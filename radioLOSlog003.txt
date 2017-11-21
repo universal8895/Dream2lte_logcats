@@ -1,0 +1,1089 @@
+11-21 21:48:05.843  3206  3206 D boot    : cbd: get_cmdline_str: find str androidboot.debug_level=0x4f4c form /proc/cmdline
+11-21 21:48:05.843  3206  3206 D boot    : cbd: check_debug_level: androidboot.debug_level=0x4f4c, 0
+11-21 21:48:05.843  3206  3206 D boot    : cbd: check_debug_level: debug level=0, cp_debug=0
+11-21 21:48:05.843  3206  3206 D boot    : cbd: main: Daemon Mode
+11-21 21:48:05.843  3206  3206 D boot    : cbd: main: SS310 modem
+11-21 21:48:05.843  3206  3206 D boot    : cbd: main: boot SHMEM link
+11-21 21:48:05.843  3206  3206 D boot    : cbd: main: main SHMEM link
+11-21 21:48:05.843  3206  3206 D boot    : cbd: main: partition number : platform/11120000.ufs/by-name/RADIO
+11-21 21:48:05.843  3206  3206 D boot    : cbd: main: partition path : /dev/block/platform/11120000.ufs/by-name/RADIO
+11-21 21:48:05.843  3206  3206 D boot    : cbd: main: partition number : platform/11120000.ufs/by-name/CP_DEBUG
+11-21 21:48:05.843  3206  3206 D boot    : cbd: main: partition path : /dev/block/platform/11120000.ufs/by-name/CP_DEBUG
+11-21 21:48:05.843  3206  3206 D boot    : cbd: main: Call boot start
+11-21 21:48:05.843  3206  3206 D boot    : cbd: check_board_revision: model_info-system_rev: 010
+11-21 21:48:05.844  3206  3206 D boot    : cbd: start_shannon310_boot: CP boot device = /dev/umts_boot0
+11-21 21:48:05.844  3206  3206 D boot    : cbd: start_shannon310_boot: CP binary file = /dev/block/platform/11120000.ufs/by-name/RADIO
+11-21 21:48:05.844  3206  3206 D boot    : cbd: start_shannon310_boot: CP NV file = /efs/nv_data.bin
+11-21 21:48:05.844  3206  3206 D boot    : cbd: start_shannon310_boot: BOOT link SHMEM
+11-21 21:48:05.844  3206  3206 D boot    : cbd: start_shannon310_boot: MAIN link SHMEM
+11-21 21:48:05.866  3209  3209 D RILD    : **RIL Daemon Started**
+11-21 21:48:05.866  3209  3209 D RILD    : **RILd param count=1**
+11-21 21:48:05.866  3209  3209 D RILD    : rilLibPath = /system/lib64/libsec-ril.so
+11-21 21:48:06.018  3209  3209 D RILD    : RIL_Init argc = 3 clientId = 0
+11-21 21:48:06.018  3209  3209 E RILD    : RIL_Init: RilIndex: 0
+11-21 21:48:06.018  3209  3209 E RILD    : Create XmlParser
+11-21 21:48:06.020  3209  3209 E RILD    : RIL_Init: SimCount: 1
+11-21 21:48:06.021  3209  3209 E RILD    : Region():
+11-21 21:48:06.021  3209  3209 E RILD    : It is not support of OMC V4
+11-21 21:48:06.021  3209  3209 E RILD    : CscSalesCode() / CscCountry() / CscCountryISO() / OmcNwCode()
+11-21 21:48:06.021  3209  3209 E RILD    : SetCSCode: entered
+11-21 21:48:06.022  3209  3209 E RILD    : SetCSCode: sales code ARO
+11-21 21:48:06.022  3209  3209 E RILD    : UpdateNetworkTypeCapability() - Can't use NTC value (NetworkTypeCapability: )
+11-21 21:48:06.022  3209  3209 E RILD    : UpdateNetworkTypeCapability() - buildChar: default, NtcModelCategory: 0, NtcModelType: 0
+11-21 21:48:06.023  3209  3209 E RILD    : RIL_Init: ModelType[LTE]
+11-21 21:48:06.023  3209  3209 E RILD    : RIL_Init: phy intf: rmnet_mhi0, gsm net prefix: rmnet
+11-21 21:48:06.023  3209  3209 E RILD    : First Ril
+11-21 21:48:06.023  3209  3209 E RILD    : LoadLogLevel: Log level is 3.
+11-21 21:48:06.023  3209  3209 E RILD    : RIL_Init: version(8)
+11-21 21:48:06.023  3209  3209 D RILD    : RIL_Init rilInit completed
+11-21 21:48:06.023  3209  3209 I RILC    : socket_id: 0
+11-21 21:48:06.023  3209  3209 E RILC    : RIL_register: RIL version 8
+11-21 21:48:06.023  3209  3209 I RILC    : s_registerCalled flag set, 1
+11-21 21:48:06.023  3209  3209 I RILC    : Start to listen RIL_SOCKET_1
+11-21 21:48:06.023  3209  3209 D RILD    : RIL_Init RIL_register completed
+11-21 21:48:06.023  3209  3209 D RILD    : RIL_register_socket started
+11-21 21:48:06.023  3209  3209 D RIL_UIM_SOCKET: Adding socket with id: 0
+11-21 21:48:06.023  3209  3209 D RILD    : RIL_register_socket completed
+11-21 21:48:06.023  3209  3209 D RILD    : RIL_Init starting sleep loop
+11-21 21:48:06.045  3212  3212 E RILClient: Connect_RILD: Connecting failed. Connection refused(111)
+11-21 21:48:06.123  3209  3278 E RILD    : LazyRilInit
+11-21 21:48:06.123  3209  3278 E RILD    : SecRil(): ModelType: 2
+11-21 21:48:06.124  3209  3278 E RILD    : LoadModemConfiguration(): NumModem(1).
+11-21 21:48:06.124  3209  3278 E RILD    : Modem config #0: index[0], iftype[3], ifname[/dev/umts_ipc0], mtype[4], proto[1], protover[2], dbg-ifname[IPCDEBUG_UNIX_SOCKET]
+11-21 21:48:06.124  3209  3278 E RILD    : Modem config #0: rfsIfName[/dev/umts_rfs0], nvHeader[nv], modemDev[/dev/mbin0], nvSize[1048576], nvDir[/efs] nvOffSet[10485760]
+11-21 21:48:06.126  3209  3278 E RILD    : Debug channel is not opened for ship build.
+11-21 21:48:06.126  3209  3278 E RILD    : Nv::CheckEfsMountMode: found_rw_fs is 2
+11-21 21:48:06.127  3209  3278 E RILD    : Nv::isSecureEfsMounted: secure EFS is not mounted
+11-21 21:48:06.127  3209  3278 E RILD    : Nv::InitNvOffset: index(0) : TOC 	 0x0 	 0x200
+11-21 21:48:06.127  3209  3278 E RILD    : Nv::InitNvOffset: index(1) : BOOT 	 0x200 	 0x1EB4
+11-21 21:48:06.127  3209  3278 E RILD    : Nv::InitNvOffset: index(2) : MAIN 	 0x20C0 	 0x246F038
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(3) : VSS 	 0x2471100 	 0x470C44
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(4) : NV 	 0x0 	 0x100000
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: NV
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(5) : OFFSET 	 0x7AA00 	 0x85600
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: OFFSET
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(6) :  	 0x0 	 0x0
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(7) :  	 0x0 	 0x0
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(8) :  	 0x0 	 0x0
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(9) :  	 0x0 	 0x0
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(10) :  	 0x0 	 0x0
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(11) :  	 0x0 	 0x0
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(12) :  	 0x0 	 0x0
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(13) :  	 0x0 	 0x0
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::InitNvOffset: index(14) :  	 0x0 	 0x0
+11-21 21:48:06.128  3209  3278 E RILD    : End Of TOC(15)
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::LoadNvChecksumState: checksum state 1
+11-21 21:48:06.128  3209  3278 E RILD    : Nv::SetChecksumState: on 1
+11-21 21:48:06.129  3209  3278 E RILD    : Nv::CopyLogElfs() mNvDefaultDevice - /dev/mbin0
+11-21 21:48:06.129  3209  3278 E RILD    : Nv::CopyLogElfs() mLogElfsOffset - 0, mLogElfsSize - 0
+11-21 21:48:06.129  3209  3278 E RILD    : Nv::CheckNvDataChecksum: 
+11-21 21:48:06.129  3209  3278 E RILD    : Nv::ReadHeader: Writting Count : 0x89780009(-1988624375)
+11-21 21:48:06.129  3209  3278 E RILD    : Nv::ReadHeader: Item Count : 0x847886(8681606))
+11-21 21:48:06.129  3209  3278 E RILD    : Nv::ReadHeader: Data Size : 0x183B8(99256) Byte
+11-21 21:48:06.137  3209  3278 E RILD    : Nv::CompareCheckSum: Checksum Offset : 0x983C8
+11-21 21:48:06.137  3209  3278 E RILD    : Nv::CompareCheckSum: Checksum is OK : 0xDBA0
+11-21 21:48:06.137  3209  3278 E RILD    : Nv::CheckNvDataChecksum: check sum NvDataPath valid
+11-21 21:48:06.137  3209  3278 E RILD    : Nv::CheckNvDataValidity: 
+11-21 21:48:06.137  3209  3278 E RILD    : Nv::IsNvDataSizeValid
+11-21 21:48:06.137  3209  3278 E RILD    : Nv::GetChecksumValidityWith: nvdata
+11-21 21:48:06.147  3209  3278 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:06.148  3209  3278 E RILD    : Nv::GetChecksumValidityWith: checksum OK
+11-21 21:48:06.149  3209  3278 E RILD    : create Thread.
+11-21 21:48:06.149  3209  3321 E RILD    : Force-exit is required for this thread
+11-21 21:48:06.150  3209  3278 E RILD    : fail to remove MSISDN_FILE_PATH
+11-21 21:48:06.150  3209  3278 E RILD    : fail to remove IMSI_FILE_PATH
+11-21 21:48:06.150  3209  3278 E RILD    : fail to remove IMEI_FILE_PATH
+11-21 21:48:06.150  3209  3278 E RILD    : fail to remove ENCRYPT_KEY_FILE_PATH
+11-21 21:48:06.150  3209  3278 E RILD    : fail to remove IV_FILE_PATH
+11-21 21:48:06.150  3209  3278 E RILD    : fail to remove ICCID_FILE
+11-21 21:48:06.150  3209  3278 E RILD    : fail to remove IMSIM_FILE
+11-21 21:48:06.150  3209  3278 E RILD    : fail to remove IMSIG_FILE
+11-21 21:48:06.150  3209  3278 E RILD    : fail to remove MDN_FILE
+11-21 21:48:06.154  3209  3278 E RILD    : chown ENCRYPT_KEY_FILE_PATH ok 
+11-21 21:48:06.156  3209  3278 E RILD    : chown IV_FILE_PATH ok 
+11-21 21:48:06.158  3209  3278 E RILD    : set ril.initPB with 0
+11-21 21:48:06.159  3209  3278 E RILD    : create Thread.
+11-21 21:48:06.159  3209  3324 E RILD    : Force-exit is required for this thread
+11-21 21:48:06.161  3209  3278 E RILD    : GetInstance(): preModelType : 0, ModelType: 2
+11-21 21:48:06.163  3209  3278 E RILD    : LoadSimOperator(): read gsm.sim.operator.numeric
+11-21 21:48:06.163  3209  3278 E RILD    : SetSimOperator: invalid operator
+11-21 21:48:06.163  3209  3278 E RILD    : Failed to set IMSI from [gsm.sim.operator.numeric] RilIndex=0
+11-21 21:48:06.163  3209  3278 E RILD    : CreateDataCallList: Interface prefix: rmnet
+11-21 21:48:06.163  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.164  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.164  3209  3278 E RILD    : [NIF] Address is set for rmnet0
+11-21 21:48:06.164  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.164  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.164  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.164  3209  3278 E RILD    : [NIF] Interface(rmnet0) is down.
+11-21 21:48:06.165  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet0) is added to callList
+11-21 21:48:06.165  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.165  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.165  3209  3278 E RILD    : [NIF] Address is set for rmnet1
+11-21 21:48:06.165  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.165  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.165  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.165  3209  3278 E RILD    : [NIF] Interface(rmnet1) is down.
+11-21 21:48:06.166  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet1) is added to callList
+11-21 21:48:06.166  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.166  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.166  3209  3278 E RILD    : [NIF] Address is set for rmnet2
+11-21 21:48:06.166  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.166  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.167  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.167  3209  3278 E RILD    : [NIF] Interface(rmnet2) is down.
+11-21 21:48:06.167  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet2) is added to callList
+11-21 21:48:06.167  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.167  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.167  3209  3278 E RILD    : [NIF] Address is set for rmnet3
+11-21 21:48:06.167  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.167  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.168  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.168  3209  3278 E RILD    : [NIF] Interface(rmnet3) is down.
+11-21 21:48:06.168  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet3) is added to callList
+11-21 21:48:06.168  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.168  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.168  3209  3278 E RILD    : [NIF] Address is set for rmnet4
+11-21 21:48:06.168  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.168  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.169  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.169  3209  3278 E RILD    : [NIF] Interface(rmnet4) is down.
+11-21 21:48:06.169  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet4) is added to callList
+11-21 21:48:06.169  3209  3278 E RILD    : [FD] wakelocktime : 0
+11-21 21:48:06.169  3209  3278 E RILD    : CreateDataCallList: Interface prefix: rmnet
+11-21 21:48:06.170  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.170  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.170  3209  3278 E RILD    : [NIF] Address is set for rmnet0
+11-21 21:48:06.170  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.170  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.170  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.171  3209  3278 E RILD    : [NIF] Interface(rmnet0) is down.
+11-21 21:48:06.171  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet0) is added to callList
+11-21 21:48:06.171  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.171  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.171  3209  3278 E RILD    : [NIF] Address is set for rmnet1
+11-21 21:48:06.171  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.171  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.171  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.172  3209  3278 E RILD    : [NIF] Interface(rmnet1) is down.
+11-21 21:48:06.172  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet1) is added to callList
+11-21 21:48:06.172  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.172  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.172  3209  3278 E RILD    : [NIF] Address is set for rmnet2
+11-21 21:48:06.172  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.172  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.173  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.173  3209  3278 E RILD    : [NIF] Interface(rmnet2) is down.
+11-21 21:48:06.173  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet2) is added to callList
+11-21 21:48:06.173  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.173  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.173  3209  3278 E RILD    : [NIF] Address is set for rmnet3
+11-21 21:48:06.173  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.173  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.174  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.174  3209  3278 E RILD    : [NIF] Interface(rmnet3) is down.
+11-21 21:48:06.174  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet3) is added to callList
+11-21 21:48:06.174  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.174  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.174  3209  3278 E RILD    : [NIF] Address is set for rmnet4
+11-21 21:48:06.174  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.175  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.175  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.175  3209  3278 E RILD    : [NIF] Interface(rmnet4) is down.
+11-21 21:48:06.175  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet4) is added to callList
+11-21 21:48:06.175  3209  3278 E RILD    : CreateDataCallList: Interface prefix: rmnet
+11-21 21:48:06.176  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.176  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.176  3209  3278 E RILD    : [NIF] Address is set for rmnet0
+11-21 21:48:06.176  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.176  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.176  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.176  3209  3278 E RILD    : [NIF] Interface(rmnet0) is down.
+11-21 21:48:06.176  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet0) is added to callList
+11-21 21:48:06.177  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.177  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.177  3209  3278 E RILD    : [NIF] Address is set for rmnet1
+11-21 21:48:06.177  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.177  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.177  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.177  3209  3278 E RILD    : [NIF] Interface(rmnet1) is down.
+11-21 21:48:06.178  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet1) is added to callList
+11-21 21:48:06.178  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.178  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.178  3209  3278 E RILD    : [NIF] Address is set for rmnet2
+11-21 21:48:06.178  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.178  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.178  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.179  3209  3278 E RILD    : [NIF] Interface(rmnet2) is down.
+11-21 21:48:06.179  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet2) is added to callList
+11-21 21:48:06.179  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.179  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.179  3209  3278 E RILD    : [NIF] Address is set for rmnet3
+11-21 21:48:06.179  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.179  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.180  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.180  3209  3278 E RILD    : [NIF] Interface(rmnet3) is down.
+11-21 21:48:06.180  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet3) is added to callList
+11-21 21:48:06.180  3209  3278 E RILD    : Can't Open Xml File
+11-21 21:48:06.180  3209  3278 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:06.180  3209  3278 E RILD    : [NIF] Address is set for rmnet4
+11-21 21:48:06.180  3209  3278 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:06.180  3209  3278 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:06.181  3209  3278 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:06.181  3209  3278 E RILD    : [NIF] Interface(rmnet4) is down.
+11-21 21:48:06.181  3209  3278 E RILD    : CreateDataCallList: Interface(rmnet4) is added to callList
+11-21 21:48:06.182  3209  3278 E RILD    : Handlers registered
+11-21 21:48:06.182  3209  3278 E RILD    : manager objects are created.
+11-21 21:48:06.182  3209  3278 E RILD    : Init() plmn file = /system/etc/plmn_se13.bin
+11-21 21:48:06.186  3209  3278 E RILD    : LoadOpnameDb(): db open error
+11-21 21:48:06.186  3209  3278 E RILD    : Initialize(): read gsm.sim.operator.numeric
+11-21 21:48:06.186  3209  3278 E RILD    : SetSimOperator: invalid operator
+11-21 21:48:06.186  3209  3278 E RILD    : Failed to get IMSI value.
+11-21 21:48:06.186  3209  3278 E RILD    : Start, NetlinkUtils thread Started
+11-21 21:48:06.186  3209  3278 E RILD    : create Thread.
+11-21 21:48:06.187  3209  3278 E RILD    : DefRoute for rmnet0 is disabled
+11-21 21:48:06.187  3209  3278 E RILD    : DefRoute for rmnet1 is disabled
+11-21 21:48:06.187  3209  3278 E RILD    : DefRoute for rmnet2 is disabled
+11-21 21:48:06.187  3209  3278 E RILD    : DefRoute for rmnet3 is disabled
+11-21 21:48:06.187  3209  3278 E RILD    : DefRoute for rmnet4 is disabled
+11-21 21:48:06.187  3209  3278 E RILD    : DisableAutoConfig():
+11-21 21:48:06.187  3209  3278 E RILD    : autoconf for rmnet0 is disabled.
+11-21 21:48:06.187  3209  3278 E RILD    : autoconf for rmnet1 is disabled.
+11-21 21:48:06.187  3209  3278 E RILD    : autoconf for rmnet2 is disabled.
+11-21 21:48:06.187  3209  3278 E RILD    : autoconf for rmnet3 is disabled.
+11-21 21:48:06.187  3209  3278 E RILD    : autoconf for rmnet4 is disabled.
+11-21 21:48:06.187  3209  3278 E RILD    : AcceptRa is set to 2 for rmnet0.
+11-21 21:48:06.187  3209  3278 E RILD    : AcceptRa is set to 2 for rmnet1.
+11-21 21:48:06.187  3209  3278 E RILD    : AcceptRa is set to 2 for rmnet2.
+11-21 21:48:06.187  3209  3278 E RILD    : AcceptRa is set to 2 for rmnet3.
+11-21 21:48:06.187  3209  3278 E RILD    : AcceptRa is set to 2 for rmnet4.
+11-21 21:48:06.187  3209  3278 E RILD    : AddHandler: Handler CA-DCA already exit.
+11-21 21:48:06.187  3209  3278 E RILD    : Initialize(): Is initialized: 0
+11-21 21:48:06.188  3209  3278 E RILD    : create Thread.
+11-21 21:48:06.188  3209  3278 E RILD    : create Thread.
+11-21 21:48:06.188  3209  3278 E RILD    : Wait boot ready
+11-21 21:48:06.188  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x0]
+11-21 21:48:06.207  3209  3328 E RILD    : Force-exit is required for this thread
+11-21 21:48:06.207  3209  3328 E RILD    : Run(): NetlinkUtilsRunnable
+11-21 21:48:06.207  3209  3329 E RILD    : Force-exit is required for this thread
+11-21 21:48:06.207  3209  3329 E RILD    : GC-MGR(4): evt(219)
+11-21 21:48:06.207  3209  3329 E RILD    : OnDataCallStateChanged() - data call is null
+11-21 21:48:06.207  3209  3329 E RILD    : LEDC-MGR(9): evt(10001)
+11-21 21:48:06.207  3209  3329 E RILD    : OnPsRegistrationStateChanged
+11-21 21:48:06.208  3209  3330 E RILD    : Force-exit is required for this thread
+11-21 21:48:06.246  3206  3206 D boot    : cbd: start_shannon310_boot: NV validation done
+11-21 21:48:06.246  3206  3206 D boot    : cbd: start_shannon310_boot: Prepare arguments, read TOC, check NV
+11-21 21:48:06.247  3206  3206 E boot    : cbd: (ERR! Not a typewriter) alloc_srinfo: Crash info string was invalid(ffffffff/5245564a)
+11-21 21:48:06.247  3206  3206 E boot    : cbd: (ERR! Not a typewriter) store_srinfo: alloc srinfo fail
+11-21 21:48:06.247  3206  3206 D boot    : cbd: get_modem_state: modem_status: 0
+11-21 21:48:06.247  3206  3206 D boot    : cbd: start_shannon310_boot: Request Security : non-secure mode
+11-21 21:48:06.264  3206  3206 D boot    : cbd: start_shannon310_boot: Send BIN
+11-21 21:48:06.388  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x0]
+11-21 21:48:06.391  3206  3206 D boot    : cbd: start_shannon310_boot: Request Security : secure mode
+11-21 21:48:06.543  3206  3206 D boot    : cbd: start_shannon310_boot: MODEM ON : pda_active 1, cp power on
+11-21 21:48:06.588  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x0]
+11-21 21:48:06.788  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x0]
+11-21 21:48:06.846  3206  3206 D boot    : cbd: start_shannon310_boot: BOOT ON : change modem state, irq, wait cp state
+11-21 21:48:06.846  3206  3206 D boot    : cbd: start_shannon310_boot: BOOT START : reset ipcmap, set magic code
+11-21 21:48:06.846  3206  3206 D boot    : cbd: start_shannon310_boot: HANDSHAKE COMMAND : send & recv boot_done, fin message
+11-21 21:48:06.848  3206  3206 D boot    : cbd: start_shannon310_boot: BOOT OFF : wait completion, irq
+11-21 21:48:06.989  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:07.045  3212  3212 E RILClient: Connect_RILD: Connecting failed. Connection refused(111)
+11-21 21:48:07.189  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:07.389  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:07.589  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:07.789  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:07.990  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:08.046  3212  3212 E RILClient: Connect_RILD: Connecting failed. Connection refused(111)
+11-21 21:48:08.083  3206  3206 D boot    : cbd: open_srinfo_last: open last_sr_info file - /data/log/err/last_sr_info_umts
+11-21 21:48:08.083  3206  3206 E boot    : cbd: (ERR! No such file or directory) open_srinfo_last: last_sr_info open fail(-1)
+11-21 21:48:08.083  3206  3206 E boot    : cbd: (ERR! No such file or directory) restore_srinfo: sr_info_last open fail(-1)
+11-21 21:48:08.089  3206  3206 D boot    : cbd: main: Boot up process done!!!
+11-21 21:48:08.089  3206  3206 D boot    : cbd: status_loop: CP status_loop start(modem = 13)
+11-21 21:48:08.190  3209  3278 E RILD    : Modem status[waiting: 0x4, current: 0x4]
+11-21 21:48:08.190  3209  3278 E RILD    : 
+11-21 21:48:08.190  3209  3278 E RILD    : 
+11-21 21:48:08.190  3209  3278 E RILD    : Modem is in ONLINE state
+11-21 21:48:08.190  3209  3278 E RILD    : 
+11-21 21:48:08.190  3209  3278 E RILD    : 
+11-21 21:48:08.191  3209  3278 E RILD    : create Thread.
+11-21 21:48:08.191  3209  3278 E RILD    : Modem is started now.
+11-21 21:48:08.191  3209  3595 E RILD    : Force-exit is required for this thread
+11-21 21:48:08.194  3209  3278 E RILD    : Succeeded to init SEC RIL.
+11-21 21:48:08.197  3209  3278 E RILD    : create Thread.
+11-21 21:48:08.197  3209  3278 E RILD    : OemClientReceiver started
+11-21 21:48:08.197  3209  3278 E RILD    : Init() - SendModemCrashReason fail
+11-21 21:48:08.198  3209  3278 E RILD    : SecRil proxy inited
+11-21 21:48:08.198  3209  3278 E RILD    : LazyRilSapInit
+11-21 21:48:08.198  3209  3596 E RILD    : Force-exit is required for this thread
+11-21 21:48:09.046  3212  3212 D RILClient: Connect_RILD: Success to connect
+11-21 21:48:09.047  3209  3596 E RILD    : Oem client connected
+11-21 21:48:09.047  3209  3596 E RILD    : new oem client connection=25
+11-21 21:48:09.484  3209  3595 E RILD    : [G] RX: (M)FACTORY_CMD (S)FACTORY_BYPASS_TEST (T)NOTI l:19 m:00 a:00 [ 0F 00 0D 0A 41 53 54 5F 50 4F 57 45 52 4F 4E 0D 0A 00 ]
+11-21 21:48:09.484  3209  3595 E RILD    : IpcRxFactory:
+11-21 21:48:09.484  3209  3329 E RILD    : FAC-MGR(16): evt(108)
+11-21 21:48:09.484  3209  3595 E RILD    : [G] RX: (M)PWR_CMD (S)PWR_PHONE_PWR_UP (T)NOTI l:8 m:01 a:00 [ 53 ]
+11-21 21:48:09.484  3209  3329 E RILD    : OnFactoryBypassNoti : 
+11-21 21:48:09.484  3209  3329 E RILD    : AST_POWERON
+11-21 21:48:09.484  3209  3329 E RILD    : at_distributor is not ready. queuing a message
+11-21 21:48:09.484  3209  3329 E RILD    : IMEI-MGR(17): evt(106)
+11-21 21:48:09.484  3209  3595 E RILD    : [G] RX: (M)GPRS_CMD (S)GPRS_PIN_CTRL (T)NOTI l:9 m:02 a:00 [ 06 00 ]
+11-21 21:48:09.485  3209  3329 E RILD    : GP-MGR(1): evt(102)
+11-21 21:48:09.485  3209  3329 E RILD    : PWR: newState(0) oldState(1)
+11-21 21:48:09.485  3209  3329 E RILD    : NotifyRadioStateChanged: 0(PWR:0 SIM:0)
+11-21 21:48:09.485  3209  3329 E RILD    : OnUnsolicitedResponse: unsolId: 1000
+11-21 21:48:09.485  3209  3329 E RILD    : Notify power state changed: 2
+11-21 21:48:09.485  3209  3329 E RILD    : OnRadioPowerUp: Online booting, need to enable processing
+11-21 21:48:09.486  3209  3329 E RILD    : Request processing is enabled.
+11-21 21:48:09.486  3209  3329 E RILD    : setCpConfigOnFirstBoot()
+11-21 21:48:09.486  3209  3329 E RILD    : setCpConfigOnFirstBoot autoConfigType : DISABLE
+11-21 21:48:09.486  3209  3329 E RILD    : setPreconfigOnFirstBoot(): support one cp bin.
+11-21 21:48:09.486  3209  3329 E RILD    : setPreconfigOnFirstBoot(): first boot
+11-21 21:48:09.486  3209  3329 E RILD    : Get sales code from (/system/csc/sales_code.dat)
+11-21 21:48:09.486  3209  3329 E RILD    : GetStringFromFile: Error(/system/csc/sales_code.dat)
+11-21 21:48:09.486  3209  3329 E RILD    : setPreconfigOnFirstBoot(): sales code : 
+11-21 21:48:09.486  3209  3329 E RILD    : GLNET-MGR(3): evt(1002)
+11-21 21:48:09.486  3209  3329 E RILD    : GNET-MGR: EVENT_RADIO_STATE_CHANGED
+11-21 21:48:09.486  3209  3329 E RILD    : OnRadioStateChanged: LteNetworkManager
+11-21 21:48:09.486  3209  3329 E RILD    : networkmanager radio off
+11-21 21:48:09.487  3209  3329 E RILD    : EMBMS-MGR(22): evt(203)
+11-21 21:48:09.487  3209  3329 E RILD    : OnOemEmbmsRadioStateNoti():
+11-21 21:48:09.487  3209  3330 E RILD    : Onprocessing: request id(1011), handleEvent(100)
+11-21 21:48:09.487  3209  3329 E RILD    : SMS-MGR(8): evt(8006)
+11-21 21:48:09.487  3209  3329 E RILD    : OnRadioStateChanged: RADIO_OFF : mIsDeviceReadyNotiNeed = NOT_CONNECTED
+11-21 21:48:09.487  3209  3329 E RILD    : LEDC-MGR(9): evt(108)
+11-21 21:48:09.487  3209  3329 E RILD    : OnUnsolicitedResponse: unsolId: 11011
+11-21 21:48:09.487  3209  3329 E RILC    : unsupported OEM unsolicated response code 11011
+11-21 21:48:09.487  3209  3329 E RILD    : Oem OnUnsolicitedResponse: response code=11011
+11-21 21:48:09.487  3209  3329 E RILD    : IMEI-MGR(17): evt(100)
+11-21 21:48:09.487  3209  3329 E RILD    : DoOemImei: sub id = 0x01
+11-21 21:48:09.487  3209  3329 E RILD    : DoOemImeiSetPreconfig:
+11-21 21:48:09.487  3209  3329 E RILD    : mkdir failed (/efs/imei) 
+11-21 21:48:09.487  3209  3329 E RILD    : DoOemImeiSetPreconfig: OMC version : 0
+11-21 21:48:09.487  3212  3620 D RILClient: processUnsolicited(): resp_id (11011), len(2)
+11-21 21:48:09.490  3209  3329 E RILD    : WriteTextWithOffset() Error : /dev/block/param
+11-21 21:48:09.490  3209  3329 E RILD    : failed to set boot param
+11-21 21:48:09.490  3209  3329 E RILD    : IpcTxImeiPreconfigSet:
+11-21 21:48:09.490  3209  3329 E RILD    : [G] TX: (M)IMEI_CMD (S)IMEI_PRE_CONFIG (T)SET l:13 m:00 a:00 [ 00 00 00 00 00 00 00 00 00 00 00 00 ]
+11-21 21:48:09.490  3209  3329 E RILD    : LEDC-MGR(9): evt(107)
+11-21 21:48:09.490  3209  3329 E RILD    : OnRadioStateChanged: Attach-tried flag is set to false
+11-21 21:48:09.493  3209  3595 E RILD    : [G] RX: (M)GEN_CMD (S)GEN_PHONE_RES (T)RESP l:c m:03 a:00 [ 10 03 03 00 80 ]
+11-21 21:48:09.493  3209  3595 E RILD    : IpcProtocol41 GR: 0x8000
+11-21 21:48:09.493  3209  3595 E RILD    : IpcProtocol GR: 0x8000
+11-21 21:48:09.493  3209  3329 E RILD    : IMEI-MGR(17): evt(109)
+11-21 21:48:09.493  3209  3329 E RILD    : EVENT_PRECONFIG_SET_DONE response
+11-21 21:48:09.493  3209  3329 E RILD    : Cannot get free space size. skip get logs
+11-21 21:48:09.493  3209  3329 E RILD    : RequestComplete - req : 1011, peek : 1011
+11-21 21:48:10.703  3209  3595 E RILD    : Nv::ProcessRfsPacket: full RFS frame received (49 packets / 99296 bytes)
+11-21 21:48:10.703  3209  3595 E RILD    : Nv::ProcessRfsMessage: cmd = 0x02
+11-21 21:48:10.703  3209  3595 E RILD    : Nv::GetChecksumValidityWith: nvdata
+11-21 21:48:10.707  3209  3595 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:10.707  3209  3595 E RILD    : Nv::GetChecksumValidityWith: checksum OK
+11-21 21:48:10.707  3209  3595 E RILD    : Nv::ProcessNvWrite: offset=0x00080000, size=0x000183D2
+11-21 21:48:10.711  3209  3595 E RILD    : Nv::ProcessNvWrite: writeCount 0x183D2(99282)
+11-21 21:48:10.711  3209  3595 E RILD    : Nv::UpdateChecksumFile
+11-21 21:48:10.715  3209  3595 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:10.715  3209  3595 E RILD    : Nv::UpdateChecksumFile() SetIoBoost
+11-21 21:48:10.715  3209  3595 E RILD    : Nv::UpdateChecksumFile() WriteBytes
+11-21 21:48:10.718  3209  3595 E RILD    : Nv::SendRfsMessage
+11-21 21:48:10.718  3209  3595 E RILD    : Nv::ProcessRfsPacket: full RFS frame received (9 packets / 16888 bytes)
+11-21 21:48:10.718  3209  3595 E RILD    : Nv::ProcessRfsMessage: cmd = 0x02
+11-21 21:48:10.718  3209  3595 E RILD    : Nv::GetChecksumValidityWith: nvdata
+11-21 21:48:10.722  3209  3595 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:10.722  3209  3595 E RILD    : Nv::GetChecksumValidityWith: checksum OK
+11-21 21:48:10.722  3209  3595 E RILD    : Nv::ProcessNvWrite: offset=0x00000000, size=0x000041EA
+11-21 21:48:10.724  3209  3595 E RILD    : Nv::ProcessNvWrite: writeCount 0x41EA(16874)
+11-21 21:48:10.724  3209  3595 E RILD    : Nv::UpdateChecksumFile
+11-21 21:48:10.728  3209  3595 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:10.728  3209  3595 E RILD    : Nv::UpdateChecksumFile() SetIoBoost
+11-21 21:48:10.728  3209  3595 E RILD    : Nv::UpdateChecksumFile() WriteBytes
+11-21 21:48:10.730  3209  3595 E RILD    : Nv::SendRfsMessage
+11-21 21:48:11.207  3209  3595 E RILD    : [G] RX: (M)FACTORY_CMD (S)FACTORY_DEVICE_TEST (T)INDI l:b m:04 a:ff [ 02 00 33 42 ]
+11-21 21:48:11.207  3209  3595 E RILD    : IpcRxFactory:
+11-21 21:48:11.207  3209  3595 E RILD    : IpcRxFactoryDeviceTest:
+11-21 21:48:11.207  3209  3595 E RILD    : INDI len=0x02
+11-21 21:48:11.207  3209  3329 E RILD    : FAC-MGR(16): evt(104)
+11-21 21:48:11.207  3209  3329 E RILD    : IpcProtocol41::IpcTxFactoryConfirm
+11-21 21:48:11.207  3209  3329 E RILD    : [G] TX: (M)FACTORY_CMD (S)FACTORY_DEVICE_TEST (T)CFRM l:7 m:01 a:00 [ ]
+11-21 21:48:11.207  3209  3329 E RILD    : Nv::BackupNvData
+11-21 21:48:11.207  3209  3329 E RILD    : Nv::IsNvDataSizeValid
+11-21 21:48:11.208  3209  3329 E RILD    : Nv::ReadHeader: Writting Count : 0x89780009(-1988624375)
+11-21 21:48:11.208  3209  3329 E RILD    : Nv::ReadHeader: Item Count : 0x847886(8681606))
+11-21 21:48:11.208  3209  3329 E RILD    : Nv::ReadHeader: Data Size : 0x183BF(99263) Byte
+11-21 21:48:11.218  3209  3329 E RILD    : Nv::CompareCheckSum: Checksum Offset : 0x983D0
+11-21 21:48:11.218  3209  3329 E RILD    : Nv::CompareCheckSum: Checksum is OK : 0x7722
+11-21 21:48:11.218  3209  3329 E RILD    : Nv::BackupIncludeCoreBackup:
+11-21 21:48:11.218  3209  3329 E RILD    : lengthOfCoreData(0, 546304 bytes), 546304 bytes
+11-21 21:48:11.218  3209  3329 E RILD    : Nv::BackupIncludeCoreBackup: offset = 0x7AA00, size = 0x85600
+11-21 21:48:11.229  3209  3329 E RILD    : Nv::UpdateChecksumFile
+11-21 21:48:11.229  3209  3329 E RILD    : lengthOfCoreData(0, 546304 bytes), 546304 bytes
+11-21 21:48:11.231  3209  3329 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:11.231  3209  3329 E RILD    : Nv::UpdateChecksumFile() SetIoBoost
+11-21 21:48:11.231  3209  3329 E RILD    : Nv::UpdateChecksumFile() WriteBytes
+11-21 21:48:11.233  3209  3329 E RILD    : Nv::CopyFile
+11-21 21:48:11.233  3209  3329 E RILD    : Nv::CopyFile: offset 0x00000000 size 0x00100000
+11-21 21:48:11.235  3209  3329 E RILD    : Nv::CopyFile: 1048576 bytes written.
+11-21 21:48:11.235  3209  3329 E RILD    : Nv::UpdateChecksumFile
+11-21 21:48:11.238  3209  3329 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:11.238  3209  3329 E RILD    : Nv::UpdateChecksumFile() SetIoBoost
+11-21 21:48:11.238  3209  3329 E RILD    : Nv::UpdateChecksumFile() WriteBytes
+11-21 21:48:11.256  3209  3329 E RILD    : IpcProtocol41::IpcTxFactoryEvent
+11-21 21:48:11.256  3209  3329 E RILD    : [G] TX: (M)FACTORY_CMD (S)FACTORY_DEVICE_TEST (T)EVENT l:b m:02 a:00 [ 02 00 33 42 ]
+11-21 21:48:11.805  3209  3595 E RILD    : Nv::ProcessRfsPacket: received standalone RFS frame (20 bytes)
+11-21 21:48:11.805  3209  3595 E RILD    : Nv::ProcessRfsMessage: cmd = 0x11
+11-21 21:48:11.805  3209  3595 E RILD    : Nv::ProcessOpenFile: open file "/efs/root/}ZE$" flag(0x00000000)
+11-21 21:48:11.805  3209  3595 E RILD    : Nv::CheckRfsDirectory: check dir '/efs/root'
+11-21 21:48:11.805  3209  3595 E RILD    : A directory already exists
+11-21 21:48:11.807  3209  3595 E RILD    : Nv::ProcessOpenFile: open failed No such file or directory(2)
+11-21 21:48:11.807  3209  3595 E RILD    : Nv::ProcessOpenFile: length 14
+11-21 21:48:11.807  3209  3595 E RILD    : Nv::SendRfsMessage
+11-21 21:48:11.809  3209  3595 E RILD    : Nv::ProcessRfsPacket: received standalone RFS frame (32 bytes)
+11-21 21:48:11.809  3209  3595 E RILD    : Nv::ProcessRfsMessage: cmd = 0x11
+11-21 21:48:11.809  3209  3595 E RILD    : Nv::ProcessOpenFile: open file "/system/etc/CP_AUDIO_SLSI.bin" flag(0x00000000)
+11-21 21:48:11.809  3209  3595 E RILD    : Nv::CheckRfsDirectory: check dir '/system/etc'
+11-21 21:48:11.809  3209  3595 E RILD    : A directory already exists
+11-21 21:48:11.809  3209  3595 E RILD    : Nv::ProcessOpenFile: open failed No such file or directory(2)
+11-21 21:48:11.809  3209  3595 E RILD    : Nv::ProcessOpenFile: length 14
+11-21 21:48:11.809  3209  3595 E RILD    : Nv::SendRfsMessage
+11-21 21:48:11.812  3209  3595 E RILD    : Nv::ProcessRfsPacket: received standalone RFS frame (10 bytes)
+11-21 21:48:11.812  3209  3595 E RILD    : Nv::ProcessRfsMessage: cmd = 0x06
+11-21 21:48:11.812  3209  3595 E RILD    : Nv::ProcessCloseFile: fileHandler=-1
+11-21 21:48:11.812  3209  3595 E RILD    : Nv::ProcessCloseFile: length 14
+11-21 21:48:11.812  3209  3595 E RILD    : Nv::SendRfsMessage
+11-21 21:48:11.816  3209  3595 E RILD    : Nv::ProcessRfsPacket: received standalone RFS frame (10 bytes)
+11-21 21:48:11.816  3209  3595 E RILD    : Nv::ProcessRfsMessage: cmd = 0x06
+11-21 21:48:11.816  3209  3595 E RILD    : Nv::ProcessCloseFile: fileHandler=-1
+11-21 21:48:11.816  3209  3595 E RILD    : Nv::ProcessCloseFile: length 14
+11-21 21:48:11.816  3209  3595 E RILD    : Nv::SendRfsMessage
+11-21 21:48:12.207  3209  3595 E RILD    : [G] RX: (M)PWR_CMD (S)PWR_PHONE_RESET (T)NOTI l:9 m:05 a:00 [ 01 04 ]
+11-21 21:48:12.207  3209  3329 E RILD    : GP-MGR(1): evt(104)
+11-21 21:48:12.207  3209  3329 E RILD    : PWR: newState(1) oldState(0)
+11-21 21:48:12.207  3209  3329 E RILD    : NotifyRadioStateChanged: 1(PWR:1 SIM:0)
+11-21 21:48:12.207  3209  3329 E RILD    : OnUnsolicitedResponse: unsolId: 1000
+11-21 21:48:12.208  3209  3329 E RILD    : DoModemSilentReset()
+11-21 21:48:12.213  3624  3624 D boot    : cbd: get_cmdline_str: find str androidboot.debug_level=0x4f4c form /proc/cmdline
+11-21 21:48:12.213  3624  3624 D boot    : cbd: check_debug_level: androidboot.debug_level=0x4f4c, 0
+11-21 21:48:12.213  3624  3624 D boot    : cbd: check_debug_level: debug level=0, cp_debug=0
+11-21 21:48:12.213  3624  3624 D boot    : cbd: main: Daemon Mode
+11-21 21:48:12.213  3624  3624 D boot    : cbd: main: SS310 modem
+11-21 21:48:12.213  3624  3624 D boot    : cbd: main: boot SHMEM link
+11-21 21:48:12.213  3624  3624 D boot    : cbd: main: main SHMEM link
+11-21 21:48:12.213  3624  3624 D boot    : cbd: main: partition number : platform/11120000.ufs/by-name/RADIO
+11-21 21:48:12.213  3624  3624 D boot    : cbd: main: partition path : /dev/block/platform/11120000.ufs/by-name/RADIO
+11-21 21:48:12.213  3624  3624 D boot    : cbd: main: partition number : platform/11120000.ufs/by-name/CP_DEBUG
+11-21 21:48:12.213  3624  3624 D boot    : cbd: main: partition path : /dev/block/platform/11120000.ufs/by-name/CP_DEBUG
+11-21 21:48:12.213  3624  3624 D boot    : cbd: main: Call boot start
+11-21 21:48:12.213  3624  3624 D boot    : cbd: check_board_revision: model_info-system_rev: 010
+11-21 21:48:12.213  3624  3624 D boot    : cbd: start_shannon310_boot: CP boot device = /dev/umts_boot0
+11-21 21:48:12.214  3624  3624 D boot    : cbd: start_shannon310_boot: CP binary file = /dev/block/platform/11120000.ufs/by-name/RADIO
+11-21 21:48:12.214  3624  3624 D boot    : cbd: start_shannon310_boot: CP NV file = /efs/nv_data.bin
+11-21 21:48:12.214  3624  3624 D boot    : cbd: start_shannon310_boot: BOOT link SHMEM
+11-21 21:48:12.214  3624  3624 D boot    : cbd: start_shannon310_boot: MAIN link SHMEM
+11-21 21:48:12.214  3624  3624 D boot    : cbd: start_shannon310_boot: NV validation done
+11-21 21:48:12.214  3624  3624 D boot    : cbd: start_shannon310_boot: Prepare arguments, read TOC, check NV
+11-21 21:48:12.216  3624  3624 E boot    : cbd: (ERR! Not a typewriter) alloc_srinfo: Crash info string was invalid(0/5245564a)
+11-21 21:48:12.216  3624  3624 E boot    : cbd: (ERR! Not a typewriter) store_srinfo: alloc srinfo fail
+11-21 21:48:12.216  3624  3624 D boot    : cbd: get_modem_state: modem_status: 4
+11-21 21:48:12.223  3623  3623 D RILD    : **RIL Daemon Started**
+11-21 21:48:12.223  3623  3623 D RILD    : **RILd param count=1**
+11-21 21:48:12.223  3623  3623 D RILD    : rilLibPath = /system/lib64/libsec-ril.so
+11-21 21:48:12.245  3623  3623 D RILD    : RIL_Init argc = 3 clientId = 0
+11-21 21:48:12.245  3623  3623 E RILD    : RIL_Init: RilIndex: 0
+11-21 21:48:12.245  3623  3623 E RILD    : Create XmlParser
+11-21 21:48:12.245  3623  3623 E RILD    : RIL_Init: SimCount: 1
+11-21 21:48:12.245  3623  3623 E RILD    : Region():
+11-21 21:48:12.245  3623  3623 E RILD    : It is not support of OMC V4
+11-21 21:48:12.245  3623  3623 E RILD    : CscSalesCode() / CscCountry() / CscCountryISO() / OmcNwCode()
+11-21 21:48:12.245  3623  3623 E RILD    : SetCSCode: entered
+11-21 21:48:12.245  3623  3623 E RILD    : SetCSCode: sales code ARO
+11-21 21:48:12.245  3624  3624 D boot    : cbd: start_shannon310_boot: Request Security : non-secure mode
+11-21 21:48:12.245  3623  3623 E RILD    : UpdateNetworkTypeCapability() - Can't use NTC value (NetworkTypeCapability: )
+11-21 21:48:12.245  3623  3623 E RILD    : UpdateNetworkTypeCapability() - buildChar: default, NtcModelCategory: 0, NtcModelType: 0
+11-21 21:48:12.245  3623  3623 E RILD    : RIL_Init: ModelType[LTE]
+11-21 21:48:12.245  3623  3623 E RILD    : RIL_Init: phy intf: rmnet_mhi0, gsm net prefix: rmnet
+11-21 21:48:12.245  3623  3623 E RILD    : First Ril
+11-21 21:48:12.245  3623  3623 E RILD    : LoadLogLevel: Log level is 3.
+11-21 21:48:12.245  3623  3623 E RILD    : RIL_Init: version(8)
+11-21 21:48:12.245  3623  3623 D RILD    : RIL_Init rilInit completed
+11-21 21:48:12.245  3623  3623 I RILC    : socket_id: 0
+11-21 21:48:12.245  3623  3623 E RILC    : RIL_register: RIL version 8
+11-21 21:48:12.245  3623  3623 I RILC    : s_registerCalled flag set, 1
+11-21 21:48:12.245  3623  3623 I RILC    : Start to listen RIL_SOCKET_1
+11-21 21:48:12.245  3623  3623 D RILD    : RIL_Init RIL_register completed
+11-21 21:48:12.245  3623  3623 D RILD    : RIL_register_socket started
+11-21 21:48:12.245  3623  3623 D RIL_UIM_SOCKET: Adding socket with id: 0
+11-21 21:48:12.245  3623  3623 D RILD    : RIL_register_socket completed
+11-21 21:48:12.245  3623  3623 D RILD    : RIL_Init starting sleep loop
+11-21 21:48:12.257  3624  3624 D boot    : cbd: start_shannon310_boot: Send BIN
+11-21 21:48:12.321  3624  3624 D boot    : cbd: start_shannon310_boot: Request Security : secure mode
+11-21 21:48:12.345  3623  3626 E RILD    : LazyRilInit
+11-21 21:48:12.346  3623  3626 E RILD    : SecRil(): ModelType: 2
+11-21 21:48:12.346  3623  3626 E RILD    : LoadModemConfiguration(): NumModem(1).
+11-21 21:48:12.346  3623  3626 E RILD    : Modem config #0: index[0], iftype[3], ifname[/dev/umts_ipc0], mtype[4], proto[1], protover[2], dbg-ifname[IPCDEBUG_UNIX_SOCKET]
+11-21 21:48:12.346  3623  3626 E RILD    : Modem config #0: rfsIfName[/dev/umts_rfs0], nvHeader[nv], modemDev[/dev/mbin0], nvSize[1048576], nvDir[/efs] nvOffSet[10485760]
+11-21 21:48:12.346  3623  3626 E RILD    : Debug channel is not opened for ship build.
+11-21 21:48:12.346  3623  3626 E RILD    : Nv::CheckEfsMountMode: found_rw_fs is 2
+11-21 21:48:12.346  3623  3626 E RILD    : Nv::isSecureEfsMounted: secure EFS is not mounted
+11-21 21:48:12.346  3623  3626 E RILD    : Nv::InitNvOffset: index(0) : TOC 	 0x0 	 0x200
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(1) : BOOT 	 0x200 	 0x1EB4
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(2) : MAIN 	 0x20C0 	 0x246F038
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(3) : VSS 	 0x2471100 	 0x470C44
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(4) : NV 	 0x0 	 0x100000
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: NV
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(5) : OFFSET 	 0x7AA00 	 0x85600
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: OFFSET
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(6) :  	 0x0 	 0x0
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(7) :  	 0x0 	 0x0
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(8) :  	 0x0 	 0x0
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(9) :  	 0x0 	 0x0
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(10) :  	 0x0 	 0x0
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(11) :  	 0x0 	 0x0
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(12) :  	 0x0 	 0x0
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(13) :  	 0x0 	 0x0
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::InitNvOffset: index(14) :  	 0x0 	 0x0
+11-21 21:48:12.347  3623  3626 E RILD    : End Of TOC(15)
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::LoadNvChecksumState: checksum state 1
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::SetChecksumState: on 1
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::CopyLogElfs() mNvDefaultDevice - /dev/mbin0
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::CopyLogElfs() mLogElfsOffset - 0, mLogElfsSize - 0
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::CheckNvDataChecksum: 
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::ReadHeader: Writting Count : 0x89780009(-1988624375)
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::ReadHeader: Item Count : 0x847886(8681606))
+11-21 21:48:12.347  3623  3626 E RILD    : Nv::ReadHeader: Data Size : 0x183BF(99263) Byte
+11-21 21:48:12.358  3623  3626 E RILD    : Nv::CompareCheckSum: Checksum Offset : 0x983D0
+11-21 21:48:12.358  3623  3626 E RILD    : Nv::CompareCheckSum: Checksum is OK : 0x7722
+11-21 21:48:12.358  3623  3626 E RILD    : Nv::CheckNvDataChecksum: check sum NvDataPath valid
+11-21 21:48:12.358  3623  3626 E RILD    : Nv::CheckNvDataValidity: 
+11-21 21:48:12.358  3623  3626 E RILD    : Nv::IsNvDataSizeValid
+11-21 21:48:12.358  3623  3626 E RILD    : Nv::GetChecksumValidityWith: nvdata
+11-21 21:48:12.362  3623  3626 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:12.362  3623  3626 E RILD    : Nv::GetChecksumValidityWith: checksum OK
+11-21 21:48:12.363  3623  3626 E RILD    : create Thread.
+11-21 21:48:12.363  3623  3626 E RILD    : Rild Restarted
+11-21 21:48:12.363  3623  3626 E RILD    : Rild Restarted so not delete EncryptFiles
+11-21 21:48:12.363  3623  3626 E RILD    : Rild Restarted
+11-21 21:48:12.363  3623  3626 E RILD    : Rild Restarted so not generate key
+11-21 21:48:12.363  3623  3627 E RILD    : Force-exit is required for this thread
+11-21 21:48:12.364  3623  3626 E RILD    : set ril.initPB with 0
+11-21 21:48:12.364  3623  3626 E RILD    : create Thread.
+11-21 21:48:12.364  3623  3626 E RILD    : GetInstance(): preModelType : 0, ModelType: 2
+11-21 21:48:12.364  3623  3626 E RILD    : LoadSimOperator(): read gsm.sim.operator.numeric
+11-21 21:48:12.364  3623  3626 E RILD    : SetSimOperator: invalid operator
+11-21 21:48:12.364  3623  3626 E RILD    : Failed to set IMSI from [gsm.sim.operator.numeric] RilIndex=0
+11-21 21:48:12.364  3623  3626 E RILD    : CreateDataCallList: Interface prefix: rmnet
+11-21 21:48:12.364  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.364  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.364  3623  3626 E RILD    : [NIF] Address is set for rmnet0
+11-21 21:48:12.364  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Interface(rmnet0) is down.
+11-21 21:48:12.365  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet0) is added to callList
+11-21 21:48:12.365  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Address is set for rmnet1
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Interface(rmnet1) is down.
+11-21 21:48:12.365  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet1) is added to callList
+11-21 21:48:12.365  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Address is set for rmnet2
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.365  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Interface(rmnet2) is down.
+11-21 21:48:12.366  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet2) is added to callList
+11-21 21:48:12.366  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Address is set for rmnet3
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Interface(rmnet3) is down.
+11-21 21:48:12.366  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet3) is added to callList
+11-21 21:48:12.366  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Address is set for rmnet4
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.366  3623  3626 E RILD    : [NIF] Interface(rmnet4) is down.
+11-21 21:48:12.367  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet4) is added to callList
+11-21 21:48:12.367  3623  3626 E RILD    : [FD] wakelocktime : 0
+11-21 21:48:12.367  3623  3626 E RILD    : CreateDataCallList: Interface prefix: rmnet
+11-21 21:48:12.367  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Address is set for rmnet0
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Interface(rmnet0) is down.
+11-21 21:48:12.367  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet0) is added to callList
+11-21 21:48:12.367  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Address is set for rmnet1
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.367  3623  3626 E RILD    : [NIF] Interface(rmnet1) is down.
+11-21 21:48:12.367  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet1) is added to callList
+11-21 21:48:12.367  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Address is set for rmnet2
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Interface(rmnet2) is down.
+11-21 21:48:12.368  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet2) is added to callList
+11-21 21:48:12.368  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Address is set for rmnet3
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Interface(rmnet3) is down.
+11-21 21:48:12.368  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet3) is added to callList
+11-21 21:48:12.368  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Address is set for rmnet4
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.368  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Interface(rmnet4) is down.
+11-21 21:48:12.369  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet4) is added to callList
+11-21 21:48:12.369  3623  3626 E RILD    : CreateDataCallList: Interface prefix: rmnet
+11-21 21:48:12.369  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Address is set for rmnet0
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Interface(rmnet0) is down.
+11-21 21:48:12.369  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet0) is added to callList
+11-21 21:48:12.369  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Address is set for rmnet1
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Interface(rmnet1) is down.
+11-21 21:48:12.369  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet1) is added to callList
+11-21 21:48:12.369  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Address is set for rmnet2
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.369  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Interface(rmnet2) is down.
+11-21 21:48:12.370  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet2) is added to callList
+11-21 21:48:12.370  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Address is set for rmnet3
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Interface(rmnet3) is down.
+11-21 21:48:12.370  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet3) is added to callList
+11-21 21:48:12.370  3623  3626 E RILD    : Can't Open Xml File
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Clearing IPv4 address.
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Address is set for rmnet4
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Clearing all the IPv6 global addresses.
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Deleting IPv6 default routes.
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Deleting IPv6 host routes.
+11-21 21:48:12.370  3623  3628 E RILD    : Force-exit is required for this thread
+11-21 21:48:12.370  3623  3626 E RILD    : [NIF] Interface(rmnet4) is down.
+11-21 21:48:12.371  3623  3626 E RILD    : CreateDataCallList: Interface(rmnet4) is added to callList
+11-21 21:48:12.371  3623  3626 E RILD    : Handlers registered
+11-21 21:48:12.371  3623  3626 E RILD    : manager objects are created.
+11-21 21:48:12.371  3623  3626 E RILD    : Init() plmn file = /system/etc/plmn_se13.bin
+11-21 21:48:12.372  3623  3626 E RILD    : Initialize(): read gsm.sim.operator.numeric
+11-21 21:48:12.372  3623  3626 E RILD    : SetSimOperator: invalid operator
+11-21 21:48:12.372  3623  3626 E RILD    : Failed to get IMSI value.
+11-21 21:48:12.372  3623  3626 E RILD    : Start, NetlinkUtils thread Started
+11-21 21:48:12.372  3623  3626 E RILD    : create Thread.
+11-21 21:48:12.372  3623  3626 E RILD    : DefRoute for rmnet0 is disabled
+11-21 21:48:12.372  3623  3626 E RILD    : DefRoute for rmnet1 is disabled
+11-21 21:48:12.372  3623  3626 E RILD    : DefRoute for rmnet2 is disabled
+11-21 21:48:12.372  3623  3626 E RILD    : DefRoute for rmnet3 is disabled
+11-21 21:48:12.372  3623  3626 E RILD    : DefRoute for rmnet4 is disabled
+11-21 21:48:12.372  3623  3626 E RILD    : DisableAutoConfig():
+11-21 21:48:12.372  3623  3626 E RILD    : autoconf for rmnet0 is disabled.
+11-21 21:48:12.372  3623  3626 E RILD    : autoconf for rmnet1 is disabled.
+11-21 21:48:12.372  3623  3626 E RILD    : autoconf for rmnet2 is disabled.
+11-21 21:48:12.372  3623  3626 E RILD    : autoconf for rmnet3 is disabled.
+11-21 21:48:12.372  3623  3626 E RILD    : autoconf for rmnet4 is disabled.
+11-21 21:48:12.372  3623  3626 E RILD    : AcceptRa is set to 2 for rmnet0.
+11-21 21:48:12.372  3623  3626 E RILD    : AcceptRa is set to 2 for rmnet1.
+11-21 21:48:12.372  3623  3626 E RILD    : AcceptRa is set to 2 for rmnet2.
+11-21 21:48:12.372  3623  3626 E RILD    : AcceptRa is set to 2 for rmnet3.
+11-21 21:48:12.372  3623  3626 E RILD    : AcceptRa is set to 2 for rmnet4.
+11-21 21:48:12.372  3623  3626 E RILD    : AddHandler: Handler CA-DCA already exit.
+11-21 21:48:12.372  3623  3626 E RILD    : Initialize(): Is initialized: 0
+11-21 21:48:12.372  3623  3626 E RILD    : create Thread.
+11-21 21:48:12.372  3623  3626 E RILD    : create Thread.
+11-21 21:48:12.372  3623  3626 E RILD    : Wait boot ready
+11-21 21:48:12.373  3623  3626 E RILD    : Modem status[waiting: 0x4, current: 0x0]
+11-21 21:48:12.373  3623  3629 E RILD    : Force-exit is required for this thread
+11-21 21:48:12.373  3623  3629 E RILD    : Run(): NetlinkUtilsRunnable
+11-21 21:48:12.373  3623  3630 E RILD    : Force-exit is required for this thread
+11-21 21:48:12.373  3623  3630 E RILD    : GC-MGR(4): evt(219)
+11-21 21:48:12.373  3623  3630 E RILD    : OnDataCallStateChanged() - data call is null
+11-21 21:48:12.373  3623  3631 E RILD    : Force-exit is required for this thread
+11-21 21:48:12.373  3623  3630 E RILD    : LEDC-MGR(9): evt(10001)
+11-21 21:48:12.373  3623  3630 E RILD    : OnPsRegistrationStateChanged
+11-21 21:48:12.473  3624  3624 D boot    : cbd: start_shannon310_boot: MODEM ON : pda_active 1, cp power on
+11-21 21:48:12.573  3623  3626 E RILD    : Modem status[waiting: 0x4, current: 0x0]
+11-21 21:48:12.773  3623  3626 E RILD    : Modem status[waiting: 0x4, current: 0x0]
+11-21 21:48:12.782  3624  3624 D boot    : cbd: start_shannon310_boot: BOOT ON : change modem state, irq, wait cp state
+11-21 21:48:12.782  3624  3624 D boot    : cbd: start_shannon310_boot: BOOT START : reset ipcmap, set magic code
+11-21 21:48:12.782  3624  3624 D boot    : cbd: start_shannon310_boot: HANDSHAKE COMMAND : send & recv boot_done, fin message
+11-21 21:48:12.784  3624  3624 D boot    : cbd: start_shannon310_boot: BOOT OFF : wait completion, irq
+11-21 21:48:12.973  3623  3626 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:13.173  3623  3626 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:13.373  3623  3626 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:13.573  3623  3626 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:13.774  3623  3626 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:13.974  3623  3626 E RILD    : Modem status[waiting: 0x4, current: 0x3]
+11-21 21:48:14.025  3624  3624 D boot    : cbd: open_srinfo_last: open last_sr_info file - /data/log/err/last_sr_info_umts
+11-21 21:48:14.025  3624  3624 E boot    : cbd: (ERR! No such file or directory) open_srinfo_last: last_sr_info open fail(-1)
+11-21 21:48:14.025  3624  3624 E boot    : cbd: (ERR! No such file or directory) restore_srinfo: sr_info_last open fail(-1)
+11-21 21:48:14.030  3624  3624 D boot    : cbd: main: Boot up process done!!!
+11-21 21:48:14.030  3624  3624 D boot    : cbd: status_loop: CP status_loop start(modem = 13)
+11-21 21:48:14.174  3623  3626 E RILD    : Modem status[waiting: 0x4, current: 0x4]
+11-21 21:48:14.174  3623  3626 E RILD    : 
+11-21 21:48:14.174  3623  3626 E RILD    : 
+11-21 21:48:14.174  3623  3626 E RILD    : Modem is in ONLINE state
+11-21 21:48:14.174  3623  3626 E RILD    : 
+11-21 21:48:14.174  3623  3626 E RILD    : 
+11-21 21:48:14.175  3623  3626 E RILD    : create Thread.
+11-21 21:48:14.175  3623  3626 E RILD    : Modem is started now.
+11-21 21:48:14.176  3623  3632 E RILD    : Force-exit is required for this thread
+11-21 21:48:14.195  3623  3626 E RILD    : Succeeded to init SEC RIL.
+11-21 21:48:14.199  3623  3626 E RILD    : create Thread.
+11-21 21:48:14.200  3623  3634 E RILD    : Force-exit is required for this thread
+11-21 21:48:14.200  3623  3626 E RILD    : OemClientReceiver started
+11-21 21:48:14.200  3623  3626 E RILD    : Init() - SendModemCrashReason fail
+11-21 21:48:14.200  3623  3626 E RILD    : SecRil proxy inited
+11-21 21:48:14.200  3623  3626 E RILD    : LazyRilSapInit
+11-21 21:48:15.427  3623  3632 E RILD    : [G] RX: (M)FACTORY_CMD (S)FACTORY_BYPASS_TEST (T)NOTI l:19 m:00 a:00 [ 0F 00 0D 0A 41 53 54 5F 50 4F 57 45 52 4F 4E 0D 0A 00 ]
+11-21 21:48:15.427  3623  3632 E RILD    : IpcRxFactory:
+11-21 21:48:15.427  3623  3632 E RILD    : [G] RX: (M)PWR_CMD (S)PWR_PHONE_PWR_UP (T)NOTI l:8 m:01 a:00 [ 53 ]
+11-21 21:48:15.427  3623  3632 E RILD    : [G] RX: (M)GPRS_CMD (S)GPRS_PIN_CTRL (T)NOTI l:9 m:02 a:00 [ 06 00 ]
+11-21 21:48:15.428  3623  3630 E RILD    : IMEI-MGR(17): evt(106)
+11-21 21:48:15.428  3623  3630 E RILD    : GP-MGR(1): evt(102)
+11-21 21:48:15.428  3623  3630 E RILD    : PWR: newState(0) oldState(1)
+11-21 21:48:15.428  3623  3630 E RILD    : NotifyRadioStateChanged: 0(PWR:0 SIM:0)
+11-21 21:48:15.428  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1000
+11-21 21:48:15.429  3623  3630 E RILD    : Notify power state changed: 2
+11-21 21:48:15.429  3623  3630 E RILD    : OnRadioPowerUp: Online booting, need to enable processing
+11-21 21:48:15.429  3623  3630 E RILD    : Request processing is enabled.
+11-21 21:48:15.430  3623  3630 E RILD    : setCpConfigOnFirstBoot()
+11-21 21:48:15.430  3623  3630 E RILD    : setCpConfigOnFirstBoot autoConfigType : DISABLE
+11-21 21:48:15.430  3623  3630 E RILD    : setPreconfigOnFirstBoot(): support one cp bin.
+11-21 21:48:15.430  3623  3630 E RILD    : GLNET-MGR(3): evt(1002)
+11-21 21:48:15.430  3623  3630 E RILD    : GNET-MGR: EVENT_RADIO_STATE_CHANGED
+11-21 21:48:15.430  3623  3630 E RILD    : OnRadioStateChanged: LteNetworkManager
+11-21 21:48:15.430  3623  3630 E RILD    : networkmanager radio off
+11-21 21:48:15.430  3623  3630 E RILD    : EMBMS-MGR(22): evt(203)
+11-21 21:48:15.430  3623  3630 E RILD    : OnOemEmbmsRadioStateNoti():
+11-21 21:48:15.430  3623  3630 E RILD    : SMS-MGR(8): evt(8006)
+11-21 21:48:15.431  3623  3630 E RILD    : OnRadioStateChanged: RADIO_OFF : mIsDeviceReadyNotiNeed = NOT_CONNECTED
+11-21 21:48:15.431  3623  3630 E RILD    : LEDC-MGR(9): evt(108)
+11-21 21:48:15.431  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 11011
+11-21 21:48:15.431  3623  3630 E RILC    : unsupported OEM unsolicated response code 11011
+11-21 21:48:15.431  3623  3630 E RILD    : Oem OnUnsolicitedResponse: response code=11011
+11-21 21:48:15.431  3623  3630 E RILD    : FAC-MGR(16): evt(108)
+11-21 21:48:15.431  3623  3630 E RILD    : OnFactoryBypassNoti : 
+11-21 21:48:15.431  3623  3630 E RILD    : AST_POWERON
+11-21 21:48:15.431  3623  3630 E RILD    : at_distributor is not ready. queuing a message
+11-21 21:48:15.431  3623  3630 E RILD    : LEDC-MGR(9): evt(107)
+11-21 21:48:15.431  3623  3630 E RILD    : OnRadioStateChanged: Attach-tried flag is set to false
+11-21 21:48:17.696  3623  3632 E RILD    : Nv::ProcessRfsPacket: received standalone RFS frame (20 bytes)
+11-21 21:48:17.696  3623  3632 E RILD    : Nv::ProcessRfsMessage: cmd = 0x11
+11-21 21:48:17.697  3623  3632 E RILD    : Nv::ProcessOpenFile: open file "/efs/root/Á!E$" flag(0x00000000)
+11-21 21:48:17.697  3623  3632 E RILD    : Nv::CheckRfsDirectory: check dir '/efs/root'
+11-21 21:48:17.697  3623  3632 E RILD    : A directory already exists
+11-21 21:48:17.697  3623  3632 E RILD    : Nv::ProcessOpenFile: open failed No such file or directory(2)
+11-21 21:48:17.697  3623  3632 E RILD    : Nv::ProcessOpenFile: length 14
+11-21 21:48:17.697  3623  3632 E RILD    : Nv::SendRfsMessage
+11-21 21:48:17.699  3623  3632 E RILD    : Nv::ProcessRfsPacket: received standalone RFS frame (32 bytes)
+11-21 21:48:17.700  3623  3632 E RILD    : Nv::ProcessRfsMessage: cmd = 0x11
+11-21 21:48:17.700  3623  3632 E RILD    : Nv::ProcessOpenFile: open file "/system/etc/CP_AUDIO_SLSI.bin" flag(0x00000000)
+11-21 21:48:17.700  3623  3632 E RILD    : Nv::CheckRfsDirectory: check dir '/system/etc'
+11-21 21:48:17.700  3623  3632 E RILD    : A directory already exists
+11-21 21:48:17.700  3623  3632 E RILD    : Nv::ProcessOpenFile: open failed No such file or directory(2)
+11-21 21:48:17.700  3623  3632 E RILD    : Nv::ProcessOpenFile: length 14
+11-21 21:48:17.700  3623  3632 E RILD    : Nv::SendRfsMessage
+11-21 21:48:17.704  3623  3632 E RILD    : Nv::ProcessRfsPacket: received standalone RFS frame (10 bytes)
+11-21 21:48:17.704  3623  3632 E RILD    : Nv::ProcessRfsMessage: cmd = 0x06
+11-21 21:48:17.704  3623  3632 E RILD    : Nv::ProcessCloseFile: fileHandler=-1
+11-21 21:48:17.704  3623  3632 E RILD    : Nv::ProcessCloseFile: length 14
+11-21 21:48:17.704  3623  3632 E RILD    : Nv::SendRfsMessage
+11-21 21:48:17.709  3623  3632 E RILD    : [G] RX: (M)SEC_CMD (S)SEC_SIM_ICCID (T)NOTI l:12 m:03 a:00 [ 0A 98 45 43 02 18 76 15 22 86 80 ]
+11-21 21:48:17.709  3623  3632 E RILD    : Nv::ProcessRfsPacket: received standalone RFS frame (10 bytes)
+11-21 21:48:17.709  3623  3632 E RILD    : Nv::ProcessRfsMessage: cmd = 0x06
+11-21 21:48:17.709  3623  3632 E RILD    : Nv::ProcessCloseFile: fileHandler=-1
+11-21 21:48:17.709  3623  3632 E RILD    : Nv::ProcessCloseFile: length 14
+11-21 21:48:17.709  3623  3632 E RILD    : Nv::SendRfsMessage
+11-21 21:48:17.709  3623  3632 E RILD    : [G] RX: (M)SEC_CMD (S)SEC_SIM_ICC_TYPE (T)NOTI l:8 m:04 a:00 [ 02 ]
+11-21 21:48:17.709  3623  3632 E RILD    : [G] RX: (M)PWR_CMD (S)PWR_PHONE_STATE (T)NOTI l:8 m:05 a:00 [ 02 ]
+11-21 21:48:17.709  3623  3630 E RILD    : GP-MGR(1): evt(101)
+11-21 21:48:17.710  3623  3630 E RILD    : PWR: newState(10) oldState(0)
+11-21 21:48:17.710  3623  3630 E RILD    : NotifyRadioStateChanged: 2(PWR:10 SIM:0)
+11-21 21:48:17.710  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1000
+11-21 21:48:17.710  3623  3630 E RILD    : SIM-MGR(2): evt(340)
+11-21 21:48:17.710  3623  3630 E RILD    : SIM-MGR: iccid->ICCIDLen: 20, iccid->ICCID : 89543420816751226808
+11-21 21:48:17.714  3623  3630 E RILD    : SetSimOp():simOp = ETC
+11-21 21:48:17.715  3623  3630 E RILD    : SIM-MGR: Get Iccid
+11-21 21:48:17.715  3623  3630 E RILD    : GLNET-MGR(3): evt(1002)
+11-21 21:48:17.715  3623  3630 E RILD    : GNET-MGR: EVENT_RADIO_STATE_CHANGED
+11-21 21:48:17.715  3623  3630 E RILD    : OnRadioStateChanged: LteNetworkManager
+11-21 21:48:17.715  3623  3630 E RILD    : EMBMS-MGR(22): evt(203)
+11-21 21:48:17.715  3623  3630 E RILD    : OnOemEmbmsRadioStateNoti():
+11-21 21:48:17.715  3623  3630 E RILD    : SMS-MGR(8): evt(8006)
+11-21 21:48:17.715  3623  3630 E RILD    : LEDC-MGR(9): evt(107)
+11-21 21:48:17.715  3623  3630 E RILD    : OnRadioStateChanged: mInitialAttach is set to true
+11-21 21:48:17.715  3623  3630 E RILD    : OnRadioStateChanged(): read gsm.sim.operator.numeric
+11-21 21:48:17.715  3623  3630 E RILD    : SetSimOperator: invalid operator
+11-21 21:48:17.715  3623  3630 E RILD    : OnRadioStateChanged: sim operator not ready wait for read
+11-21 21:48:17.715  3623  3630 E RILD    : SIM-MGR(2): evt(301)
+11-21 21:48:17.715  3623  3630 E RILD    : ConvertToSimState: state(0)
+11-21 21:48:17.716  3623  3630 E RILD    : SIM-MGR: Notify SIM state changed(0, 0).
+11-21 21:48:17.716  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1019
+11-21 21:48:17.716  3623  3630 E RILD    : SIM-MGR: status->mSimType(2)
+11-21 21:48:17.716  3623  3630 E RILD    : STK-MGR(7): evt(300)
+11-21 21:48:17.717  3623  3630 E RILD    : SMS-MGR(8): evt(1013)
+11-21 21:48:17.717  3623  3630 E RILD    : OnSimStateChanged: set Device Ready
+11-21 21:48:17.717  3623  3630 E RILD    : PB-MGR(14): evt(301)
+11-21 21:48:17.717  3623  3630 E RILD    : PB-MGR: SimType (2)
+11-21 21:48:17.717  3623  3630 E RILD    : GP-MGR(1): evt(105)
+11-21 21:48:17.758  3623  3632 E RILD    : [G] RX: (M)SEC_CMD (S)SEC_SIM_ICC_TYPE (T)NOTI l:8 m:06 a:00 [ 02 ]
+11-21 21:48:17.758  3623  3630 E RILD    : SIM-MGR(2): evt(301)
+11-21 21:48:17.758  3623  3630 E RILD    : SIM-MGR: status->mSimType(2)
+11-21 21:48:17.759  3623  3632 E RILD    : [G] RX: (M)SEC_CMD (S)SEC_PIN_STATUS (T)NOTI l:9 m:07 a:00 [ 00 00 ]
+11-21 21:48:17.759  3623  3632 E RILD    : [G] RX: (M)SEC_CMD (S)SEC_PIN_STATUS (T)NOTI l:9 m:08 a:00 [ 82 00 ]
+11-21 21:48:17.759  3623  3632 E RILD    : [G] RX: (M)SEC_CMD (S)SEC_PIN_STATUS (T)NOTI l:9 m:09 a:00 [ 00 00 ]
+11-21 21:48:17.760  3623  3632 E RILD    : [G] RX: (M)SEC_CMD (S)SEC_PIN_STATUS (T)NOTI l:9 m:0a a:00 [ 82 00 ]
+11-21 21:48:17.760  3623  3630 E RILD    : SIM-MGR(2): evt(300)
+11-21 21:48:17.760  3623  3630 E RILD    : ConvertToSimState: state(0)
+11-21 21:48:17.760  3623  3630 E RILD    : SIM-MGR: Notify SIM state changed(0, 0).
+11-21 21:48:17.760  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1019
+11-21 21:48:17.760  3623  3630 E RILD    : STK-MGR(7): evt(300)
+11-21 21:48:17.760  3623  3630 E RILD    : SMS-MGR(8): evt(1013)
+11-21 21:48:17.760  3623  3630 E RILD    : OnSimStateChanged: set Device Ready
+11-21 21:48:17.760  3623  3630 E RILD    : PB-MGR(14): evt(301)
+11-21 21:48:17.760  3623  3630 E RILD    : PB-MGR: SimType (2)
+11-21 21:48:17.760  3623  3630 E RILD    : GP-MGR(1): evt(105)
+11-21 21:48:17.760  3623  3630 E RILD    : SIM-MGR(2): evt(300)
+11-21 21:48:17.760  3623  3630 E RILD    : SIM-MGR(2): evt(300)
+11-21 21:48:17.761  3623  3630 E RILD    : SIM-MGR(2): evt(300)
+11-21 21:48:17.805  3623  3632 E RILD    : [G] RX: (M)SAT_CMD (S)SAT_PROACTIVE_CMD (T)INDI l:cd m:0b a:ff [ C4 00 D0 81 C1 81 03 01 25 00 82 02 81 82 85 0B 4D 69 20 50 65 72 73 6F 6E 61 6C 8F 0A 0A 48 6F 72 6F 73 63 6F 70 6F 8F 05 0F 43 68 61 74 8F 0E 14 49 6E 66 6F 20 4C 6F 74 65 72 69 61 73 8F 05 19 53 65 78 79 8F 0C 1E 49 6E 66 6F 72 6D 61 63 69 6F 6E 8F 10 23 50 65 72 73 6F 6E 61 6C 20 4D 75 73 69 63 61 8F 09 28 46 61 63 65 62 6F 6F 6B 8F 0E 32 45 73 70 61 63 69 6F 20 4D 75 6A 65 72 8F 0F 37 50 65 72 73 6F 6E 61 6C 42 61 63 6B 55 70 8F 0B 3C 4A 75 65 67 6F 73 20 79 20 2B 8F 0C 46 41 75 74 6F 67 65 73 74 69 6F 6E 8F 08 4B 52 6F 61 6D 69 6E 67 8F 0E 50 49 6E 74 65 72 6E 61 63 69 6F 6E 61 6C ]
+11-21 21:48:17.806  3623  3632 E RILD    : IpcProtocol41::IpcRxSatProactiveCmd()
+11-21 21:48:17.806  3623  3630 E RILD    : STK-MGR(7): evt(200)
+11-21 21:48:17.806  3623  3630 E RILD    : Stk is not yet running, so save ProactiveCmd
+11-21 21:48:17.945  3623  3632 E RILD    : [G] RX: (M)MISC_CMD (S)MISC_CLTCP (T)NOTI l:1b m:0c a:00 [ 01 01 01 03 00 34 30 30 02 01 00 30 03 01 00 30 04 01 00 30 ]
+11-21 21:48:17.946  3623  3630 E RILD    : GMISC-MGR(18): evt(187)
+11-21 21:48:17.946  3623  3630 E RILD    : OnOemCltcpParamNoti() Length : 27
+11-21 21:48:19.329  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_REGIST (T)NOTI l:1a m:0d a:00 [ 04 02 02 01 68 07 DE 46 6B 00 00 FE FF 02 02 01 FF FF 00 ]
+11-21 21:48:19.329  3623  3632 E RILD    : IpcProtocol41::IpcRxNetRegState() lte no service feature turn off
+11-21 21:48:19.329  3623  3630 E RILD    : GLNET-MGR(3): evt(200)
+11-21 21:48:19.329  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_STATE_CHANGED
+11-21 21:48:19.329  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1002
+11-21 21:48:19.330  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_REGIST (T)NOTI l:1a m:0e a:00 [ 04 03 01 01 68 07 DE 46 6B 00 00 FE FF 02 02 01 FF FF 00 ]
+11-21 21:48:19.330  3623  3632 E RILD    : IpcProtocol41::IpcRxNetRegState() lte no service feature turn off
+11-21 21:48:19.331  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_SERVING_NETWORK (T)NOTI l:21 m:0f a:00 [ 02 02 04 37 32 32 33 34 23 68 07 01 DE 46 6B 00 FE FF FF 00 00 FF 00 00 FF FF ]
+11-21 21:48:19.331  3623  3630 E RILD    : GLNET-MGR(3): evt(200)
+11-21 21:48:19.331  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_STATE_CHANGED
+11-21 21:48:19.331  3623  3630 E RILD    : OnNetworkStateChanged(): Don't send UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED (1)
+11-21 21:48:19.331  3623  3630 E RILD    : GLNET-MGR(3): evt(206)
+11-21 21:48:19.331  3623  3630 E RILD    : GNET-MGR: EVENT_SERVING_NETWORK
+11-21 21:48:19.951  3623  3632 E RILD    : [G] RX: (M)DISP_CMD (S)DISP_RSSI_INFO (T)NOTI l:13 m:10 a:00 [ 4D 12 63 63 00 FF FF FF FF 08 00 FF ]
+11-21 21:48:19.951  3623  3632 E RILD    : ConvertDbmToAsu(): dbm=77, asu=18
+11-21 21:48:19.951  3623  3632 E RILD    : IpcRxDispRssiInfo(): signalbar=-1, signal=18
+11-21 21:48:19.951  3623  3632 E RILD    : Signal Strength: [ffffffff, 18, 99, 18, 200, 18, 200, -1, 99, 2147483647, 255, 2147483647, 2147483647, 2147483647]
+11-21 21:48:19.951  3623  3630 E RILD    : GLNET-MGR(3): evt(201)
+11-21 21:48:19.951  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_SIGNAL_STRENGTH
+11-21 21:48:19.951  3623  3630 E RILD    : OnNetworkSignalStrength() - mSignalBar: ffffffff
+11-21 21:48:19.951  3623  3630 E RILD    : IsRegisteredNetworkType(): netType[1]  feature[00] state[0] 
+11-21 21:48:19.951  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1009
+11-21 21:48:19.952  3623  3632 E RILD    : [G] RX: (M)DISP_CMD (S)DISP_ICON_INFO (T)NOTI l:11 m:11 a:00 [ 01 04 00 00 00 00 FF FF FF FF ]
+11-21 21:48:19.952  3623  3632 E RILD    : IpcProtocol41::IpcRxDispIconInfo(): modemType=4
+11-21 21:48:19.952  3623  3632 E RILD    : Signal Strength: [4, 16, 99, 16, 200, 16, 200, -1, 0, 2147483647, 255, 2147483647, 2147483647, 2147483647]
+11-21 21:48:19.952  3623  3630 E RILD    : GLNET-MGR(3): evt(201)
+11-21 21:48:19.952  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_SIGNAL_STRENGTH
+11-21 21:48:19.952  3623  3630 E RILD    : OnNetworkSignalStrength() - mSignalBar: 4
+11-21 21:48:19.952  3623  3630 E RILD    : IsRegisteredNetworkType(): netType[1]  feature[00] state[0] 
+11-21 21:48:19.952  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1009
+11-21 21:48:20.951  3623  3632 E RILD    : [G] RX: (M)DISP_CMD (S)DISP_RSSI_INFO (T)NOTI l:13 m:12 a:00 [ 58 0C 63 63 00 FF FF FF FF 09 00 FF ]
+11-21 21:48:20.951  3623  3632 E RILD    : ConvertDbmToAsu(): dbm=88, asu=12
+11-21 21:48:20.951  3623  3632 E RILD    : IpcRxDispRssiInfo(): signalbar=-1, signal=12
+11-21 21:48:20.951  3623  3632 E RILD    : Signal Strength: [ffffffff, 12, 99, 12, 200, 12, 200, -1, 99, 2147483647, 255, 2147483647, 2147483647, 2147483647]
+11-21 21:48:20.951  3623  3630 E RILD    : GLNET-MGR(3): evt(201)
+11-21 21:48:20.951  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_SIGNAL_STRENGTH
+11-21 21:48:20.951  3623  3630 E RILD    : OnNetworkSignalStrength() - mSignalBar: 4
+11-21 21:48:20.951  3623  3630 E RILD    : IsRegisteredNetworkType(): netType[1]  feature[00] state[0] 
+11-21 21:48:20.951  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1009
+11-21 21:48:21.903  3623  3632 E RILD    : Nv::ProcessRfsPacket: full RFS frame received (49 packets / 99296 bytes)
+11-21 21:48:21.903  3623  3632 E RILD    : Nv::ProcessRfsMessage: cmd = 0x02
+11-21 21:48:21.903  3623  3632 E RILD    : Nv::GetChecksumValidityWith: nvdata
+11-21 21:48:21.911  3623  3632 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:21.911  3623  3632 E RILD    : Nv::GetChecksumValidityWith: checksum OK
+11-21 21:48:21.911  3623  3632 E RILD    : Nv::ProcessNvWrite: offset=0x00080000, size=0x000183D2
+11-21 21:48:21.916  3623  3632 E RILD    : Nv::ProcessNvWrite: writeCount 0x183D2(99282)
+11-21 21:48:21.916  3623  3632 E RILD    : Nv::UpdateChecksumFile
+11-21 21:48:21.924  3623  3632 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:21.924  3623  3632 E RILD    : Nv::UpdateChecksumFile() SetIoBoost
+11-21 21:48:21.924  3623  3632 E RILD    : Nv::UpdateChecksumFile() WriteBytes
+11-21 21:48:21.927  3623  3632 E RILD    : Nv::SendRfsMessage
+11-21 21:48:21.927  3623  3632 E RILD    : Nv::ProcessRfsPacket: full RFS frame received (9 packets / 17658 bytes)
+11-21 21:48:21.927  3623  3632 E RILD    : Nv::ProcessRfsMessage: cmd = 0x02
+11-21 21:48:21.927  3623  3632 E RILD    : Nv::GetChecksumValidityWith: nvdata
+11-21 21:48:21.931  3623  3632 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:21.931  3623  3632 E RILD    : Nv::GetChecksumValidityWith: checksum OK
+11-21 21:48:21.931  3623  3632 E RILD    : Nv::ProcessNvWrite: offset=0x00000000, size=0x000044EC
+11-21 21:48:21.933  3623  3632 E RILD    : Nv::ProcessNvWrite: writeCount 0x44EC(17644)
+11-21 21:48:21.933  3623  3632 E RILD    : Nv::UpdateChecksumFile
+11-21 21:48:21.937  3623  3632 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:21.937  3623  3632 E RILD    : Nv::UpdateChecksumFile() SetIoBoost
+11-21 21:48:21.937  3623  3632 E RILD    : Nv::UpdateChecksumFile() WriteBytes
+11-21 21:48:21.940  3623  3632 E RILD    : Nv::SendRfsMessage
+11-21 21:48:22.608  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_REGIST (T)NOTI l:1a m:13 a:00 [ 04 03 02 01 68 07 DE 46 6B 00 00 FE FF 02 02 01 FF FF 00 ]
+11-21 21:48:22.608  3623  3632 E RILD    : IpcProtocol41::IpcRxNetRegState() lte no service feature turn off
+11-21 21:48:22.608  3623  3630 E RILD    : GLNET-MGR(3): evt(200)
+11-21 21:48:22.608  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_STATE_CHANGED
+11-21 21:48:22.608  3623  3630 E RILD    : OnNetworkStateChanged(): Don't send UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED (2)
+11-21 21:48:23.437  3623  3632 E RILD    : [G] RX: (M)GPRS_CMD (S)GPRS_HSDPA_STATUS (T)NOTI l:8 m:14 a:00 [ 03 ]
+11-21 21:48:23.437  3623  3630 E RILD    : GLNET-MGR(3): evt(204)
+11-21 21:48:23.437  3623  3630 E RILD    : NET-MGR: EVENT_HSDPA_STATUS
+11-21 21:48:23.437  3623  3630 E RILD    : OnNetworkStateChanged(): Don't send UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED (3)
+11-21 21:48:24.340  3623  3632 E RILD    : [G] RX: (M)DISP_CMD (S)DISP_RSSI_INFO (T)NOTI l:13 m:15 a:00 [ 4E 11 63 63 00 FF FF FF FF 0A 00 FF ]
+11-21 21:48:24.340  3623  3632 E RILD    : ConvertDbmToAsu(): dbm=78, asu=17
+11-21 21:48:24.340  3623  3632 E RILD    : IpcRxDispRssiInfo(): signalbar=-1, signal=17
+11-21 21:48:24.340  3623  3632 E RILD    : Signal Strength: [ffffffff, 17, 99, 17, 200, 17, 200, -1, 99, 2147483647, 255, 2147483647, 2147483647, 2147483647]
+11-21 21:48:24.340  3623  3630 E RILD    : GLNET-MGR(3): evt(201)
+11-21 21:48:24.340  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_SIGNAL_STRENGTH
+11-21 21:48:24.340  3623  3630 E RILD    : OnNetworkSignalStrength() - mSignalBar: 4
+11-21 21:48:24.340  3623  3630 E RILD    : IsRegisteredNetworkType(): netType[1]  feature[00] state[0] 
+11-21 21:48:24.340  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1009
+11-21 21:48:24.372  3214  3214 D TelephonyManager: No /proc/cmdline exception=java.io.FileNotFoundException: /proc/cmdline (Permission denied)
+11-21 21:48:24.373  3214  3214 D TelephonyManager: /proc/cmdline=
+11-21 21:48:24.506  3213  3213 D TelephonyManager: No /proc/cmdline exception=java.io.FileNotFoundException: /proc/cmdline (Permission denied)
+11-21 21:48:24.506  3213  3213 D TelephonyManager: /proc/cmdline=
+11-21 21:48:25.225  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_REGIST (T)NOTI l:1a m:16 a:00 [ 21 01 02 00 00 00 01 2E BF 02 00 78 2E 02 02 00 E9 00 00 ]
+11-21 21:48:25.226  3623  3632 E RILD    : IpcProtocol41::IpcRxNetRegState() lte no service feature turn off
+11-21 21:48:25.226  3623  3630 E RILD    : GLNET-MGR(3): evt(200)
+11-21 21:48:25.226  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_STATE_CHANGED
+11-21 21:48:25.226  3623  3630 E RILD    : OnNetworkStateChanged(): Don't send UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED (4)
+11-21 21:48:25.227  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_SERVING_NETWORK (T)NOTI l:21 m:17 a:00 [ 05 02 21 37 32 32 33 34 23 00 00 00 01 2E BF 02 78 2E 64 00 00 64 00 00 E9 00 ]
+11-21 21:48:25.227  3623  3630 E RILD    : GLNET-MGR(3): evt(206)
+11-21 21:48:25.227  3623  3630 E RILD    : GNET-MGR: EVENT_SERVING_NETWORK
+11-21 21:48:25.227  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_REGIST (T)NOTI l:1a m:18 a:00 [ 21 01 01 00 00 00 01 2E BF 02 0A 78 2E 02 01 00 E9 00 00 ]
+11-21 21:48:25.227  3623  3632 E RILD    : IpcProtocol41::IpcRxNetRegState() lte no service feature turn off
+11-21 21:48:25.227  3623  3630 E RILD    : GLNET-MGR(3): evt(200)
+11-21 21:48:25.227  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_STATE_CHANGED
+11-21 21:48:25.227  3623  3630 E RILD    : OnNetworkStateChanged(): Don't send UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED (5)
+11-21 21:48:25.227  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_SERVING_NETWORK (T)NOTI l:21 m:19 a:00 [ 05 01 21 37 32 32 33 34 23 00 00 00 01 2E BF 02 78 2E 64 00 00 64 00 00 E9 00 ]
+11-21 21:48:25.227  3623  3630 E RILD    : GLNET-MGR(3): evt(206)
+11-21 21:48:25.227  3623  3630 E RILD    : GNET-MGR: EVENT_SERVING_NETWORK
+11-21 21:48:25.227  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_REGIST (T)NOTI l:1a m:1a a:00 [ 21 03 07 00 00 00 01 2E BF 02 0A 78 2E 02 01 00 E9 00 00 ]
+11-21 21:48:25.228  3623  3632 E RILD    : IpcProtocol41::IpcRxNetRegState() lte no service feature turn off
+11-21 21:48:25.228  3623  3630 E RILD    : GLNET-MGR(3): evt(200)
+11-21 21:48:25.228  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_STATE_CHANGED
+11-21 21:48:25.228  3623  3630 E RILD    : OnNetworkStateChanged(): Don't send UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED (6)
+11-21 21:48:25.228  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_SERVING_NETWORK (T)NOTI l:21 m:1b a:00 [ 05 07 21 37 32 32 33 34 23 00 00 00 01 2E BF 02 78 2E 64 00 00 64 00 00 E9 00 ]
+11-21 21:48:25.228  3623  3630 E RILD    : GLNET-MGR(3): evt(206)
+11-21 21:48:25.228  3623  3630 E RILD    : GNET-MGR: EVENT_SERVING_NETWORK
+11-21 21:48:25.229  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_SERVING_NETWORK (T)NOTI l:21 m:1c a:00 [ 05 07 21 37 32 32 33 34 23 00 00 00 01 2E BF 02 78 2E FF 00 00 FF 00 00 E9 00 ]
+11-21 21:48:25.229  3623  3630 E RILD    : GLNET-MGR(3): evt(206)
+11-21 21:48:25.229  3623  3630 E RILD    : GNET-MGR: EVENT_SERVING_NETWORK
+11-21 21:48:25.234  3623  3632 E RILD    : [G] RX: (M)NET_CMD (S)NET_REGIST (T)NOTI l:1a m:1d a:00 [ 21 01 07 00 00 00 01 2E BF 02 0A 78 2E 02 01 00 E9 00 00 ]
+11-21 21:48:25.234  3623  3632 E RILD    : IpcProtocol41::IpcRxNetRegState() lte no service feature turn off
+11-21 21:48:25.234  3623  3630 E RILD    : GLNET-MGR(3): evt(200)
+11-21 21:48:25.234  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_STATE_CHANGED
+11-21 21:48:25.234  3623  3630 E RILD    : OnNetworkStateChanged(): Don't send UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED (7)
+11-21 21:48:25.254  3623  3632 E RILD    : [G] RX: (M)GPRS_CMD (S)GPRS_LTE_CA_STATUS (T)NOTI l:9 m:1e a:00 [ 00 01 ]
+11-21 21:48:25.254  3623  3632 E RILD    : OnUnsolicitedResponse: RIL is not connected, queueing unsol message
+11-21 21:48:25.254  3623  3632 E RILD    : OnUnsolicitedResponse: unsolId: 11010 is pending
+11-21 21:48:25.254  3623  3630 E RILD    : GLNET-MGR(3): evt(227)
+11-21 21:48:25.254  3623  3630 E RILD    : NET-MGR: EVENT_LTE_CA_STATUS_NOTI
+11-21 21:48:25.254  3623  3632 E RILD    : [G] RX: (M)DISP_CMD (S)DISP_RSSI_INFO (T)NOTI l:13 m:1f a:00 [ 66 63 63 09 66 07 90 01 00 FF 00 FF ]
+11-21 21:48:25.254  3623  3630 E RILD    : OnLteCaStatusNoti:
+11-21 21:48:25.254  3623  3630 E RILD    : OnLteCaStatusNoti: LteCa status was changed:0->0
+11-21 21:48:25.254  3623  3632 E RILD    : ConvertDbmToAsu(): dbm=102, asu=5
+11-21 21:48:25.254  3623  3632 E RILD    : IpcRxDispRssiInfo(): signalbar=-1, signal=5
+11-21 21:48:25.254  3623  3632 E RILD    : Signal Strength: [ffffffff, 5, 99, 5, 200, 5, 200, -1, 9, 102, 7, 200, 0, 2147483647]
+11-21 21:48:25.254  3623  3632 E RILD    : [G] RX: (M)DISP_CMD (S)DISP_ICON_INFO (T)NOTI l:11 m:20 a:00 [ 01 02 00 00 63 66 07 90 01 00 ]
+11-21 21:48:25.254  3623  3632 E RILD    : IpcProtocol41::IpcRxDispIconInfo(): modemType=4
+11-21 21:48:25.254  3623  3632 E RILD    : Signal Strength: [2, 4, 99, 4, 200, 4, 200, -1, 99, 102, 7, 200, 0, 2147483647]
+11-21 21:48:25.254  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 11010 is pending
+11-21 21:48:25.254  3623  3630 E RILD    : GLNET-MGR(3): evt(201)
+11-21 21:48:25.254  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_SIGNAL_STRENGTH
+11-21 21:48:25.254  3623  3630 E RILD    : OnNetworkSignalStrength() - mSignalBar: 4
+11-21 21:48:25.254  3623  3630 E RILD    : IsRegisteredNetworkType(): netType[1]  feature[00] state[0] 
+11-21 21:48:25.254  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1009
+11-21 21:48:25.254  3623  3630 E RILD    : GLNET-MGR(3): evt(201)
+11-21 21:48:25.254  3623  3630 E RILD    : NET-MGR: EVENT_NETWORK_SIGNAL_STRENGTH
+11-21 21:48:25.254  3623  3630 E RILD    : OnNetworkSignalStrength() - mSignalBar: 2
+11-21 21:48:25.254  3623  3630 E RILD    : IsRegisteredNetworkType(): netType[1]  feature[00] state[0] 
+11-21 21:48:25.254  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 1009
+11-21 21:48:25.259  3623  3632 E RILD    : [G] RX: (M)SVC_CMD (S)SVC_BIG_DATA_INFO (T)NOTI l:b1 m:21 a:00 [ 09 A7 00 7B 22 4A 56 45 52 22 3A 22 53 51 42 31 22 2C 22 50 4C 4D 4E 22 3A 22 37 32 32 33 34 23 22 2C 22 41 43 54 5F 22 3A 22 34 22 2C 22 52 41 43 5F 22 3A 22 30 22 2C 22 4C 41 43 5F 22 3A 22 30 30 30 30 22 2C 22 54 41 43 5F 22 3A 22 32 45 37 38 22 2C 22 43 5F 49 44 22 3A 22 32 42 46 32 45 30 31 22 2C 22 50 68 49 44 22 3A 22 30 22 2C 22 44 4C 43 68 22 3A 22 32 32 32 35 22 2C 22 52 67 53 74 22 3A 22 37 22 2C 22 54 59 50 45 22 3A 22 32 22 2C 22 45 4D 4D 43 22 3A 22 30 22 2C 22 45 53 4D 43 22 3A 22 30 22 7D ]
+11-21 21:48:25.259  3623  3632 E RILD    : IpcRxServiceMode:
+11-21 21:48:25.259  3623  3632 E RILD    : IpcRxServiceModeBigDataInfo:
+11-21 21:48:25.259  3623  3632 E RILD    : BIG_DATA_INFO(167): {"JVER":"SQB1","PLMN":"72234#","ACT_":"4","RAC_":"0","LAC_":"0000","TAC_":"2E78","C_ID":"2BF2E01","PhID":"0","DLCh":"2225","RgSt":"7","TYPE":"2","EMMC":"0","ESMC":"0"}
+11-21 21:48:25.259  3623  3632 E RILD    : OnUnsolicitedResponse: unsolId: 11010 is pending
+11-21 21:48:25.259  3623  3632 E RILD    : ProcessSingleIpcMessageReceived() - There is no IpcHistoryRecord
+11-21 21:48:26.337  3623  3632 E RILD    : [G] RX: (M)GPRS_CMD (S)GPRS_LTE_CA_STATUS (T)NOTI l:9 m:22 a:00 [ 00 0F ]
+11-21 21:48:26.337  3623  3632 E RILD    : OnUnsolicitedResponse: unsolId: 11010 is pending
+11-21 21:48:26.337  3623  3630 E RILD    : GLNET-MGR(3): evt(227)
+11-21 21:48:26.337  3623  3630 E RILD    : NET-MGR: EVENT_LTE_CA_STATUS_NOTI
+11-21 21:48:26.337  3623  3630 E RILD    : OnLteCaStatusNoti:
+11-21 21:48:26.337  3623  3630 E RILD    : OnLteCaStatusNoti: LteCa status was changed:0->0
+11-21 21:48:26.338  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 11010 is pending
+11-21 21:48:27.614  3623  3632 E RILD    : Nv::ProcessRfsPacket: full RFS frame received (9 packets / 17694 bytes)
+11-21 21:48:27.615  3623  3632 E RILD    : Nv::ProcessRfsMessage: cmd = 0x02
+11-21 21:48:27.615  3623  3632 E RILD    : Nv::GetChecksumValidityWith: nvdata
+11-21 21:48:27.621  3623  3632 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:27.621  3623  3632 E RILD    : Nv::GetChecksumValidityWith: checksum OK
+11-21 21:48:27.622  3623  3632 E RILD    : Nv::ProcessNvWrite: offset=0x00000000, size=0x00004510
+11-21 21:48:27.628  3623  3632 E RILD    : Nv::ProcessNvWrite: writeCount 0x4510(17680)
+11-21 21:48:27.628  3623  3632 E RILD    : Nv::UpdateChecksumFile
+11-21 21:48:27.635  3623  3632 E RILD    : Nv::ComputeChecksum: ComputeChecksum Ok
+11-21 21:48:27.635  3623  3632 E RILD    : Nv::UpdateChecksumFile() SetIoBoost
+11-21 21:48:27.636  3623  3632 E RILD    : Nv::UpdateChecksumFile() WriteBytes
+11-21 21:48:27.638  3623  3632 E RILD    : Nv::SendRfsMessage
+11-21 21:48:32.229  3623  3634 E RILD    : Oem client connected
+11-21 21:48:32.229  3212  3212 D RILClient: Connect_RILD: Success to connect
+11-21 21:48:32.229  3623  3634 E RILD    : new oem client connection=28
+11-21 21:48:33.100  3623  3632 E RILD    : [G] RX: (M)SEC_CMD (S)SEC_PIN_STATUS (T)NOTI l:9 m:23 a:00 [ 83 00 ]
+11-21 21:48:33.100  3623  3630 E RILD    : SMS-MGR(8): evt(8005)
+11-21 21:48:33.100  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 11008 is pending
+11-21 21:48:33.100  3623  3630 E RILD    : PB-MGR(14): evt(300)
+11-21 21:48:33.100  3623  3630 E RILD    : OnPbInitComplete ril.initPB = 0
+11-21 21:48:33.100  3623  3631 E RILD    : Onprocessing: request id(1010), handleEvent(110)
+11-21 21:48:33.100  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 11021 is pending
+11-21 21:48:33.100  3623  3630 E RILD    : ims modem is null
+11-21 21:48:33.101  3623  3630 E RILD    : SMS-MGR(8): evt(110)
+11-21 21:48:33.101  3623  3630 E RILD    : DoGetSmscAddress():__
+11-21 21:48:33.101  3623  3630 E RILD    : [G] TX: (M)SMS_CMD (S)SMS_SVC_CENTER_ADDR (T)GET l:7 m:00 a:00 [ ]
+11-21 21:48:33.101  3623  3632 E RILD    : [G] RX: (M)SMS_CMD (S)SMS_DEVICE_READY (T)NOTI l:8 m:24 a:00 [ 02 ]
+11-21 21:48:33.101  3623  3630 E RILD    : SMS-MGR(8): evt(1002)
+11-21 21:48:33.101  3623  3632 E RILD    : [G] RX: (M)PB_CMD (S)PB_3GPB_CAPA (T)NOTI l:1e m:25 a:00 [ 01 03 01 FE 00 0E 00 00 00 02 FE 00 28 00 00 00 07 FE 00 02 00 00 00 ]
+11-21 21:48:33.101  3623  3630 E RILD    : OnUnsolicitedResponse: unsolId: 11008 is pending
+11-21 21:48:33.101  3623  3632 E RILD    : ProcessSingleIpcMessageReceived() - There is no IpcHistoryRecord
+11-21 21:48:33.101  3623  3631 E RILD    : Onprocessing: request id(1010), handleEvent(110)
+11-21 21:48:33.117  3623  3632 E RILD    : [G] RX: (M)SMS_CMD (S)SMS_SVC_CENTER_ADDR (T)RESP l:13 m:26 a:00 [ 07 91 45 11 15 47 00 55 00 00 00 00 ]
+11-21 21:48:33.117  3623  3630 E RILD    : SMS-MGR(8): evt(1009)
+11-21 21:48:33.117  3623  3630 E RILD    : OnGetSmscAddressDone():__
+11-21 21:48:33.117  3623  3630 E RILD    : RequestComplete - req : 1010, peek : 1010
+11-21 21:48:33.117  3623  3630 E RILD    : SMSC: 541151740055
+11-21 21:48:33.117  3623  3631 E RILD    : Onprocessing: request id(1010), handleEvent(110)
+11-21 21:48:33.117  3623  3630 E RILD    : SMS-MGR(8): evt(110)
+11-21 21:48:33.117  3623  3630 E RILD    : DoGetSmscAddress():__
+11-21 21:48:33.117  3623  3630 E RILD    : [G] TX: (M)SMS_CMD (S)SMS_SVC_CENTER_ADDR (T)GET l:7 m:01 a:00 [ ]
+11-21 21:48:33.126  3623  3632 E RILD    : [G] RX: (M)SMS_CMD (S)SMS_SVC_CENTER_ADDR (T)RESP l:13 m:27 a:01 [ 07 91 45 11 15 47 00 55 00 00 00 00 ]
+11-21 21:48:33.126  3623  3630 E RILD    : SMS-MGR(8): evt(1009)
+11-21 21:48:33.126  3623  3630 E RILD    : OnGetSmscAddressDone():__
+11-21 21:48:33.126  3623  3630 E RILD    : RequestComplete - req : 1010, peek : 1010
+11-21 21:48:33.126  3623  3630 E RILD    : SMSC: 541151740055
