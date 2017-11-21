@@ -1,0 +1,1073 @@
+--------- beginning of main
+11-20 21:22:51.367  3123  3123 W auditd  : type=1325 audit(0.0:2): table=filter family=2 entries=0
+11-20 21:22:51.367  3123  3123 W auditd  : type=1325 audit(0.0:3): table=mangle family=2 entries=0
+11-20 21:22:51.367  3123  3123 W auditd  : type=1325 audit(0.0:4): table=nat family=2 entries=0
+11-20 21:22:51.367  3123  3123 W auditd  : type=1325 audit(0.0:5): table=raw family=2 entries=0
+11-20 21:22:51.367  3123  3123 W auditd  : type=1325 audit(0.0:6): table=security family=2 entries=0
+11-20 21:22:51.367  3123  3123 W auditd  : type=1325 audit(0.0:7): table=filter family=3 entries=0
+11-20 21:22:51.367  3123  3123 W auditd  : type=1325 audit(0.0:8): table=filter family=10 entries=0
+11-20 21:22:51.367  3123  3123 W auditd  : type=1325 audit(0.0:9): table=mangle family=10 entries=0
+11-20 21:22:51.367  3123  3123 W auditd  : type=1325 audit(0.0:10): table=raw family=10 entries=0
+11-20 21:22:51.367  3123  3123 W auditd  : type=1325 audit(0.0:11): table=nat family=10 entries=0
+11-20 21:22:51.655  3123  3123 I auditd  : type=1403 audit(0.0:12): policy loaded auid=4294967295 ses=4294967295
+11-20 21:22:52.675  3112  3112 I logd    : type=1400 audit(0.0:13): avc: denied { dac_override } for capability=1 scontext=u:r:logd:s0 tcontext=u:r:logd:s0 tclass=capability permissive=1
+11-20 21:22:52.675  3112  3112 W logd    : type=1300 audit(0.0:13): arch=c00000b7 syscall=48 success=yes exit=0 a0=ffffff9c a1=7fb2b5534a a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 exe="/system/bin/logd" subj=u:r:logd:s0 key=(null)
+11-20 21:22:52.675  3123  3123 W auditd  : type=1327 audit(0.0:13): proctitle="/system/bin/logd"
+11-20 21:22:52.675  3123  3123 W auditd  : type=1320 audit(0.0:13): 
+11-20 21:22:52.675  3123  3123 W auditd  : type=1305 audit(0.0:14): audit_pid=3112 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+11-20 21:22:52.675  3123  3123 W auditd  : type=1305 audit(0.0:15): audit_rate_limit=20 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+--------- beginning of system
+11-20 21:22:52.698  3115  3115 I vold    : Vold 3.0 (the awakening) firing up
+11-20 21:22:52.699  3115  3115 V vold    : Detected support for: exfat ext4 ntfs vfat
+11-20 21:22:52.700  3115  3115 W Vold    : Tearing down stale mount /mnt/secure/asec
+11-20 21:22:52.715  3113  3113 I         : debuggerd: starting
+11-20 21:22:52.720  3115  3115 W Vold    : Tearing down stale mount /mnt/secure
+11-20 21:22:52.742  3115  3182 D vold    : e4crypt_init_user0
+11-20 21:22:52.742  3115  3182 D vold    : e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+11-20 21:22:52.742  3115  3182 D vold    : Preparing: /data/system/users/0
+11-20 21:22:52.742  3115  3182 D vold    : Preparing: /data/misc/profiles/cur/0
+11-20 21:22:52.743  3115  3182 D vold    : Preparing: /data/misc/profiles/cur/0/foreign-dex
+11-20 21:22:52.743  3115  3182 D vold    : Preparing: /data/system_de/0
+11-20 21:22:52.743  3115  3182 D vold    : Preparing: /data/misc_de/0
+11-20 21:22:52.743  3115  3182 D vold    : Preparing: /data/user_de/0
+11-20 21:22:52.743  3115  3182 D vold    : e4crypt_unlock_user_key 0 serial=0 token_present=0
+11-20 21:22:52.743  3115  3182 E vold    : Failed to chmod /data/system_ce/0: No such file or directory
+11-20 21:22:52.743  3115  3182 E vold    : Failed to chmod /data/misc_ce/0: No such file or directory
+11-20 21:22:52.743     1     1 I vdc     : 200 3116 Command succeeded
+11-20 21:22:52.750  3183  3183 I /system/bin/tzdatacheck: tzdata file /data/misc/zoneinfo/current/tzdata does not exist. No action required.
+11-20 21:22:52.761  3184  3184 D macloader: Deleting file /data/.cid.info
+11-20 21:22:52.765  3185  3185 I TeeMcDaemon: Registry search paths: [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:212]
+11-20 21:22:52.765  3185  3185 I TeeMcDaemon:   /data/misc/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+11-20 21:22:52.765  3185  3185 I TeeMcDaemon:   /efs/prov [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+11-20 21:22:52.765  3185  3185 I TeeMcDaemon:   /vendor/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+11-20 21:22:52.765  3185  3185 I TeeMcDaemon:   /system/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+11-20 21:22:52.765  3185  3185 I TeeMcDaemon: partition paths rp:  /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:223]
+11-20 21:22:52.765  3185  3185 I TeeMcDaemon: Initialise Secure World [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:253]
+11-20 21:22:52.767     1     1 I init    : type=1400 audit(0.0:16): avc: denied { write } for name="serialnumber" dev="configfs" ino=18128 scontext=u:r:init:s0 tcontext=u:object_r:configfs:s0 tclass=file permissive=1
+11-20 21:22:52.767     1     1 I init    : type=1400 audit(0.0:17): avc: denied { create } for name="mtp.0" scontext=u:r:init:s0 tcontext=u:object_r:configfs:s0 tclass=lnk_file permissive=1
+11-20 21:22:52.768  3185  3185 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:295]
+11-20 21:22:52.774  3195  3195 I sysinit : Running /system/etc/init.d/00banner
+11-20 21:22:52.783  3190  3190 I lowmemorykiller: Using in-kernel low memory killer interface
+11-20 21:22:52.785  3202  3202 I cm      : _ _                                       
+11-20 21:22:52.791  3206  3206 I cm      : | (_)_ __   ___  __ _  __ _  ___  ___  ___ 
+11-20 21:22:52.809  3212  3212 D wifiloader: Trigger initcall of deferred modules
+11-20 21:22:52.809  3207  3207 I cm      : | | | '_ \ / _ \/ _` |/ _` |/ _ \/ _ \/ __|
+11-20 21:22:52.812  3192  3192 I SurfaceFlinger: SurfaceFlinger is starting
+11-20 21:22:52.814  3192  3192 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+11-20 21:22:52.815  3209  3209 D SensorHubService: nuSensorHubService starting...
+11-20 21:22:52.825  3209  3209 E Sensorhubs: !@check sensor_device, nodeNumber: 14, deviceName: ssp_context
+11-20 21:22:52.825  3209  3209 E Sensorhubs: !@check sensor_device, matched ssp_context
+11-20 21:22:52.825  3209  3209 I SensorHubService: HardwareSensorHub
+11-20 21:22:52.825  3209  3209 I SensorHubService: HardwareSensorHub
+11-20 21:22:52.826  3209  3235 D SensorHubService: nuSensorHubService thread starting...
+11-20 21:22:52.827  3209  3209 I sensorhubservice: SensorHubService is starting now........................................
+11-20 21:22:52.827  3220  3220 I keystore: Found keymaster0 module Keymaster OpenSSL HAL, version 2
+11-20 21:22:52.828  3220  3220 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 131: Creating device
+11-20 21:22:52.828  3220  3220 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 132: Device address: 0x7f9b63e000
+11-20 21:22:52.828  3220  3220 I keystore: Keymaster0 module is software-only.  Using SoftKeymasterDevice instead.
+11-20 21:22:52.828  3220  3220 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 131: Creating device
+11-20 21:22:52.828  3220  3220 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 132: Device address: 0x7f9b63e400
+11-20 21:22:52.829  3213  3213 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+11-20 21:22:52.830  3213  3213 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+11-20 21:22:52.830  3213  3213 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LhePatch"="/system/bin/bcm_sensorhub_a1.patch"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LheFailSafe"="ON"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LheFailSafe"="BINFILE=/data/system/gps/esw-crash-dump.bin"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LheFailSafe"="LOG"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+11-20 21:22:52.830  3213  3213 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+11-20 21:22:52.830  3213  3213 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+11-20 21:22:52.830  3213  3213 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+11-20 21:22:52.830  3213  3213 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+11-20 21:22:52.830  3213  3213 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+11-20 21:22:52.830  3213  3213 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+11-20 21:22:52.835  3233  3233 I cm      : | | | | | |  __/ (_| | (_| |  __/ (_) \__ \
+11-20 21:22:52.835  3219  3219 I         : installd firing up
+11-20 21:22:52.844  3225  3225 I Netd    : Netd 1.0 starting
+11-20 21:22:52.844  3225  3225 D TetherController: Setting IP forward enable = 0
+11-20 21:22:52.844  3226  3226 I fingerprintd: Starting fingerprintd
+11-20 21:22:52.847  3225  3225 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+11-20 21:22:52.847  3225  3225 E         : Failed to open libdatactrl, some features may not be present.
+11-20 21:22:52.847  3225  3225 E         : Failed to open libcsm_data, some features may not be present.
+11-20 21:22:52.849  3238  3238 I cm      : |_|_|_| |_|\___|\__,_|\__, |\___|\___/|___/
+11-20 21:22:52.852  3228  3228 I perfprofd: starting Android Wide Profiling daemon
+11-20 21:22:52.852  3228  3228 E perfprofd: unable to open configuration file /data/data/com.google.android.gms/files/perfprofd.conf
+11-20 21:22:52.853  3228  3228 I perfprofd: random seed set to 1876862119
+11-20 21:22:52.866  3227  3227 I gatekeeperd: Starting gatekeeperd...
+11-20 21:22:52.867  3227  3227 W gatekeeperd: falling back to software GateKeeper
+11-20 21:22:52.867  3227  3227 I gatekeeperd: cold boot: clearing state
+11-20 21:22:52.867  3240  3240 I cm      :                       |___/
+11-20 21:22:52.868  3185  3185 I TeeMcDaemon: TEE is ready [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:332]
+11-20 21:22:52.870  3185  3185 I TeeMcDaemon: t-base-EXYNOS64-Android-400A-V011-20170203_131128_25330_57476 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:280]
+11-20 21:22:52.871  3185  3185 I TeeMcDaemon: Specific partition path used for Store_1.tf, stored in /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:340]
+11-20 21:22:52.871  3185  3185 I TeeMcDaemon: Start services [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:304]
+11-20 21:22:52.871  3185  3185 I TeeMcDaemon: * start secure world interface [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+11-20 21:22:52.872  3185  3185 I TeeMcDaemon: * start filesystem [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+11-20 21:22:52.872  3185  3185 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:71]
+11-20 21:22:52.872  3185  3185 I TeeMcDaemon: driver open [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:84]
+11-20 21:22:52.872  3185  3185 I TeeMcDaemon: Kinibi access granted by the driver [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/common.cpp:217]
+11-20 21:22:52.873  3185  3243 I TeeMcDaemon: Start listening to secure world [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:466]
+11-20 21:22:52.875  3185  3243 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/07050501000000000000000000000020.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+11-20 21:22:52.877  3185  3185 I TeeMcDaemon: * start registry update [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+11-20 21:22:52.877  3185  3185 I TeeMcDaemon: * start registry server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+11-20 21:22:52.877  3185  3185 I TeeMcDaemon: * start debug session [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+11-20 21:22:52.877  3185  3246 I TeeMcDaemon: void RegistryServer::Impl::run(): Starting server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryServer.cpp:230]
+11-20 21:22:52.878  3185  3243 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/08050500000000000000000000000000.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+11-20 21:22:52.879  3185  3185 I TeeMcDaemon: session opened [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/DebugSession.cpp:113]
+11-20 21:22:52.879  3185  3185 I TeeMcDaemon: Load secure drivers [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:318]
+11-20 21:22:52.879  3185  3185 I TeeMcDaemon: * loading /system/app/FFFFFFFF000000000000000000000001.drbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+11-20 21:22:52.884  3185  3185 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+11-20 21:22:52.884  3185  3244 I TeeMcDaemon: void FileSystem::Impl::run(): Start listening for request from STH2 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:443]
+11-20 21:22:52.894  3192  3192 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+11-20 21:22:52.895  3185  3245 I TeeRegistryUpdate: Starting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:85]
+11-20 21:22:52.911  3210  3210 I cameraserver: ServiceManager: 0xf6a19440
+11-20 21:22:52.911  3210  3210 I CameraService: CameraService started (pid=3210)
+11-20 21:22:52.911  3210  3210 I CameraService: CameraService process starting
+11-20 21:22:52.911  3210  3210 W BatteryNotifier: batterystats service unavailable!
+11-20 21:22:52.912  3210  3210 W BatteryNotifier: batterystats service unavailable!
+11-20 21:22:52.912  3210  3210 E CameraService: Could not load camera HAL module: -2 (No such file or directory)
+11-20 21:22:52.927  3185  3185 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+11-20 21:22:52.928  3185  3245 I TeeRegistryUpdate: Exiting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:143]
+11-20 21:22:52.929  3221  3221 I mediacodec: @@@ mediacodecservice starting
+11-20 21:22:52.933  3221  3221 W /system/bin/mediacodec: libminijail: allowing syscall: clock_gettime
+11-20 21:22:52.933  3221  3221 W /system/bin/mediacodec: libminijail: allowing syscall: connect
+11-20 21:22:52.933  3221  3221 W /system/bin/mediacodec: libminijail: allowing syscall: fcntl64
+11-20 21:22:52.933  3221  3221 W /system/bin/mediacodec: libminijail: allowing syscall: socket
+11-20 21:22:52.933  3221  3221 W /system/bin/mediacodec: libminijail: allowing syscall: writev
+11-20 21:22:52.933  3221  3221 W /system/bin/mediacodec: libminijail: logging seccomp filter failures
+11-20 21:22:52.939  3192  3192 I gralloc : using (id=)
+11-20 21:22:52.939  3192  3192 I gralloc : xres         = 1440 px
+11-20 21:22:52.939  3192  3192 I gralloc : yres         = 2960 px
+11-20 21:22:52.939  3192  3192 I gralloc : width        = 70 mm (522.514282 dpi)
+11-20 21:22:52.939  3192  3192 I gralloc : height       = 143 mm (525.762268 dpi)
+11-20 21:22:52.939  3192  3192 I gralloc : refresh rate = 60.00 Hz
+11-20 21:22:52.948  3263  3263 I cm      : Welcome to Android 7.1.2 / LineageOS-14.1-20171120_192719-UNOFFICIAL-dream2lte
+11-20 21:22:52.951  3217  3217 I         : sMaxFastTracks = 8
+11-20 21:22:52.951  3217  3217 I audioserver: ServiceManager: 0xf6299440
+11-20 21:22:52.951  3217  3217 W BatteryNotifier: batterystats service unavailable!
+11-20 21:22:52.951  3217  3217 I AudioFlinger: Using default 3000 mSec as standby time.
+11-20 21:22:52.952  3217  3217 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+11-20 21:22:52.952  3217  3217 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+11-20 21:22:52.961  3192  3192 W hwcomposer: invalid refresh rate, assuming 60 Hz
+11-20 21:22:52.961  3192  3192 D hwcomposer: using
+11-20 21:22:52.961  3192  3192 D hwcomposer: xres         = 1440 px
+11-20 21:22:52.961  3192  3192 D hwcomposer: yres         = 2960 px
+11-20 21:22:52.961  3192  3192 D hwcomposer: width        = 70 mm (522.514000 dpi)
+11-20 21:22:52.961  3192  3192 D hwcomposer: height       = 143 mm (525.762000 dpi)
+11-20 21:22:52.961  3192  3192 D hwcomposer: refresh rate = 60 Hz
+11-20 21:22:52.961  3192  3192 I hwcomposer: PSR info devname = /sys/devices/platform/12860000.decon_f/psr_info
+11-20 21:22:52.962  3192  3192 I hwcomposer: PSR mode is 2(0: video mode, 1: DP PSR mode, 2: MIPI-DSI command mode)
+11-20 21:22:52.962  3192  3192 I SurfaceFlinger: Using composer version 1.4
+11-20 21:22:52.962  3192  3192 E display : unknown display attribute 6
+11-20 21:22:52.962  3192  3192 I SurfaceFlinger: EGL information:
+11-20 21:22:52.962  3192  3192 I SurfaceFlinger: vendor    : Android
+11-20 21:22:52.962  3192  3192 I SurfaceFlinger: version   : 1.4 Android META-EGL
+11-20 21:22:52.962  3192  3192 I SurfaceFlinger: extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_swap_buffers_with_damage EGL_ANDROID_create_native_client_buffer EGL_ANDROID_front_buffer_auto_refresh EGL_KHR_image EGL_KHR_image_base EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_fence_sync EGL_KHR_create_context EGL_KHR_config_attribs EGL_KHR_surfaceless_context EGL_EXT_create_context_robustness EGL_ANDROID_image_native_buffer EGL_KHR_wait_sync EGL_ANDROID_recordable EGL_KHR_partial_update EGL_KHR_mutable_render_buffer EGL_EXT_protected_content 
+11-20 21:22:52.962  3192  3192 I SurfaceFlinger: Client API: OpenGL_ES
+11-20 21:22:52.962  3192  3192 I SurfaceFlinger: EGLSurface: 8-8-8-8, config=0x7f88e69138
+11-20 21:22:52.966  3269  3269 I sysinit : Running /system/etc/init.d/90userinit
+11-20 21:22:52.967  3214  3214 D gpsd    : WakeLock(Release,GPSD)
+11-20 21:22:52.967  3213  3213 D lhd     : OnIpcConnect
+11-20 21:22:52.970  3214  3214 D gpsd    : WakeLock(Release,SUPL)
+11-20 21:22:52.970  3214  3214 I gpsd_d  : GNSS: 282637
+11-20 21:22:52.971  3214  3214 I gpsd_d  : CustomerModule::Create chip info "Broadcom,BCM4774,282637" written into /data/system/gps//chip.info
+11-20 21:22:52.971  3214  3214 D wrapperGPS: wrapperOpenClient_RILD
+11-20 21:22:52.971  3214  3214 E wrapperGPS: wrapperOpenClient_RILD: RegisterUnsolicitedHandler() UNSOL_GPS_NOTI (11009)
+11-20 21:22:52.971  3214  3214 D wrapperGPS: wrapperRegisterRequestCompleteHandler
+11-20 21:22:52.971  3214  3214 D wrapperGPS: wrapperRegisterUnsolicitedHandler id(12009), handler(0x5555fadd30)
+11-20 21:22:52.971  3214  3214 D wrapperGPS: wrapperRegisterErrorCallback
+11-20 21:22:52.971  3214  3214 D wrapperGPS: wrapperConnect_RILD
+11-20 21:22:52.973  3192  3192 I SurfaceFlinger: OpenGL ES informations:
+11-20 21:22:52.973  3192  3192 I SurfaceFlinger: vendor    : ARM
+11-20 21:22:52.973  3192  3192 I SurfaceFlinger: renderer  : Mali-G71
+11-20 21:22:52.973  3192  3192 I SurfaceFlinger: version   : OpenGL ES 3.2 v1.r3p0-00rel0.52a2c5ce14e045eb8b9074c171442f91
+11-20 21:22:52.973  3192  3192 I SurfaceFlinger: extensions: GL_EXT_debug_marker GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_EXT_read_format_bgra GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_image_external_essl3 GL_OES_EGL_sync GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_required_internalformat GL_OES_vertex_array_object GL_OES_mapbuffer GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_type_2_10_10_10_REV GL_OES_fbo_render_mipmap GL_OES_element_index_uint GL_EXT_shadow_samplers GL_OES_texture_compression_astc GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_KHR_texture_compression_astc_sliced_3d GL_KHR_debug GL_EXT_occlusion_query_boolean GL_EXT_disjoint_timer_query GL_EXT_blend_minmax GL_EXT_discard_framebuffer GL_OES_get_program_binary GL_OES_texture_3D GL_EXT_texture_storage GL_EXT_multisamp
+11-20 21:22:52.973  3192  3192 I SurfaceFlinger: GL_MAX_TEXTURE_SIZE = 16384
+11-20 21:22:52.973  3192  3192 I SurfaceFlinger: GL_MAX_VIEWPORT_DIMS = 16384
+11-20 21:22:52.974  3192  3192 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:1
+11-20 21:22:52.995  3123  3123 W auditd  : type=1325 audit(0.0:18): table=filter family=2 entries=4
+11-20 21:22:52.995  3123  3123 W auditd  : type=1320 audit(0.0:18): 
+11-20 21:22:53.003  3123  3123 W auditd  : type=1325 audit(0.0:19): table=filter family=10 entries=4
+11-20 21:22:53.003  3123  3123 W auditd  : type=1320 audit(0.0:19): 
+11-20 21:22:53.007  3185  3244 I TeeMcDaemon: TEEC_Result Partition::open(): Open storage file "/efs/TEE/Store_1.tf" [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:157]
+11-20 21:22:53.007  3185  3244 I TeeMcDaemon: TEEC_Result Partition::open(): storage file "/efs/TEE/Store_1.tf" successfully open (size: 23 KB / 23552 B)) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:166]
+11-20 21:22:53.014  3224  3224 I mediaserver: ServiceManager: 0xf64194a0
+11-20 21:22:53.018  3224  3224 W BatteryNotifier: batterystats service unavailable!
+11-20 21:22:53.031  3123  3123 W auditd  : type=1325 audit(0.0:20): table=filter family=2 entries=6
+11-20 21:22:53.031  3123  3123 W auditd  : type=1320 audit(0.0:20): 
+11-20 21:22:53.036  3185  3185 I TeeMcDaemon: Daemon running [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:342]
+11-20 21:22:53.043  3123  3123 W auditd  : type=1325 audit(0.0:21): table=filter family=10 entries=6
+11-20 21:22:53.043  3123  3123 W auditd  : type=1320 audit(0.0:21): 
+11-20 21:22:53.043  3223  3223 V MediaUtils: physMem: 3644985344
+11-20 21:22:53.043  3223  3223 V MediaUtils: requested limit: 728997060
+11-20 21:22:53.043  3223  3223 V MediaUtils: actual limit: 728997060
+11-20 21:22:53.043  3223  3223 V MediaUtils: original limits: 4294967295/4294967295
+11-20 21:22:53.043  3223  3223 V MediaUtils: new limits: 728997060/4294967295
+11-20 21:22:53.043  3223  3223 W /system/bin/mediaextractor: libminijail: allowing syscall: clock_gettime
+11-20 21:22:53.043  3223  3223 W /system/bin/mediaextractor: libminijail: allowing syscall: connect
+11-20 21:22:53.043  3223  3223 W /system/bin/mediaextractor: libminijail: allowing syscall: fcntl64
+11-20 21:22:53.043  3223  3223 W /system/bin/mediaextractor: libminijail: allowing syscall: socket
+11-20 21:22:53.043  3223  3223 W /system/bin/mediaextractor: libminijail: allowing syscall: writev
+11-20 21:22:53.047  3222  3222 I mediaserver: ServiceManager: 0xf61194a0
+11-20 21:22:53.048  3223  3223 W /system/bin/mediaextractor: libminijail: logging seccomp filter failures
+11-20 21:22:53.107  3123  3123 W auditd  : type=1325 audit(0.0:22): table=filter family=2 entries=7
+11-20 21:22:53.107  3123  3123 W auditd  : type=1320 audit(0.0:22): 
+11-20 21:22:53.111  3123  3123 W auditd  : type=1325 audit(0.0:23): table=filter family=10 entries=7
+11-20 21:22:53.111  3123  3123 W auditd  : type=1320 audit(0.0:23): 
+11-20 21:22:53.127  3123  3123 W auditd  : type=1325 audit(0.0:24): table=filter family=2 entries=9
+11-20 21:22:53.127  3123  3123 W auditd  : type=1320 audit(0.0:24): 
+11-20 21:22:53.139  3123  3123 W auditd  : type=1325 audit(0.0:25): table=filter family=10 entries=9
+11-20 21:22:53.139  3123  3123 W auditd  : type=1320 audit(0.0:25): 
+11-20 21:22:53.173  3212  3212 V wifiloader: /proc/deferred_initcalls=0
+11-20 21:22:53.173  3212  3212 V wifiloader: 
+11-20 21:22:53.223  3123  3123 W auditd  : type=1325 audit(0.0:26): table=filter family=2 entries=10
+11-20 21:22:53.223  3123  3123 W auditd  : type=1320 audit(0.0:26): 
+11-20 21:22:53.243  3123  3123 W auditd  : type=1325 audit(0.0:27): table=filter family=10 entries=10
+11-20 21:22:53.243  3123  3123 W auditd  : type=1320 audit(0.0:27): 
+11-20 21:22:53.251  3123  3123 W auditd  : type=1325 audit(0.0:28): table=filter family=2 entries=12
+11-20 21:22:53.251  3123  3123 W auditd  : type=1320 audit(0.0:28): 
+11-20 21:22:53.275  3123  3123 W auditd  : type=1325 audit(0.0:29): table=filter family=10 entries=12
+11-20 21:22:53.275  3123  3123 W auditd  : type=1320 audit(0.0:29): 
+11-20 21:22:53.329  3215  3215 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+11-20 21:22:53.335  3123  3123 W auditd  : type=1325 audit(0.0:30): table=filter family=2 entries=13
+11-20 21:22:53.335  3123  3123 W auditd  : type=1320 audit(0.0:30): 
+11-20 21:22:53.340  3215  3215 D AndroidRuntime: CheckJNI is OFF
+11-20 21:22:53.341  3216  3216 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+11-20 21:22:53.343  3123  3123 W auditd  : type=1325 audit(0.0:31): table=filter family=10 entries=13
+11-20 21:22:53.343  3123  3123 W auditd  : type=1320 audit(0.0:31): 
+11-20 21:22:53.344  3215  3215 I art     : option[0]=-Xzygote
+11-20 21:22:53.344  3215  3215 I art     : option[1]=-Xstacktracefile:/data/anr/traces.txt
+11-20 21:22:53.344  3215  3215 I art     : option[2]=exit
+11-20 21:22:53.344  3215  3215 I art     : option[3]=vfprintf
+11-20 21:22:53.344  3215  3215 I art     : option[4]=sensitiveThread
+11-20 21:22:53.344  3215  3215 I art     : option[5]=-verbose:gc
+11-20 21:22:53.344  3215  3215 I art     : option[6]=-Xms8m
+11-20 21:22:53.344  3215  3215 I art     : option[7]=-Xmx512m
+11-20 21:22:53.344  3215  3215 I art     : option[8]=-XX:HeapGrowthLimit=256m
+11-20 21:22:53.344  3215  3215 I art     : option[9]=-XX:HeapMinFree=2m
+11-20 21:22:53.344  3215  3215 I art     : option[10]=-XX:HeapMaxFree=8m
+11-20 21:22:53.344  3215  3215 I art     : option[11]=-XX:HeapTargetUtilization=0.75
+11-20 21:22:53.344  3215  3215 I art     : option[12]=-Xusejit:true
+11-20 21:22:53.344  3215  3215 I art     : option[13]=-Xjitsaveprofilinginfo
+11-20 21:22:53.344  3215  3215 I art     : option[14]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+11-20 21:22:53.344  3215  3215 I art     : option[15]=-Xlockprofthreshold:500
+11-20 21:22:53.344  3215  3215 I art     : option[16]=-Ximage-compiler-option
+11-20 21:22:53.344  3215  3215 I art     : option[17]=--runtime-arg
+11-20 21:22:53.344  3215  3215 I art     : option[18]=-Ximage-compiler-option
+11-20 21:22:53.344  3215  3215 I art     : option[19]=-Xms64m
+11-20 21:22:53.344  3215  3215 I art     : option[20]=-Ximage-compiler-option
+11-20 21:22:53.344  3215  3215 I art     : option[21]=--runtime-arg
+11-20 21:22:53.344  3215  3215 I art     : option[22]=-Ximage-compiler-option
+11-20 21:22:53.344  3215  3215 I art     : option[23]=-Xmx64m
+11-20 21:22:53.344  3215  3215 I art     : option[24]=-Ximage-compiler-option
+11-20 21:22:53.344  3215  3215 I art     : option[25]=--image-classes=/system/etc/preloaded-classes
+11-20 21:22:53.344  3215  3215 I art     : option[26]=-Ximage-compiler-option
+11-20 21:22:53.344  3215  3215 I art     : option[27]=--compiled-classes=/system/etc/compiled-classes
+11-20 21:22:53.344  3215  3215 I art     : option[28]=-Xcompiler-option
+11-20 21:22:53.344  3215  3215 I art     : option[29]=--runtime-arg
+11-20 21:22:53.344  3215  3215 I art     : option[30]=-Xcompiler-option
+11-20 21:22:53.344  3215  3215 I art     : option[31]=-Xms64m
+11-20 21:22:53.344  3215  3215 I art     : option[32]=-Xcompiler-option
+11-20 21:22:53.345  3215  3215 I art     : option[33]=--runtime-arg
+11-20 21:22:53.345  3215  3215 I art     : option[34]=-Xcompiler-option
+11-20 21:22:53.345  3215  3215 I art     : option[35]=-Xmx512m
+11-20 21:22:53.345  3215  3215 I art     : option[36]=-Ximage-compiler-option
+11-20 21:22:53.345  3215  3215 I art     : option[37]=--instruction-set-variant=generic
+11-20 21:22:53.345  3215  3215 I art     : option[38]=-Xcompiler-option
+11-20 21:22:53.345  3215  3215 I art     : option[39]=--instruction-set-variant=generic
+11-20 21:22:53.345  3215  3215 I art     : option[40]=-Ximage-compiler-option
+11-20 21:22:53.345  3215  3215 I art     : option[41]=--instruction-set-features=default
+11-20 21:22:53.345  3215  3215 I art     : option[42]=-Xcompiler-option
+11-20 21:22:53.345  3215  3215 I art     : option[43]=--instruction-set-features=default
+11-20 21:22:53.345  3215  3215 I art     : option[44]=-Duser.locale=en-US
+11-20 21:22:53.345  3215  3215 I art     : option[45]=--cpu-abilist=arm64-v8a
+11-20 21:22:53.345  3215  3215 I art     : option[46]=-Xfingerprint:samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys
+11-20 21:22:53.351  3123  3123 W auditd  : type=1325 audit(0.0:32): table=filter family=2 entries=15
+11-20 21:22:53.351  3123  3123 W auditd  : type=1320 audit(0.0:32): 
+11-20 21:22:53.355  3123  3123 W auditd  : type=1325 audit(0.0:33): table=filter family=10 entries=15
+11-20 21:22:53.355  3123  3123 W auditd  : type=1320 audit(0.0:33): 
+11-20 21:22:53.355  3216  3216 D AndroidRuntime: CheckJNI is OFF
+11-20 21:22:53.359  3216  3216 I art     : option[0]=-Xzygote
+11-20 21:22:53.359  3216  3216 I art     : option[1]=-Xstacktracefile:/data/anr/traces.txt
+11-20 21:22:53.359  3216  3216 I art     : option[2]=exit
+11-20 21:22:53.359  3216  3216 I art     : option[3]=vfprintf
+11-20 21:22:53.359  3216  3216 I art     : option[4]=sensitiveThread
+11-20 21:22:53.359  3216  3216 I art     : option[5]=-verbose:gc
+11-20 21:22:53.359  3216  3216 I art     : option[6]=-Xms8m
+11-20 21:22:53.359  3216  3216 I art     : option[7]=-Xmx512m
+11-20 21:22:53.359  3216  3216 I art     : option[8]=-XX:HeapGrowthLimit=256m
+11-20 21:22:53.359  3216  3216 I art     : option[9]=-XX:HeapMinFree=2m
+11-20 21:22:53.359  3216  3216 I art     : option[10]=-XX:HeapMaxFree=8m
+11-20 21:22:53.359  3216  3216 I art     : option[11]=-XX:HeapTargetUtilization=0.75
+11-20 21:22:53.359  3216  3216 I art     : option[12]=-Xusejit:true
+11-20 21:22:53.359  3216  3216 I art     : option[13]=-Xjitsaveprofilinginfo
+11-20 21:22:53.359  3216  3216 I art     : option[14]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+11-20 21:22:53.359  3216  3216 I art     : option[15]=-Xlockprofthreshold:500
+11-20 21:22:53.359  3216  3216 I art     : option[16]=-Ximage-compiler-option
+11-20 21:22:53.359  3216  3216 I art     : option[17]=--runtime-arg
+11-20 21:22:53.359  3216  3216 I art     : option[18]=-Ximage-compiler-option
+11-20 21:22:53.359  3216  3216 I art     : option[19]=-Xms64m
+11-20 21:22:53.360  3216  3216 I art     : option[20]=-Ximage-compiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[21]=--runtime-arg
+11-20 21:22:53.360  3216  3216 I art     : option[22]=-Ximage-compiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[23]=-Xmx64m
+11-20 21:22:53.360  3216  3216 I art     : option[24]=-Ximage-compiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[25]=--image-classes=/system/etc/preloaded-classes
+11-20 21:22:53.360  3216  3216 I art     : option[26]=-Ximage-compiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[27]=--compiled-classes=/system/etc/compiled-classes
+11-20 21:22:53.360  3216  3216 I art     : option[28]=-Xcompiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[29]=--runtime-arg
+11-20 21:22:53.360  3216  3216 I art     : option[30]=-Xcompiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[31]=-Xms64m
+11-20 21:22:53.360  3216  3216 I art     : option[32]=-Xcompiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[33]=--runtime-arg
+11-20 21:22:53.360  3216  3216 I art     : option[34]=-Xcompiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[35]=-Xmx512m
+11-20 21:22:53.360  3216  3216 I art     : option[36]=-Ximage-compiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[37]=--instruction-set-variant=cortex-a53.a57
+11-20 21:22:53.360  3216  3216 I art     : option[38]=-Xcompiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[39]=--instruction-set-variant=cortex-a53.a57
+11-20 21:22:53.360  3216  3216 I art     : option[40]=-Ximage-compiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[41]=--instruction-set-features=default
+11-20 21:22:53.360  3216  3216 I art     : option[42]=-Xcompiler-option
+11-20 21:22:53.360  3216  3216 I art     : option[43]=--instruction-set-features=default
+11-20 21:22:53.360  3216  3216 I art     : option[44]=-Duser.locale=en-US
+11-20 21:22:53.360  3216  3216 I art     : option[45]=--cpu-abilist=armeabi-v7a,armeabi
+11-20 21:22:53.360  3216  3216 I art     : option[46]=-Xfingerprint:samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys
+11-20 21:22:53.363  3215  3215 I art     : Pruning dalvik-cache since we are generating an image and will need to recompile
+11-20 21:22:53.363  3215  3215 I art     : Using an offset of 0xfffcb000 from default art base address of 0x70000000
+11-20 21:22:53.363  3215  3215 I art     : GenerateImage: /system/bin/dex2oat --image=/data/dalvik-cache/arm64/system@framework@boot.art --dex-file=/system/framework/core-oj.jar --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/apache-xml.jar --dex-file=/system/framework/org.apache.http.legacy.boot.jar --dex-file=/system/framework/telephony-ext.jar --oat-file=/data/dalvik-cache/arm64/system@framework@boot.oat --instruction-set=arm64 --instruction-set-features=smp,a53 --base=0x6ffcb000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --image-classes=/system/etc/preloaded-classes --compiled-classes=/system/etc/compiled-classes --instruction-set-vari
+11-20 21:22:53.372  3216  3216 I art     : Pruning dalvik-cache since we are generating an image and will need to recompile
+11-20 21:22:53.372  3216  3216 I art     : Using an offset of 0xec7000 from default art base address of 0x70000000
+11-20 21:22:53.372  3216  3216 I art     : GenerateImage: /system/bin/dex2oat --image=/data/dalvik-cache/arm/system@framework@boot.art --dex-file=/system/framework/core-oj.jar --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/apache-xml.jar --dex-file=/system/framework/org.apache.http.legacy.boot.jar --dex-file=/system/framework/telephony-ext.jar --oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --base=0x70ec7000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --image-classes=/system/etc/preloaded-classes --compiled-classes=/system/etc/compiled-classes --instructi
+11-20 21:22:53.399  3123  3123 W auditd  : type=1325 audit(0.0:34): table=filter family=2 entries=16
+11-20 21:22:53.399  3123  3123 W auditd  : type=1320 audit(0.0:34): 
+11-20 21:22:53.405  3363  3363 I dex2oat : /system/bin/dex2oat --image=/data/dalvik-cache/arm/system@framework@boot.art --dex-file=/system/framework/core-oj.jar --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/apache-xml.jar --dex-file=/system/framework/org.apache.http.legacy.boot.jar --dex-file=/system/framework/telephony-ext.jar --oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --base=0x70ec7000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --image-classes=/system/etc/preloaded-classes --compiled-classes=/system/etc/compiled-classes --instruction-set-variant=
+11-20 21:22:53.407  3123  3123 W auditd  : type=1325 audit(0.0:35): table=filter family=10 entries=16
+11-20 21:22:53.407  3123  3123 W auditd  : type=1320 audit(0.0:35): 
+11-20 21:22:53.413  3360  3360 I dex2oat : /system/bin/dex2oat --image=/data/dalvik-cache/arm64/system@framework@boot.art --dex-file=/system/framework/core-oj.jar --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/apache-xml.jar --dex-file=/system/framework/org.apache.http.legacy.boot.jar --dex-file=/system/framework/telephony-ext.jar --oat-file=/data/dalvik-cache/arm64/system@framework@boot.oat --instruction-set=arm64 --instruction-set-features=smp,a53 --base=0x6ffcb000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --image-classes=/system/etc/preloaded-classes --compiled-classes=/system/etc/compiled-classes --instruction-set-variant=generic --i
+11-20 21:22:53.419  3123  3123 W auditd  : type=1325 audit(0.0:36): table=filter family=2 entries=18
+11-20 21:22:53.439  3360  3360 I dex2oat : setting boot class path to /system/framework/core-oj.jar:/system/framework/core-libart.jar:/system/framework/conscrypt.jar:/system/framework/okhttp.jar:/system/framework/core-junit.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/apache-xml.jar:/system/framework/org.apache.http.legacy.boot.jar:/system/framework/telephony-ext.jar
+11-20 21:22:53.446  3363  3363 I dex2oat : setting boot class path to /system/framework/core-oj.jar:/system/framework/core-libart.jar:/system/framework/conscrypt.jar:/system/framework/okhttp.jar:/system/framework/core-junit.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/apache-xml.jar:/system/framework/org.apache.http.legacy.boot.jar:/system/framework/telephony-ext.jar
+11-20 21:22:53.452  3217  3217 E audio_route: Failed to open /system/etc/mixer_paths_0.xml
+11-20 21:22:53.457  3217  3217 E audio_hw_primary: mixer_init: Failed to init audio route controls for card 0, aborting.
+11-20 21:22:53.457  3217  3217 E audio_hw_primary: adev_open: Failed to init, aborting.
+11-20 21:22:53.457  3217  3217 E AudioFlinger: int android::load_audio_interface(const char *, audio_hw_device_t **) couldn't open audio hw device in audio.primary (Invalid argument)
+11-20 21:22:53.457  3217  3217 E AudioFlinger: loadHwModule() error -22 loading module primary
+11-20 21:22:53.457  3217  3217 W APM_AudioPolicyManager: could not open HW module primary
+11-20 21:22:53.458  3217  3217 I r_submix: adev_open(name=audio_hw_if)
+11-20 21:22:53.458  3217  3217 I r_submix: adev_init_check()
+11-20 21:22:53.458  3217  3217 I AudioFlinger: loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 10
+11-20 21:22:53.458  3217  3217 D r_submix: adev_open_input_stream(addr=0)
+11-20 21:22:53.458  3217  3217 D r_submix: submix_audio_device_create_pipe_l(addr=0, idx=9)
+11-20 21:22:53.458  3217  3217 D r_submix:   now using address 0 for route 9
+11-20 21:22:53.464  3217  3379 I AudioFlinger: AudioFlinger's thread 0xf5d9e4c0 ready to run
+11-20 21:22:53.464  3217  3217 D r_submix: adev_close_input_stream()
+11-20 21:22:53.464  3217  3217 D r_submix: submix_audio_device_release_pipe_l(idx=9) addr=0
+11-20 21:22:53.464  3217  3217 D r_submix: submix_audio_device_destroy_pipe_l(): pipe destroyed
+11-20 21:22:53.464  3217  3217 W APM_AudioPolicyManager: Output device 00000002 unreachable
+11-20 21:22:53.464  3217  3217 W APM_AudioPolicyManager: Input device 80000004 unreachable
+11-20 21:22:53.464  3217  3217 E APM_AudioPolicyManager: Default device 00000002 is unreachable
+11-20 21:22:53.465  3217  3217 E APM_AudioPolicyManager: Failed to open primary output
+11-20 21:22:53.466  3217  3217 I RadioService: RadioService
+11-20 21:22:53.466  3217  3217 I RadioService: onFirstRef
+11-20 21:22:53.466  3217  3217 E RadioService: couldn't load radio module radio.primary (No such file or directory)
+11-20 21:22:53.467  3217  3217 E SoundTriggerHwService: couldn't load sound trigger module sound_trigger.primary (No such file or directory)
+11-20 21:22:53.908  3192  3192 D SurfaceFlinger: SF. shader cache generated - 26 shaders in 915.999023 ms
+11-20 21:22:53.911  3192  3192 D SurfaceFlinger: Set power mode=2, type=0 flinger=0x7f88e48000
+11-20 21:22:53.971  3214  3214 D wrapperGPS: wrapperConnect_RILD
+11-20 21:22:54.121  3225  3225 V NatController: runCmd(/system/bin/iptables -w -F natctrl_FORWARD) res=0
+11-20 21:22:54.126  3225  3225 V NatController: runCmd(/system/bin/ip6tables -w -F natctrl_FORWARD) res=0
+11-20 21:22:54.131  3225  3225 V NatController: runCmd(/system/bin/iptables -w -A natctrl_FORWARD -j DROP) res=0
+11-20 21:22:54.136  3225  3225 V NatController: runCmd(/system/bin/iptables -w -t nat -F natctrl_nat_POSTROUTING) res=0
+11-20 21:22:54.143  3225  3225 V NatController: runCmd(/system/bin/ip6tables -w -t raw -F natctrl_raw_PREROUTING) res=0
+11-20 21:22:54.148  3225  3225 V NatController: runCmd(/system/bin/iptables -w -F natctrl_tether_counters) res=1
+11-20 21:22:54.153  3225  3225 V NatController: runCmd(/system/bin/ip6tables -w -F natctrl_tether_counters) res=1
+11-20 21:22:54.159  3225  3225 V NatController: runCmd(/system/bin/iptables -w -X natctrl_tether_counters) res=1
+11-20 21:22:54.164  3225  3225 V NatController: runCmd(/system/bin/ip6tables -w -X natctrl_tether_counters) res=1
+11-20 21:22:54.169  3225  3225 V NatController: runCmd(/system/bin/iptables -w -N natctrl_tether_counters) res=0
+11-20 21:22:54.175  3225  3225 V NatController: runCmd(/system/bin/ip6tables -w -N natctrl_tether_counters) res=0
+11-20 21:22:54.183  3225  3225 V NatController: runCmd(/system/bin/iptables -w -t mangle -A natctrl_mangle_FORWARD -p tcp --tcp-flags SYN SYN -j TCPMSS --clamp-mss-to-pmtu) res=0
+11-20 21:22:54.200  3481  3540 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+11-20 21:22:54.215  3481  3540 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:2
+11-20 21:22:54.231  3123  3123 W auditd  : type=1325 audit(0.0:112): table=filter family=2 entries=65
+11-20 21:22:54.231  3123  3123 W auditd  : type=1320 audit(0.0:112): 
+11-20 21:22:54.231  3123  3123 W auditd  : type=1325 audit(0.0:113): table=raw family=2 entries=12
+11-20 21:22:54.231  3123  3123 W auditd  : type=1320 audit(0.0:113): 
+11-20 21:22:54.231  3123  3123 W auditd  : type=1325 audit(0.0:114): table=mangle family=2 entries=16
+11-20 21:22:54.231  3123  3123 W auditd  : type=1320 audit(0.0:114): 
+11-20 21:22:54.239  3123  3123 W auditd  : type=1325 audit(0.0:115): table=filter family=10 entries=76
+11-20 21:22:54.239  3123  3123 W auditd  : type=1320 audit(0.0:115): 
+11-20 21:22:54.239  3123  3123 W auditd  : type=1325 audit(0.0:116): table=raw family=10 entries=12
+11-20 21:22:54.239  3123  3123 W auditd  : type=1320 audit(0.0:116): 
+11-20 21:22:54.239  3123  3123 W auditd  : type=1325 audit(0.0:117): table=mangle family=10 entries=15
+11-20 21:22:54.239  3123  3123 W auditd  : type=1320 audit(0.0:117): 
+11-20 21:22:54.255  3225  3225 E Netd    : cannot find interface dummy0
+11-20 21:22:54.256  3225  3225 D MDnsDS  : MDnsSdListener::Hander starting up
+11-20 21:22:54.256  3225  3568 D MDnsDS  : MDnsSdListener starting to monitor
+11-20 21:22:54.256  3225  3568 D MDnsDS  : Going to poll with pollCount 1
+11-20 21:22:54.292  3213  3213 I lhd     : Lhd::LHD Init took 1.462s
+11-20 21:22:54.312  3209  3235 D Sensorhubs: readEvents: 2, 1, -43, 1
+11-20 21:22:54.971  3214  3214 D wrapperGPS: wrapperConnect_RILD
+11-20 21:22:55.027  3363  3584 W dex2oat : Before Android 4.1, method double java.util.concurrent.ThreadLocalRandom.internalNextDouble(double, double) would have incorrectly overridden the package-private method in java.util.Random
+11-20 21:22:55.027  3363  3584 W dex2oat : Before Android 4.1, method int java.util.concurrent.ThreadLocalRandom.internalNextInt(int, int) would have incorrectly overridden the package-private method in java.util.Random
+11-20 21:22:55.027  3363  3584 W dex2oat : Before Android 4.1, method long java.util.concurrent.ThreadLocalRandom.internalNextLong(long, long) would have incorrectly overridden the package-private method in java.util.Random
+11-20 21:22:55.057  3360  3587 W dex2oat : Before Android 4.1, method double java.util.concurrent.ThreadLocalRandom.internalNextDouble(double, double) would have incorrectly overridden the package-private method in java.util.Random
+11-20 21:22:55.057  3360  3587 W dex2oat : Before Android 4.1, method int java.util.concurrent.ThreadLocalRandom.internalNextInt(int, int) would have incorrectly overridden the package-private method in java.util.Random
+11-20 21:22:55.057  3360  3587 W dex2oat : Before Android 4.1, method long java.util.concurrent.ThreadLocalRandom.internalNextLong(long, long) would have incorrectly overridden the package-private method in java.util.Random
+11-20 21:22:55.286  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedInputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3580 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension$PrimitiveExtension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.InternalNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.InvalidProtocolBufferNanoException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.UnknownFieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.WireFormatNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3583 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNanoPrinter from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3580 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldArray from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3581 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.286  3363  3584 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.287  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.ExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.288  3363  3582 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNanoCreator from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedInputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldArray from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.InternalNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.ExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.UnknownFieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.WireFormatNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNanoCreator from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3586 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension$PrimitiveExtension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3588 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNanoPrinter from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.314  3360  3592 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.315  3360  3591 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.315  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.315  3360  3589 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.315  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.InvalidProtocolBufferNanoException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:55.971  3214  3214 D wrapperGPS: wrapperConnect_RILD
+11-20 21:22:55.972  3214  3214 D gpsd    : WakeLock(Acquire,GPSD)
+11-20 21:22:55.972  3214  3214 D gpsd    : WakeLock(Release,GPSD)
+11-20 21:22:55.972  3214  3214 D gpsd    : WakeLock(Acquire,GPSD)
+11-20 21:22:55.972  3214  3214 D gpsd    : WakeLock(Release,GPSD)
+11-20 21:22:56.809  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedInputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.809  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.809  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.809  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.809  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.ExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.809  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.809  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldArray from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.809  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.809  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.InternalNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.809  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.InvalidProtocolBufferNanoException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.809  3363  3580 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension$PrimitiveExtension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.810  3363  3580 W dex2oat : Skipping class com.android.framework.protobuf.nano.WireFormatNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.810  3363  3581 W dex2oat : Skipping class com.android.framework.protobuf.nano.UnknownFieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.810  3363  3580 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.810  3363  3581 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.810  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNanoCreator from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.811  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNanoPrinter from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.923  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.923  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.923  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.923  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.ExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.923  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.923  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension$PrimitiveExtension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.923  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldArray from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.923  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.924  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.InternalNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.924  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.InvalidProtocolBufferNanoException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.924  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.UnknownFieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.924  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.WireFormatNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.924  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNanoPrinter from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.924  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.924  3360  3591 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNanoCreator from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.925  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:56.926  3360  3588 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedInputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:22:59.122  3214  3622 D wrapperGPS: onError: error 4
+11-20 21:22:59.122  3214  3214 D gpsd    : WakeLock(Acquire,GPSD)
+11-20 21:23:00.885  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedInputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.885  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.ExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension$PrimitiveExtension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldArray from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.InternalNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.InvalidProtocolBufferNanoException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNanoPrinter from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.UnknownFieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.WireFormatNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.886  3363  3363 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNanoCreator from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:00.968  3363  3363 I dex2oat : Explicit concurrent mark sweep GC freed 49156(7MB) AllocSpace objects, 0(0B) LOS objects, 35% free, 7MB/11MB, paused 77us total 34.410ms
+11-20 21:23:01.114  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedInputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.114  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.ExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension$PrimitiveExtension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldArray from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.InternalNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.InvalidProtocolBufferNanoException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNanoPrinter from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.UnknownFieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.WireFormatNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.115  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNanoCreator from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:01.211  3360  3360 I dex2oat : Explicit concurrent mark sweep GC freed 49183(11MB) AllocSpace objects, 0(0B) LOS objects, 27% free, 10MB/14MB, paused 98us total 40.790ms
+11-20 21:23:02.832  3363  3363 I dex2oat : Method exceeds compiler instruction limit: 25337 in void org.ccil.cowan.tagsoup.HTMLSchema.<init>()
+11-20 21:23:03.820  3360  3360 I dex2oat : Method exceeds compiler instruction limit: 25337 in void org.ccil.cowan.tagsoup.HTMLSchema.<init>()
+11-20 21:23:03.835  3363  3363 W dex2oat : Compilation of boolean android.content.pm.IPackageManager$Stub.onTransact(int, android.os.Parcel, android.os.Parcel, int) took 197.669ms
+11-20 21:23:04.935  3363  3581 W dex2oat : Compilation of void android.os.BatteryStats.dumpCheckinLocked(android.content.Context, java.io.PrintWriter, int, int, boolean) took 133.007ms
+11-20 21:23:04.945  3360  3590 W dex2oat : Compilation of boolean android.content.pm.IPackageManager$Stub.onTransact(int, android.os.Parcel, android.os.Parcel, int) took 192.725ms
+11-20 21:23:05.276  3363  3581 W dex2oat : Compilation of void android.os.BatteryStats.dumpLocked(android.content.Context, java.io.PrintWriter, java.lang.String, int, int, boolean) took 315.871ms
+11-20 21:23:05.620  3360  3588 W dex2oat : Compilation of void android.media.MediaCodecInfo$VideoCapabilities.applyLevelLimits() took 105.743ms
+11-20 21:23:06.225  3360  3591 W dex2oat : Compilation of boolean android.os.INetworkManagementService$Stub.onTransact(int, android.os.Parcel, android.os.Parcel, int) took 140.275ms
+11-20 21:23:06.380  3360  3592 W dex2oat : Compilation of void android.os.BatteryStats.dumpCheckinLocked(android.content.Context, java.io.PrintWriter, int, int, boolean) took 305.649ms
+11-20 21:23:06.887  3360  3592 W dex2oat : Compilation of void android.os.BatteryStats.dumpLocked(android.content.Context, java.io.PrintWriter, java.lang.String, int, int, boolean) took 438.797ms
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedInputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.ExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension$PrimitiveExtension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldArray from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.InternalNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.InvalidProtocolBufferNanoException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNanoPrinter from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.UnknownFieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.WireFormatNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.978  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.979  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:06.979  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNanoCreator from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3580 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedInputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3582 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3582 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3584 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension$PrimitiveExtension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3584 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3584 W dex2oat : Skipping class com.android.framework.protobuf.nano.InvalidProtocolBufferNanoException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3582 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldArray from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3582 W dex2oat : Skipping class com.android.framework.protobuf.nano.UnknownFieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3582 W dex2oat : Skipping class com.android.framework.protobuf.nano.WireFormatNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3584 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNanoPrinter from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.152  3363  3584 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNanoCreator from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.156  3363  3580 W dex2oat : Skipping class com.android.framework.protobuf.nano.ExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.156  3363  3583 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.156  3363  3579 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.157  3363  3582 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.158  3363  3581 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.158  3363  3585 W dex2oat : Skipping class com.android.framework.protobuf.nano.InternalNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedInputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.ExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension$PrimitiveExtension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldArray from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.InternalNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.InvalidProtocolBufferNanoException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNanoPrinter from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.UnknownFieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.WireFormatNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.485  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNanoCreator from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:08.671  3363  3363 I dex2oat : Explicit concurrent mark sweep GC freed 38386(4MB) AllocSpace objects, 0(0B) LOS objects, 47% free, 4MB/8MB, paused 80us total 21.768ms
+11-20 21:23:09.267  3360  3592 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedInputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3591 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3592 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3588 W dex2oat : Skipping class com.android.framework.protobuf.nano.InvalidProtocolBufferNanoException from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.Extension$PrimitiveExtension from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.WireFormatNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.CodedOutputByteBufferNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3590 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3592 W dex2oat : Skipping class com.android.framework.protobuf.nano.MessageNanoPrinter from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3586 W dex2oat : Skipping class com.android.framework.protobuf.nano.ExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.268  3360  3588 W dex2oat : Skipping class com.android.framework.protobuf.nano.UnknownFieldData from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.271  3360  3589 W dex2oat : Skipping class com.android.framework.protobuf.nano.FieldArray from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.271  3360  3587 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableExtendableMessageNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.271  3360  3360 W dex2oat : Skipping class com.android.framework.protobuf.nano.android.ParcelableMessageNanoCreator from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.272  3360  3591 W dex2oat : Skipping class com.android.framework.protobuf.nano.InternalNano from /system/framework/telephony-common.jar previously found in /system/framework/framework.jar:classes2.dex
+11-20 21:23:09.641  3360  3360 I dex2oat : Explicit concurrent mark sweep GC freed 38381(7MB) AllocSpace objects, 0(0B) LOS objects, 43% free, 5MB/9MB, paused 123us total 23.983ms
+11-20 21:23:10.355  3363  3363 I dex2oat : dex2oat took 16.951s (threads: 8) arena alloc=21MB (22438344B) java alloc=4MB (4624024B) native alloc=78MB (82063000B) free=15MB (15978856B)
+11-20 21:23:10.395  3216  3216 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-20 21:23:10.423  3216  3216 I Radio-JNI: register_android_hardware_Radio DONE
+11-20 21:23:10.425  3216  3216 I SamplingProfilerIntegration: Profiling disabled.
+11-20 21:23:10.426  3216  3216 D Zygote  : begin preload
+11-20 21:23:10.426  3216  3216 I Zygote  : Installing ICU cache reference pinning...
+11-20 21:23:10.426  3216  3216 I Zygote  : Preloading ICU data...
+11-20 21:23:10.438  3216  3216 I Zygote  : Preloading classes...
+11-20 21:23:10.440  3216  3216 W Zygote  : Class not found for preloading: [Landroid.view.Display$ColorTransform;
+11-20 21:23:10.556  3216  3216 E Typeface: Error mapping font file /system/fonts/DroidSansFallback.ttf
+11-20 21:23:10.639  3216  3216 I art     : Thread[1,tid=3216,Native,Thread*=0xf4805400,peer=0x12c070d0,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+11-20 21:23:10.639  3216  3216 D MtpDeviceJNI: register_android_mtp_MtpDevice
+11-20 21:23:10.639  3216  3216 I art     : Thread[1,tid=3216,Native,Thread*=0xf4805400,peer=0x12c070d0,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+11-20 21:23:10.639  3216  3216 I art     : Thread[1,tid=3216,Native,Thread*=0xf4805400,peer=0x12c070d0,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+11-20 21:23:10.656  3216  3216 E FFMPEGSoftCodec: Failed to load FFMPEG plugin: (null)
+11-20 21:23:10.717  3216  3216 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform
+11-20 21:23:10.717  3216  3216 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform$1
+11-20 21:23:10.727  3216  3216 W System  : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+11-20 21:23:10.774  3216  3216 I System  : Loaded time zone names for "" in 26ms (25ms in ICU)
+11-20 21:23:10.785  3216  3216 I System  : Loaded time zone names for "en_US" in 10ms (9ms in ICU)
+11-20 21:23:10.799  3216  3216 I Zygote  : ...preloaded 4158 classes in 361ms.
+11-20 21:23:10.799  3216  3216 I art     : VMRuntime.preloadDexCaches starting
+11-20 21:23:10.854  3216  3216 I art     : VMRuntime.preloadDexCaches strings total=288447 before=37242 after=37242
+11-20 21:23:10.854  3216  3216 I art     : VMRuntime.preloadDexCaches types total=23810 before=7912 after=7943
+11-20 21:23:10.854  3216  3216 I art     : VMRuntime.preloadDexCaches fields total=113943 before=41389 after=41620
+11-20 21:23:10.854  3216  3216 I art     : VMRuntime.preloadDexCaches methods total=199719 before=82845 after=83440
+11-20 21:23:10.854  3216  3216 I art     : VMRuntime.preloadDexCaches finished
+11-20 21:23:10.854  3216  3216 I Zygote  : Preloading resources...
+11-20 21:23:11.059  3216  3216 W Resources: Preloaded drawable resource #0x108025c (android:drawable/dialog_background_material) that varies with configuration!!
+11-20 21:23:11.063  3216  3216 W Resources: Preloaded color resource #0x10600ea (android:color/material_grey_800) that varies with configuration!!
+11-20 21:23:11.064  3216  3216 W Resources: Preloaded drawable resource #0x10802c9 (android:drawable/floating_popup_background_dark) that varies with configuration!!
+11-20 21:23:11.143  3216  3216 I Zygote  : ...preloaded 114 resources in 288ms.
+11-20 21:23:11.145  3216  3216 W Resources: Preloaded color resource #0x1060114 (android:color/background_cache_hint_selector_material_dark) that varies with configuration!!
+11-20 21:23:11.146  3216  3216 W Resources: Preloaded color resource #0x1060119 (android:color/btn_default_material_dark) that varies with configuration!!
+11-20 21:23:11.146  3216  3216 I Zygote  : ...preloaded 41 resources in 3ms.
+11-20 21:23:11.147  3216  3216 I Zygote  : ...preloaded 2 resource in 0ms.
+11-20 21:23:11.181  3216  3216 D libEGL  : loaded /vendor/lib/egl/libGLES_mali.so
+11-20 21:23:11.195  3216  3216 I Zygote  : Preloading shared libraries...
+11-20 21:23:11.202  3216  3216 I Zygote  : Uninstalled ICU cache reference pinning...
+11-20 21:23:11.203  3216  3216 I Zygote  : Installed AndroidKeyStoreProvider in 1ms.
+11-20 21:23:11.208  3216  3216 I Zygote  : Warmed up JCA providers in 5ms.
+11-20 21:23:11.208  3216  3216 D Zygote  : end preload
+11-20 21:23:11.208  3216  3216 I art     : Starting a blocking GC Explicit
+11-20 21:23:11.216  3216  3216 I art     : Explicit concurrent mark sweep GC freed 7478(415KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 8MB/13MB, paused 88us total 7.134ms
+11-20 21:23:11.216  3216  3216 I art     : Starting a blocking GC Explicit
+11-20 21:23:11.223  3216  3216 I art     : Explicit concurrent mark sweep GC freed 1549(55KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 7MB/13MB, paused 80us total 6.146ms
+11-20 21:23:11.240  3216  3216 I Zygote  : Accepting command socket connections
+11-20 21:23:11.399  3360  3360 I dex2oat : dex2oat took 17.986s (threads: 8) arena alloc=18MB (19751032B) java alloc=5MB (5367680B) native alloc=94MB (99506176B) free=12MB (12822528B)
+11-20 21:23:11.443  3215  3215 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-20 21:23:11.479  3215  3215 I Radio-JNI: register_android_hardware_Radio DONE
+11-20 21:23:11.481  3215  3215 I SamplingProfilerIntegration: Profiling disabled.
+11-20 21:23:11.481  3215  3215 D Zygote  : begin preload
+11-20 21:23:11.481  3215  3215 I Zygote  : Installing ICU cache reference pinning...
+11-20 21:23:11.481  3215  3215 I Zygote  : Preloading ICU data...
+11-20 21:23:11.490  3215  3215 I Zygote  : Preloading classes...
+11-20 21:23:11.491  3215  3215 W Zygote  : Class not found for preloading: [Landroid.view.Display$ColorTransform;
+11-20 21:23:11.527  3215  3215 E Typeface: Error mapping font file /system/fonts/DroidSansFallback.ttf
+11-20 21:23:11.589  3215  3215 I art     : Thread[1,tid=3215,Native,Thread*=0x7fab095a00,peer=0x12c070d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+11-20 21:23:11.589  3215  3215 D MtpDeviceJNI: register_android_mtp_MtpDevice
+11-20 21:23:11.590  3215  3215 I art     : Thread[1,tid=3215,Native,Thread*=0x7fab095a00,peer=0x12c070d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+11-20 21:23:11.590  3215  3215 I art     : Thread[1,tid=3215,Native,Thread*=0x7fab095a00,peer=0x12c070d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+11-20 21:23:11.606  3215  3215 E FFMPEGSoftCodec: Failed to load FFMPEG plugin: (null)
+11-20 21:23:11.628  3215  3215 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform
+11-20 21:23:11.628  3215  3215 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform$1
+11-20 21:23:11.636  3215  3215 W System  : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+11-20 21:23:11.670  3215  3215 I System  : Loaded time zone names for "" in 17ms (16ms in ICU)
+11-20 21:23:11.679  3215  3215 I System  : Loaded time zone names for "en_US" in 9ms (8ms in ICU)
+11-20 21:23:11.692  3215  3215 I Zygote  : ...preloaded 4158 classes in 201ms.
+11-20 21:23:11.692  3215  3215 I art     : VMRuntime.preloadDexCaches starting
+11-20 21:23:11.730  3215  3215 I art     : VMRuntime.preloadDexCaches strings total=288447 before=37242 after=37242
+11-20 21:23:11.731  3215  3215 I art     : VMRuntime.preloadDexCaches types total=23810 before=7912 after=7943
+11-20 21:23:11.731  3215  3215 I art     : VMRuntime.preloadDexCaches fields total=113943 before=41389 after=41620
+11-20 21:23:11.731  3215  3215 I art     : VMRuntime.preloadDexCaches methods total=199719 before=82845 after=83440
+11-20 21:23:11.731  3215  3215 I art     : VMRuntime.preloadDexCaches finished
+11-20 21:23:11.731  3215  3215 I Zygote  : Preloading resources...
+11-20 21:23:11.744  3215  3215 W Resources: Preloaded drawable resource #0x108025c (android:drawable/dialog_background_material) that varies with configuration!!
+11-20 21:23:11.747  3215  3215 W Resources: Preloaded color resource #0x10600ea (android:color/material_grey_800) that varies with configuration!!
+11-20 21:23:11.747  3215  3215 W Resources: Preloaded drawable resource #0x10802c9 (android:drawable/floating_popup_background_dark) that varies with configuration!!
+11-20 21:23:11.805  3215  3215 I Zygote  : ...preloaded 114 resources in 74ms.
+11-20 21:23:11.807  3215  3215 W Resources: Preloaded color resource #0x1060114 (android:color/background_cache_hint_selector_material_dark) that varies with configuration!!
+11-20 21:23:11.808  3215  3215 W Resources: Preloaded color resource #0x1060119 (android:color/btn_default_material_dark) that varies with configuration!!
+11-20 21:23:11.808  3215  3215 I Zygote  : ...preloaded 41 resources in 3ms.
+11-20 21:23:11.809  3215  3215 I Zygote  : ...preloaded 2 resource in 0ms.
+11-20 21:23:11.818  3215  3215 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+11-20 21:23:11.826  3215  3215 I Zygote  : Preloading shared libraries...
+11-20 21:23:11.833  3215  3215 I Zygote  : Uninstalled ICU cache reference pinning...
+11-20 21:23:11.834  3215  3215 I Zygote  : Installed AndroidKeyStoreProvider in 1ms.
+11-20 21:23:11.839  3215  3215 I Zygote  : Warmed up JCA providers in 4ms.
+11-20 21:23:11.839  3215  3215 D Zygote  : end preload
+11-20 21:23:11.839  3215  3215 I art     : Starting a blocking GC Explicit
+11-20 21:23:11.845  3215  3215 I art     : Explicit concurrent mark sweep GC freed 7312(408KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 8MB/13MB, paused 59us total 6.284ms
+11-20 21:23:11.846  3215  3215 I art     : Starting a blocking GC Explicit
+11-20 21:23:11.851  3215  3215 I art     : Explicit concurrent mark sweep GC freed 1581(56KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 7MB/13MB, paused 52us total 5.461ms
+11-20 21:23:11.868  3215  3651 I art     : Starting a blocking GC HeapTrim
+11-20 21:23:11.869  3215  3215 I art     : Starting a blocking GC Background
+11-20 21:23:11.889  3215  3215 I Zygote  : System server process 3653 has been created
+11-20 21:23:11.890  3215  3215 I Zygote  : Accepting command socket connections
+11-20 21:23:11.887  3653  3653 I main    : type=1400 audit(0.0:118): avc: denied { sys_nice } for capability=23 scontext=u:r:zygote:s0 tcontext=u:r:zygote:s0 tclass=capability permissive=1
+11-20 21:23:11.887  3653  3653 W main    : type=1300 audit(0.0:118): arch=c00000b7 syscall=119 success=yes exit=0 a0=e45 a1=0 a2=7fd371aef0 a3=0 items=0 ppid=3215 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 exe="/system/bin/app_process64" subj=u:r:zygote:s0 key=(null)
+11-20 21:23:11.887  3123  3123 W auditd  : type=1327 audit(0.0:118): proctitle="zygote64"
+11-20 21:23:11.887  3123  3123 W auditd  : type=1320 audit(0.0:118): 
+11-20 21:23:11.894  3653  3653 I Zygote  : Process: zygote socket opened, supported ABIS: armeabi-v7a,armeabi
+11-20 21:23:11.895  3653  3653 I InstallerConnection: connecting...
+11-20 21:23:11.895  3219  3219 I         : new connection
+11-20 21:23:11.913  3664  3664 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:12.174  3664  3664 I dex2oat : dex2oat took 261.837ms (threads: 8) arena alloc=2MB (2556616B) java alloc=750KB (768088B) native alloc=2MB (3093048B) free=4MB (4771272B)
+11-20 21:23:12.195  3674  3674 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:12.240  3674  3674 I dex2oat : dex2oat took 45.761ms (threads: 8) arena alloc=893KB (915440B) java alloc=113KB (115856B) native alloc=1253KB (1283096B) free=3MB (3959784B)
+11-20 21:23:12.259  3683  3683 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:13.285  3683  3687 W dex2oat : Compilation of void com.android.server.SystemServer.startOtherServices() took 170.704ms
+11-20 21:23:13.603  3683  3690 W dex2oat : Compilation of void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) took 118.714ms
+11-20 21:23:14.723  3683  3691 W dex2oat : Compilation of void com.android.server.pm.DefaultPermissionGrantPolicy.grantDefaultSystemHandlerPermissions(int) took 316.029ms
+11-20 21:23:14.932  3683  3687 W dex2oat : Compilation of android.content.pm.PackageParser$Package com.android.server.pm.PackageManagerService.scanPackageDirtyLI(android.content.pm.PackageParser$Package, int, int, long, android.os.UserHandle) took 110.736ms
+11-20 21:23:15.156  3683  3687 W dex2oat : Compilation of void com.android.server.pm.PackageManagerService.dump(java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]) took 108.520ms
+11-20 21:23:15.719  3683  3683 I dex2oat : dex2oat took 3.460s (threads: 8) arena alloc=17MB (18473944B) java alloc=3MB (3855592B) native alloc=32MB (34097472B) free=22MB (23312064B)
+11-20 21:23:15.745  3693  3693 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:15.982  3693  3693 I dex2oat : dex2oat took 237.466ms (threads: 8) arena alloc=1093KB (1119832B) java alloc=178KB (182520B) native alloc=2MB (2317096B) free=4MB (4498648B)
+11-20 21:23:16.001  3702  3702 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:16.668  3702  3702 I dex2oat : dex2oat took 667.239ms (threads: 8) arena alloc=10MB (11316288B) java alloc=696KB (713432B) native alloc=5MB (5740208B) free=14MB (15493456B)
+11-20 21:23:16.674  3653  3653 I InstallerConnection: disconnecting...
+11-20 21:23:16.674  3219  3219 E         : eof
+11-20 21:23:16.674  3219  3219 E         : failed to read size
+11-20 21:23:16.674  3219  3219 I         : closing connection
+11-20 21:23:16.677  3653  3653 W art     : Found duplicate classes, falling back to interpreter mode for /system/framework/wifi-service.jar
+11-20 21:23:16.677  3653  3653 W art     : Found duplicated class when checking oat files: 'Lcom/google/protobuf/nano/MessageNano;' in /system/framework/services.jar and /system/framework/wifi-service.jar
+11-20 21:23:16.702  3653  3653 I SystemServer: Entered the Android system server!
+11-20 21:23:16.722  3653  3653 I SystemServiceManager: Starting com.android.server.pm.Installer
+11-20 21:23:16.722  3653  3653 I Installer: Waiting for installd to be ready.
+11-20 21:23:16.722  3653  3653 I InstallerConnection: connecting...
+11-20 21:23:16.723  3219  3219 I         : new connection
+11-20 21:23:16.723  3653  3653 I SystemServiceManager: Starting com.android.server.am.ActivityManagerService$Lifecycle
+11-20 21:23:16.729  3653  3653 I ActivityManager: Memory class: 256
+11-20 21:23:16.729  3653  3714 I ServiceThread: Enabled StrictMode logging for ActivityManager looper.
+11-20 21:23:16.730  3653  3715 I ServiceThread: Enabled StrictMode logging for android.ui looper.
+11-20 21:23:16.735  3653  3653 D BatteryStatsImpl: Reading daily items from /data/system/batterystats-daily.xml
+11-20 21:23:16.759  3653  3653 I AppOps  : No existing app ops /data/system/appops.xml; starting empty
+11-20 21:23:16.792  3653  3653 I IntentFirewall: Read new rules (A:0 B:0 S:0)
+11-20 21:23:16.794  3653  3721 I ServiceThread: Enabled StrictMode logging for android.display looper.
+11-20 21:23:16.797  3653  3653 D AppOps  : AppOpsService published
+11-20 21:23:16.797  3653  3653 I SystemServiceManager: Starting com.android.server.power.PowerManagerService
+11-20 21:23:16.798  3653  3723 I ServiceThread: Enabled StrictMode logging for PowerManagerService looper.
+11-20 21:23:16.801  3653  3653 I SamsungPowerHAL: Initialized settings:
+11-20 21:23:16.801  3653  3653 I SamsungPowerHAL: max_freqs: cluster[0]: 1690000, cluster[1]: 2314000
+11-20 21:23:16.801  3653  3653 I SamsungPowerHAL: hispeed_freqs: cluster[0]: 1690000, cluster[1]: 2314000
+11-20 21:23:16.801  3653  3653 I SamsungPowerHAL: boostpulse_fd: 62
+11-20 21:23:16.801  3653  3653 I SamsungPowerHAL: touchscreen_power_path: /sys/class/input/input0/enabled
+11-20 21:23:16.801  3653  3653 I SamsungPowerHAL: touchkey_power_path: NULL
+11-20 21:23:16.801  3653  3653 W libsuspend: Error writing 'on' to /sys/power/state: Invalid argument
+11-20 21:23:16.801  3653  3653 I libsuspend: Selected wakeup count
+11-20 21:23:16.802  3653  3653 I SystemServiceManager: Starting com.android.server.lights.LightsService
+11-20 21:23:16.804  3653  3653 I SystemServiceManager: Starting com.android.server.display.DisplayManagerService
+11-20 21:23:16.805  3653  3653 I SystemServiceManager: Starting phase 100
+11-20 21:23:16.806  3653  3721 W LocalDisplayAdapter: Unable to get active color mode for display device 0
+11-20 21:23:16.806  3653  3721 E LocalDisplayAdapter: Default and active color mode is no longer available! Reverting to first available mode.
+11-20 21:23:16.807  3192  3623 E SurfaceFlinger: getDefaultDisplay: id=2 is not a valid default display id
+11-20 21:23:16.807  3653  3721 I DisplayManagerService: Display device added: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 1440 x 2960, modeId 1, defaultModeId 1, supportedModes [{id=1, width=1440, height=2960, fps=60.000004}], colorMode -22, supportedColorModes [-22], HdrCapabilities android.view.Display$HdrCapabilities@a69d6308, density 560, 522.514 x 525.762 dpi, appVsyncOff 1000000, presDeadline 16666666, touch INTERNAL, rotation 0, type BUILT_IN, state UNKNOWN, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
+11-20 21:23:16.807  3192  3192 D SurfaceFlinger: Set power mode=2, type=0 flinger=0x7f88e48000
+11-20 21:23:16.807  3192  3192 D SurfaceFlinger: Screen type=0 is already mode=2
+11-20 21:23:16.808  3653  3721 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+11-20 21:23:16.808  3653  3653 I SystemServer: StartPackageManagerService
+11-20 21:23:16.812  3653  3653 W FileUtils: Failed to chmod(/data/system/packages.list): android.system.ErrnoException: chmod failed: ENOENT (No such file or directory)
+11-20 21:23:16.843  3653  3653 D SELinuxMMAC: Using policy file /system/etc/security/mac_permissions.xml
+11-20 21:23:16.845  3653  3653 I PackageManager: No settings file; creating initial state
+11-20 21:23:16.862  3728  3728 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.109  3728  3728 I dex2oat : dex2oat took 247.032ms (threads: 8) arena alloc=2MB (2554216B) java alloc=686KB (702544B) native alloc=2MB (2580576B) free=5MB (5808032B)
+11-20 21:23:17.130  3737  3737 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.164  3737  3737 I dex2oat : dex2oat took 34.966ms (threads: 8) arena alloc=469KB (481080B) java alloc=250KB (256472B) native alloc=1286KB (1317408B) free=3MB (3401184B)
+11-20 21:23:17.183  3746  3746 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.214  3746  3746 I dex2oat : dex2oat took 31.325ms (threads: 8) arena alloc=247KB (253104B) java alloc=48KB (49240B) native alloc=1101KB (1127864B) free=1458KB (1493576B)
+11-20 21:23:17.233  3755  3755 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.291  3755  3755 I dex2oat : dex2oat took 58.825ms (threads: 8) arena alloc=3MB (3178232B) java alloc=150KB (154544B) native alloc=1272KB (1303512B) free=5MB (6036520B)
+11-20 21:23:17.309  3764  3764 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.342  3764  3764 I dex2oat : dex2oat took 33.514ms (threads: 8) arena alloc=758KB (776632B) java alloc=83KB (85040B) native alloc=987KB (1011648B) free=4MB (4231232B)
+11-20 21:23:17.361  3773  3773 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.453  3773  3773 I dex2oat : dex2oat took 92.531ms (threads: 8) arena alloc=1821KB (1865392B) java alloc=371KB (380832B) native alloc=1411KB (1445608B) free=4MB (4845848B)
+11-20 21:23:17.456  3653  3653 E art     : DexFile_getDexOptNeeded file '/system/framework/org.apache.http.legacy.jar' does not exist
+11-20 21:23:17.456  3653  3653 W PackageManager: Library not found: /system/framework/org.apache.http.legacy.jar
+11-20 21:23:17.472  3782  3782 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.500  3782  3782 I dex2oat : dex2oat took 28.199ms (threads: 8) arena alloc=458KB (469048B) java alloc=97KB (99640B) native alloc=1155KB (1182776B) free=2MB (3011528B)
+11-20 21:23:17.518  3791  3791 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.544  3791  3791 I dex2oat : dex2oat took 26.390ms (threads: 8) arena alloc=300KB (308168B) java alloc=88KB (90768B) native alloc=1099KB (1125776B) free=2MB (2544240B)
+11-20 21:23:17.562  3800  3800 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.584  3800  3800 I dex2oat : dex2oat took 22.782ms (threads: 8) arena alloc=84KB (86488B) java alloc=59KB (61128B) native alloc=1029KB (1054528B) free=2042KB (2091200B)
+11-20 21:23:17.602  3809  3809 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.636  3809  3809 I dex2oat : dex2oat took 34.808ms (threads: 8) arena alloc=506KB (518200B) java alloc=223KB (228496B) native alloc=1298KB (1329672B) free=3MB (3913208B)
+11-20 21:23:17.654  3818  3818 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.680  3818  3818 I dex2oat : dex2oat took 26.313ms (threads: 8) arena alloc=253KB (259560B) java alloc=37KB (38472B) native alloc=1108KB (1135112B) free=1451KB (1486328B)
+11-20 21:23:17.698  3827  3827 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.766  3827  3827 I dex2oat : dex2oat took 68.263ms (threads: 8) arena alloc=3MB (3675400B) java alloc=123KB (126240B) native alloc=1354KB (1387096B) free=6MB (7001512B)
+11-20 21:23:17.784  3836  3836 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.876  3836  3836 I dex2oat : dex2oat took 91.869ms (threads: 8) arena alloc=1651KB (1691080B) java alloc=348KB (357160B) native alloc=1290KB (1321240B) free=4MB (4970216B)
+11-20 21:23:17.879  3653  3653 E art     : DexFile_getDexOptNeeded file '/system/framework/org.apache.http.legacy.jar' does not exist
+11-20 21:23:17.879  3653  3653 W PackageManager: Library not found: /system/framework/org.apache.http.legacy.jar
+11-20 21:23:17.895  3845  3845 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.923  3845  3845 I dex2oat : dex2oat took 29.353ms (threads: 8) arena alloc=600KB (615024B) java alloc=73KB (75440B) native alloc=1145KB (1173136B) free=2MB (3021168B)
+11-20 21:23:17.941  3854  3854 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:17.968  3854  3854 I dex2oat : dex2oat took 26.811ms (threads: 8) arena alloc=322KB (330160B) java alloc=71KB (73656B) native alloc=1102KB (1128696B) free=1969KB (2017032B)
+11-20 21:23:17.986  3863  3863 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:18.008  3863  3863 I dex2oat : dex2oat took 23.202ms (threads: 8) arena alloc=102KB (105336B) java alloc=67KB (69312B) native alloc=1024KB (1049464B) free=2047KB (2096264B)
+11-20 21:23:18.011  3653  3653 D PackageManager: No files in app dir /vendor/overlay
+11-20 21:23:18.011  3653  3653 D PackageManager: start scanDirLI:/system/framework
+11-20 21:23:18.011  3653  3653 D PackageManager: max thread:6
+11-20 21:23:18.019  3653  3873 I PackageManager: /system/framework/org.cyanogenmod.platform-res.apk changed; collecting certs
+11-20 21:23:18.024  3653  3873 W PackageManager: Permission cyanogenmod.permission.WRITE_ALARMS from package cyanogenmod.platform in an unknown group android.permission-group.SYSTEM_CLOCK
+11-20 21:23:18.024  3653  3873 W PackageManager: Permission cyanogenmod.permission.MANAGE_ALARMS from package cyanogenmod.platform in an unknown group android.permission-group.SYSTEM_CLOCK
+11-20 21:23:18.024  3653  3873 W PackageManager: Permission cyanogenmod.permission.READ_ALARMS from package cyanogenmod.platform in an unknown group android.permission-group.SYSTEM_CLOCK
+11-20 21:23:18.024  3653  3872 I PackageManager: /system/framework/framework-res.apk changed; collecting certs
+11-20 21:23:18.078  3653  3653 D PackageManager: end scanDirLI:/system/framework
+11-20 21:23:18.080  3653  3653 D PackageManager: start scanDirLI:/system/priv-app
+11-20 21:23:18.080  3653  3653 D PackageManager: max thread:6
+11-20 21:23:18.086  3653  3874 I PackageManager: /system/priv-app/AudioFX changed; collecting certs
+11-20 21:23:18.086  3653  3876 I PackageManager: /system/priv-app/BlockedNumberProvider changed; collecting certs
+11-20 21:23:18.087  3653  3877 I PackageManager: /system/priv-app/CMAudioService changed; collecting certs
+11-20 21:23:18.087  3653  3872 I PackageManager: /system/priv-app/CMSettingsProvider changed; collecting certs
+11-20 21:23:18.089  3653  3875 I PackageManager: /system/priv-app/BackupRestoreConfirmation changed; collecting certs
+11-20 21:23:18.089  3653  3876 I PackageManager: New shared user android.uid.shared: id=10000
+11-20 21:23:18.094  3653  3877 I PackageManager: /system/priv-app/CallLogBackup changed; collecting certs
+11-20 21:23:18.096  3653  3873 I PackageManager: /system/priv-app/CMParts changed; collecting certs
+11-20 21:23:18.097  3653  3874 I PackageManager: /system/priv-app/CarrierConfig changed; collecting certs
+11-20 21:23:18.100  3653  3876 I PackageManager: /system/priv-app/CalendarProvider changed; collecting certs
+11-20 21:23:18.101  3653  3872 I PackageManager: /system/priv-app/CellBroadcastReceiver changed; collecting certs
+11-20 21:23:18.103  3653  3876 I PackageManager: New shared user android.uid.calendar: id=10005
+11-20 21:23:18.105  3653  3874 I PackageManager: /system/priv-app/CtsShimPrivPrebuilt changed; collecting certs
+11-20 21:23:18.106  3653  3877 I PackageManager: /system/priv-app/ContactsProvider changed; collecting certs
+11-20 21:23:18.116  3653  3876 I PackageManager: /system/priv-app/DefaultContainerService changed; collecting certs
+11-20 21:23:18.118  3653  3875 W PackageParser: No actions in intent filter at /system/priv-app/Contacts/Contacts.apk Binary XML file line #431
+11-20 21:23:18.119  3653  3875 I PackageManager: /system/priv-app/Contacts changed; collecting certs
+11-20 21:23:18.124  3653  3877 I PackageManager: /system/priv-app/DownloadProvider changed; collecting certs
+11-20 21:23:18.125  3653  3873 I PackageManager: /system/priv-app/DocumentsUI changed; collecting certs
+11-20 21:23:18.127  3653  3877 I PackageManager: New shared user android.media: id=10009
+11-20 21:23:18.128  3653  3877 W PackageManager: Permission android.permission.DOWNLOAD_WITHOUT_NOTIFICATION from package com.android.providers.downloads in an unknown group android.permission-group.NETWORK
+11-20 21:23:18.132  3653  3872 I PackageManager: /system/priv-app/Eleven changed; collecting certs
+11-20 21:23:18.135  3653  3877 I PackageManager: /system/priv-app/ExtServices changed; collecting certs
+11-20 21:23:18.136  3653  3876 I PackageManager: /system/priv-app/EmergencyInfo changed; collecting certs
+11-20 21:23:18.141  3653  3873 I PackageManager: /system/priv-app/ExternalStorageProvider changed; collecting certs
+11-20 21:23:18.144  3653  3877 I PackageManager: /system/priv-app/FusedLocation changed; collecting certs
+11-20 21:23:18.146  3653  3874 W PackageParser: No actions in intent filter at /system/priv-app/Dialer/Dialer.apk Binary XML file line #207
+11-20 21:23:18.148  3653  3874 I PackageManager: /system/priv-app/Dialer changed; collecting certs
+11-20 21:23:18.149  3653  3876 I PackageManager: New shared user com.android.emergency.uid: id=10014
+11-20 21:23:18.154  3653  3877 I PackageManager: /system/priv-app/InputDevices changed; collecting certs
+11-20 21:23:18.159  3653  3877 I PackageManager: /system/priv-app/MmsService changed; collecting certs
+11-20 21:23:18.163  3653  3875 I PackageManager: /system/priv-app/LineageSetupWizard changed; collecting certs
+11-20 21:23:18.163  3653  3873 I PackageManager: /system/priv-app/Gallery2 changed; collecting certs
+11-20 21:23:18.164  3653  3872 I PackageManager: /system/priv-app/MediaProvider changed; collecting certs
+11-20 21:23:18.165  3653  3876 I PackageManager: /system/priv-app/ManagedProvisioning changed; collecting certs
+11-20 21:23:18.166  3653  3877 I PackageManager: /system/priv-app/MtpDocumentsProvider changed; collecting certs
+11-20 21:23:18.173  3653  3872 I PackageManager: /system/priv-app/OneTimeInitializer changed; collecting certs
+11-20 21:23:18.173  3653  3877 I PackageManager: /system/priv-app/ProxyHandler changed; collecting certs
+11-20 21:23:18.182  3653  3874 I PackageManager: /system/priv-app/SharedStorageBackup changed; collecting certs
+11-20 21:23:18.182  3653  3875 I PackageManager: /system/priv-app/SettingsProvider changed; collecting certs
+11-20 21:23:18.186  3653  3872 I PackageManager: /system/priv-app/Recorder changed; collecting certs
+11-20 21:23:18.188  3653  3875 I PackageManager: /system/priv-app/StatementService changed; collecting certs
+11-20 21:23:18.189  3653  3876 I PackageManager: /system/priv-app/PackageInstaller changed; collecting certs
+11-20 21:23:18.190  3653  3874 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS in package: com.android.shell at: Binary XML file line #102
+11-20 21:23:18.190  3653  3874 I PackageManager: /system/priv-app/Shell changed; collecting certs
+11-20 21:23:18.202  3653  3874 I PackageManager: /system/priv-app/Tag changed; collecting certs
+11-20 21:23:18.207  3653  3872 I PackageManager: /system/priv-app/StorageManager changed; collecting certs
+11-20 21:23:18.211  3653  3876 I PackageManager: /system/priv-app/TelephonyProvider changed; collecting certs
+11-20 21:23:18.218  3653  3874 I PackageManager: /system/priv-app/Telecom changed; collecting certs
+11-20 21:23:18.220  3653  3875 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.CONFIGURE_WIFI_DISPLAY in package: com.android.systemui at: Binary XML file line #117
+11-20 21:23:18.223  3653  3876 I PackageManager: /system/priv-app/Trebuchet changed; collecting certs
+11-20 21:23:18.224  3653  3875 I PackageManager: /system/priv-app/SystemUI changed; collecting certs
+11-20 21:23:18.230  3653  3876 W PackageManager: Permission com.android.launcher.permission.INSTALL_SHORTCUT from package com.cyanogenmod.trebuchet in an unknown group android.permission-group.SYSTEM_TOOLS
+11-20 21:23:18.230  3653  3876 W PackageManager: Permission com.android.launcher3.permission.READ_SETTINGS from package com.cyanogenmod.trebuchet in an unknown group android.permission-group.SYSTEM_TOOLS
+11-20 21:23:18.230  3653  3876 W PackageManager: Permission com.android.launcher3.permission.WRITE_SETTINGS from package com.cyanogenmod.trebuchet in an unknown group android.permission-group.SYSTEM_TOOLS
+11-20 21:23:18.231  3653  3873 I PackageManager: /system/priv-app/TeleService changed; collecting certs
+11-20 21:23:18.234  3653  3872 I PackageManager: /system/priv-app/Updater changed; collecting certs
+11-20 21:23:18.236  3653  3874 I PackageManager: /system/priv-app/VpnDialogs changed; collecting certs
+11-20 21:23:18.238  3653  3876 I PackageManager: /system/priv-app/WallpaperCropper changed; collecting certs
+11-20 21:23:18.243  3653  3874 I PackageManager: /system/priv-app/WeatherManagerService changed; collecting certs
+11-20 21:23:18.247  3653  3872 I PackageManager: /system/priv-app/WeatherProvider changed; collecting certs
+11-20 21:23:18.257  3653  3877 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.USE_CREDENTIALS in package: com.android.settings at: Binary XML file line #56
+11-20 21:23:18.258  3653  3877 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.READ_SYNC_SETTINGS in package: com.android.settings at: Binary XML file line #61
+11-20 21:23:18.258  3653  3877 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.WRITE_SYNC_SETTINGS in package: com.android.settings at: Binary XML file line #62
+11-20 21:23:18.260  3653  3875 I PackageManager: New shared user android.uid.systemui: id=10033
+11-20 21:23:18.269  3653  3877 I PackageManager: /system/priv-app/Settings changed; collecting certs
+11-20 21:23:18.341  3653  3653 D PackageManager: end scanDirLI:/system/priv-app
+11-20 21:23:18.341  3653  3653 D PackageManager: start scanDirLI:/system/app
+11-20 21:23:18.341  3653  3653 D PackageManager: max thread:6
+11-20 21:23:18.345  3653  3875 I PackageManager: /system/app/BookmarkProvider changed; collecting certs
+11-20 21:23:18.345  3653  3874 I PackageManager: /system/app/BasicDreams changed; collecting certs
+11-20 21:23:18.346  3653  3873 I PackageManager: /system/app/BluetoothMidiService changed; collecting certs
+11-20 21:23:18.352  3653  3877 I PackageManager: /system/app/Calendar changed; collecting certs
+11-20 21:23:18.352  3653  3874 I PackageManager: /system/app/CaptivePortalLogin changed; collecting certs
+11-20 21:23:18.353  3653  3876 I PackageManager: /system/app/AdvancedDisplay changed; collecting certs
+11-20 21:23:18.354  3653  3872 W PackageParser: No actions in intent filter at /system/app/Bluetooth/Bluetooth.apk Binary XML file line #226
+11-20 21:23:18.355  3653  3872 I PackageManager: /system/app/Bluetooth changed; collecting certs
+11-20 21:23:18.355  3653  3873 I PackageManager: /system/app/CertInstaller changed; collecting certs
+11-20 21:23:18.360  3653  3874 I PackageManager: /system/app/CtsShimPrebuilt changed; collecting certs
+11-20 21:23:18.365  3653  3874 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+11-20 21:23:18.365  3653  3874 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+11-20 21:23:18.365  3653  3874 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+11-20 21:23:18.365  3653  3874 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+11-20 21:23:18.365  3653  3874 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+11-20 21:23:18.365  3653  3877 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.calendar activity: com.android.calendar.GoogleCalendarUriIntentFilter origPrio: 50
+11-20 21:23:18.368  3653  3875 I PackageManager: /system/app/Camera2 changed; collecting certs
+11-20 21:23:18.375  3653  3873 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.WRITE_SETTINGS in package: com.android.deskclock at: Binary XML file line #45
+11-20 21:23:18.375  3653  3876 I PackageManager: /system/app/EasterEgg changed; collecting certs
+11-20 21:23:18.377  3653  3877 I PackageManager: /system/app/DownloadProviderUi changed; collecting certs
+11-20 21:23:18.377  3653  3874 I PackageManager: /system/app/Development changed; collecting certs
+11-20 21:23:18.379  3653  3873 I PackageManager: /system/app/DeskClock changed; collecting certs
+11-20 21:23:18.385  3653  3874 I PackageManager: /system/app/ExtShared changed; collecting certs
+11-20 21:23:18.389  3653  3876 I PackageManager: /system/app/ExactCalculator changed; collecting certs
+11-20 21:23:18.391  3653  3874 I PackageManager: /system/app/HTMLViewer changed; collecting certs
+11-20 21:23:18.392  3653  3877 I PackageManager: /system/app/Exchange2 changed; collecting certs
+11-20 21:23:18.392  3653  3872 I PackageManager: /system/app/Email changed; collecting certs
+11-20 21:23:18.396  3653  3875 I PackageManager: /system/app/Jelly changed; collecting certs
+11-20 21:23:18.401  3653  3876 I PackageManager: /system/app/KeyChain changed; collecting certs
+11-20 21:23:18.407  3653  3876 I PackageManager: /system/app/PacProcessor changed; collecting certs
+11-20 21:23:18.407  3653  3873 I PackageManager: /system/app/LiveWallpapersPicker changed; collecting certs
+11-20 21:23:18.409  3653  3877 I PackageManager: /system/app/LockClock changed; collecting certs
+11-20 21:23:18.410  3653  3875 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.CHANGE_WIFI_STATE in package: com.android.nfc at: Binary XML file line #47
+11-20 21:23:18.410  3653  3875 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.ACCESS_WIFI_STATE in package: com.android.nfc at: Binary XML file line #48
+11-20 21:23:18.412  3653  3875 I PackageManager: /system/app/NfcNci changed; collecting certs
+11-20 21:23:18.415  3653  3872 W PackageManager: Permission com.android.email.permission.READ_ATTACHMENT from package com.android.email in an unknown group android.permission-group.MESSAGES
+11-20 21:23:18.417  3653  3876 I PackageManager: /system/app/PhotoTable changed; collecting certs
+11-20 21:23:18.421  3653  3872 I PackageManager: /system/app/PicoTts changed; collecting certs
+11-20 21:23:18.422  3653  3873 I PackageManager: /system/app/PrintRecommendationService changed; collecting certs
+11-20 21:23:18.425  3653  3874 I PackageManager: /system/app/LatinIME changed; collecting certs
+11-20 21:23:18.426  3653  3875 I PackageManager: /system/app/PrintSpooler changed; collecting certs
+11-20 21:23:18.427  3653  3876 I PackageManager: /system/app/Profiles changed; collecting certs
+11-20 21:23:18.428  3653  3877 I PackageManager: /system/app/Stk changed; collecting certs
+11-20 21:23:18.428  3653  3872 I PackageManager: /system/app/UserDictionaryProvider changed; collecting certs
+11-20 21:23:18.432  3653  3873 I PackageManager: /system/app/Terminal changed; collecting certs
+11-20 21:23:18.435  3653  3875 I PackageManager: /system/app/WAPPushManager changed; collecting certs
+11-20 21:23:18.435  3653  3876 I PackageManager: /system/app/WallpaperBackup changed; collecting certs
+11-20 21:23:18.438  3653  3877 W PackageManager: Failed to parse /system/app/mcRegistry: Missing base APK in /system/app/mcRegistry
+11-20 21:23:18.438  3653  3872 I PackageManager: /system/app/WallpaperPicker changed; collecting certs
+11-20 21:23:18.452  3653  3877 I PackageManager: /system/app/webview changed; collecting certs
+11-20 21:23:18.460  3653  3875 I PackageManager: /system/app/messaging changed; collecting certs
+11-20 21:23:18.742  3653  3653 D PackageManager: end scanDirLI:/system/app
+11-20 21:23:18.742  3653  3653 D PackageManager: No files in app dir /system/vendor/app
+11-20 21:23:18.742  3653  3653 D PackageManager: No files in app dir /oem/app
+11-20 21:23:18.743  3653  3653 D PackageManager: No files in app dir /data/app
+11-20 21:23:18.743  3653  3653 D PackageManager: No files in app dir /data/app-private
+11-20 21:23:18.743  3653  3653 D PackageManager: No files in app dir /data/app-ephemeral
+11-20 21:23:18.743  3653  3653 E PackageManager: There should probably be exactly one setup wizard; found 0: matches=[]
+11-20 21:23:18.743  3653  3653 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+11-20 21:23:18.743  3653  3653 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+11-20 21:23:18.743  3653  3653 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+11-20 21:23:18.743  3653  3653 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+11-20 21:23:18.743  3653  3653 W PackageManager: Protected action; cap priority to 0; package: com.android.packageinstaller activity: com.android.packageinstaller.PackageInstallerActivity origPrio: 1
+11-20 21:23:18.743  3653  3653 W PackageManager: Package com.android.gallery3d desires unavailable shared library com.google.android.media.effects; ignoring!
+11-20 21:23:18.743  3653  3653 W PackageManager: Package com.android.gallery3d desires unavailable shared library com.google.android.media.effects; ignoring!
+11-20 21:23:18.744  3653  3653 I PackageManager: Adjusting ABI for com.android.providers.downloads.ui to arm64-v8a (requirer=com.android.mtp, scannedPackage=null)
+11-20 21:23:18.744  3653  3653 I PackageManager: Adjusting ABI for com.android.providers.media to arm64-v8a (requirer=com.android.mtp, scannedPackage=null)
+11-20 21:23:18.744  3653  3653 I PackageManager: Adjusting ABI for com.android.providers.downloads to arm64-v8a (requirer=com.android.mtp, scannedPackage=null)
+11-20 21:23:18.744  3653  3653 I PackageManager: Adjusting ABI for org.cyanogenmod.cmparts to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.744  3653  3653 I PackageManager: Adjusting ABI for com.android.server.telecom to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.744  3653  3653 I PackageManager: Adjusting ABI for com.android.providers.settings to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.745  3653  3653 I PackageManager: Adjusting ABI for com.android.inputdevices to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.745  3653  3653 I PackageManager: Adjusting ABI for com.android.location.fused to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.745  3653  3653 I PackageManager: Adjusting ABI for com.cyanogenmod.settings.device to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.745  3653  3653 I PackageManager: Adjusting ABI for com.cyanogenmod.setupwizard to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.745  3653  3653 I PackageManager: Adjusting ABI for com.android.development to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.745  3653  3653 I PackageManager: Adjusting ABI for com.android.wallpaperbackup to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.745  3653  3653 I PackageManager: Adjusting ABI for com.android.settings to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.746  3653  3653 I PackageManager: Adjusting ABI for org.cyanogenmod.cmsettings to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.746  3653  3653 I PackageManager: Adjusting ABI for com.android.keychain to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.746  3653  3653 I PackageManager: Adjusting ABI for cyanogenmod.platform to arm64-v8a (requirer=android, scannedPackage=null)
+11-20 21:23:18.746  3219  3219 E         : invalid apk path '/system/framework/org.cyanogenmod.platform-res.apk' (bad prefix)
+11-20 21:23:18.746  3653  3653 I PackageManager: Time to scan packages: 1.9 seconds
+11-20 21:23:18.747  3653  3653 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+11-20 21:23:18.747  3653  3653 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+11-20 21:23:18.747  3653  3653 W PackageManager: Unknown permission cyanogenmod.permission.LEGALESE in package com.cyanogenmod.setupwizard
+11-20 21:23:18.747  3653  3653 W PackageManager: Unknown permission com.android.gallery3d.permission.STORAGE_CHANGE in package com.android.camera2
+11-20 21:23:18.747  3653  3653 W PackageManager: Unknown permission android.permission.NFC_UNLOCK in package com.android.nfc
+11-20 21:23:18.748  3653  3653 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+11-20 21:23:18.748  3653  3653 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+11-20 21:23:18.748  3653  3653 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+11-20 21:23:18.748  3653  3653 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.cyanogenmod.trebuchet
+11-20 21:23:18.748  3653  3653 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.cyanogenmod.trebuchet
+11-20 21:23:18.748  3653  3653 W PackageManager: Unknown permission com.google.android.permission.INSTALL_WEARABLE_PACKAGES in package com.android.packageinstaller
+11-20 21:23:18.748  3653  3653 W PackageManager: Not granting permission android.permission.DELETE_PACKAGES to package com.svox.pico (protectionLevel=18 flags=0x3808be45)
+11-20 21:23:18.748  3653  3653 W PackageManager: Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.android.dreams.phototable
+11-20 21:23:18.749  3653  3653 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+11-20 21:23:18.749  3653  3653 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.settings
+11-20 21:23:18.749  3653  3653 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.settings
+11-20 21:23:18.749  3653  3653 W PackageManager: Not granting permission android.permission.MANAGE_DOCUMENTS to package com.android.deskclock (protectionLevel=2 flags=0x3c49be45)
+11-20 21:23:18.750  3653  3653 W PackageManager: Unknown permission com.android.deskclock.worldclock.permissions.WRITE_DATABASE in package com.android.deskclock
+11-20 21:23:18.750  3653  3653 W PackageManager: Unknown permission org.codeaurora.permission.POWER_ON_ALERT in package com.android.deskclock
+11-20 21:23:18.750  3653  3653 W PackageManager: Not granting permission android.permission.WRITE_SECURE_SETTINGS to package com.android.deskclock (protectionLevel=50 flags=0x3c49be45)
+11-20 21:23:18.750  3653  3653 W PackageManager: Unknown permission com.cyanogenmod.lockclock.permission.READ_WEATHER in package com.android.systemui
+11-20 21:23:18.750  3653  3653 W PackageManager: Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.bluetooth
+11-20 21:23:18.750  3653  3653 W PackageManager: Unknown permission com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD in package com.android.development
+11-20 21:23:18.750  3653  3653 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.development
+11-20 21:23:18.750  3653  3653 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES in package com.android.development
+11-20 21:23:18.750  3653  3653 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser in package com.android.development
+11-20 21:23:18.751  3653  3653 V PackageManager: reconcileAppsData for null u0 0x3
+11-20 21:23:18.751  3219  3219 E SELinux : selinux_android_file_context_handle: Error getting file context handle (No such file or directory)
+11-20 21:23:18.814  3653  3653 V PackageManager: reconcileAppsData finished 91 packages
+11-20 21:23:18.814  3653  3653 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity
+11-20 21:23:18.814  3653  3653 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity
+11-20 21:23:18.814  3653  3653 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver
+11-20 21:23:18.814  3653  3653 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver
+11-20 21:23:18.814  3653  3653 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$SecretCodeReceiver
+11-20 21:23:18.814  3653  3653 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$SecretCodeReceiver
+11-20 21:23:18.814  3653  3653 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateServiceReceiver
+11-20 21:23:18.814  3653  3653 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateServiceReceiver
+11-20 21:23:18.814  3653  3653 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity
+11-20 21:23:18.815  3653  3653 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity
+11-20 21:23:18.815  3653  3653 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver
+11-20 21:23:18.815  3653  3653 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver
+11-20 21:23:18.815  3653  3653 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver
+11-20 21:23:18.815  3653  3653 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver
+11-20 21:23:18.815  3653  3653 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver
+11-20 21:23:18.815  3653  3653 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver
+11-20 21:23:18.815  3653  3653 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateServiceReceiver
+11-20 21:23:18.815  3653  3653 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateServiceReceiver
+11-20 21:23:18.815  3653  3653 V PackageManager: Enabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService
+11-20 21:23:18.815  3653  3653 W PackageManager: Unable to enable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService
+11-20 21:23:18.815  3653  3653 V PackageManager: Enabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService
+11-20 21:23:18.815  3653  3653 W PackageManager: Unable to enable com.google.android.gms/com.google.android.gms.update.SystemUpdateService
+11-20 21:23:18.852  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/TelephonyProvider/TelephonyProvider.apk pkg=com.android.providers.telephony isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:18.868  3878  3878 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:19.012  3878  3878 I dex2oat : dex2oat took 144.235ms (threads: 8) arena alloc=7MB (7811800B) java alloc=282KB (288824B) native alloc=1795KB (1838480B) free=11MB (12317296B)
+11-20 21:23:19.015  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/MmsService/MmsService.apk pkg=com.android.mms.service isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:19.031  3887  3887 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:19.089  3887  3887 I dex2oat : dex2oat took 58.530ms (threads: 8) arena alloc=2MB (2175592B) java alloc=249KB (255024B) native alloc=1585KB (1623160B) free=4MB (4668296B)
+11-20 21:23:19.092  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/DefaultContainerService/DefaultContainerService.apk pkg=com.android.defcontainer isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:19.107  3896  3896 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:19.140  3214  3214 D wrapperGPS: wrapperisConnected_RILD
+11-20 21:23:19.140  3214  3214 D wrapperGPS: wrapperConnect_RILD
+11-20 21:23:19.140  3214  3214 D gpsd    : WakeLock(Release,GPSD)
+11-20 21:23:19.142  3896  3896 I dex2oat : dex2oat took 34.497ms (threads: 8) arena alloc=528KB (540752B) java alloc=101KB (104128B) native alloc=1140KB (1167888B) free=1931KB (1977840B)
+11-20 21:23:19.144  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/SettingsProvider/SettingsProvider.apk pkg=com.android.providers.settings isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:19.160  3906  3906 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:19.326  3906  3906 I dex2oat : dex2oat took 167.015ms (threads: 8) arena alloc=6MB (6535256B) java alloc=279KB (286320B) native alloc=1609KB (1648416B) free=9MB (10410208B)
+11-20 21:23:19.330  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/InputDevices/InputDevices.apk pkg=com.android.inputdevices isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:19.346  3915  3915 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:19.369  3915  3915 I dex2oat : dex2oat took 23.539ms (threads: 8) arena alloc=15KB (15632B) java alloc=32KB (33200B) native alloc=865KB (886104B) free=1182KB (1211048B)
+11-20 21:23:19.371  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/ExtShared/ExtShared.apk pkg=android.ext.shared isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:19.386  3924  3924 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:19.409  3924  3924 I dex2oat : dex2oat took 23.235ms (threads: 8) arena alloc=78KB (79992B) java alloc=55KB (57056B) native alloc=894KB (915848B) free=2MB (2229880B)
+11-20 21:23:19.411  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Telecom/Telecom.apk pkg=com.android.server.telecom isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:19.427  3933  3933 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:19.771  3933  3933 I dex2oat : dex2oat took 344.321ms (threads: 8) arena alloc=3MB (3919272B) java alloc=1024KB (1049536B) native alloc=4MB (4211456B) free=6MB (7322880B)
+11-20 21:23:19.775  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Dialer/Dialer.apk pkg=com.android.dialer isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:19.792  3942  3942 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:19.964  3942  3948 W dex2oat : Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+11-20 21:23:19.976  3942  3944 W dex2oat : Before Android 4.1, method int android.support.v7.widget.ListViewCompat.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+11-20 21:23:21.270  3942  3942 I dex2oat : dex2oat took 1.478s (threads: 8) arena alloc=5MB (5300712B) java alloc=5MB (6087104B) native alloc=15MB (16164792B) free=7MB (7952456B)
+11-20 21:23:21.276  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/ExtServices/ExtServices.apk pkg=android.ext.services isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:21.292  3951  3951 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:21.324  3951  3951 I dex2oat : dex2oat took 31.854ms (threads: 8) arena alloc=337KB (345520B) java alloc=87KB (89968B) native alloc=1119KB (1146480B) free=2MB (3047824B)
+11-20 21:23:21.326  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/CMSettingsProvider/CMSettingsProvider.apk pkg=org.cyanogenmod.cmsettings isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:21.342  3960  3960 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:21.424  3960  3960 I dex2oat : dex2oat took 82.985ms (threads: 8) arena alloc=2MB (2348760B) java alloc=232KB (238376B) native alloc=1651KB (1691016B) free=5MB (5649016B)
+11-20 21:23:21.428  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/PackageInstaller/PackageInstaller.apk pkg=com.android.packageinstaller isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:21.444  3969  3969 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:21.519  3969  3977 W dex2oat : Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+11-20 21:23:21.534  3969  3971 W dex2oat : Before Android 4.1, method int android.support.v7.widget.ListViewCompat.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+11-20 21:23:22.115  3969  3969 I dex2oat : dex2oat took 671.441ms (threads: 8) arena alloc=3MB (4078552B) java alloc=3MB (3977424B) native alloc=6MB (7091488B) free=6MB (7064288B)
+11-20 21:23:22.119  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/ProxyHandler/ProxyHandler.apk pkg=com.android.proxyhandler isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:22.136  3978  3978 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+11-20 21:23:22.173  3978  3978 I dex2oat : dex2oat took 37.401ms (threads: 8) arena alloc=1264KB (1294936B) java alloc=113KB (116544B) native alloc=1182KB (1210376B) free=3MB (3508216B)
+11-20 21:23:22.176  3653  3653 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/LatinIME/LatinIME.apk pkg=com.android.inputmethod.latin isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+11-20 21:23:22.192  3987  3987 I dex2oat : /system/bin/dex2oat --compiler-filter=speed

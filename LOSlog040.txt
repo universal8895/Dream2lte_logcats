@@ -1,0 +1,1251 @@
+--------- beginning of main
+09-08 01:09:45.369  3074  3074 W auditd  : type=1325 audit(0.0:2): table=filter family=2 entries=0
+09-08 01:09:45.369  3074  3074 W auditd  : type=1325 audit(0.0:3): table=mangle family=2 entries=0
+09-08 01:09:45.369  3074  3074 W auditd  : type=1325 audit(0.0:4): table=nat family=2 entries=0
+09-08 01:09:45.369  3074  3074 W auditd  : type=1325 audit(0.0:5): table=raw family=2 entries=0
+09-08 01:09:45.369  3074  3074 W auditd  : type=1325 audit(0.0:6): table=security family=2 entries=0
+09-08 01:09:45.369  3074  3074 W auditd  : type=1325 audit(0.0:7): table=filter family=3 entries=0
+09-08 01:09:45.369  3074  3074 W auditd  : type=1325 audit(0.0:8): table=filter family=10 entries=0
+09-08 01:09:45.369  3074  3074 W auditd  : type=1325 audit(0.0:9): table=mangle family=10 entries=0
+09-08 01:09:45.369  3074  3074 W auditd  : type=1325 audit(0.0:10): table=raw family=10 entries=0
+09-08 01:09:45.369  3074  3074 W auditd  : type=1325 audit(0.0:11): table=nat family=10 entries=0
+09-08 01:09:45.551  3074  3074 I auditd  : type=1403 audit(0.0:12): policy loaded auid=4294967295 ses=4294967295
+09-08 01:09:46.299  3063  3063 I logd    : type=1400 audit(0.0:13): avc: denied { dac_override } for capability=1 scontext=u:r:logd:s0 tcontext=u:r:logd:s0 tclass=capability permissive=1
+09-08 01:09:46.299  3063  3063 W logd    : type=1300 audit(0.0:13): arch=c00000b7 syscall=48 success=yes exit=0 a0=ffffff9c a1=7fae2a534a a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 exe="/system/bin/logd" subj=u:r:logd:s0 key=(null)
+09-08 01:09:46.299  3074  3074 W auditd  : type=1327 audit(0.0:13): proctitle="/system/bin/logd"
+09-08 01:09:46.299  3074  3074 W auditd  : type=1320 audit(0.0:13): 
+09-08 01:09:46.303  3074  3074 W auditd  : type=1305 audit(0.0:14): audit_pid=3063 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+09-08 01:09:46.303  3074  3074 W auditd  : type=1305 audit(0.0:15): audit_rate_limit=20 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+--------- beginning of system
+09-08 01:09:46.331  3066  3066 I vold    : Vold 3.0 (the awakening) firing up
+09-08 01:09:46.331  3066  3066 V vold    : Detected support for: exfat ext4 f2fs ntfs vfat
+09-08 01:09:46.333  3066  3066 W Vold    : Tearing down stale mount /mnt/secure/asec
+09-08 01:09:46.345  3064  3064 I         : debuggerd: starting
+09-08 01:09:46.351  3066  3066 W Vold    : Tearing down stale mount /mnt/secure
+09-08 01:09:46.377  3066  3132 D vold    : e4crypt_init_user0
+09-08 01:09:46.377  3066  3132 D vold    : e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+09-08 01:09:46.377  3066  3132 D vold    : Preparing: /data/system/users/0
+09-08 01:09:46.378  3066  3132 D vold    : Preparing: /data/misc/profiles/cur/0
+09-08 01:09:46.378  3066  3132 D vold    : Preparing: /data/misc/profiles/cur/0/foreign-dex
+09-08 01:09:46.378  3066  3132 D vold    : Preparing: /data/system_de/0
+09-08 01:09:46.379  3066  3132 D vold    : Preparing: /data/misc_de/0
+09-08 01:09:46.379  3066  3132 D vold    : Preparing: /data/user_de/0
+09-08 01:09:46.379  3066  3132 D vold    : e4crypt_unlock_user_key 0 serial=0 token_present=0
+09-08 01:09:46.380  3066  3132 E vold    : Failed to chmod /data/system_ce/0: No such file or directory
+09-08 01:09:46.380  3066  3132 E vold    : Failed to chmod /data/misc_ce/0: No such file or directory
+09-08 01:09:46.380     1     1 I vdc     : 200 3067 Command succeeded
+09-08 01:09:46.387  3133  3133 I /system/bin/tzdatacheck: tzdata file /data/misc/zoneinfo/current/tzdata does not exist. No action required.
+09-08 01:09:46.399  3134  3134 D macloader: Deleting file /data/.cid.info
+09-08 01:09:46.401  3135  3135 I TeeMcDaemon: Registry search paths: [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:212]
+09-08 01:09:46.401  3135  3135 I TeeMcDaemon:   /data/misc/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-08 01:09:46.402  3135  3135 I TeeMcDaemon:   /efs/prov [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-08 01:09:46.402  3135  3135 I TeeMcDaemon:   /vendor/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-08 01:09:46.402  3135  3135 I TeeMcDaemon:   /system/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-08 01:09:46.402  3135  3135 I TeeMcDaemon: partition paths rp:  /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:223]
+09-08 01:09:46.402  3135  3135 I TeeMcDaemon: Initialise Secure World [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:253]
+09-08 01:09:46.405  3135  3135 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:295]
+09-08 01:09:46.417  3140  3140 I sysinit : Running /system/etc/init.d/00banner
+09-08 01:09:46.419     1     1 I init    : type=1400 audit(0.0:16): avc: denied { write } for name="serialnumber" dev="configfs" ino=20725 scontext=u:r:init:s0 tcontext=u:object_r:configfs:s0 tclass=file permissive=1
+09-08 01:09:46.419     1     1 I init    : type=1400 audit(0.0:17): avc: denied { create } for name="mtp.0" scontext=u:r:init:s0 tcontext=u:object_r:configfs:s0 tclass=lnk_file permissive=1
+09-08 01:09:46.419     1     1 I init    : type=1400 audit(0.0:18): avc: denied { write } for name="battery" dev="sysfs" ino=35512 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+09-08 01:09:46.427  3156  3156 I init    : type=1400 audit(0.0:19): avc: denied { entrypoint } for path="/system/bin/cbd" dev="sda17" ino=192 scontext=u:r:cbd:s0 tcontext=u:object_r:cpboot-daemon_exec:s0 tclass=file permissive=1
+09-08 01:09:46.427  3156  3156 W cbd     : type=1300 audit(0.0:19): arch=c00000b7 syscall=221 success=yes exit=0 a0=7fac5181c1 a1=7fac596680 a2=544098 a3=4 items=0 ppid=1 auid=4294967295 uid=0 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/cbd" subj=u:r:cbd:s0 key=(null)
+09-08 01:09:46.427  3074  3074 W auditd  : type=1327 audit(0.0:19): proctitle=2F73797374656D2F62696E2F636264002D64002D747373333130002D626D002D6D6D002D5000706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F524144494F002D6300706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F43505F4445425547
+09-08 01:09:46.427  3074  3074 W auditd  : type=1320 audit(0.0:19): 
+09-08 01:09:46.432  3150  3150 I cm      : _ _                                       
+09-08 01:09:46.433  3145  3145 I lowmemorykiller: Using in-kernel low memory killer interface
+09-08 01:09:46.435  3156  3156 I cbd     : type=1400 audit(0.0:20): avc: denied { read } for path="/system/bin/cbd" dev="sda17" ino=192 scontext=u:r:cbd:s0 tcontext=u:object_r:cpboot-daemon_exec:s0 tclass=file permissive=1
+09-08 01:09:46.435  3156  3156 W cbd     : type=1300 audit(0.0:20): arch=c00000b7 syscall=226 success=yes exit=0 a0=493000 a1=3000 a2=1 a3=1 items=0 ppid=1 auid=4294967295 uid=0 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/cbd" subj=u:r:cbd:s0 key=(null)
+09-08 01:09:46.435  3074  3074 W auditd  : type=1327 audit(0.0:20): proctitle=2F73797374656D2F62696E2F636264002D64002D747373333130002D626D002D6D6D002D5000706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F524144494F002D6300706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F43505F4445425547
+09-08 01:09:46.435  3074  3074 W auditd  : type=1320 audit(0.0:20): 
+09-08 01:09:46.439  3154  3154 I cm      : | (_)_ __   ___  __ _  __ _  ___  ___  ___ 
+09-08 01:09:46.448  3173  3173 I cm      : | | | '_ \ / _ \/ _` |/ _` |/ _ \/ _ \/ __|
+09-08 01:09:46.460  3166  3166 I         : installd firing up
+09-08 01:09:46.463  3158  3158 D wifiloader: Trigger initcall of deferred modules
+09-08 01:09:46.464  3147  3147 I SurfaceFlinger: SurfaceFlinger is starting
+09-08 01:09:46.465  3147  3147 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+09-08 01:09:46.473  3159  3159 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-08 01:09:46.474  3175  3175 I perfprofd: starting Android Wide Profiling daemon
+09-08 01:09:46.474  3175  3175 E perfprofd: unable to open configuration file /data/data/com.google.android.gms/files/perfprofd.conf
+09-08 01:09:46.475  3159  3159 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-08 01:09:46.475  3159  3159 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-08 01:09:46.475  3159  3159 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-08 01:09:46.475  3159  3159 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-08 01:09:46.475  3159  3159 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-08 01:09:46.475  3159  3159 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-08 01:09:46.475  3159  3159 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-08 01:09:46.475  3159  3159 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-08 01:09:46.475  3159  3159 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-08 01:09:46.475  3159  3159 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-08 01:09:46.475  3159  3159 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-08 01:09:46.475  3159  3159 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-08 01:09:46.475  3159  3159 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-08 01:09:46.475  3175  3175 I perfprofd: random seed set to 3972610930
+09-08 01:09:46.475  3159  3159 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-08 01:09:46.475  3159  3159 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-08 01:09:46.475  3159  3159 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-08 01:09:46.475  3167  3167 I keystore: Found keymaster0 module Keymaster OpenSSL HAL, version 2
+09-08 01:09:46.475  3167  3167 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 131: Creating device
+09-08 01:09:46.475  3167  3167 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 132: Device address: 0x7f9283e000
+09-08 01:09:46.475  3167  3167 I keystore: Keymaster0 module is software-only.  Using SoftKeymasterDevice instead.
+09-08 01:09:46.475  3167  3167 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 131: Creating device
+09-08 01:09:46.475  3167  3167 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 132: Device address: 0x7f9283e400
+09-08 01:09:46.485  3176  3176 I cm      : | | | | | |  __/ (_| | (_| |  __/ (_) \__ \
+09-08 01:09:46.491  3171  3171 I Netd    : Netd 1.0 starting
+09-08 01:09:46.492  3171  3171 D TetherController: Setting IP forward enable = 0
+09-08 01:09:46.495  3172  3172 I fingerprintd: Starting fingerprintd
+09-08 01:09:46.495  3171  3171 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:09:46.495  3171  3171 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:09:46.495  3171  3171 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:09:46.500  3182  3182 I cm      : |_|_|_| |_|\___|\__,_|\__, |\___|\___/|___/
+09-08 01:09:46.505  3135  3135 I TeeMcDaemon: TEE is ready [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:332]
+09-08 01:09:46.506  3135  3135 I TeeMcDaemon: t-base-EXYNOS64-Android-400A-V011-20170203_131128_25330_57476 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:280]
+09-08 01:09:46.507  3135  3135 I TeeMcDaemon: Specific partition path used for Store_1.tf, stored in /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:340]
+09-08 01:09:46.507  3135  3135 I TeeMcDaemon: Start services [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:304]
+09-08 01:09:46.507  3135  3135 I TeeMcDaemon: * start secure world interface [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-08 01:09:46.507  3135  3135 I TeeMcDaemon: * start filesystem [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-08 01:09:46.507  3135  3135 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:71]
+09-08 01:09:46.507  3135  3135 I TeeMcDaemon: driver open [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:84]
+09-08 01:09:46.507  3135  3135 I TeeMcDaemon: Kinibi access granted by the driver [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/common.cpp:217]
+09-08 01:09:46.509  3174  3174 I gatekeeperd: Starting gatekeeperd...
+09-08 01:09:46.510  3174  3174 W gatekeeperd: falling back to software GateKeeper
+09-08 01:09:46.514  3135  3185 I TeeMcDaemon: Start listening to secure world [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:466]
+09-08 01:09:46.516  3135  3185 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/07050501000000000000000000000020.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+09-08 01:09:46.517  3135  3135 I TeeMcDaemon: * start registry update [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-08 01:09:46.517  3135  3135 I TeeMcDaemon: * start registry server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-08 01:09:46.518  3135  3135 I TeeMcDaemon: * start debug session [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-08 01:09:46.518  3135  3185 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/08050500000000000000000000000000.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+09-08 01:09:46.518  3135  3187 I TeeMcDaemon: void FileSystem::Impl::run(): Start listening for request from STH2 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:443]
+09-08 01:09:46.519  3135  3135 I TeeMcDaemon: session opened [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/DebugSession.cpp:113]
+09-08 01:09:46.519  3135  3135 I TeeMcDaemon: Load secure drivers [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:318]
+09-08 01:09:46.519  3135  3135 I TeeMcDaemon: * loading /system/app/FFFFFFFF000000000000000000000001.drbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-08 01:09:46.520  3135  3188 I TeeRegistryUpdate: Starting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:85]
+09-08 01:09:46.527  3184  3184 I cm      :                       |___/
+09-08 01:09:46.528  3135  3135 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-08 01:09:46.530  3135  3189 I TeeMcDaemon: void RegistryServer::Impl::run(): Starting server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryServer.cpp:230]
+09-08 01:09:46.533  3135  3188 I TeeRegistryUpdate: Exiting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:143]
+09-08 01:09:46.539  3147  3147 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-08 01:09:46.554  3135  3135 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-08 01:09:46.557  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:09:46.559  3159  3159 D lhd     : OnIpcConnect
+09-08 01:09:46.560  3162  3162 D gpsd    : WakeLock(Release,SUPL)
+09-08 01:09:46.560  3162  3162 I gpsd_d  : GNSS: 282637
+09-08 01:09:46.561  3162  3162 I gpsd_d  : CustomerModule::Create chip info "Broadcom,BCM4774,282637" written into /data/system/gps//chip.info
+09-08 01:09:46.561  3162  3162 D wrapperGPS: wrapperOpenClient_RILD
+09-08 01:09:46.561  3162  3162 E wrapperGPS: wrapperOpenClient_RILD: RegisterUnsolicitedHandler() UNSOL_GPS_NOTI (11009)
+09-08 01:09:46.561  3162  3162 D wrapperGPS: wrapperRegisterRequestCompleteHandler
+09-08 01:09:46.561  3162  3162 D wrapperGPS: wrapperRegisterUnsolicitedHandler id(12009), handler(0x13b0dfd30)
+09-08 01:09:46.561  3162  3162 D wrapperGPS: wrapperRegisterErrorCallback
+09-08 01:09:46.561  3162  3162 D wrapperGPS: wrapperConnect_RILD
+09-08 01:09:46.574  3168  3168 I mediacodec: @@@ mediacodecservice starting
+09-08 01:09:46.575  3218  3218 I init    : type=1400 audit(0.0:21): avc: denied { create } for name="rild2" scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+09-08 01:09:46.575  3218  3218 W init    : type=1300 audit(0.0:21): arch=c00000b7 syscall=200 success=yes exit=0 a0=9 a1=7fc49eda28 a2=6e a3=ffffffffffffffff items=0 ppid=1 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 exe="/init" subj=u:r:init:s0 key=(null)
+09-08 01:09:46.575  3074  3074 W auditd  : type=1327 audit(0.0:21): proctitle=2F696E6974002D2D7365636F6E642D7374616765
+09-08 01:09:46.575  3074  3074 W auditd  : type=1320 audit(0.0:21): 
+09-08 01:09:46.575  3218  3218 I init    : type=1400 audit(0.0:22): avc: denied { setattr } for name="rild2" dev="tmpfs" ino=1148 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+09-08 01:09:46.575  3218  3218 W init    : type=1300 audit(0.0:22): arch=c00000b7 syscall=54 success=yes exit=0 a0=ffffff9c a1=7fc49eda2a a2=0 a3=3e9 items=0 ppid=1 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 exe="/init" subj=u:r:init:s0 key=(null)
+09-08 01:09:46.575  3074  3074 W auditd  : type=1327 audit(0.0:22): proctitle=2F696E6974002D2D7365636F6E642D7374616765
+09-08 01:09:46.575  3074  3074 W auditd  : type=1320 audit(0.0:22): 
+09-08 01:09:46.575  3168  3168 W /system/bin/mediacodec: libminijail: allowing syscall: clock_gettime
+09-08 01:09:46.575  3168  3168 W /system/bin/mediacodec: libminijail: allowing syscall: connect
+09-08 01:09:46.575  3168  3168 W /system/bin/mediacodec: libminijail: allowing syscall: fcntl64
+09-08 01:09:46.575  3168  3168 W /system/bin/mediacodec: libminijail: allowing syscall: socket
+09-08 01:09:46.575  3168  3168 W /system/bin/mediacodec: libminijail: allowing syscall: writev
+09-08 01:09:46.576  3168  3168 W /system/bin/mediacodec: libminijail: logging seccomp filter failures
+09-08 01:09:46.580  3147  3147 I gralloc : using (id=)
+09-08 01:09:46.580  3147  3147 I gralloc : xres         = 1440 px
+09-08 01:09:46.580  3147  3147 I gralloc : yres         = 2960 px
+09-08 01:09:46.580  3147  3147 I gralloc : width        = 70 mm (522.514282 dpi)
+09-08 01:09:46.580  3147  3147 I gralloc : height       = 143 mm (525.762268 dpi)
+09-08 01:09:46.580  3147  3147 I gralloc : refresh rate = 60.00 Hz
+09-08 01:09:46.582  3164  3164 I         : sMaxFastTracks = 8
+09-08 01:09:46.583  3164  3164 I audioserver: ServiceManager: 0xf6799440
+09-08 01:09:46.583  3164  3164 W BatteryNotifier: batterystats service unavailable!
+09-08 01:09:46.583  3164  3164 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:09:46.583  3164  3164 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:09:46.584  3200  3200 I cm      : Welcome to Android 7.1.2 / LineageOS-14.1-20170907-UNOFFICIAL-dream2lte
+09-08 01:09:46.585  3164  3164 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:09:46.585  3164  3164 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:09:46.585  3164  3164 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:09:46.585  3164  3164 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:09:46.606  3170  3170 V MediaUtils: physMem: 3645853696
+09-08 01:09:46.606  3170  3170 V MediaUtils: requested limit: 729170720
+09-08 01:09:46.606  3170  3170 V MediaUtils: actual limit: 729170720
+09-08 01:09:46.606  3170  3170 V MediaUtils: original limits: 4294967295/4294967295
+09-08 01:09:46.606  3170  3170 V MediaUtils: new limits: 729170720/4294967295
+09-08 01:09:46.606  3170  3170 W /system/bin/mediaextractor: libminijail: allowing syscall: clock_gettime
+09-08 01:09:46.606  3170  3170 W /system/bin/mediaextractor: libminijail: allowing syscall: connect
+09-08 01:09:46.606  3170  3170 W /system/bin/mediaextractor: libminijail: allowing syscall: fcntl64
+09-08 01:09:46.606  3170  3170 W /system/bin/mediaextractor: libminijail: allowing syscall: socket
+09-08 01:09:46.606  3170  3170 W /system/bin/mediaextractor: libminijail: allowing syscall: writev
+09-08 01:09:46.606  3223  3223 I sysinit : Running /system/etc/init.d/90userinit
+09-08 01:09:46.606  3169  3169 I mediaserver: ServiceManager: 0xf65994a0
+09-08 01:09:46.606  3170  3170 W /system/bin/mediaextractor: libminijail: logging seccomp filter failures
+09-08 01:09:46.611  3074  3074 W auditd  : type=1325 audit(0.0:23): table=filter family=2 entries=4
+09-08 01:09:46.611  3074  3074 W auditd  : type=1320 audit(0.0:23): 
+09-08 01:09:46.614  3147  3147 W hwcomposer: invalid refresh rate, assuming 60 Hz
+09-08 01:09:46.614  3147  3147 D hwcomposer: using
+09-08 01:09:46.614  3147  3147 D hwcomposer: xres         = 1440 px
+09-08 01:09:46.614  3147  3147 D hwcomposer: yres         = 2960 px
+09-08 01:09:46.614  3147  3147 D hwcomposer: width        = 70 mm (522.514000 dpi)
+09-08 01:09:46.614  3147  3147 D hwcomposer: height       = 143 mm (525.762000 dpi)
+09-08 01:09:46.614  3147  3147 D hwcomposer: refresh rate = 60 Hz
+09-08 01:09:46.614  3147  3147 I hwcomposer: PSR info devname = /sys/devices/platform/12860000.decon_f/psr_info
+09-08 01:09:46.614  3147  3147 I hwcomposer: PSR mode is 2(0: video mode, 1: DP PSR mode, 2: MIPI-DSI command mode)
+09-08 01:09:46.615  3074  3074 W auditd  : type=1325 audit(0.0:24): table=filter family=10 entries=4
+09-08 01:09:46.615  3074  3074 W auditd  : type=1320 audit(0.0:24): 
+09-08 01:09:46.615  3147  3147 I SurfaceFlinger: Using composer version 1.4
+09-08 01:09:46.615  3147  3147 E display : unknown display attribute 6
+09-08 01:09:46.615  3147  3147 I SurfaceFlinger: EGL information:
+09-08 01:09:46.615  3147  3147 I SurfaceFlinger: vendor    : Android
+09-08 01:09:46.615  3147  3147 I SurfaceFlinger: version   : 1.4 Android META-EGL
+09-08 01:09:46.615  3147  3147 I SurfaceFlinger: extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_swap_buffers_with_damage EGL_ANDROID_create_native_client_buffer EGL_ANDROID_front_buffer_auto_refresh EGL_KHR_image EGL_KHR_image_base EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_fence_sync EGL_KHR_create_context EGL_KHR_config_attribs EGL_KHR_surfaceless_context EGL_EXT_create_context_robustness EGL_ANDROID_image_native_buffer EGL_KHR_wait_sync EGL_ANDROID_recordable EGL_KHR_partial_update EGL_KHR_mutable_render_buffer EGL_EXT_protected_content 
+09-08 01:09:46.615  3147  3147 I SurfaceFlinger: Client API: OpenGL_ES
+09-08 01:09:46.615  3147  3147 I SurfaceFlinger: EGLSurface: 8-8-8-8, config=0x7fa4669138
+09-08 01:09:46.617  3135  3187 I TeeMcDaemon: TEEC_Result Partition::open(): Open storage file "/efs/TEE/Store_1.tf" [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:157]
+09-08 01:09:46.618  3135  3187 I TeeMcDaemon: TEEC_Result Partition::open(): storage file "/efs/TEE/Store_1.tf" successfully open (size: 23 KB / 23552 B)) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:166]
+09-08 01:09:46.623  3074  3074 W auditd  : type=1325 audit(0.0:25): table=filter family=2 entries=6
+09-08 01:09:46.623  3074  3074 W auditd  : type=1320 audit(0.0:25): 
+09-08 01:09:46.626  3147  3147 I SurfaceFlinger: OpenGL ES informations:
+09-08 01:09:46.626  3147  3147 I SurfaceFlinger: vendor    : ARM
+09-08 01:09:46.626  3147  3147 I SurfaceFlinger: renderer  : Mali-G71
+09-08 01:09:46.626  3147  3147 I SurfaceFlinger: version   : OpenGL ES 3.2 v1.r3p0-00rel0.52a2c5ce14e045eb8b9074c171442f91
+09-08 01:09:46.626  3147  3147 I SurfaceFlinger: extensions: GL_EXT_debug_marker GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_EXT_read_format_bgra GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_image_external_essl3 GL_OES_EGL_sync GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_required_internalformat GL_OES_vertex_array_object GL_OES_mapbuffer GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_type_2_10_10_10_REV GL_OES_fbo_render_mipmap GL_OES_element_index_uint GL_EXT_shadow_samplers GL_OES_texture_compression_astc GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_KHR_texture_compression_astc_sliced_3d GL_KHR_debug GL_EXT_occlusion_query_boolean GL_EXT_disjoint_timer_query GL_EXT_blend_minmax GL_EXT_discard_framebuffer GL_OES_get_program_binary GL_OES_texture_3D GL_EXT_texture_storage GL_EXT_multisamp
+09-08 01:09:46.626  3147  3147 I SurfaceFlinger: GL_MAX_TEXTURE_SIZE = 16384
+09-08 01:09:46.626  3147  3147 I SurfaceFlinger: GL_MAX_VIEWPORT_DIMS = 16384
+09-08 01:09:46.627  3135  3135 I mcDriverDaemon: type=1400 audit(0.0:26): avc: denied { read } for name="t-base-tui" dev="tmpfs" ino=16333 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:09:46.627  3135  3135 I mcDriverDaemon: type=1400 audit(0.0:26): avc: denied { open } for path="/dev/t-base-tui" dev="tmpfs" ino=16333 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:09:46.627  3135  3135 W mcDriverDaemon: type=1300 audit(0.0:26): arch=c00000b7 syscall=56 success=yes exit=9 a0=ffffff9c a1=4a89cb a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 exe="/system/bin/mcDriverDaemon" subj=u:r:tee:s0 key=(null)
+09-08 01:09:46.627  3074  3074 W auditd  : type=1327 audit(0.0:26): proctitle=2F73797374656D2F62696E2F6D634472697665724461656D6F6E002D72002F73797374656D2F6170702F46464646464646463030303030303030303030303030303030303030303030312E647262696E002D72002F73797374656D2F6170702F6D6352656769737472792F666666666666666664303030303030303030303030
+09-08 01:09:46.627  3074  3074 W auditd  : type=1320 audit(0.0:26): 
+09-08 01:09:46.627  3135  3135 I mcDriverDaemon: type=1400 audit(0.0:27): avc: denied { ioctl } for path="/dev/t-base-tui" dev="tmpfs" ino=16333 ioctlcmd=7404 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:09:46.627  3135  3135 W mcDriverDaemon: type=1300 audit(0.0:27): arch=c00000b7 syscall=29 success=yes exit=0 a0=9 a1=7404 a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 exe="/system/bin/mcDriverDaemon" subj=u:r:tee:s0 key=(null)
+09-08 01:09:46.627  3074  3074 W auditd  : type=1327 audit(0.0:27): proctitle=2F73797374656D2F62696E2F6D634472697665724461656D6F6E002D72002F73797374656D2F6170702F46464646464646463030303030303030303030303030303030303030303030312E647262696E002D72002F73797374656D2F6170702F6D6352656769737472792F666666666666666664303030303030303030303030
+09-08 01:09:46.627  3074  3074 W auditd  : type=1320 audit(0.0:27): 
+09-08 01:09:46.627  3074  3074 W auditd  : type=1325 audit(0.0:28): table=filter family=10 entries=6
+09-08 01:09:46.627  3074  3074 W auditd  : type=1320 audit(0.0:28): 
+09-08 01:09:46.627  3147  3147 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:1
+09-08 01:09:46.631  3135  3135 I TeeMcDaemon: Daemon running [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:342]
+09-08 01:09:46.659  3074  3074 W auditd  : type=1325 audit(0.0:29): table=filter family=2 entries=7
+09-08 01:09:46.659  3074  3074 W auditd  : type=1320 audit(0.0:29): 
+09-08 01:09:46.663  3074  3074 W auditd  : type=1325 audit(0.0:30): table=filter family=10 entries=7
+09-08 01:09:46.812  3158  3158 V wifiloader: /proc/deferred_initcalls=0
+09-08 01:09:46.812  3158  3158 V wifiloader: 
+09-08 01:09:46.997  3163  3163 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+09-08 01:09:47.005  3163  3163 D AndroidRuntime: CheckJNI is ON
+09-08 01:09:47.008  3163  3163 I art     : option[0]=-Xzygote
+09-08 01:09:47.008  3163  3163 I art     : option[1]=-Xcheck:jni
+09-08 01:09:47.008  3163  3163 I art     : option[2]=-Xstacktracefile:/data/anr/traces.txt
+09-08 01:09:47.008  3163  3163 I art     : option[3]=exit
+09-08 01:09:47.008  3163  3163 I art     : option[4]=vfprintf
+09-08 01:09:47.008  3163  3163 I art     : option[5]=sensitiveThread
+09-08 01:09:47.008  3163  3163 I art     : option[6]=-verbose:gc
+09-08 01:09:47.008  3163  3163 I art     : option[7]=-Xms8m
+09-08 01:09:47.008  3163  3163 I art     : option[8]=-Xmx512m
+09-08 01:09:47.008  3163  3163 I art     : option[9]=-XX:HeapGrowthLimit=256m
+09-08 01:09:47.009  3163  3163 I art     : option[10]=-XX:HeapMinFree=2m
+09-08 01:09:47.009  3163  3163 I art     : option[11]=-XX:HeapMaxFree=8m
+09-08 01:09:47.009  3163  3163 I art     : option[12]=-XX:HeapTargetUtilization=0.75
+09-08 01:09:47.009  3163  3163 I art     : option[13]=-Xusejit:true
+09-08 01:09:47.009  3163  3163 I art     : option[14]=-Xjitsaveprofilinginfo
+09-08 01:09:47.009  3163  3163 I art     : option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+09-08 01:09:47.009  3163  3163 I art     : option[16]=-Xlockprofthreshold:500
+09-08 01:09:47.009  3163  3163 I art     : option[17]=-Ximage-compiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[18]=--runtime-arg
+09-08 01:09:47.009  3163  3163 I art     : option[19]=-Ximage-compiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[20]=-Xms64m
+09-08 01:09:47.009  3163  3163 I art     : option[21]=-Ximage-compiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[22]=--runtime-arg
+09-08 01:09:47.009  3163  3163 I art     : option[23]=-Ximage-compiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[24]=-Xmx64m
+09-08 01:09:47.009  3163  3163 I art     : option[25]=-Ximage-compiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[26]=--compiler-filter=verify-at-runtime
+09-08 01:09:47.009  3163  3163 I art     : option[27]=-Ximage-compiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[28]=--image-classes=/system/etc/preloaded-classes
+09-08 01:09:47.009  3163  3163 I art     : option[29]=-Ximage-compiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[30]=--compiled-classes=/system/etc/compiled-classes
+09-08 01:09:47.009  3163  3163 I art     : option[31]=-Xcompiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[32]=--runtime-arg
+09-08 01:09:47.009  3163  3163 I art     : option[33]=-Xcompiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[34]=-Xms64m
+09-08 01:09:47.009  3163  3163 I art     : option[35]=-Xcompiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[36]=--runtime-arg
+09-08 01:09:47.009  3163  3163 I art     : option[37]=-Xcompiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[38]=-Xmx512m
+09-08 01:09:47.009  3163  3163 I art     : option[39]=-Ximage-compiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[40]=--instruction-set-variant=generic
+09-08 01:09:47.009  3163  3163 I art     : option[41]=-Xcompiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[42]=--instruction-set-variant=generic
+09-08 01:09:47.009  3163  3163 I art     : option[43]=-Ximage-compiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[44]=--instruction-set-features=default
+09-08 01:09:47.009  3163  3163 I art     : option[45]=-Xcompiler-option
+09-08 01:09:47.009  3163  3163 I art     : option[46]=--instruction-set-features=default
+09-08 01:09:47.009  3163  3163 I art     : option[47]=-Duser.locale=en-US
+09-08 01:09:47.009  3163  3163 I art     : option[48]=--cpu-abilist=arm64-v8a
+09-08 01:09:47.009  3163  3163 I art     : option[49]=-Xfingerprint:samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys
+09-08 01:09:47.046  3164  3164 V audio_route: Control 'VTS VoiceTrigger Value' is to be controled by user
+09-08 01:09:47.046  3164  3164 I audio_route: > audio_route_update_mixer : +
+09-08 01:09:47.053  3164  3164 I audio_route: > audio_route_update_mixer : changed(46) -
+09-08 01:09:47.053  3164  3164 V audio_hw_voice: voice_session_init: Forcing voice config: wide
+09-08 01:09:47.053  3164  3164 I AudioFlinger: loadHwModule() Loaded primary audio interface from Samsung Audio HAL (audio) handle 10
+09-08 01:09:47.053  3164  3164 I AudioFlinger: openOutput(), module 10 Device 2, SamplingRate 48000, Format 0x000001, Channels 3, flags a
+09-08 01:09:47.053  3164  3164 I AudioFlinger: HAL output buffer size 480 frames, normal sink buffer size 960 frames
+09-08 01:09:47.058  3164  3164 W EffectsFactory: loadLibrary() failed to open /system/vendor/lib/soundfx/libswdap.so
+09-08 01:09:47.058  3164  3164 W EffectsFactory: loadLibrary() failed to open /system/vendor/lib/soundfx/libhwdap.so
+09-08 01:09:47.058  3164  3164 W EffectsFactory: loadEffect() could not get library proxy
+09-08 01:09:47.058  3164  3164 I BufferProvider: found effect "Multichannel Downmix To Stereo" from The Android Open Source Project
+09-08 01:09:47.058  3164  3164 I AudioFlinger: Using module 10 has the primary audio interface
+09-08 01:09:47.058  3164  3377 I AudioFlinger: AudioFlinger's thread 0xf6189400 ready to run
+09-08 01:09:47.058  3164  3377 W BatteryNotifier: batterystats service unavailable!
+09-08 01:09:47.059  3164  3377 W BatteryNotifier: batterystats service unavailable!
+09-08 01:09:47.059  3164  3377 W BatteryNotifier: batterystats service unavailable!
+09-08 01:09:47.059  3164  3377 W AudioFlinger: no wake lock to update, system not ready yet
+09-08 01:09:47.059  3164  3164 I AudioFlinger: openOutput(), module 10 Device 2, SamplingRate 48000, Format 0x000001, Channels 3, flags 4
+09-08 01:09:47.059  3164  3164 I AudioFlinger: HAL output buffer size 256 frames, normal sink buffer size 768 frames
+09-08 01:09:47.060  3164  3380 I AudioFlinger: AudioFlinger's thread 0xf5e03240 ready to run
+09-08 01:09:47.060  3164  3380 W BatteryNotifier: batterystats service unavailable!
+09-08 01:09:47.060  3164  3380 W BatteryNotifier: batterystats service unavailable!
+09-08 01:09:47.060  3164  3380 W BatteryNotifier: batterystats service unavailable!
+09-08 01:09:47.060  3164  3380 W AudioFlinger: no wake lock to update, system not ready yet
+09-08 01:09:47.062  3164  3382 I AudioFlinger: AudioFlinger's thread 0xf5b03400 ready to run
+09-08 01:09:47.063  3164  3164 I bt_a2dp_hw: adev_open:  adev_open in A2dp_hw module
+09-08 01:09:47.063  3164  3164 I AudioFlinger: loadHwModule() Loaded a2dp audio interface from A2DP Audio HW HAL (audio) handle 18
+09-08 01:09:47.065  3164  3164 I AudioFlinger: loadHwModule() Loaded usb audio interface from USB audio HW HAL (audio) handle 26
+09-08 01:09:47.066  3164  3164 I r_submix: adev_open(name=audio_hw_if)
+09-08 01:09:47.066  3164  3164 I r_submix: adev_init_check()
+09-08 01:09:47.066  3164  3164 I AudioFlinger: loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 34
+09-08 01:09:47.066  3164  3164 D r_submix: adev_open_input_stream(addr=0)
+09-08 01:09:47.066  3164  3164 D r_submix: submix_audio_device_create_pipe_l(addr=0, idx=9)
+09-08 01:09:47.066  3164  3164 D r_submix:   now using address 0 for route 9
+09-08 01:09:47.067  3164  3384 I AudioFlinger: AudioFlinger's thread 0xf5a83e80 ready to run
+09-08 01:09:47.067  3164  3164 D r_submix: adev_close_input_stream()
+09-08 01:09:47.067  3164  3164 D r_submix: submix_audio_device_release_pipe_l(idx=9) addr=0
+09-08 01:09:47.067  3164  3164 D r_submix: submix_audio_device_destroy_pipe_l(): pipe destroyed
+09-08 01:09:47.067  3164  3164 I RadioService: RadioService
+09-08 01:09:47.067  3164  3164 I RadioService: onFirstRef
+09-08 01:09:47.067  3164  3164 E RadioService: couldn't load radio module radio.primary (No such file or directory)
+09-08 01:09:47.068  3164  3164 E SoundTriggerHwService: couldn't load sound trigger module sound_trigger.primary (No such file or directory)
+09-08 01:09:47.103  3163  3163 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-08 01:09:47.153  3163  3163 W art     : Before Android 4.1, method double java.util.concurrent.ThreadLocalRandom.internalNextDouble(double, double) would have incorrectly overridden the package-private method in java.util.Random
+09-08 01:09:47.153  3163  3163 W art     : Before Android 4.1, method int java.util.concurrent.ThreadLocalRandom.internalNextInt(int, int) would have incorrectly overridden the package-private method in java.util.Random
+09-08 01:09:47.153  3163  3163 W art     : Before Android 4.1, method long java.util.concurrent.ThreadLocalRandom.internalNextLong(long, long) would have incorrectly overridden the package-private method in java.util.Random
+09-08 01:09:47.328  3163  3163 I Radio-JNI: register_android_hardware_Radio DONE
+09-08 01:09:47.361  3163  3163 I SamplingProfilerIntegration: Profiling disabled.
+09-08 01:09:47.362  3163  3163 D Zygote  : begin preload
+09-08 01:09:47.362  3163  3163 I Zygote  : Installing ICU cache reference pinning...
+09-08 01:09:47.362  3163  3163 I Zygote  : Preloading ICU data...
+09-08 01:09:47.406  3171  3171 V NatController: runCmd(/system/bin/iptables -w -F natctrl_FORWARD) res=0
+09-08 01:09:47.411  3171  3171 V NatController: runCmd(/system/bin/ip6tables -w -F natctrl_FORWARD) res=0
+09-08 01:09:47.416  3171  3171 V NatController: runCmd(/system/bin/iptables -w -A natctrl_FORWARD -j DROP) res=0
+09-08 01:09:47.420  3171  3171 V NatController: runCmd(/system/bin/iptables -w -t nat -F natctrl_nat_POSTROUTING) res=0
+09-08 01:09:47.425  3171  3171 V NatController: runCmd(/system/bin/ip6tables -w -t raw -F natctrl_raw_PREROUTING) res=0
+09-08 01:09:47.429  3171  3171 V NatController: runCmd(/system/bin/iptables -w -F natctrl_tether_counters) res=1
+09-08 01:09:47.434  3171  3171 V NatController: runCmd(/system/bin/ip6tables -w -F natctrl_tether_counters) res=1
+09-08 01:09:47.438  3171  3171 V NatController: runCmd(/system/bin/iptables -w -X natctrl_tether_counters) res=1
+09-08 01:09:47.442  3171  3171 V NatController: runCmd(/system/bin/ip6tables -w -X natctrl_tether_counters) res=1
+09-08 01:09:47.447  3171  3171 V NatController: runCmd(/system/bin/iptables -w -N natctrl_tether_counters) res=0
+09-08 01:09:47.452  3171  3171 V NatController: runCmd(/system/bin/ip6tables -w -N natctrl_tether_counters) res=0
+09-08 01:09:47.456  3171  3171 V NatController: runCmd(/system/bin/iptables -w -t mangle -A natctrl_mangle_FORWARD -p tcp --tcp-flags SYN SYN -j TCPMSS --clamp-mss-to-pmtu) res=0
+09-08 01:09:47.514  3171  3171 E Netd    : cannot find interface dummy0
+09-08 01:09:47.515  3171  3171 D MDnsDS  : MDnsSdListener::Hander starting up
+09-08 01:09:47.515  3171  3512 D MDnsDS  : MDnsSdListener starting to monitor
+09-08 01:09:47.515  3171  3512 D MDnsDS  : Going to poll with pollCount 1
+09-08 01:09:47.516  3163  3163 I Zygote  : Preloading classes...
+09-08 01:09:47.522  3163  3163 W Zygote  : Class not found for preloading: [Landroid.view.Display$ColorTransform;
+09-08 01:09:47.561  3162  3162 D wrapperGPS: wrapperConnect_RILD
+09-08 01:09:47.582  3147  3147 D SurfaceFlinger: SF. shader cache generated - 26 shaders in 936.094116 ms
+09-08 01:09:47.585  3147  3147 D SurfaceFlinger: Set power mode=2, type=0 flinger=0x7fa4648000
+09-08 01:09:47.794  3522  3527 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-08 01:09:47.804  3522  3527 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:2
+09-08 01:09:47.875  3527  3527 I BootAnimation: type=1400 audit(0.0:126): avc: denied { read write } for name="fimg2d" dev="tmpfs" ino=16266 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:09:47.875  3527  3527 I BootAnimation: type=1400 audit(0.0:126): avc: denied { open } for path="/dev/fimg2d" dev="tmpfs" ino=16266 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:09:47.875  3527  3527 W BootAnimation: type=1300 audit(0.0:126): arch=c00000b7 syscall=56 success=yes exit=14 a0=ffffff9c a1=7fa81b4703 a2=2 a3=0 items=0 ppid=1 auid=4294967295 uid=1003 gid=1003 euid=1003 suid=1003 fsuid=1003 egid=1003 sgid=1003 fsgid=1003 tty=(none) ses=4294967295 exe="/system/bin/bootanimation" subj=u:r:bootanim:s0 key=(null)
+09-08 01:09:47.875  3074  3074 W auditd  : type=1327 audit(0.0:126): proctitle="/system/bin/bootanimation"
+09-08 01:09:47.875  3074  3074 W auditd  : type=1320 audit(0.0:126): 
+09-08 01:09:47.875  3527  3527 I BootAnimation: type=1400 audit(0.0:127): avc: denied { ioctl } for path="/dev/fimg2d" dev="tmpfs" ino=16266 ioctlcmd=4d04 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:09:47.875  3527  3527 W BootAnimation: type=1300 audit(0.0:127): arch=c00000b7 syscall=29 success=yes exit=0 a0=f a1=c1104d04 a2=7fa410d2b0 a3=0 items=0 ppid=1 auid=4294967295 uid=1003 gid=1003 euid=1003 suid=1003 fsuid=1003 egid=1003 sgid=1003 fsgid=1003 tty=(none) ses=4294967295 exe="/system/bin/bootanimation" subj=u:r:bootanim:s0 key=(null)
+09-08 01:09:47.875  3074  3074 W auditd  : type=1327 audit(0.0:127): proctitle="/system/bin/bootanimation"
+09-08 01:09:47.875  3074  3074 W auditd  : type=1320 audit(0.0:127): 
+09-08 01:09:47.992  3163  3163 E Typeface: Error mapping font file /system/fonts/DroidSansFallback.ttf
+09-08 01:09:48.561  3162  3162 D wrapperGPS: wrapperConnect_RILD
+09-08 01:09:48.822  3163  3163 I art     : Thread[1,tid=3163,Native,Thread*=0x7fab495a00,peer=0x12c420d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+09-08 01:09:48.822  3163  3163 D MtpDeviceJNI: register_android_mtp_MtpDevice
+09-08 01:09:48.823  3163  3163 I art     : Thread[1,tid=3163,Native,Thread*=0x7fab495a00,peer=0x12c420d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+09-08 01:09:48.824  3163  3163 I art     : Thread[1,tid=3163,Native,Thread*=0x7fab495a00,peer=0x12c420d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+09-08 01:09:48.863  3163  3163 E FFMPEGSoftCodec: Failed to load FFMPEG plugin: (null)
+09-08 01:09:49.202  3163  3163 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform
+09-08 01:09:49.202  3163  3163 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform$1
+09-08 01:09:49.419  3163  3163 W System  : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+09-08 01:09:49.562  3162  3162 D wrapperGPS: wrapperConnect_RILD
+09-08 01:09:49.562  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:09:49.562  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:09:49.562  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:09:49.562  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:09:49.636  3163  3163 I System  : Loaded time zone names for "" in 54ms (25ms in ICU)
+09-08 01:09:49.677  3163  3163 I System  : Loaded time zone names for "en_US" in 40ms (9ms in ICU)
+09-08 01:09:49.989  3163  3163 I Zygote  : ...preloaded 4158 classes in 2473ms.
+09-08 01:09:49.989  3163  3163 I art     : VMRuntime.preloadDexCaches starting
+09-08 01:09:50.039  3163  3163 I art     : VMRuntime.preloadDexCaches strings total=288446 before=12011 after=12011
+09-08 01:09:50.039  3163  3163 I art     : VMRuntime.preloadDexCaches types total=23810 before=9280 after=11325
+09-08 01:09:50.039  3163  3163 I art     : VMRuntime.preloadDexCaches fields total=113941 before=41160 after=54105
+09-08 01:09:50.039  3163  3163 I art     : VMRuntime.preloadDexCaches methods total=199717 before=78591 after=96703
+09-08 01:09:50.039  3163  3163 I art     : VMRuntime.preloadDexCaches finished
+09-08 01:09:50.040  3163  3163 I Zygote  : Preloading resources...
+09-08 01:09:50.064  3164  3380 W BatteryNotifier: batterystats service unavailable!
+09-08 01:09:50.068  3164  3377 W BatteryNotifier: batterystats service unavailable!
+09-08 01:09:50.074  3163  3163 W Resources: Preloaded drawable resource #0x108025c (android:drawable/dialog_background_material) that varies with configuration!!
+09-08 01:09:50.083  3163  3163 W Resources: Preloaded color resource #0x10600ea (android:color/material_grey_800) that varies with configuration!!
+09-08 01:09:50.083  3163  3163 W Resources: Preloaded drawable resource #0x10802c9 (android:drawable/floating_popup_background_dark) that varies with configuration!!
+09-08 01:09:50.199  3163  3163 I Zygote  : ...preloaded 114 resources in 159ms.
+09-08 01:09:50.207  3163  3163 W Resources: Preloaded color resource #0x1060114 (android:color/background_cache_hint_selector_material_dark) that varies with configuration!!
+09-08 01:09:50.207  3163  3163 W Resources: Preloaded color resource #0x1060119 (android:color/btn_default_material_dark) that varies with configuration!!
+09-08 01:09:50.210  3163  3163 I Zygote  : ...preloaded 41 resources in 11ms.
+09-08 01:09:50.212  3163  3163 I Zygote  : ...preloaded 2 resource in 2ms.
+09-08 01:09:50.222  3163  3163 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-08 01:09:50.232  3163  3163 I Zygote  : Preloading shared libraries...
+09-08 01:09:50.258  3163  3163 I Zygote  : Uninstalled ICU cache reference pinning...
+09-08 01:09:50.266  3163  3163 I Zygote  : Installed AndroidKeyStoreProvider in 9ms.
+09-08 01:09:50.385  3163  3163 I Zygote  : Warmed up JCA providers in 119ms.
+09-08 01:09:50.385  3163  3163 D Zygote  : end preload
+09-08 01:09:50.386  3163  3163 I art     : Starting a blocking GC Explicit
+09-08 01:09:50.396  3163  3163 I art     : Explicit concurrent mark sweep GC freed 3275(143KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 10MB/17MB, paused 50us total 10.702ms
+09-08 01:09:50.397  3163  3163 I art     : Starting a blocking GC Explicit
+09-08 01:09:50.407  3163  3163 I art     : Explicit concurrent mark sweep GC freed 53(1992B) AllocSpace objects, 0(0B) LOS objects, 39% free, 10MB/17MB, paused 51us total 10.454ms
+09-08 01:09:50.423  3163  3422 I art     : Starting a blocking GC HeapTrim
+09-08 01:09:50.424  3163  3163 I art     : Starting a blocking GC Background
+09-08 01:09:50.463  3559  3559 I main    : type=1400 audit(0.0:128): avc: denied { sys_nice } for capability=23 scontext=u:r:zygote:s0 tcontext=u:r:zygote:s0 tclass=capability permissive=1
+09-08 01:09:50.463  3559  3559 W main    : type=1300 audit(0.0:128): arch=c00000b7 syscall=119 success=yes exit=0 a0=de7 a1=0 a2=7fe5f2a340 a3=0 items=0 ppid=3163 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 exe="/system/bin/app_process64" subj=u:r:zygote:s0 key=(null)
+09-08 01:09:50.463  3074  3074 W auditd  : type=1327 audit(0.0:128): proctitle="zygote64"
+09-08 01:09:50.463  3074  3074 W auditd  : type=1320 audit(0.0:128): 
+09-08 01:09:50.469  3163  3163 I Zygote  : System server process 3559 has been created
+09-08 01:09:50.469  3163  3163 I Zygote  : Accepting command socket connections
+09-08 01:09:50.474  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:09:51.474  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:09:52.475  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:09:53.475  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:09:54.476  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:09:55.476  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:09:56.477  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:09:57.477  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:09:58.478  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:09:59.478  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:00.479  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:01.479  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:01.521  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:01.521  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:01.521  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:01.521  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:01.536  3604  3604 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-08 01:10:01.536  3604  3604 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-08 01:10:01.536  3604  3604 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-08 01:10:01.536  3604  3604 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-08 01:10:01.536  3604  3604 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-08 01:10:01.536  3604  3604 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-08 01:10:01.536  3604  3604 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-08 01:10:01.536  3604  3604 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-08 01:10:01.537  3604  3604 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-08 01:10:01.537  3604  3604 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-08 01:10:01.537  3604  3604 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-08 01:10:01.537  3604  3604 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-08 01:10:01.537  3604  3604 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-08 01:10:01.537  3604  3604 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-08 01:10:01.537  3604  3604 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-08 01:10:01.537  3604  3604 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-08 01:10:01.537  3604  3604 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-08 01:10:01.596  3604  3604 D lhd     : OnIpcConnect
+09-08 01:10:01.596  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:01.596  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:01.596  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:01.596  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:02.480  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:03.480  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:04.481  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:05.481  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:06.482  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:07.482  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:08.483  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:09.484  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:10.484  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:11.485  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:12.485  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:13.486  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:14.487  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:15.487  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:16.488  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:16.584  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.584  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.584  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.584  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.599  3609  3609 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-08 01:10:16.599  3609  3609 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-08 01:10:16.599  3609  3609 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-08 01:10:16.599  3609  3609 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-08 01:10:16.599  3609  3609 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-08 01:10:16.599  3609  3609 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-08 01:10:16.599  3609  3609 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-08 01:10:16.599  3609  3609 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-08 01:10:16.599  3609  3609 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-08 01:10:16.599  3609  3609 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-08 01:10:16.599  3609  3609 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-08 01:10:16.599  3609  3609 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-08 01:10:16.599  3609  3609 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-08 01:10:16.599  3609  3609 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-08 01:10:16.599  3609  3609 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-08 01:10:16.599  3609  3609 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-08 01:10:16.599  3609  3609 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-08 01:10:16.658  3609  3609 D lhd     : OnIpcConnect
+09-08 01:10:16.658  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.658  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.658  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.658  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.658  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.659  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.660  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.661  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.662  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.663  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.664  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.665  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.666  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.667  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:16.667  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:16.667  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:17.488  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:18.488  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:19.489  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:20.489  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:21.490  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:22.490  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:23.491  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:24.492  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:25.500  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:26.503  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:27.506  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:28.509  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:29.512  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:30.516  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:31.518  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:31.672  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:31.673  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:31.673  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:31.675  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:31.740  3615  3615 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-08 01:10:31.741  3615  3615 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-08 01:10:31.741  3615  3615 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-08 01:10:31.741  3615  3615 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-08 01:10:31.741  3615  3615 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-08 01:10:31.741  3615  3615 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-08 01:10:31.741  3615  3615 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-08 01:10:31.741  3615  3615 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-08 01:10:31.741  3615  3615 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-08 01:10:31.741  3615  3615 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-08 01:10:31.741  3615  3615 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-08 01:10:31.741  3615  3615 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-08 01:10:31.741  3615  3615 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-08 01:10:31.741  3615  3615 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-08 01:10:31.741  3615  3615 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-08 01:10:31.741  3615  3615 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-08 01:10:31.742  3615  3615 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-08 01:10:31.807  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:31.807  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:31.808  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:31.808  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:31.808  3615  3615 D lhd     : OnIpcConnect
+09-08 01:10:32.521  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:33.525  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:34.528  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:35.530  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:36.533  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:37.537  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:38.540  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:39.542  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:40.545  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:41.548  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:42.551  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:43.553  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:44.556  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:45.560  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:46.563  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:46.827  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:46.828  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:46.828  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:46.828  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:46.901  3620  3620 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-08 01:10:46.902  3620  3620 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-08 01:10:46.902  3620  3620 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-08 01:10:46.902  3620  3620 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-08 01:10:46.902  3620  3620 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-08 01:10:46.902  3620  3620 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-08 01:10:46.902  3620  3620 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-08 01:10:46.902  3620  3620 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-08 01:10:46.902  3620  3620 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-08 01:10:46.902  3620  3620 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-08 01:10:46.902  3620  3620 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-08 01:10:46.902  3620  3620 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-08 01:10:46.902  3620  3620 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-08 01:10:46.902  3620  3620 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-08 01:10:46.902  3620  3620 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-08 01:10:46.903  3620  3620 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-08 01:10:46.903  3620  3620 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-08 01:10:46.965  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:46.965  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:46.965  3620  3620 D lhd     : OnIpcConnect
+09-08 01:10:46.966  3162  3162 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:10:46.966  3162  3162 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:10:47.566  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:48.569  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:49.573  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:50.576  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:51.579  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:52.581  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:53.585  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:54.588  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory
+09-08 01:10:55.592  3559  3559 W Zygote  : Got error connecting to zygote, retrying. msg= No such file or directory

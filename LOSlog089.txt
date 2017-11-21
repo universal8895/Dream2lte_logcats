@@ -1,0 +1,1710 @@
+--------- beginning of main
+09-15 18:41:36.727  3083  3083 W auditd  : type=2000 audit(0.0:1): initialized
+09-15 18:41:37.371  3083  3083 W auditd  : type=1325 audit(0.0:2): table=filter family=2 entries=0
+09-15 18:41:37.371  3083  3083 W auditd  : type=1325 audit(0.0:3): table=mangle family=2 entries=0
+09-15 18:41:37.371  3083  3083 W auditd  : type=1325 audit(0.0:4): table=nat family=2 entries=0
+09-15 18:41:37.371  3083  3083 W auditd  : type=1325 audit(0.0:5): table=raw family=2 entries=0
+09-15 18:41:37.371  3083  3083 W auditd  : type=1325 audit(0.0:6): table=security family=2 entries=0
+09-15 18:41:37.371  3083  3083 W auditd  : type=1325 audit(0.0:7): table=filter family=3 entries=0
+09-15 18:41:37.375  3083  3083 W auditd  : type=1325 audit(0.0:8): table=filter family=10 entries=0
+09-15 18:41:37.375  3083  3083 W auditd  : type=1325 audit(0.0:9): table=mangle family=10 entries=0
+09-15 18:41:37.375  3083  3083 W auditd  : type=1325 audit(0.0:10): table=raw family=10 entries=0
+09-15 18:41:37.375  3083  3083 W auditd  : type=1325 audit(0.0:11): table=nat family=10 entries=0
+09-15 18:41:37.551  3083  3083 I auditd  : type=1403 audit(0.0:12): policy loaded auid=4294967295 ses=4294967295
+09-15 18:41:37.583     1     1 I init    : type=1400 audit(0.0:13): avc: denied { relabelto } for name="config" dev="sysfs" ino=10855 scontext=u:r:init:s0 tcontext=u:object_r:configfs:s0 tclass=dir permissive=1
+09-15 18:41:37.583     1     1 I init    : type=1400 audit(0.0:14): avc: denied { associate } for name="config" dev="sysfs" ino=10855 scontext=u:object_r:configfs:s0 tcontext=u:object_r:sysfs:s0 tclass=filesystem permissive=1
+09-15 18:41:38.307  3083  3083 W auditd  : type=1305 audit(0.0:15): audit_pid=3073 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+09-15 18:41:38.307  3083  3083 W auditd  : type=1305 audit(0.0:16): audit_rate_limit=20 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+09-15 18:41:38.359  3074  3074 I         : debuggerd: starting
+--------- beginning of system
+09-15 18:41:38.371  3076  3076 I vold    : Vold 3.0 (the awakening) firing up
+09-15 18:41:38.371  3076  3076 V vold    : Detected support for: exfat ext4 f2fs ntfs vfat
+09-15 18:41:38.373  3076  3076 W Vold    : Tearing down stale mount /mnt/secure/asec
+09-15 18:41:38.393  3076  3076 W Vold    : Tearing down stale mount /mnt/secure
+09-15 18:41:38.420  3076  3089 V vold    : /system/bin/sgdisk
+09-15 18:41:38.420  3076  3089 V vold    :     --android-dump
+09-15 18:41:38.420  3076  3089 V vold    :     /dev/block/vold/disk:179_0
+09-15 18:41:38.429  3076  3147 D vold    : e4crypt_init_user0
+09-15 18:41:38.429  3076  3147 D vold    : e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+09-15 18:41:38.429  3076  3147 D vold    : Preparing: /data/system/users/0
+09-15 18:41:38.429  3076  3147 D vold    : Preparing: /data/misc/profiles/cur/0
+09-15 18:41:38.430  3076  3147 D vold    : Preparing: /data/misc/profiles/cur/0/foreign-dex
+09-15 18:41:38.430  3076  3147 D vold    : Preparing: /data/system_de/0
+09-15 18:41:38.430  3076  3147 D vold    : Preparing: /data/misc_de/0
+09-15 18:41:38.431  3076  3147 D vold    : Preparing: /data/user_de/0
+09-15 18:41:38.431  3076  3147 D vold    : e4crypt_unlock_user_key 0 serial=0 token_present=0
+09-15 18:41:38.431  3076  3089 V vold    : DISK mbr
+09-15 18:41:38.431  3076  3089 V vold    : 
+09-15 18:41:38.431  3076  3089 V vold    : PART 1 c
+09-15 18:41:38.431  3076  3089 V vold    : 
+09-15 18:41:38.431  3076  3147 E vold    : Failed to chmod /data/system_ce/0: No such file or directory
+09-15 18:41:38.432  3076  3147 E vold    : Failed to chmod /data/misc_ce/0: No such file or directory
+09-15 18:41:38.432     1     1 I vdc     : 200 3085 Command succeeded
+09-15 18:41:38.438  3149  3149 I /system/bin/tzdatacheck: tzdata file /data/misc/zoneinfo/current/tzdata does not exist. No action required.
+09-15 18:41:38.451  3150  3150 D macloader: Deleting file /data/.cid.info
+09-15 18:41:38.451  3151  3151 I TeeMcDaemon: Registry search paths: [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:212]
+09-15 18:41:38.451  3151  3151 I TeeMcDaemon:   /data/misc/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-15 18:41:38.451  3151  3151 I TeeMcDaemon:   /efs/prov [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-15 18:41:38.451  3151  3151 I TeeMcDaemon:   /vendor/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-15 18:41:38.451  3151  3151 I TeeMcDaemon:   /system/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-15 18:41:38.451  3151  3151 I TeeMcDaemon: partition paths rp:  /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:223]
+09-15 18:41:38.451  3151  3151 I TeeMcDaemon: Initialise Secure World [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:253]
+09-15 18:41:38.454  3151  3151 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:295]
+09-15 18:41:38.467  3156  3156 I sysinit : Running /system/etc/init.d/00banner 
+09-15 18:41:38.477  3164  3164 I cm      : _ _                                        
+09-15 18:41:38.484  3168  3168 I cm      : | (_)_ __   ___  __ _  __ _  ___  ___  ___  
+09-15 18:41:38.489  3161  3161 I lowmemorykiller: Using in-kernel low memory killer interface
+09-15 18:41:38.491  3171  3171 I cm      : | | | '_ \ / _ \/ _` |/ _` |/ _ \/ _ \/ __| 
+09-15 18:41:38.499  3163  3163 I SurfaceFlinger: SurfaceFlinger is starting
+09-15 18:41:38.499  3163  3163 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+09-15 18:41:38.503  3178  3178 D wifiloader: Trigger initcall of deferred modules
+09-15 18:41:38.506  3185  3185 I         : installd firing up
+09-15 18:41:38.520  3179  3179 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-15 18:41:38.521  3179  3179 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-15 18:41:38.521  3179  3179 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-15 18:41:38.521  3179  3179 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-15 18:41:38.521  3179  3179 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-15 18:41:38.521  3179  3179 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-15 18:41:38.521  3179  3179 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-15 18:41:38.521  3179  3179 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-15 18:41:38.521  3179  3179 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-15 18:41:38.521  3179  3179 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-15 18:41:38.521  3179  3179 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-15 18:41:38.521  3179  3179 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-15 18:41:38.521  3179  3179 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-15 18:41:38.521  3179  3179 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-15 18:41:38.523  3179  3179 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-15 18:41:38.523  3179  3179 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-15 18:41:38.523  3179  3179 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-15 18:41:38.523  3192  3192 I cm      : | | | | | |  __/ (_| | (_| |  __/ (_) \__ \ 
+09-15 18:41:38.524  3186  3186 I keystore: Found keymaster0 module Keymaster OpenSSL HAL, version 2
+09-15 18:41:38.524  3186  3186 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 131: Creating device
+09-15 18:41:38.524  3186  3186 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 132: Device address: 0x7f8803e000
+09-15 18:41:38.524  3186  3186 I keystore: Keymaster0 module is software-only.  Using SoftKeymasterDevice instead.
+09-15 18:41:38.524  3186  3186 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 131: Creating device
+09-15 18:41:38.524  3186  3186 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 132: Device address: 0x7f8803e400
+09-15 18:41:38.527  3195  3195 I perfprofd: starting Android Wide Profiling daemon
+09-15 18:41:38.527  3195  3195 E perfprofd: unable to open configuration file /data/data/com.google.android.gms/files/perfprofd.conf
+09-15 18:41:38.528  3195  3195 I perfprofd: random seed set to 4022513886
+09-15 18:41:38.535  3193  3193 I fingerprintd: Starting fingerprintd
+09-15 18:41:38.539  3201  3201 I cm      : |_|_|_| |_|\___|\__,_|\__, |\___|\___/|___/ 
+09-15 18:41:38.543  3191  3191 I Netd    : Netd 1.0 starting
+09-15 18:41:38.547  3191  3191 D TetherController: Setting IP forward enable = 0
+09-15 18:41:38.550  3194  3194 I gatekeeperd: Starting gatekeeperd...
+09-15 18:41:38.551  3194  3194 W gatekeeperd: falling back to software GateKeeper
+09-15 18:41:38.551  3191  3191 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-15 18:41:38.551  3191  3191 E         : Failed to open libdatactrl, some features may not be present.
+09-15 18:41:38.552  3191  3191 E         : Failed to open libcsm_data, some features may not be present.
+09-15 18:41:38.554  3151  3151 I TeeMcDaemon: TEE is ready [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:332]
+09-15 18:41:38.556  3151  3151 I TeeMcDaemon: t-base-EXYNOS64-Android-400A-V011-20170203_131128_25330_57476 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:280]
+09-15 18:41:38.556  3151  3151 I TeeMcDaemon: Specific partition path used for Store_1.tf, stored in /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:340]
+09-15 18:41:38.556  3151  3151 I TeeMcDaemon: Start services [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:304]
+09-15 18:41:38.556  3151  3151 I TeeMcDaemon: * start secure world interface [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-15 18:41:38.557  3151  3151 I TeeMcDaemon: * start filesystem [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-15 18:41:38.557  3151  3151 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:71]
+09-15 18:41:38.557  3151  3151 I TeeMcDaemon: driver open [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:84]
+09-15 18:41:38.557  3151  3151 I TeeMcDaemon: Kinibi access granted by the driver [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/common.cpp:217]
+09-15 18:41:38.557  3151  3204 I TeeMcDaemon: Start listening to secure world [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:466]
+09-15 18:41:38.559  3202  3202 I cm      :                       |___/ 
+09-15 18:41:38.560  3151  3204 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/07050501000000000000000000000020.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+09-15 18:41:38.562  3151  3151 I TeeMcDaemon: * start registry update [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-15 18:41:38.562  3151  3151 I TeeMcDaemon: * start registry server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-15 18:41:38.563  3151  3151 I TeeMcDaemon: * start debug session [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-15 18:41:38.563  3151  3204 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/08050500000000000000000000000000.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+09-15 18:41:38.564  3151  3206 I TeeMcDaemon: void FileSystem::Impl::run(): Start listening for request from STH2 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:443]
+09-15 18:41:38.564  3151  3151 I TeeMcDaemon: session opened [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/DebugSession.cpp:113]
+09-15 18:41:38.564  3151  3151 I TeeMcDaemon: Load secure drivers [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:318]
+09-15 18:41:38.564  3151  3151 I TeeMcDaemon: * loading /system/app/FFFFFFFF000000000000000000000001.drbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-15 18:41:38.568  3151  3207 I TeeRegistryUpdate: Starting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:85]
+09-15 18:41:38.569  3151  3208 I TeeMcDaemon: void RegistryServer::Impl::run(): Starting server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryServer.cpp:230]
+09-15 18:41:38.573  3151  3151 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-15 18:41:38.574  3151  3207 I TeeRegistryUpdate: Exiting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:143]
+09-15 18:41:38.585  3163  3163 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-15 18:41:38.619  3187  3187 I mediacodec: @@@ mediacodecservice starting
+09-15 18:41:38.620  3187  3187 W /system/bin/mediacodec: libminijail: allowing syscall: clock_gettime
+09-15 18:41:38.620  3187  3187 W /system/bin/mediacodec: libminijail: allowing syscall: connect
+09-15 18:41:38.620  3187  3187 W /system/bin/mediacodec: libminijail: allowing syscall: fcntl64
+09-15 18:41:38.620  3187  3187 W /system/bin/mediacodec: libminijail: allowing syscall: socket
+09-15 18:41:38.620  3187  3187 W /system/bin/mediacodec: libminijail: allowing syscall: writev
+09-15 18:41:38.621  3187  3187 W /system/bin/mediacodec: libminijail: logging seccomp filter failures
+09-15 18:41:38.622  3176  3176 I cameraserver: ServiceManager: 0xf6499420
+09-15 18:41:38.622  3176  3176 I CameraService: CameraService started (pid=3176)
+09-15 18:41:38.622  3176  3176 I CameraService: CameraService process starting
+09-15 18:41:38.622  3176  3176 W BatteryNotifier: batterystats service unavailable!
+09-15 18:41:38.623  3176  3176 W BatteryNotifier: batterystats service unavailable!
+09-15 18:41:38.624  3176  3176 E CameraService: Could not load camera HAL module: -2 (No such file or directory)
+09-15 18:41:38.628  3163  3163 I gralloc : using (id=)
+09-15 18:41:38.628  3163  3163 I gralloc : xres         = 1440 px
+09-15 18:41:38.628  3163  3163 I gralloc : yres         = 2960 px
+09-15 18:41:38.628  3163  3163 I gralloc : width        = 70 mm (522.514282 dpi)
+09-15 18:41:38.628  3163  3163 I gralloc : height       = 143 mm (525.762268 dpi)
+09-15 18:41:38.628  3163  3163 I gralloc : refresh rate = 60.00 Hz
+09-15 18:41:38.630  3151  3151 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-15 18:41:38.633  3213  3213 I cm      : Welcome to Android 7.1.2 / LineageOS-14.1-20170915-UNOFFICIAL-dream2lte 
+09-15 18:41:38.646  3231  3231 I sysinit : Running /system/etc/init.d/90userinit 
+09-15 18:41:38.650  3163  3163 W hwcomposer: invalid refresh rate, assuming 60 Hz
+09-15 18:41:38.650  3163  3163 D hwcomposer: using
+09-15 18:41:38.650  3163  3163 D hwcomposer: xres         = 1440 px
+09-15 18:41:38.650  3163  3163 D hwcomposer: yres         = 2960 px
+09-15 18:41:38.650  3163  3163 D hwcomposer: width        = 70 mm (522.514000 dpi)
+09-15 18:41:38.650  3163  3163 D hwcomposer: height       = 143 mm (525.762000 dpi)
+09-15 18:41:38.650  3163  3163 D hwcomposer: refresh rate = 60 Hz
+09-15 18:41:38.650  3163  3163 I hwcomposer: PSR info devname = /sys/devices/platform/12860000.decon_f/psr_info
+09-15 18:41:38.650  3163  3163 I hwcomposer: PSR mode is 2(0: video mode, 1: DP PSR mode, 2: MIPI-DSI command mode)
+09-15 18:41:38.650  3163  3163 I SurfaceFlinger: Using composer version 1.4
+09-15 18:41:38.650  3163  3163 E display : unknown display attribute 6
+09-15 18:41:38.650  3163  3163 I SurfaceFlinger: EGL information:
+09-15 18:41:38.650  3163  3163 I SurfaceFlinger: vendor    : Android
+09-15 18:41:38.650  3163  3163 I SurfaceFlinger: version   : 1.4 Android META-EGL
+09-15 18:41:38.650  3163  3163 I SurfaceFlinger: extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_swap_buffers_with_damage EGL_ANDROID_create_native_client_buffer EGL_ANDROID_front_buffer_auto_refresh EGL_KHR_image EGL_KHR_image_base EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_fence_sync EGL_KHR_create_context EGL_KHR_config_attribs EGL_KHR_surfaceless_context EGL_EXT_create_context_robustness EGL_ANDROID_image_native_buffer EGL_KHR_wait_sync EGL_ANDROID_recordable EGL_KHR_partial_update EGL_KHR_mutable_render_buffer EGL_EXT_protected_content 
+09-15 18:41:38.650  3163  3163 I SurfaceFlinger: Client API: OpenGL_ES
+09-15 18:41:38.651  3163  3163 I SurfaceFlinger: EGLSurface: 8-8-8-8, config=0x7f8d469138
+09-15 18:41:38.660  3189  3189 V MediaUtils: physMem: 3645853696
+09-15 18:41:38.661  3189  3189 V MediaUtils: requested limit: 729170720
+09-15 18:41:38.661  3189  3189 V MediaUtils: actual limit: 729170720
+09-15 18:41:38.661  3189  3189 V MediaUtils: original limits: 4294967295/4294967295
+09-15 18:41:38.661  3189  3189 V MediaUtils: new limits: 729170720/4294967295
+09-15 18:41:38.661  3189  3189 W /system/bin/mediaextractor: libminijail: allowing syscall: clock_gettime
+09-15 18:41:38.661  3189  3189 W /system/bin/mediaextractor: libminijail: allowing syscall: connect
+09-15 18:41:38.661  3189  3189 W /system/bin/mediaextractor: libminijail: allowing syscall: fcntl64
+09-15 18:41:38.661  3189  3189 W /system/bin/mediaextractor: libminijail: allowing syscall: socket
+09-15 18:41:38.661  3189  3189 W /system/bin/mediaextractor: libminijail: allowing syscall: writev
+09-15 18:41:38.662  3189  3189 W /system/bin/mediaextractor: libminijail: logging seccomp filter failures
+09-15 18:41:38.663  3163  3163 I SurfaceFlinger: OpenGL ES informations:
+09-15 18:41:38.663  3163  3163 I SurfaceFlinger: vendor    : ARM
+09-15 18:41:38.663  3163  3163 I SurfaceFlinger: renderer  : Mali-G71
+09-15 18:41:38.663  3163  3163 I SurfaceFlinger: version   : OpenGL ES 3.2 v1.r3p0-00rel0.52a2c5ce14e045eb8b9074c171442f91
+09-15 18:41:38.663  3163  3163 I SurfaceFlinger: extensions: GL_EXT_debug_marker GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_EXT_read_format_bgra GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_image_external_essl3 GL_OES_EGL_sync GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_required_internalformat GL_OES_vertex_array_object GL_OES_mapbuffer GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_type_2_10_10_10_REV GL_OES_fbo_render_mipmap GL_OES_element_index_uint GL_EXT_shadow_samplers GL_OES_texture_compression_astc GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_KHR_texture_compression_astc_sliced_3d GL_KHR_debug GL_EXT_occlusion_query_boolean GL_EXT_disjoint_timer_query GL_EXT_blend_minmax GL_EXT_discard_framebuffer GL_OES_get_program_binary GL_OES_texture_3D GL_EXT_texture_storage GL_EXT_multisamp
+09-15 18:41:38.663  3163  3163 I SurfaceFlinger: GL_MAX_TEXTURE_SIZE = 16384
+09-15 18:41:38.663  3163  3163 I SurfaceFlinger: GL_MAX_VIEWPORT_DIMS = 16384
+09-15 18:41:38.664  3163  3163 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:1
+09-15 18:41:38.666  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:41:38.666  3179  3179 D lhd     : OnIpcConnect
+09-15 18:41:38.670  3180  3180 D gpsd    : WakeLock(Release,SUPL)
+09-15 18:41:38.670  3180  3180 I gpsd_d  : GNSS: 282637
+09-15 18:41:38.671  3180  3180 I gpsd_d  : CustomerModule::Create chip info "Broadcom,BCM4774,282637" written into /data/system/gps//chip.info
+09-15 18:41:38.671  3180  3180 D wrapperGPS: wrapperOpenClient_RILD
+09-15 18:41:38.671  3180  3180 E wrapperGPS: wrapperOpenClient_RILD: RegisterUnsolicitedHandler() UNSOL_GPS_NOTI (11009)
+09-15 18:41:38.671  3180  3180 D wrapperGPS: wrapperRegisterRequestCompleteHandler
+09-15 18:41:38.671  3180  3180 D wrapperGPS: wrapperRegisterUnsolicitedHandler id(12009), handler(0x1026abd30)
+09-15 18:41:38.671  3180  3180 D wrapperGPS: wrapperRegisterErrorCallback
+09-15 18:41:38.671  3180  3180 D wrapperGPS: wrapperConnect_RILD
+09-15 18:41:38.675  3083  3083 W auditd  : type=1325 audit(0.0:17): table=filter family=2 entries=4
+09-15 18:41:38.675  3083  3083 W auditd  : type=1320 audit(0.0:17): 
+09-15 18:41:38.691  3083  3083 W auditd  : type=1325 audit(0.0:18): table=filter family=10 entries=4
+09-15 18:41:38.691  3083  3083 W auditd  : type=1320 audit(0.0:18): 
+09-15 18:41:38.691  3183  3183 I         : sMaxFastTracks = 8
+09-15 18:41:38.692  3183  3183 I audioserver: ServiceManager: 0xf6319420
+09-15 18:41:38.692  3183  3183 W BatteryNotifier: batterystats service unavailable!
+09-15 18:41:38.692  3188  3188 I mediaserver: ServiceManager: 0xf5f19480
+09-15 18:41:38.692  3183  3183 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:41:38.693  3183  3183 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:41:38.694  3183  3183 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:41:38.694  3183  3183 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:41:38.694  3183  3183 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:41:38.694  3183  3183 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:41:38.707  3083  3083 W auditd  : type=1325 audit(0.0:19): table=filter family=2 entries=6
+09-15 18:41:38.707  3083  3083 W auditd  : type=1320 audit(0.0:19): 
+09-15 18:41:38.708  3190  3190 I mediaserver: ServiceManager: 0xf6099480
+09-15 18:41:38.708  3190  3190 W BatteryNotifier: batterystats service unavailable!
+09-15 18:41:38.710  3151  3206 I TeeMcDaemon: TEEC_Result Partition::open(): Open storage file "/efs/TEE/Store_1.tf" [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:157]
+09-15 18:41:38.711  3083  3083 W auditd  : type=1325 audit(0.0:20): table=filter family=10 entries=6
+09-15 18:41:38.711  3083  3083 W auditd  : type=1320 audit(0.0:20): 
+09-15 18:41:38.711  3151  3206 I TeeMcDaemon: TEEC_Result Partition::open(): storage file "/efs/TEE/Store_1.tf" successfully open (size: 23 KB / 23552 B)) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:166]
+09-15 18:41:38.725  3151  3151 I TeeMcDaemon: Daemon running [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:342]
+09-15 18:41:38.763  3083  3083 W auditd  : type=1325 audit(0.0:21): table=filter family=2 entries=7
+09-15 18:41:38.763  3083  3083 W auditd  : type=1320 audit(0.0:21): 
+09-15 18:41:38.771  3083  3083 W auditd  : type=1325 audit(0.0:22): table=filter family=10 entries=7
+09-15 18:41:38.771  3083  3083 W auditd  : type=1320 audit(0.0:22): 
+09-15 18:41:38.779  3083  3083 W auditd  : type=1325 audit(0.0:23): table=filter family=2 entries=9
+09-15 18:41:38.779  3083  3083 W auditd  : type=1320 audit(0.0:23): 
+09-15 18:41:38.787  3083  3083 W auditd  : type=1325 audit(0.0:24): table=filter family=10 entries=9
+09-15 18:41:38.787  3083  3083 W auditd  : type=1320 audit(0.0:24): 
+09-15 18:41:38.803  3173  3173 I cbd     : type=1400 audit(0.0:25): avc: denied { read write } for name="umts_boot0" dev="tmpfs" ino=3554 scontext=u:r:cbd:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-15 18:41:38.803  3173  3173 I cbd     : type=1400 audit(0.0:25): avc: denied { open } for path="/dev/umts_boot0" dev="tmpfs" ino=3554 scontext=u:r:cbd:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-15 18:41:38.803  3173  3173 W cbd     : type=1300 audit(0.0:25): arch=c00000b7 syscall=56 success=yes exit=6 a0=ffffff9c a1=472d5e a2=2 a3=0 items=0 ppid=1 auid=4294967295 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/cbd" subj=u:r:cbd:s0 key=(null)
+09-15 18:41:38.803  3083  3083 W auditd  : type=1327 audit(0.0:25): proctitle=2F73797374656D2F62696E2F636264002D64002D747373333130002D626D002D6D6D002D5000706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F524144494F002D6300706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F43505F4445425547
+09-15 18:41:38.803  3083  3083 W auditd  : type=1320 audit(0.0:25): 
+09-15 18:41:38.807  3173  3173 I cbd     : type=1400 audit(0.0:26): avc: denied { ioctl } for path="/dev/umts_boot0" dev="tmpfs" ino=3554 ioctlcmd=6f45 scontext=u:r:cbd:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-15 18:41:38.807  3173  3173 W cbd     : type=1300 audit(0.0:26): arch=c00000b7 syscall=29 success=yes exit=0 a0=6 a1=6f45 a2=7fb6c1d000 a3=4 items=0 ppid=1 auid=4294967295 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/cbd" subj=u:r:cbd:s0 key=(null)
+09-15 18:41:38.807  3083  3083 W auditd  : type=1327 audit(0.0:26): proctitle=2F73797374656D2F62696E2F636264002D64002D747373333130002D626D002D6D6D002D5000706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F524144494F002D6300706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F43505F4445425547
+09-15 18:41:38.807  3083  3083 W auditd  : type=1320 audit(0.0:26): 
+09-15 18:41:38.811  3232  3232 I rild    : type=1400 audit(0.0:27): avc: denied { write } for name="opname.db" dev="sda24" ino=3121253 scontext=u:r:rild:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+09-15 18:41:38.811  3232  3232 W rild    : type=1300 audit(0.0:27): arch=c00000b7 syscall=56 success=yes exit=18 a0=ffffff9c a1=7f9e9a7640 a2=a0042 a3=180 items=0 ppid=1 auid=4294967295 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/rild" subj=u:r:rild:s0 key=(null)
+09-15 18:41:38.811  3083  3083 W auditd  : type=1327 audit(0.0:27): proctitle="/system/bin/rild"
+09-15 18:41:38.811  3083  3083 W auditd  : type=1320 audit(0.0:27): 
+09-15 18:41:38.815  3232  3232 I rild    : type=1400 audit(0.0:28): avc: denied { read write } for name="umts_boot0" dev="tmpfs" ino=3554 scontext=u:r:rild:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-15 18:41:38.815  3232  3232 I rild    : type=1400 audit(0.0:28): avc: denied { open } for path="/dev/umts_boot0" dev="tmpfs" ino=3554 scontext=u:r:rild:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-15 18:41:38.815  3232  3232 W rild    : type=1300 audit(0.0:28): arch=c00000b7 syscall=56 success=yes exit=19 a0=ffffff9c a1=7f9f0db48a a2=2 a3=0 items=0 ppid=1 auid=4294967295 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/rild" subj=u:r:rild:s0 key=(null)
+09-15 18:41:38.815  3083  3083 W auditd  : type=1327 audit(0.0:28): proctitle="/system/bin/rild"
+09-15 18:41:38.815  3083  3083 W auditd  : type=1320 audit(0.0:28): 
+09-15 18:41:38.815  3232  3232 I rild    : type=1400 audit(0.0:29): avc: denied { ioctl } for path="/dev/umts_boot0" dev="tmpfs" ino=3554 ioctlcmd=6f27 scontext=u:r:rild:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-15 18:41:38.815  3232  3232 W rild    : type=1300 audit(0.0:29): arch=c00000b7 syscall=29 success=yes exit=0 a0=13 a1=6f27 a2=2 a3=0 items=0 ppid=1 auid=4294967295 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/rild" subj=u:r:rild:s0 key=(null)
+09-15 18:41:38.815  3083  3083 W auditd  : type=1327 audit(0.0:29): proctitle="/system/bin/rild"
+09-15 18:41:38.815  3083  3083 W auditd  : type=1320 audit(0.0:29): 
+09-15 18:41:38.853  3178  3178 V wifiloader: /proc/deferred_initcalls=0
+09-15 18:41:38.853  3178  3178 V wifiloader: 
+09-15 18:41:38.859  3083  3083 W auditd  : type=1325 audit(0.0:30): table=filter family=2 entries=10
+09-15 18:41:38.948  3181  3181 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+09-15 18:41:38.957  3181  3181 D AndroidRuntime: CheckJNI is ON
+09-15 18:41:38.960  3181  3181 I art     : option[0]=-Xzygote
+09-15 18:41:38.960  3181  3181 I art     : option[1]=-Xcheck:jni
+09-15 18:41:38.960  3181  3181 I art     : option[2]=-Xstacktracefile:/data/anr/traces.txt
+09-15 18:41:38.960  3181  3181 I art     : option[3]=exit
+09-15 18:41:38.960  3181  3181 I art     : option[4]=vfprintf
+09-15 18:41:38.960  3181  3181 I art     : option[5]=sensitiveThread
+09-15 18:41:38.960  3181  3181 I art     : option[6]=-verbose:gc
+09-15 18:41:38.960  3181  3181 I art     : option[7]=-Xms8m
+09-15 18:41:38.960  3181  3181 I art     : option[8]=-Xmx512m
+09-15 18:41:38.960  3181  3181 I art     : option[9]=-XX:HeapGrowthLimit=256m
+09-15 18:41:38.960  3181  3181 I art     : option[10]=-XX:HeapMinFree=2m
+09-15 18:41:38.960  3181  3181 I art     : option[11]=-XX:HeapMaxFree=8m
+09-15 18:41:38.960  3181  3181 I art     : option[12]=-XX:HeapTargetUtilization=0.75
+09-15 18:41:38.960  3181  3181 I art     : option[13]=-Xusejit:true
+09-15 18:41:38.960  3181  3181 I art     : option[14]=-Xjitsaveprofilinginfo
+09-15 18:41:38.960  3181  3181 I art     : option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+09-15 18:41:38.960  3181  3181 I art     : option[16]=-Xlockprofthreshold:500
+09-15 18:41:38.960  3181  3181 I art     : option[17]=-Ximage-compiler-option
+09-15 18:41:38.960  3181  3181 I art     : option[18]=--runtime-arg
+09-15 18:41:38.960  3181  3181 I art     : option[19]=-Ximage-compiler-option
+09-15 18:41:38.960  3181  3181 I art     : option[20]=-Xms64m
+09-15 18:41:38.960  3181  3181 I art     : option[21]=-Ximage-compiler-option
+09-15 18:41:38.960  3181  3181 I art     : option[22]=--runtime-arg
+09-15 18:41:38.960  3181  3181 I art     : option[23]=-Ximage-compiler-option
+09-15 18:41:38.960  3181  3181 I art     : option[24]=-Xmx64m
+09-15 18:41:38.961  3181  3181 I art     : option[25]=-Ximage-compiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[26]=--compiler-filter=verify-at-runtime
+09-15 18:41:38.961  3181  3181 I art     : option[27]=-Ximage-compiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[28]=--image-classes=/system/etc/preloaded-classes
+09-15 18:41:38.961  3181  3181 I art     : option[29]=-Ximage-compiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[30]=--compiled-classes=/system/etc/compiled-classes
+09-15 18:41:38.961  3181  3181 I art     : option[31]=-Xcompiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[32]=--runtime-arg
+09-15 18:41:38.961  3181  3181 I art     : option[33]=-Xcompiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[34]=-Xms64m
+09-15 18:41:38.961  3181  3181 I art     : option[35]=-Xcompiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[36]=--runtime-arg
+09-15 18:41:38.961  3181  3181 I art     : option[37]=-Xcompiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[38]=-Xmx512m
+09-15 18:41:38.961  3181  3181 I art     : option[39]=-Ximage-compiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[40]=--instruction-set-variant=generic
+09-15 18:41:38.961  3181  3181 I art     : option[41]=-Xcompiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[42]=--instruction-set-variant=generic
+09-15 18:41:38.961  3181  3181 I art     : option[43]=-Ximage-compiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[44]=--instruction-set-features=default
+09-15 18:41:38.961  3181  3181 I art     : option[45]=-Xcompiler-option
+09-15 18:41:38.961  3181  3181 I art     : option[46]=--instruction-set-features=default
+09-15 18:41:38.961  3181  3181 I art     : option[47]=-Duser.locale=en-US
+09-15 18:41:38.961  3181  3181 I art     : option[48]=--cpu-abilist=arm64-v8a
+09-15 18:41:38.961  3181  3181 I art     : option[49]=-Xfingerprint:samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys
+09-15 18:41:39.020  3182  3182 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+09-15 18:41:39.036  3182  3182 D AndroidRuntime: CheckJNI is ON
+09-15 18:41:39.040  3182  3182 I art     : option[0]=-Xzygote
+09-15 18:41:39.040  3182  3182 I art     : option[1]=-Xcheck:jni
+09-15 18:41:39.040  3182  3182 I art     : option[2]=-Xstacktracefile:/data/anr/traces.txt
+09-15 18:41:39.040  3182  3182 I art     : option[3]=exit
+09-15 18:41:39.040  3182  3182 I art     : option[4]=vfprintf
+09-15 18:41:39.040  3182  3182 I art     : option[5]=sensitiveThread
+09-15 18:41:39.040  3182  3182 I art     : option[6]=-verbose:gc
+09-15 18:41:39.040  3182  3182 I art     : option[7]=-Xms8m
+09-15 18:41:39.040  3182  3182 I art     : option[8]=-Xmx512m
+09-15 18:41:39.040  3182  3182 I art     : option[9]=-XX:HeapGrowthLimit=256m
+09-15 18:41:39.040  3182  3182 I art     : option[10]=-XX:HeapMinFree=2m
+09-15 18:41:39.040  3182  3182 I art     : option[11]=-XX:HeapMaxFree=8m
+09-15 18:41:39.040  3182  3182 I art     : option[12]=-XX:HeapTargetUtilization=0.75
+09-15 18:41:39.040  3182  3182 I art     : option[13]=-Xusejit:true
+09-15 18:41:39.040  3182  3182 I art     : option[14]=-Xjitsaveprofilinginfo
+09-15 18:41:39.040  3182  3182 I art     : option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+09-15 18:41:39.040  3182  3182 I art     : option[16]=-Xlockprofthreshold:500
+09-15 18:41:39.040  3182  3182 I art     : option[17]=-Ximage-compiler-option
+09-15 18:41:39.040  3182  3182 I art     : option[18]=--runtime-arg
+09-15 18:41:39.040  3182  3182 I art     : option[19]=-Ximage-compiler-option
+09-15 18:41:39.040  3182  3182 I art     : option[20]=-Xms64m
+09-15 18:41:39.040  3182  3182 I art     : option[21]=-Ximage-compiler-option
+09-15 18:41:39.040  3182  3182 I art     : option[22]=--runtime-arg
+09-15 18:41:39.040  3182  3182 I art     : option[23]=-Ximage-compiler-option
+09-15 18:41:39.040  3182  3182 I art     : option[24]=-Xmx64m
+09-15 18:41:39.041  3182  3182 I art     : option[25]=-Ximage-compiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[26]=--compiler-filter=verify-at-runtime
+09-15 18:41:39.041  3182  3182 I art     : option[27]=-Ximage-compiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[28]=--image-classes=/system/etc/preloaded-classes
+09-15 18:41:39.041  3182  3182 I art     : option[29]=-Ximage-compiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[30]=--compiled-classes=/system/etc/compiled-classes
+09-15 18:41:39.041  3182  3182 I art     : option[31]=-Xcompiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[32]=--runtime-arg
+09-15 18:41:39.041  3182  3182 I art     : option[33]=-Xcompiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[34]=-Xms64m
+09-15 18:41:39.041  3182  3182 I art     : option[35]=-Xcompiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[36]=--runtime-arg
+09-15 18:41:39.041  3182  3182 I art     : option[37]=-Xcompiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[38]=-Xmx512m
+09-15 18:41:39.041  3182  3182 I art     : option[39]=-Ximage-compiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[40]=--instruction-set-variant=cortex-a53.a57
+09-15 18:41:39.041  3182  3182 I art     : option[41]=-Xcompiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[42]=--instruction-set-variant=cortex-a53.a57
+09-15 18:41:39.041  3182  3182 I art     : option[43]=-Ximage-compiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[44]=--instruction-set-features=default
+09-15 18:41:39.041  3182  3182 I art     : option[45]=-Xcompiler-option
+09-15 18:41:39.041  3182  3182 I art     : option[46]=--instruction-set-features=default
+09-15 18:41:39.041  3182  3182 I art     : option[47]=-Duser.locale=en-US
+09-15 18:41:39.041  3182  3182 I art     : option[48]=--cpu-abilist=armeabi-v7a,armeabi
+09-15 18:41:39.041  3182  3182 I art     : option[49]=-Xfingerprint:samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys
+09-15 18:41:39.089  3181  3181 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-15 18:41:39.131  3182  3182 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-15 18:41:39.145  3181  3181 W art     : Before Android 4.1, method double java.util.concurrent.ThreadLocalRandom.internalNextDouble(double, double) would have incorrectly overridden the package-private method in java.util.Random
+09-15 18:41:39.145  3181  3181 W art     : Before Android 4.1, method int java.util.concurrent.ThreadLocalRandom.internalNextInt(int, int) would have incorrectly overridden the package-private method in java.util.Random
+09-15 18:41:39.145  3181  3181 W art     : Before Android 4.1, method long java.util.concurrent.ThreadLocalRandom.internalNextLong(long, long) would have incorrectly overridden the package-private method in java.util.Random
+--------- beginning of crash
+09-15 18:41:39.164  3183  3183 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3183 (audioserver)
+09-15 18:41:39.165  3074  3074 W         : debuggerd: handling request: pid=3183 uid=1041 gid=1005 tid=3183
+09-15 18:41:39.172  3362  3362 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:41:39.187  3182  3182 W art     : Before Android 4.1, method double java.util.concurrent.ThreadLocalRandom.internalNextDouble(double, double) would have incorrectly overridden the package-private method in java.util.Random
+09-15 18:41:39.187  3182  3182 W art     : Before Android 4.1, method int java.util.concurrent.ThreadLocalRandom.internalNextInt(int, int) would have incorrectly overridden the package-private method in java.util.Random
+09-15 18:41:39.187  3182  3182 W art     : Before Android 4.1, method long java.util.concurrent.ThreadLocalRandom.internalNextLong(long, long) would have incorrectly overridden the package-private method in java.util.Random
+09-15 18:41:39.223  3362  3362 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:41:39.223  3362  3362 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:41:39.223  3362  3362 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:41:39.223  3362  3362 F DEBUG   : Revision: '0'
+09-15 18:41:39.223  3362  3362 F DEBUG   : ABI: 'arm'
+09-15 18:41:39.224  3362  3362 F DEBUG   : pid: 3183, tid: 3183, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:41:39.224  3362  3362 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:41:39.224  3362  3362 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:41:39.224  3362  3362 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6305423
+09-15 18:41:39.224  3362  3362 F DEBUG   :     r8 00000000  r9 f63746c8  sl f6352314  fp 00000000
+09-15 18:41:39.224  3362  3362 F DEBUG   :     ip f6f2dfc4  sp ffca5518  lr f6f29981  pc f69606a6  cpsr 800b0030
+09-15 18:41:39.228  3362  3362 F DEBUG   : 
+09-15 18:41:39.228  3362  3362 F DEBUG   : backtrace:
+09-15 18:41:39.228  3362  3362 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:41:39.228  3362  3362 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:41:39.228  3362  3362 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:41:39.228  3362  3362 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:41:39.228  3362  3362 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:41:39.228  3362  3362 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:41:39.228  3362  3362 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:41:39.228  3362  3362 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:41:39.229  3362  3362 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:41:39.229  3362  3362 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:41:39.229  3362  3362 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:41:39.229  3362  3362 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:41:39.229  3362  3362 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:41:39.229  3362  3362 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:41:39.229  3362  3362 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:41:39.229  3362  3362 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:41:39.229  3362  3362 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:41:39.272  3074  3074 W         : debuggerd: resuming target 3183
+09-15 18:41:39.273  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:41:39.343  3181  3181 I Radio-JNI: register_android_hardware_Radio DONE
+09-15 18:41:39.374  3182  3182 I Radio-JNI: register_android_hardware_Radio DONE
+09-15 18:41:39.380  3181  3181 I SamplingProfilerIntegration: Profiling disabled.
+09-15 18:41:39.380  3181  3181 D Zygote  : begin preload
+09-15 18:41:39.380  3181  3181 I Zygote  : Installing ICU cache reference pinning...
+09-15 18:41:39.381  3181  3181 I Zygote  : Preloading ICU data...
+09-15 18:41:39.414  3182  3182 I SamplingProfilerIntegration: Profiling disabled.
+09-15 18:41:39.415  3182  3182 D Zygote  : begin preload
+09-15 18:41:39.415  3182  3182 I Zygote  : Installing ICU cache reference pinning...
+09-15 18:41:39.415  3182  3182 I Zygote  : Preloading ICU data...
+09-15 18:41:39.521  3181  3181 I Zygote  : Preloading classes...
+09-15 18:41:39.527  3181  3181 W Zygote  : Class not found for preloading: [Landroid.view.Display$ColorTransform;
+09-15 18:41:39.570  3182  3182 I Zygote  : Preloading classes...
+09-15 18:41:39.577  3182  3182 W Zygote  : Class not found for preloading: [Landroid.view.Display$ColorTransform;
+09-15 18:41:39.601  3191  3191 V NatController: runCmd(/system/bin/iptables -w -F natctrl_FORWARD) res=0
+09-15 18:41:39.602  3163  3163 D SurfaceFlinger: SF. shader cache generated - 26 shaders in 918.399658 ms
+09-15 18:41:39.604  3163  3163 D SurfaceFlinger: Set power mode=2, type=0 flinger=0x7f8d448000
+09-15 18:41:39.606  3191  3191 V NatController: runCmd(/system/bin/ip6tables -w -F natctrl_FORWARD) res=0
+09-15 18:41:39.610  3191  3191 V NatController: runCmd(/system/bin/iptables -w -A natctrl_FORWARD -j DROP) res=0
+09-15 18:41:39.615  3191  3191 V NatController: runCmd(/system/bin/iptables -w -t nat -F natctrl_nat_POSTROUTING) res=0
+09-15 18:41:39.620  3191  3191 V NatController: runCmd(/system/bin/ip6tables -w -t raw -F natctrl_raw_PREROUTING) res=0
+09-15 18:41:39.627  3191  3191 V NatController: runCmd(/system/bin/iptables -w -F natctrl_tether_counters) res=1
+09-15 18:41:39.632  3191  3191 V NatController: runCmd(/system/bin/ip6tables -w -F natctrl_tether_counters) res=1
+09-15 18:41:39.641  3191  3191 V NatController: runCmd(/system/bin/iptables -w -X natctrl_tether_counters) res=1
+09-15 18:41:39.645  3191  3191 V NatController: runCmd(/system/bin/ip6tables -w -X natctrl_tether_counters) res=1
+09-15 18:41:39.650  3191  3191 V NatController: runCmd(/system/bin/iptables -w -N natctrl_tether_counters) res=0
+09-15 18:41:39.655  3191  3191 V NatController: runCmd(/system/bin/ip6tables -w -N natctrl_tether_counters) res=0
+09-15 18:41:39.660  3191  3191 V NatController: runCmd(/system/bin/iptables -w -t mangle -A natctrl_mangle_FORWARD -p tcp --tcp-flags SYN SYN -j TCPMSS --clamp-mss-to-pmtu) res=0
+09-15 18:41:39.671  3180  3180 D wrapperGPS: wrapperConnect_RILD
+09-15 18:41:39.734  3191  3191 E Netd    : cannot find interface dummy0
+09-15 18:41:39.735  3191  3191 D MDnsDS  : MDnsSdListener::Hander starting up
+09-15 18:41:39.735  3191  3521 D MDnsDS  : MDnsSdListener starting to monitor
+09-15 18:41:39.735  3191  3521 D MDnsDS  : Going to poll with pollCount 1
+09-15 18:41:39.821  3493  3529 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-15 18:41:39.831  3493  3529 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:2
+09-15 18:41:39.903  3529  3529 I BootAnimation: type=1400 audit(0.0:123): avc: denied { read write } for name="fimg2d" dev="tmpfs" ino=3570 scontext=u:r:bootanim:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+09-15 18:41:39.903  3529  3529 I BootAnimation: type=1400 audit(0.0:123): avc: denied { open } for path="/dev/fimg2d" dev="tmpfs" ino=3570 scontext=u:r:bootanim:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+09-15 18:41:39.903  3529  3529 W BootAnimation: type=1300 audit(0.0:123): arch=c00000b7 syscall=56 success=yes exit=14 a0=ffffff9c a1=7f815df703 a2=2 a3=0 items=0 ppid=1 auid=4294967295 uid=1003 gid=1003 euid=1003 suid=1003 fsuid=1003 egid=1003 sgid=1003 fsgid=1003 tty=(none) ses=4294967295 exe="/system/bin/bootanimation" subj=u:r:bootanim:s0 key=(null)
+09-15 18:41:39.903  3083  3083 W auditd  : type=1327 audit(0.0:123): proctitle="/system/bin/bootanimation"
+09-15 18:41:39.903  3083  3083 W auditd  : type=1320 audit(0.0:123): 
+09-15 18:41:39.903  3529  3529 I BootAnimation: type=1400 audit(0.0:124): avc: denied { ioctl } for path="/dev/fimg2d" dev="tmpfs" ino=3570 ioctlcmd=4d04 scontext=u:r:bootanim:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+09-15 18:41:39.903  3529  3529 W BootAnimation: type=1300 audit(0.0:124): arch=c00000b7 syscall=29 success=yes exit=0 a0=f a1=c1104d04 a2=7f7d50d2b0 a3=0 items=0 ppid=1 auid=4294967295 uid=1003 gid=1003 euid=1003 suid=1003 fsuid=1003 egid=1003 sgid=1003 fsgid=1003 tty=(none) ses=4294967295 exe="/system/bin/bootanimation" subj=u:r:bootanim:s0 key=(null)
+09-15 18:41:39.903  3083  3083 W auditd  : type=1327 audit(0.0:124): proctitle="/system/bin/bootanimation"
+09-15 18:41:39.903  3083  3083 W auditd  : type=1320 audit(0.0:124): 
+09-15 18:41:40.026  3181  3181 E Typeface: Error mapping font file /system/fonts/DroidSansFallback.ttf
+09-15 18:41:40.027  3182  3182 E Typeface: Error mapping font file /system/fonts/DroidSansFallback.ttf
+09-15 18:41:40.671  3180  3180 D wrapperGPS: wrapperConnect_RILD
+09-15 18:41:40.814  3181  3181 I art     : Thread[1,tid=3181,Native,Thread*=0x7fa3495a00,peer=0x12c420d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+09-15 18:41:40.814  3181  3181 D MtpDeviceJNI: register_android_mtp_MtpDevice
+09-15 18:41:40.815  3181  3181 I art     : Thread[1,tid=3181,Native,Thread*=0x7fa3495a00,peer=0x12c420d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+09-15 18:41:40.816  3181  3181 I art     : Thread[1,tid=3181,Native,Thread*=0x7fa3495a00,peer=0x12c420d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+09-15 18:41:40.852  3181  3181 E FFMPEGSoftCodec: Failed to load FFMPEG plugin: (null)
+09-15 18:41:40.929  3182  3182 I art     : Thread[1,tid=3182,Native,Thread*=0xf4705400,peer=0x12c04f70,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+09-15 18:41:40.929  3182  3182 D MtpDeviceJNI: register_android_mtp_MtpDevice
+09-15 18:41:40.931  3182  3182 I art     : Thread[1,tid=3182,Native,Thread*=0xf4705400,peer=0x12c04f70,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+09-15 18:41:40.931  3182  3182 I art     : Thread[1,tid=3182,Native,Thread*=0xf4705400,peer=0x12c04f70,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+09-15 18:41:40.971  3182  3182 E FFMPEGSoftCodec: Failed to load FFMPEG plugin: (null)
+09-15 18:41:41.205  3181  3181 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform
+09-15 18:41:41.205  3181  3181 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform$1
+09-15 18:41:41.336  3182  3182 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform
+09-15 18:41:41.336  3182  3182 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform$1
+09-15 18:41:41.436  3181  3181 W System  : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+09-15 18:41:41.591  3182  3182 W System  : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+09-15 18:41:41.665  3181  3181 I System  : Loaded time zone names for "" in 57ms (26ms in ICU)
+09-15 18:41:41.671  3180  3180 D wrapperGPS: wrapperConnect_RILD
+09-15 18:41:41.672  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:41:41.672  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:41:41.672  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:41:41.672  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:41:41.705  3181  3181 I System  : Loaded time zone names for "en_US" in 39ms (10ms in ICU)
+09-15 18:41:41.745  3559  3559 I         : sMaxFastTracks = 8
+09-15 18:41:41.745  3559  3559 I audioserver: ServiceManager: 0xf6399420
+09-15 18:41:41.746  3559  3559 W BatteryNotifier: batterystats service unavailable!
+09-15 18:41:41.746  3559  3559 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:41:41.746  3559  3559 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:41:41.746  3559  3559 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:41:41.747  3559  3559 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:41:41.747  3559  3559 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:41:41.747  3559  3559 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:41:41.846  3182  3182 I System  : Loaded time zone names for "" in 62ms (18ms in ICU)
+09-15 18:41:41.902  3182  3182 I System  : Loaded time zone names for "en_US" in 55ms (10ms in ICU)
+09-15 18:41:42.005  3181  3181 I Zygote  : ...preloaded 4158 classes in 2485ms.
+09-15 18:41:42.006  3181  3181 I art     : VMRuntime.preloadDexCaches starting
+09-15 18:41:42.057  3181  3181 I art     : VMRuntime.preloadDexCaches strings total=288446 before=12011 after=12011
+09-15 18:41:42.057  3181  3181 I art     : VMRuntime.preloadDexCaches types total=23810 before=9280 after=11325
+09-15 18:41:42.057  3181  3181 I art     : VMRuntime.preloadDexCaches fields total=113941 before=41160 after=54105
+09-15 18:41:42.057  3181  3181 I art     : VMRuntime.preloadDexCaches methods total=199717 before=78591 after=96703
+09-15 18:41:42.057  3181  3181 I art     : VMRuntime.preloadDexCaches finished
+09-15 18:41:42.058  3181  3181 I Zygote  : Preloading resources...
+09-15 18:41:42.095  3181  3181 W Resources: Preloaded drawable resource #0x108025c (android:drawable/dialog_background_material) that varies with configuration!!
+09-15 18:41:42.104  3181  3181 W Resources: Preloaded color resource #0x10600ea (android:color/material_grey_800) that varies with configuration!!
+09-15 18:41:42.104  3181  3181 W Resources: Preloaded drawable resource #0x10802c9 (android:drawable/floating_popup_background_dark) that varies with configuration!!
+09-15 18:41:42.154  3559  3559 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3559 (audioserver)
+09-15 18:41:42.154  3074  3074 W         : debuggerd: handling request: pid=3559 uid=1041 gid=1005 tid=3559
+09-15 18:41:42.160  3563  3563 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:41:42.210  3563  3563 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:41:42.210  3563  3563 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:41:42.210  3563  3563 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:41:42.211  3563  3563 F DEBUG   : Revision: '0'
+09-15 18:41:42.211  3563  3563 F DEBUG   : ABI: 'arm'
+09-15 18:41:42.211  3563  3563 F DEBUG   : pid: 3559, tid: 3559, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:41:42.211  3563  3563 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:41:42.211  3563  3563 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:41:42.211  3563  3563 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6385423
+09-15 18:41:42.211  3563  3563 F DEBUG   :     r8 00000000  r9 f63f46c8  sl f63d2314  fp 00000000
+09-15 18:41:42.211  3563  3563 F DEBUG   :     ip f6fb3fc4  sp ffb02c48  lr f6faf981  pc f6a1c6a6  cpsr 800b0030
+09-15 18:41:42.215  3563  3563 F DEBUG   : 
+09-15 18:41:42.215  3563  3563 F DEBUG   : backtrace:
+09-15 18:41:42.215  3563  3563 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:41:42.215  3563  3563 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:41:42.216  3563  3563 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:41:42.233  3181  3181 I Zygote  : ...preloaded 114 resources in 176ms.
+09-15 18:41:42.242  3181  3181 W Resources: Preloaded color resource #0x1060114 (android:color/background_cache_hint_selector_material_dark) that varies with configuration!!
+09-15 18:41:42.242  3181  3181 W Resources: Preloaded color resource #0x1060119 (android:color/btn_default_material_dark) that varies with configuration!!
+09-15 18:41:42.244  3181  3181 I Zygote  : ...preloaded 41 resources in 11ms.
+09-15 18:41:42.247  3181  3181 I Zygote  : ...preloaded 2 resource in 2ms.
+09-15 18:41:42.252  3182  3182 I Zygote  : ...preloaded 4158 classes in 2682ms.
+09-15 18:41:42.253  3182  3182 I art     : VMRuntime.preloadDexCaches starting
+09-15 18:41:42.255  3559  3559 W audioserver: type=1701 audit(0.0:125): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:41:42.256  3181  3181 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-15 18:41:42.260  3074  3074 W         : debuggerd: resuming target 3559
+09-15 18:41:42.265  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:41:42.265  3181  3181 I Zygote  : Preloading shared libraries...
+09-15 18:41:42.289  3181  3181 I Zygote  : Uninstalled ICU cache reference pinning...
+09-15 18:41:42.297  3181  3181 I Zygote  : Installed AndroidKeyStoreProvider in 7ms.
+09-15 18:41:42.317  3182  3182 I art     : VMRuntime.preloadDexCaches strings total=288446 before=12011 after=12011
+09-15 18:41:42.317  3182  3182 I art     : VMRuntime.preloadDexCaches types total=23810 before=9280 after=11325
+09-15 18:41:42.317  3182  3182 I art     : VMRuntime.preloadDexCaches fields total=113941 before=41160 after=54105
+09-15 18:41:42.317  3182  3182 I art     : VMRuntime.preloadDexCaches methods total=199717 before=78591 after=96703
+09-15 18:41:42.317  3182  3182 I art     : VMRuntime.preloadDexCaches finished
+09-15 18:41:42.318  3182  3182 I Zygote  : Preloading resources...
+09-15 18:41:42.351  3182  3182 W Resources: Preloaded drawable resource #0x108025c (android:drawable/dialog_background_material) that varies with configuration!!
+09-15 18:41:42.358  3182  3182 W Resources: Preloaded color resource #0x10600ea (android:color/material_grey_800) that varies with configuration!!
+09-15 18:41:42.358  3182  3182 W Resources: Preloaded drawable resource #0x10802c9 (android:drawable/floating_popup_background_dark) that varies with configuration!!
+09-15 18:41:42.400  3181  3181 I Zygote  : Warmed up JCA providers in 104ms.
+09-15 18:41:42.400  3181  3181 D Zygote  : end preload
+09-15 18:41:42.400  3181  3181 I art     : Starting a blocking GC Explicit
+09-15 18:41:42.411  3181  3181 I art     : Explicit concurrent mark sweep GC freed 3150(137KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 10MB/17MB, paused 53us total 10.108ms
+09-15 18:41:42.411  3181  3181 I art     : Starting a blocking GC Explicit
+09-15 18:41:42.421  3181  3181 I art     : Explicit concurrent mark sweep GC freed 51(2072B) AllocSpace objects, 0(0B) LOS objects, 40% free, 10MB/17MB, paused 47us total 10.046ms
+09-15 18:41:42.441  3181  3374 I art     : Starting a blocking GC HeapTrim
+09-15 18:41:42.442  3181  3181 I art     : Starting a blocking GC Background
+09-15 18:41:42.485  3181  3181 I Zygote  : System server process 3568 has been created
+09-15 18:41:42.486  3181  3181 I Zygote  : Accepting command socket connections
+09-15 18:41:42.494  3182  3182 I Zygote  : ...preloaded 114 resources in 176ms.
+09-15 18:41:42.503  3182  3182 W Resources: Preloaded color resource #0x1060114 (android:color/background_cache_hint_selector_material_dark) that varies with configuration!!
+09-15 18:41:42.504  3182  3182 W Resources: Preloaded color resource #0x1060119 (android:color/btn_default_material_dark) that varies with configuration!!
+09-15 18:41:42.506  3182  3182 I Zygote  : ...preloaded 41 resources in 12ms.
+09-15 18:41:42.509  3182  3182 I Zygote  : ...preloaded 2 resource in 2ms.
+09-15 18:41:42.543  3182  3182 D libEGL  : loaded /vendor/lib/egl/libGLES_mali.so
+09-15 18:41:42.557  3182  3182 I Zygote  : Preloading shared libraries...
+09-15 18:41:42.581  3182  3182 I Zygote  : Uninstalled ICU cache reference pinning...
+09-15 18:41:42.590  3182  3182 I Zygote  : Installed AndroidKeyStoreProvider in 8ms.
+09-15 18:41:42.731  3182  3182 I Zygote  : Warmed up JCA providers in 141ms.
+09-15 18:41:42.731  3182  3182 D Zygote  : end preload
+09-15 18:41:42.732  3182  3182 I art     : Starting a blocking GC Explicit
+09-15 18:41:42.742  3182  3182 I art     : Explicit concurrent mark sweep GC freed 3202(141KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 9MB/16MB, paused 69us total 10.747ms
+09-15 18:41:42.743  3182  3182 I art     : Starting a blocking GC Explicit
+09-15 18:41:42.754  3182  3182 I art     : Explicit concurrent mark sweep GC freed 58(2512B) AllocSpace objects, 0(0B) LOS objects, 40% free, 9MB/16MB, paused 83us total 10.546ms
+09-15 18:41:42.768  3182  3182 I Zygote  : Accepting command socket connections
+09-15 18:41:42.776  3568  3568 I Zygote  : Process: zygote socket opened, supported ABIS: armeabi-v7a,armeabi
+09-15 18:41:42.777  3568  3568 I InstallerConnection: connecting...
+09-15 18:41:42.777  3185  3185 I         : new connection
+09-15 18:41:42.787  3568  3568 I InstallerConnection: disconnecting...
+09-15 18:41:42.787  3185  3185 E         : eof
+09-15 18:41:42.787  3185  3185 E         : failed to read size
+09-15 18:41:42.787  3185  3185 I         : closing connection
+09-15 18:41:42.797  3568  3568 W art     : Found duplicate classes, falling back to interpreter mode for /system/framework/wifi-service.jar
+09-15 18:41:42.798  3568  3568 W art     : Found duplicated class when checking oat files: 'Lcom/google/protobuf/nano/MessageNano;' in /system/framework/services.jar and /system/framework/wifi-service.jar
+09-15 18:41:42.829  3568  3568 I SystemServer: Entered the Android system server!
+09-15 18:41:42.877  3568  3568 I SystemServiceManager: Starting com.android.server.pm.Installer
+09-15 18:41:42.880  3568  3568 I Installer: Waiting for installd to be ready.
+09-15 18:41:42.880  3568  3568 I InstallerConnection: connecting...
+09-15 18:41:42.880  3185  3185 I         : new connection
+09-15 18:41:42.880  3568  3568 I SystemServiceManager: Starting com.android.server.am.ActivityManagerService$Lifecycle
+09-15 18:41:42.893  3568  3568 I ActivityManager: Memory class: 256
+09-15 18:41:42.894  3568  3582 I ServiceThread: Enabled StrictMode logging for ActivityManager looper.
+09-15 18:41:42.896  3568  3583 I ServiceThread: Enabled StrictMode logging for android.ui looper.
+09-15 18:41:42.932  3568  3568 D BatteryStatsImpl: Reading daily items from /data/system/batterystats-daily.xml
+09-15 18:41:42.966  3568  3568 I AppOps  : No existing app ops /data/system/appops.xml; starting empty
+09-15 18:41:43.054  3568  3568 I IntentFirewall: Read new rules (A:0 B:0 S:0)
+09-15 18:41:43.058  3568  3589 I ServiceThread: Enabled StrictMode logging for android.display looper.
+09-15 18:41:43.068  3568  3568 D AppOps  : AppOpsService published
+09-15 18:41:43.068  3568  3568 I SystemServiceManager: Starting com.android.server.power.PowerManagerService
+09-15 18:41:43.071  3568  3591 I ServiceThread: Enabled StrictMode logging for PowerManagerService looper.
+09-15 18:41:43.073  3568  3568 I SamsungPowerHAL: Initialized settings:
+09-15 18:41:43.073  3568  3568 I SamsungPowerHAL: max_freqs: cluster[0]: 1690000, cluster[1]: 2496000
+09-15 18:41:43.073  3568  3568 I SamsungPowerHAL: hispeed_freqs: cluster[0]: 1690000, cluster[1]: 2496000
+09-15 18:41:43.073  3568  3568 I SamsungPowerHAL: boostpulse_fd: 62
+09-15 18:41:43.073  3568  3568 I SamsungPowerHAL: touchscreen_power_path: /sys/class/input/input0/enabled
+09-15 18:41:43.073  3568  3568 I SamsungPowerHAL: touchkey_power_path: NULL
+09-15 18:41:43.073  3568  3568 W libsuspend: Error writing 'on' to /sys/power/state: Invalid argument
+09-15 18:41:43.073  3568  3568 I libsuspend: Selected wakeup count
+09-15 18:41:43.076  3568  3568 I SystemServiceManager: Starting com.android.server.lights.LightsService
+09-15 18:41:43.078  3568  3568 I SystemServiceManager: Starting com.android.server.display.DisplayManagerService
+09-15 18:41:43.083  3568  3568 I SystemServiceManager: Starting phase 100
+09-15 18:41:43.085  3568  3589 W LocalDisplayAdapter: Unable to get active color mode for display device 0
+09-15 18:41:43.089  3568  3589 E LocalDisplayAdapter: Default and active color mode is no longer available! Reverting to first available mode.
+09-15 18:41:43.090  3163  3198 E SurfaceFlinger: getDefaultDisplay: id=2 is not a valid default display id
+09-15 18:41:43.091  3568  3589 I DisplayManagerService: Display device added: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 1440 x 2960, modeId 1, defaultModeId 1, supportedModes [{id=1, width=1440, height=2960, fps=60.000004}], colorMode -22, supportedColorModes [-22], HdrCapabilities android.view.Display$HdrCapabilities@a69d6308, density 560, 522.514 x 525.762 dpi, appVsyncOff 1000000, presDeadline 16666666, touch INTERNAL, rotation 0, type BUILT_IN, state UNKNOWN, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
+09-15 18:41:43.091  3163  3163 D SurfaceFlinger: Set power mode=2, type=0 flinger=0x7f8d448000
+09-15 18:41:43.091  3163  3163 D SurfaceFlinger: Screen type=0 is already mode=2
+09-15 18:41:43.096  3568  3589 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+09-15 18:41:43.097  3568  3568 I SystemServer: StartPackageManagerService
+09-15 18:41:43.217  3568  3568 D SELinuxMMAC: Using policy file /system/etc/security/mac_permissions.xml
+09-15 18:41:44.234  3568  3568 E art     : DexFile_getDexOptNeeded file '/system/framework/org.apache.http.legacy.jar' does not exist
+09-15 18:41:44.235  3568  3568 W PackageManager: Library not found: /system/framework/org.apache.http.legacy.jar
+09-15 18:41:44.247  3553  3553 I rild    : type=1400 audit(0.0:126): avc: denied { ioctl } for path="/dev/umts_ipc0" dev="tmpfs" ino=3561 ioctlcmd=6f27 scontext=u:r:rild:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-15 18:41:44.247  3553  3553 W rild    : type=1300 audit(0.0:126): arch=c00000b7 syscall=29 success=yes exit=4 a0=13 a1=6f27 a2=40800 a3=7f9e86b880 items=0 ppid=1 auid=4294967295 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/rild" subj=u:r:rild:s0 key=(null)
+09-15 18:41:44.247  3083  3083 W auditd  : type=1327 audit(0.0:126): proctitle="/system/bin/rild"
+09-15 18:41:44.247  3083  3083 W auditd  : type=1320 audit(0.0:126): 
+09-15 18:41:44.250  3568  3568 E art     : DexFile_getDexOptNeeded file '/system/framework/org.apache.http.legacy.jar' does not exist
+09-15 18:41:44.250  3568  3568 W PackageManager: Library not found: /system/framework/org.apache.http.legacy.jar
+09-15 18:41:44.253  3568  3568 D PackageManager: No files in app dir /vendor/overlay
+09-15 18:41:44.253  3568  3568 D PackageManager: start scanDirLI:/system/framework
+09-15 18:41:44.253  3568  3568 D PackageManager: max thread:6
+09-15 18:41:44.289  3568  3598 W PackageManager: Permission cyanogenmod.permission.WRITE_ALARMS from package cyanogenmod.platform in an unknown group android.permission-group.SYSTEM_CLOCK
+09-15 18:41:44.289  3568  3598 W PackageManager: Permission cyanogenmod.permission.MANAGE_ALARMS from package cyanogenmod.platform in an unknown group android.permission-group.SYSTEM_CLOCK
+09-15 18:41:44.289  3568  3598 W PackageManager: Permission cyanogenmod.permission.READ_ALARMS from package cyanogenmod.platform in an unknown group android.permission-group.SYSTEM_CLOCK
+09-15 18:41:44.381  3568  3568 D PackageManager: end scanDirLI:/system/framework
+09-15 18:41:44.382  3568  3568 D PackageManager: start scanDirLI:/system/priv-app
+09-15 18:41:44.382  3568  3568 D PackageManager: max thread:6
+09-15 18:41:44.428  3568  3599 W PackageParser: No actions in intent filter at /system/priv-app/Contacts/Contacts.apk Binary XML file line #431
+09-15 18:41:44.436  3568  3600 W PackageManager: Permission android.permission.DOWNLOAD_WITHOUT_NOTIFICATION from package com.android.providers.downloads in an unknown group android.permission-group.NETWORK
+09-15 18:41:44.443  3568  3601 W PackageParser: No actions in intent filter at /system/priv-app/Dialer/Dialer.apk Binary XML file line #207
+09-15 18:41:44.504  3568  3599 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS in package: com.android.shell at: Binary XML file line #102
+09-15 18:41:44.524  3568  3598 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.CONFIGURE_WIFI_DISPLAY in package: com.android.systemui at: Binary XML file line #117
+09-15 18:41:44.527  3568  3599 W PackageManager: Permission com.android.launcher.permission.INSTALL_SHORTCUT from package com.cyanogenmod.trebuchet in an unknown group android.permission-group.SYSTEM_TOOLS
+09-15 18:41:44.527  3568  3599 W PackageManager: Permission com.android.launcher3.permission.READ_SETTINGS from package com.cyanogenmod.trebuchet in an unknown group android.permission-group.SYSTEM_TOOLS
+09-15 18:41:44.527  3568  3599 W PackageManager: Permission com.android.launcher3.permission.WRITE_SETTINGS from package com.cyanogenmod.trebuchet in an unknown group android.permission-group.SYSTEM_TOOLS
+09-15 18:41:44.550  3568  3602 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.USE_CREDENTIALS in package: com.android.settings at: Binary XML file line #56
+09-15 18:41:44.551  3568  3602 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.READ_SYNC_SETTINGS in package: com.android.settings at: Binary XML file line #61
+09-15 18:41:44.551  3568  3602 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.WRITE_SYNC_SETTINGS in package: com.android.settings at: Binary XML file line #62
+09-15 18:41:44.659  3568  3568 D PackageManager: end scanDirLI:/system/priv-app
+09-15 18:41:44.660  3568  3568 D PackageManager: start scanDirLI:/system/app
+09-15 18:41:44.660  3568  3568 D PackageManager: max thread:6
+09-15 18:41:44.681  3568  3601 W PackageParser: No actions in intent filter at /system/app/Bluetooth/Bluetooth.apk Binary XML file line #226
+09-15 18:41:44.685  3568  3602 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.calendar activity: com.android.calendar.GoogleCalendarUriIntentFilter origPrio: 50
+09-15 18:41:44.693  3568  3598 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+09-15 18:41:44.693  3568  3598 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+09-15 18:41:44.693  3568  3598 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+09-15 18:41:44.693  3568  3598 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+09-15 18:41:44.694  3568  3598 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+09-15 18:41:44.694  3568  3597 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.WRITE_SETTINGS in package: com.android.deskclock at: Binary XML file line #45
+09-15 18:41:44.735  3568  3601 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.CHANGE_WIFI_STATE in package: com.android.nfc at: Binary XML file line #47
+09-15 18:41:44.736  3568  3601 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.ACCESS_WIFI_STATE in package: com.android.nfc at: Binary XML file line #48
+09-15 18:41:44.752  3568  3598 W PackageManager: Permission com.android.email.permission.READ_ATTACHMENT from package com.android.email in an unknown group android.permission-group.MESSAGES
+09-15 18:41:44.764  3568  3599 W PackageManager: Failed to parse /system/app/mcRegistry: Missing base APK in /system/app/mcRegistry
+09-15 18:41:44.798  3568  3568 D PackageManager: end scanDirLI:/system/app
+09-15 18:41:44.798  3568  3568 D PackageManager: No files in app dir /system/vendor/app
+09-15 18:41:44.798  3568  3568 D PackageManager: No files in app dir /oem/app
+09-15 18:41:44.803  3568  3568 D PackageManager: No files in app dir /data/app
+09-15 18:41:44.803  3568  3568 D PackageManager: No files in app dir /data/app-private
+09-15 18:41:44.803  3568  3568 D PackageManager: No files in app dir /data/app-ephemeral
+09-15 18:41:44.807  3568  3568 E PackageManager: There should probably be exactly one setup wizard; found 0: matches=[]
+09-15 18:41:44.807  3568  3568 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+09-15 18:41:44.807  3568  3568 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+09-15 18:41:44.807  3568  3568 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+09-15 18:41:44.807  3568  3568 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+09-15 18:41:44.807  3568  3568 W PackageManager: Protected action; cap priority to 0; package: com.android.packageinstaller activity: com.android.packageinstaller.PackageInstallerActivity origPrio: 1
+09-15 18:41:44.808  3568  3568 W PackageManager: Package com.android.gallery3d desires unavailable shared library com.google.android.media.effects; ignoring!
+09-15 18:41:44.808  3568  3568 W PackageManager: Package com.android.gallery3d desires unavailable shared library com.google.android.media.effects; ignoring!
+09-15 18:41:44.808  3568  3568 I PackageManager: Adjusting ABI for com.android.providers.media to arm64-v8a (requirer=com.android.mtp, scannedPackage=null)
+09-15 18:41:44.809  3568  3568 I PackageManager: Adjusting ABI for com.android.providers.downloads.ui to arm64-v8a (requirer=com.android.mtp, scannedPackage=null)
+09-15 18:41:44.809  3568  3568 I PackageManager: Adjusting ABI for com.android.providers.downloads to arm64-v8a (requirer=com.android.mtp, scannedPackage=null)
+09-15 18:41:44.810  3568  3568 I PackageManager: Adjusting ABI for com.android.location.fused to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.810  3568  3568 I PackageManager: Adjusting ABI for com.android.providers.settings to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.811  3568  3568 I PackageManager: Adjusting ABI for org.cyanogenmod.cmsettings to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.811  3568  3568 I PackageManager: Adjusting ABI for com.cyanogenmod.setupwizard to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.811  3568  3568 I PackageManager: Adjusting ABI for cyanogenmod.platform to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.811  3185  3185 E         : invalid apk path '/system/framework/org.cyanogenmod.platform-res.apk' (bad prefix)
+09-15 18:41:44.812  3568  3568 I PackageManager: Adjusting ABI for com.android.inputdevices to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.812  3568  3568 I PackageManager: Adjusting ABI for com.android.server.telecom to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.812  3568  3568 I PackageManager: Adjusting ABI for com.cyanogenmod.settings.device to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.813  3568  3568 I PackageManager: Adjusting ABI for com.android.keychain to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.813  3568  3568 I PackageManager: Adjusting ABI for com.android.development to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.814  3568  3568 I PackageManager: Adjusting ABI for org.cyanogenmod.cmparts to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.814  3568  3568 I PackageManager: Adjusting ABI for com.android.settings to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.814  3568  3568 I PackageManager: Adjusting ABI for com.android.wallpaperbackup to arm64-v8a (requirer=android, scannedPackage=null)
+09-15 18:41:44.815  3568  3568 I PackageManager: Time to scan packages: 0.589 seconds
+09-15 18:41:44.817  3568  3568 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+09-15 18:41:44.817  3568  3568 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+09-15 18:41:44.820  3568  3568 W PackageManager: Unknown permission cyanogenmod.permission.LEGALESE in package com.cyanogenmod.setupwizard
+09-15 18:41:44.821  3568  3568 W PackageManager: Unknown permission com.android.gallery3d.permission.STORAGE_CHANGE in package com.android.camera2
+09-15 18:41:44.821  3568  3568 W PackageManager: Unknown permission android.permission.NFC_UNLOCK in package com.android.nfc
+09-15 18:41:44.823  3568  3568 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+09-15 18:41:44.823  3568  3568 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+09-15 18:41:44.823  3568  3568 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+09-15 18:41:44.825  3568  3568 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.cyanogenmod.trebuchet
+09-15 18:41:44.825  3568  3568 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.cyanogenmod.trebuchet
+09-15 18:41:44.826  3568  3568 W PackageManager: Unknown permission com.google.android.permission.INSTALL_WEARABLE_PACKAGES in package com.android.packageinstaller
+09-15 18:41:44.826  3568  3568 W PackageManager: Not granting permission android.permission.DELETE_PACKAGES to package com.svox.pico (protectionLevel=18 flags=0x3808be45)
+09-15 18:41:44.827  3568  3568 W PackageManager: Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.android.dreams.phototable
+09-15 18:41:44.828  3568  3568 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+09-15 18:41:44.828  3568  3568 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.settings
+09-15 18:41:44.829  3568  3568 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.settings
+09-15 18:41:44.833  3568  3568 W PackageManager: Not granting permission android.permission.MANAGE_DOCUMENTS to package com.android.deskclock (protectionLevel=2 flags=0x3c49be45)
+09-15 18:41:44.833  3568  3568 W PackageManager: Unknown permission com.android.deskclock.worldclock.permissions.WRITE_DATABASE in package com.android.deskclock
+09-15 18:41:44.834  3568  3568 W PackageManager: Unknown permission org.codeaurora.permission.POWER_ON_ALERT in package com.android.deskclock
+09-15 18:41:44.834  3568  3568 W PackageManager: Not granting permission android.permission.WRITE_SECURE_SETTINGS to package com.android.deskclock (protectionLevel=50 flags=0x3c49be45)
+09-15 18:41:44.835  3568  3568 W PackageManager: Unknown permission com.cyanogenmod.lockclock.permission.READ_WEATHER in package com.android.systemui
+09-15 18:41:44.837  3568  3568 W PackageManager: Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.bluetooth
+09-15 18:41:44.837  3568  3568 W PackageManager: Unknown permission com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD in package com.android.development
+09-15 18:41:44.837  3568  3568 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.development
+09-15 18:41:44.837  3568  3568 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES in package com.android.development
+09-15 18:41:44.837  3568  3568 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser in package com.android.development
+09-15 18:41:44.838  3568  3568 V PackageManager: reconcileAppsData for null u0 0x3
+09-15 18:41:44.852  3185  3185 E SELinux : selinux_android_file_context_handle: Error getting file context handle (No such file or directory)
+09-15 18:41:45.022  3568  3568 V PackageManager: reconcileAppsData finished 93 packages
+09-15 18:41:45.022  3568  3568 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity
+09-15 18:41:45.022  3568  3568 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity
+09-15 18:41:45.022  3568  3568 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver
+09-15 18:41:45.023  3568  3568 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver
+09-15 18:41:45.023  3568  3568 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$SecretCodeReceiver
+09-15 18:41:45.023  3568  3568 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$SecretCodeReceiver
+09-15 18:41:45.023  3568  3568 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateServiceReceiver
+09-15 18:41:45.023  3568  3568 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateServiceReceiver
+09-15 18:41:45.023  3568  3568 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity
+09-15 18:41:45.023  3568  3568 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity
+09-15 18:41:45.023  3568  3568 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver
+09-15 18:41:45.023  3568  3568 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver
+09-15 18:41:45.024  3568  3568 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver
+09-15 18:41:45.024  3568  3568 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver
+09-15 18:41:45.024  3568  3568 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver
+09-15 18:41:45.024  3568  3568 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver
+09-15 18:41:45.024  3568  3568 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateServiceReceiver
+09-15 18:41:45.024  3568  3568 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateServiceReceiver
+09-15 18:41:45.024  3568  3568 V PackageManager: Enabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService
+09-15 18:41:45.024  3568  3568 W PackageManager: Unable to enable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService
+09-15 18:41:45.025  3568  3568 V PackageManager: Enabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService
+09-15 18:41:45.025  3568  3568 W PackageManager: Unable to enable com.google.android.gms/com.google.android.gms.update.SystemUpdateService
+09-15 18:41:45.291  3568  3568 E PackageManager: There should probably be a verifier, but, none were found
+09-15 18:41:45.294  3568  3568 D PackageManager: Ephemeral resolver NOT found; no matching intent filters
+09-15 18:41:45.294  3568  3568 I PackageManager: Ephemeral deactivated; missing resolver and installer
+09-15 18:41:45.294  3568  3568 I art     : Starting a blocking GC Explicit
+09-15 18:41:45.313  3568  3568 I art     : Explicit concurrent mark sweep GC freed 30593(1679KB) AllocSpace objects, 3(60KB) LOS objects, 33% free, 9MB/13MB, paused 121us total 18.806ms
+09-15 18:41:45.315  3568  3568 I SystemServer: StartOtaDexOptService
+09-15 18:41:45.317  3568  3568 I SystemServer: StartUserManagerService
+09-15 18:41:45.317  3568  3568 I SystemServiceManager: Starting com.android.server.pm.UserManagerService$LifeCycle
+09-15 18:41:45.330  3161  3161 I lowmemorykiller: ActivityManager connected
+09-15 18:41:45.331  3568  3568 I SystemServiceManager: Starting com.android.server.BatteryService
+09-15 18:41:45.331  3568  3604 D SensorService: nuSensorService starting...
+09-15 18:41:45.337  3568  3568 I SystemServiceManager: Starting com.android.server.usage.UsageStatsService
+09-15 18:41:45.341  3568  3604 W MultiHal: No multihal config file found at /system/etc/sensors/hals.conf
+09-15 18:41:45.347  3568  3568 I SystemServiceManager: Starting com.android.server.webkit.WebViewUpdateService
+09-15 18:41:45.352  3568  3568 I SystemServer: Reading configuration...
+09-15 18:41:45.352  3568  3568 I SystemServer: StartSchedulingPolicyService
+09-15 18:41:45.353  3568  3568 I SystemServiceManager: Starting com.android.server.telecom.TelecomLoaderService
+09-15 18:41:45.354  3568  3568 I SystemServer: StartTelephonyRegistry
+09-15 18:41:45.358  3568  3568 I SystemServer: StartEntropyMixer
+09-15 18:41:45.378  3568  3568 I EntropyMixer: Added HW RNG output to entropy pool
+09-15 18:41:45.378  3568  3568 I EntropyMixer: Writing entropy...
+09-15 18:41:45.399  3568  3568 I SystemServer: Camera Service
+09-15 18:41:45.400  3568  3568 I SystemServiceManager: Starting com.android.server.camera.CameraService
+09-15 18:41:45.401  3568  3605 I ServiceThread: Enabled StrictMode logging for CameraService_proxy looper.
+09-15 18:41:45.402  3568  3568 I SystemServer: StartAccountManagerService
+09-15 18:41:45.403  3568  3568 I SystemServiceManager: Starting com.android.server.accounts.AccountManagerService$Lifecycle
+09-15 18:41:45.410  3568  3568 I SystemServer: StartContentService
+09-15 18:41:45.410  3568  3568 I SystemServiceManager: Starting com.android.server.content.ContentService$Lifecycle
+09-15 18:41:45.412  3568  3568 I SystemServer: InstallSystemProviders
+09-15 18:41:45.416  3568  3568 W System  : ClassLoader referenced unknown path: /system/priv-app/CMSettingsProvider/lib/arm64
+09-15 18:41:45.429  3568  3568 W System  : ClassLoader referenced unknown path: /system/priv-app/SettingsProvider/lib/arm64
+09-15 18:41:45.430  3568  3568 D ApplicationLoaders: ignored Vulkan layer search path /system/priv-app/SettingsProvider/lib/arm64:/system/priv-app/SettingsProvider/SettingsProvider.apk!/lib/arm64-v8a:/system/lib64:/vendor/lib64 for namespace 0x7fa7383160
+09-15 18:41:45.467  3568  3568 I SystemServer: StartVibratorService
+09-15 18:41:45.471  3568  3568 I SystemServer: StartConsumerIrService
+09-15 18:41:45.471  3568  3568 E ConsumerIrService: Can't open consumer IR HW Module, error: -2
+09-15 18:41:45.472  3568  3568 I SystemServer: StartAlarmManagerService
+09-15 18:41:45.472  3568  3568 I SystemServiceManager: Starting com.android.server.AlarmManagerService
+09-15 18:41:45.477  3568  3568 I SystemServer: InitWatchdog
+09-15 18:41:45.478  3568  3568 I SystemServer: StartInputManagerService
+09-15 18:41:45.478  3568  3568 I InputManager: Initializing input manager, mUseDevInputEventForAudioJack=false
+09-15 18:41:45.479  3568  3568 I SystemServer: StartWindowManagerService
+09-15 18:41:45.510  3568  3589 I WindowManager: No existing display settings /data/system/display_settings.xml; starting empty
+09-15 18:41:45.522  3568  3583 I CameraManagerGlobal: Connecting to camera service
+09-15 18:41:45.524  3176  3176 E CameraService: getCameraVendorTagDescriptor: camera hardware module doesn't exist
+09-15 18:41:45.561  3568  3583 W art     : Found duplicate classes, falling back to interpreter mode for /system/priv-app/CMParts/CMParts.apk
+09-15 18:41:45.561  3568  3583 W art     : Found duplicated class when checking oat files: 'Lcyanogenmod/app/IProfileManager;' in /system/priv-app/CMParts/CMParts.apk and /system/framework/org.cyanogenmod.platform.jar
+09-15 18:41:45.607  3568  3568 I SystemServer: StartVrManagerService
+09-15 18:41:45.607  3568  3568 I SystemServiceManager: Starting com.android.server.vr.VrManagerService
+09-15 18:41:45.608  3568  3568 W VrManagerService: init_native: Could not open VR hardware module, error No such file or directory (-2).
+09-15 18:41:45.612  3568  3568 I InputManager: Starting input manager
+09-15 18:41:45.617  3568  3568 I SystemServiceManager: Starting com.android.server.BluetoothService
+09-15 18:41:45.620  3568  3568 D BluetoothManagerService: Loading stored name and address
+09-15 18:41:45.620  3568  3568 D BluetoothManagerService: Stored bluetooth Name=null,Address=null
+09-15 18:41:45.620  3568  3568 D BluetoothManagerService: Bluetooth persisted state: 0
+09-15 18:41:45.620  3568  3568 I SystemServer: ConnectivityMetricsLoggerService
+09-15 18:41:45.620  3568  3568 I SystemServiceManager: Starting com.android.server.connectivity.MetricsLoggerService
+09-15 18:41:45.621  3568  3568 I SystemServer: IpConnectivityMetrics
+09-15 18:41:45.621  3568  3568 I SystemServiceManager: Starting com.android.server.connectivity.IpConnectivityMetrics
+09-15 18:41:45.622  3568  3568 I SystemServer: PinnerService
+09-15 18:41:45.622  3568  3568 I SystemServiceManager: Starting com.android.server.PinnerService
+09-15 18:41:45.623  3568  3568 I SystemServiceManager: Starting com.android.server.InputMethodManagerService$Lifecycle
+09-15 18:41:45.640  3568  3568 W System  : ClassLoader referenced unknown path: 
+09-15 18:41:45.641  3568  3568 D ApplicationLoaders: ignored Vulkan layer search path /system/app/LatinIME/lib/arm64:/system/fake-libs64:/system/app/LatinIME/LatinIME.apk!/lib/arm64-v8a:/system/lib64:/vendor/lib64 for namespace 0x7fa73831d0
+09-15 18:41:45.642  3568  3611 D EventHub: No input device configuration file found for device 'certify_hall'.
+09-15 18:41:45.692  3568  3611 D EventHub: No input device configuration file found for device 'Headset'.
+09-15 18:41:45.695  3568  3611 W EventHub: Unable to disable kernel key repeat for /dev/input/event15: Function not implemented
+09-15 18:41:45.695  3568  3611 I EventHub: New device: id=2, fd=93, path='/dev/input/event15', name='Headset', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+09-15 18:41:45.695  3568  3611 D EventHub: No input device configuration file found for device 'gpio_keys'.
+09-15 18:41:45.696  3568  3611 W EventHub: Unable to disable kernel key repeat for /dev/input/event16: Function not implemented
+09-15 18:41:45.696  3568  3611 I EventHub: New device: id=3, fd=95, path='/dev/input/event16', name='gpio_keys', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+09-15 18:41:45.696  3568  3611 E EventHub: could not get driver version for /dev/input/mouse1, Not a typewriter
+09-15 18:41:45.728  3568  3611 D EventHub: No input device configuration file found for device 'sec_touchpad'.
+09-15 18:41:45.729  3568  3611 W EventHub: Unable to disable kernel key repeat for /dev/input/event1: Function not implemented
+09-15 18:41:45.729  3568  3611 I EventHub: New device: id=4, fd=96, path='/dev/input/event1', name='sec_touchpad', classes=0x15, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+09-15 18:41:45.729  3568  3611 E EventHub: could not get driver version for /dev/input/mouse0, Not a typewriter
+09-15 18:41:45.747  3568  3568 W InputMethodManagerService: No IME selected. Choose the most applicable IME.
+09-15 18:41:45.753  3568  3568 I InputMethodManagerService: Default found, using com.android.inputmethod.latin/.LatinIME
+09-15 18:41:45.754  3568  3568 I SystemServer: StartAccessibilityManagerService
+09-15 18:41:45.763  3568  3568 I ActivityManager: Config changes=1df8 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h845dp 560dpi nrml long port ?uimode ?night -touch -keyb/h/h -nav/h s.2}
+09-15 18:41:45.768  3568  3581 I UsageStatsService: User[0] Rollover scheduled @ 2017-09-16 18:41:45(1505587305763)
+09-15 18:41:45.768  3568  3581 E AppIdleHistory: Unable to read app idle file for user 0
+09-15 18:41:45.769  3568  3589 I ActivityManager: Config changes=400 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h773dp 560dpi nrml long port ?uimode ?night -touch -keyb/h/h -nav/h s.3}
+09-15 18:41:45.774  3568  3589 W LocalDisplayAdapter: Unable to find color mode 0, ignoring request.
+09-15 18:41:45.782  3568  3568 W LocalDisplayAdapter: Unable to find color mode 0, ignoring request.
+09-15 18:41:45.782  3568  3568 I SystemServiceManager: Starting com.android.server.MountService$Lifecycle
+09-15 18:41:45.790  3568  3568 I SystemServiceManager: Starting com.android.server.UiModeManagerService
+09-15 18:41:45.790  3568  3612 D MountService: Thinking about init, mSystemReady=false, mDaemonConnected=true
+09-15 18:41:45.790  3568  3612 D MountService: Thinking about reset, mSystemReady=false, mDaemonConnected=true
+09-15 18:41:45.790  3568  3612 D MountService: Thinking about init, mSystemReady=false, mDaemonConnected=true
+09-15 18:41:45.790  3568  3612 D MountService: Thinking about reset, mSystemReady=false, mDaemonConnected=true
+09-15 18:41:45.791  3568  3612 D CryptdConnector: SND -> {1 cryptfs getfield SystemLocale}
+09-15 18:41:45.792  3568  3568 I ActivityManager: Config changes=200 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h773dp 560dpi nrml long port -touch -keyb/h/h -nav/h s.4}
+09-15 18:41:45.792  3568  3614 D CryptdConnector: RCV <- {200 1 -1}
+09-15 18:41:45.795  3568  3612 W MountService: No primary storage mounted!
+09-15 18:41:45.795  3568  3612 D VoldConnector: SND -> {1 asec list}
+09-15 18:41:45.797  3568  3611 W EventHub: Unable to disable kernel key repeat for /dev/input/event0: Function not implemented
+09-15 18:41:45.797  3568  3611 I EventHub: New device: id=5, fd=97, path='/dev/input/event0', name='sec_touchscreen', classes=0x15, configuration='/system/usr/idc/sec_touchscreen.idc', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+09-15 18:41:45.797  3568  3611 D EventHub: No input device configuration file found for device 'hall'.
+09-15 18:41:45.798  3568  3568 I SystemServer: StartLockSettingsService
+09-15 18:41:45.798  3568  3568 I SystemServiceManager: Starting com.android.server.LockSettingsService$Lifecycle
+09-15 18:41:45.804  3568  3613 D VoldConnector: RCV <- {200 1 asec operation succeeded}
+09-15 18:41:45.805  3568  3612 I PackageManager: No secure containers found
+09-15 18:41:45.807  3568  3612 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+09-15 18:41:45.807  3568  3612 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+09-15 18:41:45.809  3568  3612 W PackageManager: Unknown permission cyanogenmod.permission.LEGALESE in package com.cyanogenmod.setupwizard
+09-15 18:41:45.810  3568  3612 W PackageManager: Unknown permission com.android.gallery3d.permission.STORAGE_CHANGE in package com.android.camera2
+09-15 18:41:45.811  3568  3612 W PackageManager: Unknown permission android.permission.NFC_UNLOCK in package com.android.nfc
+09-15 18:41:45.811  3568  3568 I SystemServiceManager: Starting com.android.server.DeviceIdleController
+09-15 18:41:45.812  3568  3612 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+09-15 18:41:45.813  3568  3612 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+09-15 18:41:45.813  3568  3612 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+09-15 18:41:45.815  3568  3612 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.cyanogenmod.trebuchet
+09-15 18:41:45.815  3568  3612 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.cyanogenmod.trebuchet
+09-15 18:41:45.816  3568  3612 W PackageManager: Unknown permission com.google.android.permission.INSTALL_WEARABLE_PACKAGES in package com.android.packageinstaller
+09-15 18:41:45.816  3568  3612 W PackageManager: Not granting permission android.permission.DELETE_PACKAGES to package com.svox.pico (protectionLevel=18 flags=0x3808be45)
+09-15 18:41:45.817  3568  3612 W PackageManager: Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.android.dreams.phototable
+09-15 18:41:45.817  3568  3612 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+09-15 18:41:45.818  3568  3612 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.settings
+09-15 18:41:45.818  3568  3612 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.settings
+09-15 18:41:45.823  3568  3612 W PackageManager: Not granting permission android.permission.MANAGE_DOCUMENTS to package com.android.deskclock (protectionLevel=2 flags=0x3c49be45)
+09-15 18:41:45.823  3568  3612 W PackageManager: Unknown permission com.android.deskclock.worldclock.permissions.WRITE_DATABASE in package com.android.deskclock
+09-15 18:41:45.823  3568  3612 W PackageManager: Unknown permission org.codeaurora.permission.POWER_ON_ALERT in package com.android.deskclock
+09-15 18:41:45.823  3568  3612 W PackageManager: Not granting permission android.permission.WRITE_SECURE_SETTINGS to package com.android.deskclock (protectionLevel=50 flags=0x3c49be45)
+09-15 18:41:45.825  3568  3612 W PackageManager: Unknown permission com.cyanogenmod.lockclock.permission.READ_WEATHER in package com.android.systemui
+09-15 18:41:45.826  3568  3612 W PackageManager: Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.bluetooth
+09-15 18:41:45.826  3568  3612 W PackageManager: Unknown permission com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD in package com.android.development
+09-15 18:41:45.826  3568  3612 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.development
+09-15 18:41:45.826  3568  3612 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES in package com.android.development
+09-15 18:41:45.827  3568  3612 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser in package com.android.development
+09-15 18:41:45.848  3568  3611 D EventHub: No input device configuration file found for device 'ssp_context'.
+09-15 18:41:45.884  3568  3611 D EventHub: No input device configuration file found for device 'meta_event'.
+09-15 18:41:45.916  3568  3611 D EventHub: No input device configuration file found for device 'interrupt_gyro_sensor'.
+09-15 18:41:45.948  3568  3611 D EventHub: No input device configuration file found for device 'step_cnt_sensor'.
+09-15 18:41:45.976  3568  3611 D EventHub: No input device configuration file found for device 'sig_motion_sensor'.
+09-15 18:41:46.012  3568  3611 D EventHub: No input device configuration file found for device 'gesture_sensor'.
+09-15 18:41:46.048  3568  3611 D EventHub: No input device configuration file found for device 'temp_humidity_sensor'.
+09-15 18:41:46.088  3568  3611 D EventHub: No input device configuration file found for device 'proximity_alert_sensor'.
+09-15 18:41:46.097  3568  3612 W MountService: No primary storage defined yet; hacking together a stub
+09-15 18:41:46.097  3568  3568 W art     : Long monitor contention with owner MountService (3612) at void com.android.server.pm.PackageManagerService.loadMediaPackages(android.util.ArrayMap, int[], boolean)(PackageManagerService.java:19557) waiters=0 in android.content.pm.ApplicationInfo com.android.server.pm.PackageManagerService.getApplicationInfo(java.lang.String, int, int) for 284ms
+09-15 18:41:46.099  3568  3612 W MountService: No primary storage defined yet; hacking together a stub
+09-15 18:41:46.099  3568  3612 W MountService: No primary storage mounted!
+09-15 18:41:46.099  3568  3612 D VoldConnector: SND -> {2 asec list}
+09-15 18:41:46.100  3568  3568 I SystemServiceManager: Starting com.android.server.devicepolicy.DevicePolicyManagerService$Lifecycle
+09-15 18:41:46.101  3568  3613 D VoldConnector: RCV <- {200 2 asec operation succeeded}
+09-15 18:41:46.106  3568  3568 I SystemServer: StartStatusBarManagerService
+09-15 18:41:46.107  3568  3568 I SystemServer: StartClipboardService
+09-15 18:41:46.109  3568  3568 I SystemServer: StartNetworkManagementService
+09-15 18:41:46.111  3568  3615 I NetworkManagement: onDaemonConnected()
+09-15 18:41:46.114  3568  3568 I SystemServiceManager: Starting com.android.server.TextServicesManagerService$Lifecycle
+09-15 18:41:46.119  3568  3568 I SystemServer: StartNetworkScoreService
+09-15 18:41:46.120  3568  3611 D EventHub: No input device configuration file found for device 'proximity_sensor'.
+09-15 18:41:46.120  3568  3568 I SystemServer: StartNetworkStatsService
+09-15 18:41:46.125  3568  3568 I SystemServer: StartNetworkPolicyManagerService
+09-15 18:41:46.128  3568  3568 I SystemServer: No Wi-Fi NAN Service (NAN support Not Present)
+09-15 18:41:46.128  3568  3568 I SystemServiceManager: Starting com.android.server.wifi.p2p.WifiP2pService
+09-15 18:41:46.152  3568  3611 D EventHub: No input device configuration file found for device 'light_ir_sensor'.
+09-15 18:41:46.155  3568  3568 I WifiP2pService: Registering wifip2p
+09-15 18:41:46.156  3568  3568 I SystemServiceManager: Starting com.android.server.wifi.WifiService
+09-15 18:41:46.184  3568  3611 D EventHub: No input device configuration file found for device 'light_sensor'.
+09-15 18:41:46.206  3568  3568 D WifiStateMachine: fst disabled
+09-15 18:41:46.214  3568  3568 D HS20    : Passpoint is enabled, false
+09-15 18:41:46.224  3568  3611 D EventHub: No input device configuration file found for device 'hrm_sensor'.
+09-15 18:41:46.241  3191  3525 D CommandListener: Clearing all IP addresses on wlan0
+09-15 18:41:46.264  3568  3611 D EventHub: No input device configuration file found for device 'grip_sensor'.
+09-15 18:41:46.300  3568  3611 E EventHub: could not get driver version for /dev/input/mice, Not a typewriter
+09-15 18:41:46.310  3623  3623 I         : sMaxFastTracks = 8
+09-15 18:41:46.310  3623  3623 I audioserver: ServiceManager: 0xf6819420
+09-15 18:41:46.311  3623  3623 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:41:46.312  3623  3623 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:41:46.312  3623  3623 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:41:46.312  3623  3623 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:41:46.312  3623  3623 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:41:46.312  3623  3623 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:41:46.366  3568  3611 I InputReader: Device added: id=-1, name='Virtual', sources=0x00000301
+09-15 18:41:46.367  3568  3611 W InputReader: Invalid value for touch.size.calibration: 'normalized'
+09-15 18:41:46.367  3568  3611 I InputReader:   Touch device 'sec_touchscreen' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+09-15 18:41:46.367  3568  3611 I InputReader: Device added: id=5, name='sec_touchscreen', sources=0x00001103
+09-15 18:41:46.367  3568  3611 I InputReader:   Touch device 'sec_touchpad' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+09-15 18:41:46.367  3568  3611 I InputReader: Device added: id=4, name='sec_touchpad', sources=0x00002103
+09-15 18:41:46.367  3568  3611 I InputReader: Device added: id=3, name='gpio_keys', sources=0x00000101
+09-15 18:41:46.367  3568  3611 I InputReader: Device added: id=2, name='Headset', sources=0x00000101
+09-15 18:41:46.368  3568  3611 I InputReader: Reconfiguring input devices.  changes=0x00000004
+09-15 18:41:46.375  3568  3611 I InputReader: Device reconfigured: id=4, name='sec_touchpad', size 1440x2960, orientation 0, mode 4, display id 0
+09-15 18:41:46.375  3568  3611 I InputReader: Device reconfigured: id=5, name='sec_touchscreen', size 1440x2960, orientation 0, mode 1, display id 0
+09-15 18:41:46.376  3568  3610 I ActivityManager: Config changes=8 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h773dp 560dpi nrml long port finger -keyb/h/h -nav/h s.5}
+09-15 18:41:46.442  3568  3568 W art     : Long monitor contention with owner WifiStateMachine (3621) at boolean com.android.server.wifi.WifiNative.unloadDriverNative()(WifiNative.java:-2) waiters=0 in java.lang.String com.android.server.wifi.WifiNative.doStringCommand(java.lang.String) for 199ms
+09-15 18:41:46.442  3568  3568 E WifiLogger: no ring buffers found
+09-15 18:41:46.442  3568  3568 E WifiLogger: Failed to start packet fate monitoring
+09-15 18:41:46.443  3568  3621 D WifiApConfigStore: 2G band allowed channels are:1,6,11
+09-15 18:41:46.449  3568  3568 D WifiController: isAirplaneModeOn = false, isWifiEnabled = true, isScanningAvailable = false
+09-15 18:41:46.452  3568  3568 E WifiService: ensureConcurrencyFile template file doesnt existjava.io.FileNotFoundException: /etc/wifi/wifi_concurrency_cfg.txt (No such file or directory)
+09-15 18:41:46.452  3568  3568 I WifiService: Registering wifi
+09-15 18:41:46.453  3568  3568 I SystemServiceManager: Starting com.android.server.wifi.scanner.WifiScanningService
+09-15 18:41:46.453  3568  3568 I WifiScanningService: Creating wifiscanner
+09-15 18:41:46.455  3568  3568 I WifiScanningService: Publishing wifiscanner
+09-15 18:41:46.456  3568  3568 I SystemServiceManager: Starting com.android.server.wifi.RttService
+09-15 18:41:46.456  3568  3568 I RttService: Creating rttmanager
+09-15 18:41:46.457  3568  3568 I RttService: Starting rttmanager
+09-15 18:41:46.458  3568  3568 I SystemServiceManager: Starting com.android.server.ethernet.EthernetService
+09-15 18:41:46.458  3568  3568 I EthernetServiceImpl: Creating EthernetConfigStore
+09-15 18:41:46.459  3568  3568 E IpConfigStore: Error parsing configuration: java.io.FileNotFoundException: /data/misc/ethernet/ipconfig.txt (No such file or directory)
+09-15 18:41:46.459  3568  3568 W EthernetConfigStore: No Ethernet configuration found. Using default.
+09-15 18:41:46.459  3568  3568 I EthernetServiceImpl: Read stored IP configuration: IP assignment: DHCP
+09-15 18:41:46.459  3568  3568 I EthernetServiceImpl: Proxy settings: NONE
+09-15 18:41:46.459  3568  3568 I EthernetService: Registering service ethernet
+09-15 18:41:46.460  3568  3568 I SystemServer: StartConnectivityService
+09-15 18:41:46.471  3568  3568 D ConnectivityService: ConnectivityService starting up
+09-15 18:41:46.477  3568  3568 D ConnectivityService: wifiOnly=false
+09-15 18:41:46.494  3568  3568 I SystemServer: StartNsdService
+09-15 18:41:46.497  3568  3568 I SystemServer: StartUpdateLockService
+09-15 18:41:46.499  3568  3568 I SystemServiceManager: Starting com.android.server.RecoverySystemService
+09-15 18:41:46.501  3568  3568 I SystemServiceManager: Starting com.android.server.notification.NotificationManagerService
+09-15 18:41:46.515  3568  3568 D ConditionProviders.SCP: new ScheduleConditionProvider()
+09-15 18:41:46.543  3568  3568 D ZenLog  : set_zen_mode: off,init
+09-15 18:41:46.557  3568  3568 I SystemServiceManager: Starting com.android.server.storage.DeviceStorageMonitorService
+09-15 18:41:46.559  3568  3568 I SystemServer: StartLocationManagerService
+09-15 18:41:46.561  3568  3568 I SystemServer: StartCountryDetectorService
+09-15 18:41:46.562  3568  3568 I SystemServer: StartSearchManagerService
+09-15 18:41:46.562  3568  3568 I SystemServiceManager: Starting com.android.server.search.SearchManagerService$Lifecycle
+09-15 18:41:46.565  3568  3568 I SystemServiceManager: Starting com.android.server.DropBoxManagerService
+09-15 18:41:46.566  3568  3568 I SystemServer: StartWallpaperManagerService
+09-15 18:41:46.566  3568  3568 I SystemServiceManager: Starting com.android.server.wallpaper.WallpaperManagerService$Lifecycle
+09-15 18:41:46.569  3568  3568 E BitmapFactory: Unable to decode stream: java.io.FileNotFoundException: /data/system/users/0/wallpaper_orig (No such file or directory)
+09-15 18:41:46.569  3568  3568 E WallpaperManagerService: Invalid wallpaper data
+09-15 18:41:46.569  3568  3568 E WallpaperManagerService: Unable to apply new wallpaper
+09-15 18:41:46.569  3568  3568 W WallpaperManagerService: no current wallpaper -- first boot?
+09-15 18:41:46.570  3568  3568 I SystemServer: StartAudioService
+09-15 18:41:46.570  3568  3568 I SystemServiceManager: Starting com.android.server.audio.AudioService$Lifecycle
+09-15 18:41:46.575  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:46.578  3568  3568 W TelecomManager: Telecom Service not found.
+09-15 18:41:46.714  3623  3623 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3623 (audioserver)
+09-15 18:41:46.714  3074  3074 W         : debuggerd: handling request: pid=3623 uid=1041 gid=1005 tid=3623
+09-15 18:41:46.721  3638  3638 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:41:46.771  3638  3638 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:41:46.772  3638  3638 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:41:46.772  3638  3638 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:41:46.772  3638  3638 F DEBUG   : Revision: '0'
+09-15 18:41:46.772  3638  3638 F DEBUG   : ABI: 'arm'
+09-15 18:41:46.772  3638  3638 F DEBUG   : pid: 3623, tid: 3623, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:41:46.772  3638  3638 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:41:46.772  3638  3638 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:41:46.772  3638  3638 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6805423
+09-15 18:41:46.772  3638  3638 F DEBUG   :     r8 00000000  r9 f68746e0  sl f6852314  fp 00000000
+09-15 18:41:46.772  3638  3638 F DEBUG   :     ip f7459fc4  sp fff1b798  lr f7455981  pc f6a306a6  cpsr 800b0030
+09-15 18:41:46.775  3638  3638 F DEBUG   : 
+09-15 18:41:46.775  3638  3638 F DEBUG   : backtrace:
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:41:46.775  3638  3638 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:41:46.776  3638  3638 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:41:46.776  3638  3638 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:41:46.776  3638  3638 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:41:46.776  3638  3638 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:41:46.776  3638  3638 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:41:46.776  3638  3638 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:41:46.815  3623  3623 W audioserver: type=1701 audit(0.0:127): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:41:46.819  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:41:46.819  3074  3074 W         : debuggerd: resuming target 3623
+09-15 18:41:46.819  3074  3074 E         : debuggerd: failed to send signal 18 to target: No such process
+09-15 18:41:47.576  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:48.576  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:49.577  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:50.577  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:41:51.078  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:51.893  3674  3674 I         : sMaxFastTracks = 8
+09-15 18:41:51.893  3674  3674 I audioserver: ServiceManager: 0xf6499420
+09-15 18:41:51.894  3674  3674 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:41:51.894  3674  3674 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:41:51.895  3674  3674 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:41:51.895  3674  3674 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:41:51.895  3674  3674 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:41:51.895  3674  3674 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:41:52.078  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:52.300  3674  3674 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3674 (audioserver)
+09-15 18:41:52.301  3074  3074 W         : debuggerd: handling request: pid=3674 uid=1041 gid=1005 tid=3674
+09-15 18:41:52.306  3678  3678 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:41:52.357  3678  3678 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:41:52.357  3678  3678 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:41:52.357  3678  3678 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:41:52.357  3678  3678 F DEBUG   : Revision: '0'
+09-15 18:41:52.357  3678  3678 F DEBUG   : ABI: 'arm'
+09-15 18:41:52.357  3678  3678 F DEBUG   : pid: 3674, tid: 3674, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:41:52.358  3678  3678 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:41:52.358  3678  3678 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:41:52.358  3678  3678 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6485423
+09-15 18:41:52.358  3678  3678 F DEBUG   :     r8 00000000  r9 f64f46e0  sl f64d2314  fp 00000000
+09-15 18:41:52.358  3678  3678 F DEBUG   :     ip f70d9fc4  sp ffc403c8  lr f70d5981  pc f66676a6  cpsr 800b0030
+09-15 18:41:52.363  3678  3678 F DEBUG   : 
+09-15 18:41:52.363  3678  3678 F DEBUG   : backtrace:
+09-15 18:41:52.363  3678  3678 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:41:52.363  3678  3678 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:41:52.363  3678  3678 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:41:52.363  3678  3678 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:41:52.364  3678  3678 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:41:52.365  3678  3678 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:41:52.403  3674  3674 W audioserver: type=1701 audit(0.0:128): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:41:52.408  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:41:52.408  3074  3074 W         : debuggerd: resuming target 3674
+09-15 18:41:53.078  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:53.569  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:41:53.569  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:41:53.569  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:41:53.569  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:41:53.584  3684  3684 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-15 18:41:53.584  3684  3684 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-15 18:41:53.584  3684  3684 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-15 18:41:53.584  3684  3684 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-15 18:41:53.584  3684  3684 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-15 18:41:53.584  3684  3684 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-15 18:41:53.584  3684  3684 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-15 18:41:53.584  3684  3684 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-15 18:41:53.584  3684  3684 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-15 18:41:53.584  3684  3684 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-15 18:41:53.584  3684  3684 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-15 18:41:53.584  3684  3684 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-15 18:41:53.584  3684  3684 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-15 18:41:53.584  3684  3684 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-15 18:41:53.584  3684  3684 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-15 18:41:53.584  3684  3684 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-15 18:41:53.584  3684  3684 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-15 18:41:53.644  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:41:53.644  3684  3684 D lhd     : OnIpcConnect
+09-15 18:41:53.644  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:41:53.644  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:41:53.644  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:41:54.079  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:55.079  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:41:55.580  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:56.580  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:56.640  3686  3686 I         : sMaxFastTracks = 8
+09-15 18:41:56.641  3686  3686 I audioserver: ServiceManager: 0xf6919420
+09-15 18:41:56.641  3686  3686 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:41:56.642  3686  3686 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:41:56.642  3686  3686 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:41:56.642  3686  3686 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:41:56.642  3686  3686 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:41:56.642  3686  3686 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:41:57.058  3686  3686 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3686 (audioserver)
+09-15 18:41:57.058  3074  3074 W         : debuggerd: handling request: pid=3686 uid=1041 gid=1005 tid=3686
+09-15 18:41:57.064  3690  3690 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:41:57.115  3690  3690 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:41:57.115  3690  3690 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:41:57.115  3690  3690 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:41:57.115  3690  3690 F DEBUG   : Revision: '0'
+09-15 18:41:57.115  3690  3690 F DEBUG   : ABI: 'arm'
+09-15 18:41:57.115  3690  3690 F DEBUG   : pid: 3686, tid: 3686, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:41:57.115  3690  3690 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:41:57.115  3690  3690 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:41:57.115  3690  3690 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6905423
+09-15 18:41:57.115  3690  3690 F DEBUG   :     r8 00000000  r9 f69746e0  sl f6952314  fp 00000000
+09-15 18:41:57.115  3690  3690 F DEBUG   :     ip f752ffc4  sp ffd51e98  lr f752b981  pc f73466a6  cpsr 800b0030
+09-15 18:41:57.118  3690  3690 F DEBUG   : 
+09-15 18:41:57.118  3690  3690 F DEBUG   : backtrace:
+09-15 18:41:57.118  3690  3690 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:41:57.118  3690  3690 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:41:57.119  3690  3690 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:41:57.159  3686  3686 W audioserver: type=1701 audit(0.0:129): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:41:57.163  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:41:57.163  3074  3074 W         : debuggerd: resuming target 3686
+09-15 18:41:57.163  3074  3074 E         : debuggerd: failed to send signal 18 to target: No such process
+09-15 18:41:57.581  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:58.581  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:41:59.582  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:00.082  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:01.082  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:02.083  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:02.208  3696  3696 I         : sMaxFastTracks = 8
+09-15 18:42:02.208  3696  3696 I audioserver: ServiceManager: 0xf6899420
+09-15 18:42:02.210  3696  3696 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:42:02.211  3696  3696 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:42:02.211  3696  3696 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:42:02.211  3696  3696 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:02.211  3696  3696 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:02.211  3696  3696 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:42:02.628  3696  3696 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3696 (audioserver)
+09-15 18:42:02.628  3074  3074 W         : debuggerd: handling request: pid=3696 uid=1041 gid=1005 tid=3696
+09-15 18:42:02.633  3700  3700 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:42:02.684  3700  3700 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:42:02.684  3700  3700 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:42:02.684  3700  3700 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:42:02.684  3700  3700 F DEBUG   : Revision: '0'
+09-15 18:42:02.684  3700  3700 F DEBUG   : ABI: 'arm'
+09-15 18:42:02.685  3700  3700 F DEBUG   : pid: 3696, tid: 3696, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:42:02.685  3700  3700 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:42:02.685  3700  3700 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:42:02.685  3700  3700 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6885423
+09-15 18:42:02.685  3700  3700 F DEBUG   :     r8 00000000  r9 f68f46e0  sl f68d2314  fp 00000000
+09-15 18:42:02.685  3700  3700 F DEBUG   :     ip f7472fc4  sp fff709a8  lr f746e981  pc f6f606a6  cpsr 800b0030
+09-15 18:42:02.688  3700  3700 F DEBUG   : 
+09-15 18:42:02.688  3700  3700 F DEBUG   : backtrace:
+09-15 18:42:02.688  3700  3700 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:42:02.688  3700  3700 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:42:02.688  3700  3700 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:42:02.688  3700  3700 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:42:02.688  3700  3700 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:42:02.689  3700  3700 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:42:02.727  3696  3696 W audioserver: type=1701 audit(0.0:130): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:42:02.730  3074  3074 W         : debuggerd: resuming target 3696
+09-15 18:42:02.731  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:42:03.084  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:04.084  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:04.585  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:05.585  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:06.586  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:06.804  3705  3705 I         : sMaxFastTracks = 8
+09-15 18:42:06.804  3705  3705 I audioserver: ServiceManager: 0xf6799420
+09-15 18:42:06.805  3705  3705 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:42:06.805  3705  3705 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:42:06.806  3705  3705 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:42:06.806  3705  3705 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:06.806  3705  3705 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:06.806  3705  3705 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:42:07.226  3705  3705 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3705 (audioserver)
+09-15 18:42:07.226  3074  3074 W         : debuggerd: handling request: pid=3705 uid=1041 gid=1005 tid=3705
+09-15 18:42:07.232  3709  3709 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:42:07.282  3709  3709 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:42:07.283  3709  3709 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:42:07.283  3709  3709 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:42:07.283  3709  3709 F DEBUG   : Revision: '0'
+09-15 18:42:07.283  3709  3709 F DEBUG   : ABI: 'arm'
+09-15 18:42:07.283  3709  3709 F DEBUG   : pid: 3705, tid: 3705, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:42:07.283  3709  3709 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:42:07.283  3709  3709 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:42:07.283  3709  3709 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6785423
+09-15 18:42:07.283  3709  3709 F DEBUG   :     r8 00000000  r9 f67f46e0  sl f67d2314  fp 00000000
+09-15 18:42:07.283  3709  3709 F DEBUG   :     ip f73d9fc4  sp ffe14048  lr f73d5981  pc f6d316a6  cpsr 800b0030
+09-15 18:42:07.287  3709  3709 F DEBUG   : 
+09-15 18:42:07.287  3709  3709 F DEBUG   : backtrace:
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:42:07.287  3709  3709 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:42:07.288  3709  3709 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:42:07.288  3709  3709 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:42:07.288  3709  3709 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:42:07.288  3709  3709 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:42:07.288  3709  3709 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:42:07.288  3709  3709 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:42:07.331  3705  3705 W audioserver: type=1701 audit(0.0:131): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:42:07.335  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:42:07.335  3074  3074 W         : debuggerd: resuming target 3705
+09-15 18:42:07.587  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:08.587  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:08.631  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:08.631  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:08.631  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:08.631  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:08.646  3716  3716 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-15 18:42:08.646  3716  3716 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-15 18:42:08.646  3716  3716 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-15 18:42:08.646  3716  3716 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-15 18:42:08.646  3716  3716 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-15 18:42:08.646  3716  3716 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-15 18:42:08.646  3716  3716 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-15 18:42:08.646  3716  3716 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-15 18:42:08.646  3716  3716 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-15 18:42:08.646  3716  3716 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-15 18:42:08.646  3716  3716 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-15 18:42:08.646  3716  3716 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-15 18:42:08.646  3716  3716 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-15 18:42:08.646  3716  3716 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-15 18:42:08.646  3716  3716 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-15 18:42:08.646  3716  3716 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-15 18:42:08.646  3716  3716 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-15 18:42:08.706  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:08.706  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:08.706  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:08.706  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:08.706  3716  3716 D lhd     : OnIpcConnect
+09-15 18:42:09.087  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:10.088  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:11.088  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:11.702  3718  3718 I         : sMaxFastTracks = 8
+09-15 18:42:11.703  3718  3718 I audioserver: ServiceManager: 0xf6519420
+09-15 18:42:11.703  3718  3718 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:42:11.704  3718  3718 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:42:11.705  3718  3718 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:42:11.705  3718  3718 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:11.705  3718  3718 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:11.705  3718  3718 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:42:12.088  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:12.123  3718  3718 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3718 (audioserver)
+09-15 18:42:12.124  3074  3074 W         : debuggerd: handling request: pid=3718 uid=1041 gid=1005 tid=3718
+09-15 18:42:12.129  3722  3722 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:42:12.179  3722  3722 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:42:12.180  3722  3722 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:42:12.180  3722  3722 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:42:12.180  3722  3722 F DEBUG   : Revision: '0'
+09-15 18:42:12.180  3722  3722 F DEBUG   : ABI: 'arm'
+09-15 18:42:12.180  3722  3722 F DEBUG   : pid: 3718, tid: 3718, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:42:12.180  3722  3722 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:42:12.180  3722  3722 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:42:12.180  3722  3722 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6505423
+09-15 18:42:12.180  3722  3722 F DEBUG   :     r8 00000000  r9 f65746e0  sl f6552314  fp 00000000
+09-15 18:42:12.180  3722  3722 F DEBUG   :     ip f7114fc4  sp ff7fabe8  lr f7110981  pc f6f0c6a6  cpsr 800b0030
+09-15 18:42:12.184  3722  3722 F DEBUG   : 
+09-15 18:42:12.184  3722  3722 F DEBUG   : backtrace:
+09-15 18:42:12.184  3722  3722 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:42:12.184  3722  3722 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:42:12.184  3722  3722 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:42:12.184  3722  3722 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:42:12.184  3722  3722 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:42:12.184  3722  3722 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:42:12.184  3722  3722 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:42:12.184  3722  3722 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:42:12.184  3722  3722 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:42:12.184  3722  3722 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:42:12.185  3722  3722 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:42:12.185  3722  3722 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:42:12.185  3722  3722 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:42:12.185  3722  3722 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:42:12.185  3722  3722 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:42:12.185  3722  3722 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:42:12.185  3722  3722 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:42:12.223  3718  3718 W audioserver: type=1701 audit(0.0:132): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:42:12.227  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:42:12.227  3074  3074 W         : debuggerd: resuming target 3718
+09-15 18:42:12.227  3074  3074 E         : debuggerd: failed to send signal 18 to target: No such process
+09-15 18:42:13.089  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:13.589  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:14.590  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:15.590  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:16.295  3727  3727 I         : sMaxFastTracks = 8
+09-15 18:42:16.296  3727  3727 I audioserver: ServiceManager: 0xf6799420
+09-15 18:42:16.296  3727  3727 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:42:16.297  3727  3727 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:42:16.297  3727  3727 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:42:16.297  3727  3727 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:16.297  3727  3727 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:16.297  3727  3727 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:42:16.591  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:16.705  3727  3727 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3727 (audioserver)
+09-15 18:42:16.706  3074  3074 W         : debuggerd: handling request: pid=3727 uid=1041 gid=1005 tid=3727
+09-15 18:42:16.711  3731  3731 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:42:16.762  3731  3731 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:42:16.762  3731  3731 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:42:16.762  3731  3731 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:42:16.762  3731  3731 F DEBUG   : Revision: '0'
+09-15 18:42:16.762  3731  3731 F DEBUG   : ABI: 'arm'
+09-15 18:42:16.762  3731  3731 F DEBUG   : pid: 3727, tid: 3727, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:42:16.762  3731  3731 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:42:16.762  3731  3731 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:42:16.762  3731  3731 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6785423
+09-15 18:42:16.762  3731  3731 F DEBUG   :     r8 00000000  r9 f67f46e0  sl f67d2314  fp 00000000
+09-15 18:42:16.762  3731  3731 F DEBUG   :     ip f7405fc4  sp ffa7f3d8  lr f7401981  pc f6e716a6  cpsr 800b0030
+09-15 18:42:16.766  3731  3731 F DEBUG   : 
+09-15 18:42:16.766  3731  3731 F DEBUG   : backtrace:
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:42:16.766  3731  3731 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:42:16.767  3731  3731 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:42:16.767  3731  3731 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:42:16.767  3731  3731 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:42:16.767  3731  3731 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:42:16.803  3727  3727 W audioserver: type=1701 audit(0.0:133): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:42:16.807  3074  3074 W         : debuggerd: resuming target 3727
+09-15 18:42:16.809  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:42:17.592  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:18.093  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:19.094  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:20.095  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:21.096  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:21.943  3738  3738 I         : sMaxFastTracks = 8
+09-15 18:42:21.943  3738  3738 I audioserver: ServiceManager: 0xf6719420
+09-15 18:42:21.945  3738  3738 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:42:21.946  3738  3738 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:42:21.947  3738  3738 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:42:21.947  3738  3738 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:21.947  3738  3738 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:21.947  3738  3738 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:42:22.096  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:22.357  3738  3738 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3738 (audioserver)
+09-15 18:42:22.358  3074  3074 W         : debuggerd: handling request: pid=3738 uid=1041 gid=1005 tid=3738
+09-15 18:42:22.374  3742  3742 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:42:22.425  3742  3742 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:42:22.426  3742  3742 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:42:22.426  3742  3742 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:42:22.426  3742  3742 F DEBUG   : Revision: '0'
+09-15 18:42:22.426  3742  3742 F DEBUG   : ABI: 'arm'
+09-15 18:42:22.427  3742  3742 F DEBUG   : pid: 3738, tid: 3738, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:42:22.427  3742  3742 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:42:22.427  3742  3742 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:42:22.427  3742  3742 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6705423
+09-15 18:42:22.427  3742  3742 F DEBUG   :     r8 00000000  r9 f67746e0  sl f6752314  fp 00000000
+09-15 18:42:22.427  3742  3742 F DEBUG   :     ip f7315fc4  sp ffebd108  lr f7311981  pc f6b6d6a6  cpsr 800b0030
+09-15 18:42:22.442  3742  3742 F DEBUG   : 
+09-15 18:42:22.442  3742  3742 F DEBUG   : backtrace:
+09-15 18:42:22.443  3742  3742 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:42:22.443  3742  3742 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:42:22.443  3742  3742 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:42:22.443  3742  3742 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:42:22.443  3742  3742 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:42:22.443  3742  3742 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:42:22.443  3742  3742 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:42:22.444  3742  3742 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:42:22.444  3742  3742 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:42:22.444  3742  3742 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:42:22.444  3742  3742 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:42:22.444  3742  3742 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:42:22.445  3742  3742 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:42:22.445  3742  3742 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:42:22.445  3742  3742 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:42:22.445  3742  3742 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:42:22.445  3742  3742 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:42:22.495  3738  3738 W audioserver: type=1701 audit(0.0:134): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:42:22.503  3074  3074 W         : debuggerd: resuming target 3738
+09-15 18:42:22.503  3074  3074 E         : debuggerd: failed to send signal 18 to target: No such process
+09-15 18:42:22.505  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:42:22.598  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:23.599  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:23.719  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:23.720  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:23.720  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:23.721  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:23.789  3748  3748 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-15 18:42:23.789  3748  3748 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-15 18:42:23.789  3748  3748 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-15 18:42:23.789  3748  3748 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-15 18:42:23.790  3748  3748 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-15 18:42:23.790  3748  3748 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-15 18:42:23.790  3748  3748 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-15 18:42:23.790  3748  3748 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-15 18:42:23.790  3748  3748 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-15 18:42:23.790  3748  3748 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-15 18:42:23.790  3748  3748 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-15 18:42:23.790  3748  3748 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-15 18:42:23.790  3748  3748 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-15 18:42:23.790  3748  3748 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-15 18:42:23.790  3748  3748 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-15 18:42:23.790  3748  3748 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-15 18:42:23.790  3748  3748 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-15 18:42:23.855  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:23.855  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:23.855  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:23.855  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:23.856  3748  3748 D lhd     : OnIpcConnect
+09-15 18:42:24.600  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:25.601  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:26.602  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:26.864  3750  3750 I         : sMaxFastTracks = 8
+09-15 18:42:26.864  3750  3750 I audioserver: ServiceManager: 0xf6919420
+09-15 18:42:26.867  3750  3750 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:42:26.867  3750  3750 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:42:26.868  3750  3750 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:42:26.868  3750  3750 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:26.868  3750  3750 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:26.868  3750  3750 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:42:27.102  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:27.279  3750  3750 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3750 (audioserver)
+09-15 18:42:27.280  3074  3074 W         : debuggerd: handling request: pid=3750 uid=1041 gid=1005 tid=3750
+09-15 18:42:27.302  3754  3754 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:42:27.353  3754  3754 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:42:27.354  3754  3754 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:42:27.354  3754  3754 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:42:27.355  3754  3754 F DEBUG   : Revision: '0'
+09-15 18:42:27.355  3754  3754 F DEBUG   : ABI: 'arm'
+09-15 18:42:27.355  3754  3754 F DEBUG   : pid: 3750, tid: 3750, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:42:27.356  3754  3754 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:42:27.357  3754  3754 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:42:27.357  3754  3754 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6905423
+09-15 18:42:27.357  3754  3754 F DEBUG   :     r8 00000000  r9 f69746e0  sl f6952314  fp 00000000
+09-15 18:42:27.357  3754  3754 F DEBUG   :     ip f753dfc4  sp ffcdb2f8  lr f7539981  pc f6d986a6  cpsr 800b0030
+09-15 18:42:27.374  3754  3754 F DEBUG   : 
+09-15 18:42:27.374  3754  3754 F DEBUG   : backtrace:
+09-15 18:42:27.374  3754  3754 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:42:27.375  3754  3754 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:42:27.375  3754  3754 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:42:27.375  3754  3754 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:42:27.376  3754  3754 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:42:27.376  3754  3754 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:42:27.377  3754  3754 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:42:27.378  3754  3754 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:42:27.378  3754  3754 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:42:27.378  3754  3754 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:42:27.378  3754  3754 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:42:27.379  3754  3754 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:42:27.379  3754  3754 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:42:27.379  3754  3754 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:42:27.379  3754  3754 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:42:27.379  3754  3754 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:42:27.379  3754  3754 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:42:27.423  3750  3750 W audioserver: type=1701 audit(0.0:135): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:42:27.429  3074  3074 W         : debuggerd: resuming target 3750
+09-15 18:42:27.431  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:42:28.105  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:29.106  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:30.108  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:31.109  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:31.575  3760  3760 I         : sMaxFastTracks = 8
+09-15 18:42:31.575  3760  3760 I audioserver: ServiceManager: 0xf6499420
+09-15 18:42:31.577  3760  3760 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:42:31.578  3760  3760 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:42:31.579  3760  3760 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:42:31.579  3760  3760 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:31.579  3760  3760 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:31.579  3760  3760 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:42:31.610  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:31.993  3760  3760 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3760 (audioserver)
+09-15 18:42:31.993  3074  3074 W         : debuggerd: handling request: pid=3760 uid=1041 gid=1005 tid=3760
+09-15 18:42:32.015  3764  3764 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:42:32.066  3764  3764 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:42:32.067  3764  3764 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:42:32.067  3764  3764 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:42:32.067  3764  3764 F DEBUG   : Revision: '0'
+09-15 18:42:32.068  3764  3764 F DEBUG   : ABI: 'arm'
+09-15 18:42:32.068  3764  3764 F DEBUG   : pid: 3760, tid: 3760, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:42:32.068  3764  3764 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:42:32.069  3764  3764 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:42:32.069  3764  3764 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6485423
+09-15 18:42:32.069  3764  3764 F DEBUG   :     r8 00000000  r9 f64f46e0  sl f64d2314  fp 00000000
+09-15 18:42:32.070  3764  3764 F DEBUG   :     ip f707ffc4  sp ff82adb8  lr f707b981  pc f6bb46a6  cpsr 800b0030
+09-15 18:42:32.085  3764  3764 F DEBUG   : 
+09-15 18:42:32.085  3764  3764 F DEBUG   : backtrace:
+09-15 18:42:32.085  3764  3764 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:42:32.086  3764  3764 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:42:32.086  3764  3764 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:42:32.086  3764  3764 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:42:32.086  3764  3764 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:42:32.086  3764  3764 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:42:32.086  3764  3764 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:42:32.086  3764  3764 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:42:32.086  3764  3764 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:42:32.087  3764  3764 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:42:32.087  3764  3764 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:42:32.087  3764  3764 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:42:32.087  3764  3764 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:42:32.087  3764  3764 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:42:32.087  3764  3764 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:42:32.087  3764  3764 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:42:32.087  3764  3764 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:42:32.139  3760  3760 W audioserver: type=1701 audit(0.0:136): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:42:32.142  3074  3074 W         : debuggerd: resuming target 3760
+09-15 18:42:32.145  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:42:32.611  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:33.612  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:34.613  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:35.614  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:36.115  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:37.118  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:37.282  3769  3769 I         : sMaxFastTracks = 8
+09-15 18:42:37.282  3769  3769 I audioserver: ServiceManager: 0xf6699420
+09-15 18:42:37.283  3769  3769 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:42:37.284  3769  3769 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:42:37.286  3769  3769 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:42:37.286  3769  3769 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:37.286  3769  3769 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:37.286  3769  3769 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:42:37.695  3769  3769 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3769 (audioserver)
+09-15 18:42:37.695  3074  3074 W         : debuggerd: handling request: pid=3769 uid=1041 gid=1005 tid=3769
+09-15 18:42:37.712  3774  3774 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:42:37.763  3774  3774 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:42:37.763  3774  3774 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:42:37.764  3774  3774 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:42:37.764  3774  3774 F DEBUG   : Revision: '0'
+09-15 18:42:37.765  3774  3774 F DEBUG   : ABI: 'arm'
+09-15 18:42:37.765  3774  3774 F DEBUG   : pid: 3769, tid: 3769, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:42:37.765  3774  3774 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:42:37.766  3774  3774 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:42:37.766  3774  3774 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6685423
+09-15 18:42:37.766  3774  3774 F DEBUG   :     r8 00000000  r9 f66f46e0  sl f66d2314  fp 00000000
+09-15 18:42:37.766  3774  3774 F DEBUG   :     ip f7268fc4  sp ffedf3b8  lr f7264981  pc f6f9b6a6  cpsr 800b0030
+09-15 18:42:37.781  3774  3774 F DEBUG   : 
+09-15 18:42:37.781  3774  3774 F DEBUG   : backtrace:
+09-15 18:42:37.781  3774  3774 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:42:37.781  3774  3774 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:42:37.781  3774  3774 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:42:37.781  3774  3774 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:42:37.782  3774  3774 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:42:37.782  3774  3774 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:42:37.782  3774  3774 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:42:37.782  3774  3774 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:42:37.782  3774  3774 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:42:37.782  3774  3774 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:42:37.782  3774  3774 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:42:37.782  3774  3774 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:42:37.782  3774  3774 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:42:37.783  3774  3774 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:42:37.783  3774  3774 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:42:37.783  3774  3774 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:42:37.783  3774  3774 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:42:37.835  3769  3769 W audioserver: type=1701 audit(0.0:137): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:42:37.841  3074  3074 W         : debuggerd: resuming target 3769
+09-15 18:42:37.841  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:42:38.119  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:38.878  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:38.879  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:38.879  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:38.880  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:38.953  3781  3781 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-15 18:42:38.953  3781  3781 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-15 18:42:38.953  3781  3781 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-15 18:42:38.953  3781  3781 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-15 18:42:38.953  3781  3781 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-15 18:42:38.954  3781  3781 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-15 18:42:38.954  3781  3781 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-15 18:42:38.954  3781  3781 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-15 18:42:38.954  3781  3781 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-15 18:42:38.954  3781  3781 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-15 18:42:38.954  3781  3781 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-15 18:42:38.954  3781  3781 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-15 18:42:38.954  3781  3781 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-15 18:42:38.954  3781  3781 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-15 18:42:38.954  3781  3781 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-15 18:42:38.954  3781  3781 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-15 18:42:38.954  3781  3781 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-15 18:42:39.020  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:39.020  3781  3781 D lhd     : OnIpcConnect
+09-15 18:42:39.020  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:39.020  3180  3180 D gpsd    : WakeLock(Acquire,GPSD)
+09-15 18:42:39.020  3180  3180 D gpsd    : WakeLock(Release,GPSD)
+09-15 18:42:39.120  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:40.121  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:40.622  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:41.623  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:42.023  3783  3783 I         : sMaxFastTracks = 8
+09-15 18:42:42.024  3783  3783 I audioserver: ServiceManager: 0xf6819420
+09-15 18:42:42.027  3783  3783 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:42:42.027  3783  3783 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:42:42.029  3783  3783 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:42:42.029  3783  3783 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:42.029  3783  3783 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:42.029  3783  3783 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:42:42.438  3783  3783 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3783 (audioserver)
+09-15 18:42:42.439  3074  3074 W         : debuggerd: handling request: pid=3783 uid=1041 gid=1005 tid=3783
+09-15 18:42:42.461  3787  3787 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:42:42.512  3787  3787 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:42:42.512  3787  3787 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:42:42.512  3787  3787 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:42:42.512  3787  3787 F DEBUG   : Revision: '0'
+09-15 18:42:42.512  3787  3787 F DEBUG   : ABI: 'arm'
+09-15 18:42:42.513  3787  3787 F DEBUG   : pid: 3783, tid: 3783, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:42:42.513  3787  3787 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:42:42.513  3787  3787 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:42:42.513  3787  3787 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6805423
+09-15 18:42:42.514  3787  3787 F DEBUG   :     r8 00000000  r9 f68746e0  sl f6852314  fp 00000000
+09-15 18:42:42.514  3787  3787 F DEBUG   :     ip f742afc4  sp ff84d248  lr f7426981  pc f6c306a6  cpsr 800b0030
+09-15 18:42:42.521  3787  3787 F DEBUG   : 
+09-15 18:42:42.521  3787  3787 F DEBUG   : backtrace:
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:42:42.521  3787  3787 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:42:42.563  3783  3783 W audioserver: type=1701 audit(0.0:138): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:42:42.569  3074  3074 W         : debuggerd: resuming target 3783
+09-15 18:42:42.570  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:42:42.624  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:43.625  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:44.626  3568  3636 W AudioSystem: AudioPolicyService not published, waiting...
+09-15 18:42:45.127  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:46.128  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:46.718  3793  3793 I         : sMaxFastTracks = 8
+09-15 18:42:46.718  3793  3793 I audioserver: ServiceManager: 0xf6319420
+09-15 18:42:46.720  3793  3793 I AudioFlinger: Using default 3000 mSec as standby time.
+09-15 18:42:46.720  3793  3793 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-15 18:42:46.721  3793  3793 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-15 18:42:46.721  3793  3793 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:46.721  3793  3793 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-15 18:42:46.721  3793  3793 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-15 18:42:47.129  3568  3636 I ServiceManager: Waiting for service media.audio_policy...
+09-15 18:42:47.131  3793  3793 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 3793 (audioserver)
+09-15 18:42:47.132  3074  3074 W         : debuggerd: handling request: pid=3793 uid=1041 gid=1005 tid=3793
+09-15 18:42:47.152  3797  3797 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-15 18:42:47.203  3797  3797 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-15 18:42:47.204  3797  3797 F DEBUG   : LineageOS Version: '14.1-20170915-UNOFFICIAL-dream2lte'
+09-15 18:42:47.205  3797  3797 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-15 18:42:47.205  3797  3797 F DEBUG   : Revision: '0'
+09-15 18:42:47.205  3797  3797 F DEBUG   : ABI: 'arm'
+09-15 18:42:47.206  3797  3797 F DEBUG   : pid: 3793, tid: 3793, name: audioserver  >>> /system/bin/audioserver <<<
+09-15 18:42:47.206  3797  3797 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-15 18:42:47.206  3797  3797 F DEBUG   :     r0 00000000  r1 00000000  r2 00000000  r3 6e692d00
+09-15 18:42:47.206  3797  3797 F DEBUG   :     r4 00000000  r5 00000000  r6 00000000  r7 f6305423
+09-15 18:42:47.206  3797  3797 F DEBUG   :     r8 00000000  r9 f63746e0  sl f6352314  fp 00000000
+09-15 18:42:47.206  3797  3797 F DEBUG   :     ip f6f5dfc4  sp ff8549f8  lr f6f59981  pc f6aa16a6  cpsr 800b0030
+09-15 18:42:47.230  3797  3797 F DEBUG   : 
+09-15 18:42:47.230  3797  3797 F DEBUG   : backtrace:
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #00 pc 000466a6  /system/lib/libc.so (strtol+25)
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #01 pc 0000197d  /system/lib/libaudioroute.so
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #02 pc 000067d1  /system/lib/libexpat.so
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #03 pc 00005b97  /system/lib/libexpat.so
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #04 pc 00003f23  /system/lib/libexpat.so (XML_ParseBuffer+82)
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #05 pc 000015f7  /system/lib/libaudioroute.so (audio_route_init+398)
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #06 pc 00004344  /system/lib/hw/audio.primary.universal8895.so
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #07 pc 0002488f  /system/lib/libaudioflinger.so
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #08 pc 0002800b  /system/lib/libaudioflinger.so
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #09 pc 0000baef  /system/lib/libaudiopolicyservice.so
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #10 pc 00024385  /system/lib/libaudiopolicymanagerdefault.so (_ZN7android18AudioPolicyManagerC1EPNS_26AudioPolicyClientInterfaceE+692)
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #11 pc 0000082f  /system/lib/libaudiopolicymanager.so (createAudioPolicyManager+14)
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #12 pc 0000603f  /system/lib/libaudiopolicyservice.so
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #13 pc 00001d8f  /system/bin/audioserver
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #14 pc 0000182b  /system/bin/audioserver
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #15 pc 00016c8d  /system/lib/libc.so (__libc_init+48)
+09-15 18:42:47.231  3797  3797 F DEBUG   :     #16 pc 0000156c  /system/bin/audioserver
+09-15 18:42:47.275  3793  3793 W audioserver: type=1701 audit(0.0:139): auid=4294967295 uid=1041 gid=1005 ses=4294967295 subj=u:r:audioserver:s0 exe="/system/bin/audioserver" sig=11
+09-15 18:42:47.280  3074  3074 W         : debuggerd: resuming target 3793
+09-15 18:42:47.281  3162  3162 I ServiceManager: service 'media.audio_flinger' died
+09-15 18:42:48.130  3568  3636 I ServiceManager: Waiting for service media.audio_policy...

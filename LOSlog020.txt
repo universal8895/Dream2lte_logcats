@@ -1,0 +1,1429 @@
+--------- beginning of main
+09-05 20:35:49.371  3078  3078 W auditd  : type=1325 audit(0.0:2): table=filter family=2 entries=0
+09-05 20:35:49.371  3078  3078 W auditd  : type=1325 audit(0.0:3): table=mangle family=2 entries=0
+09-05 20:35:49.371  3078  3078 W auditd  : type=1325 audit(0.0:4): table=nat family=2 entries=0
+09-05 20:35:49.371  3078  3078 W auditd  : type=1325 audit(0.0:5): table=raw family=2 entries=0
+09-05 20:35:49.371  3078  3078 W auditd  : type=1325 audit(0.0:6): table=security family=2 entries=0
+09-05 20:35:49.371  3078  3078 W auditd  : type=1325 audit(0.0:7): table=filter family=3 entries=0
+09-05 20:35:49.371  3078  3078 W auditd  : type=1325 audit(0.0:8): table=filter family=10 entries=0
+09-05 20:35:49.371  3078  3078 W auditd  : type=1325 audit(0.0:9): table=mangle family=10 entries=0
+09-05 20:35:49.371  3078  3078 W auditd  : type=1325 audit(0.0:10): table=raw family=10 entries=0
+09-05 20:35:49.371  3078  3078 W auditd  : type=1325 audit(0.0:11): table=nat family=10 entries=0
+09-05 20:35:49.555  3078  3078 I auditd  : type=1403 audit(0.0:12): policy loaded auid=4294967295 ses=4294967295
+09-05 20:35:50.271  3066  3066 I logd    : type=1400 audit(0.0:13): avc: denied { dac_override } for capability=1 scontext=u:r:logd:s0 tcontext=u:r:logd:s0 tclass=capability permissive=1
+09-05 20:35:50.271  3066  3066 W logd    : type=1300 audit(0.0:13): arch=c00000b7 syscall=48 success=yes exit=0 a0=ffffff9c a1=7f9d1db34a a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 exe="/system/bin/logd" subj=u:r:logd:s0 key=(null)
+09-05 20:35:50.271  3078  3078 W auditd  : type=1327 audit(0.0:13): proctitle="/system/bin/logd"
+09-05 20:35:50.271  3078  3078 W auditd  : type=1320 audit(0.0:13): 
+09-05 20:35:50.271  3078  3078 W auditd  : type=1305 audit(0.0:14): audit_pid=3066 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+09-05 20:35:50.271  3078  3078 W auditd  : type=1305 audit(0.0:15): audit_rate_limit=20 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+--------- beginning of system
+09-05 20:35:50.294  3069  3069 I vold    : Vold 3.0 (the awakening) firing up
+09-05 20:35:50.294  3069  3069 V vold    : Detected support for: exfat ext4 f2fs ntfs vfat
+09-05 20:35:50.296  3069  3069 W Vold    : Tearing down stale mount /mnt/secure/asec
+09-05 20:35:50.309  3067  3067 I         : debuggerd: starting
+09-05 20:35:50.312  3069  3069 W Vold    : Tearing down stale mount /mnt/secure
+09-05 20:35:50.332  3069  3136 D vold    : e4crypt_init_user0
+09-05 20:35:50.332  3069  3136 D vold    : e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+09-05 20:35:50.332  3069  3136 D vold    : Preparing: /data/system/users/0
+09-05 20:35:50.333  3069  3136 D vold    : Preparing: /data/misc/profiles/cur/0
+09-05 20:35:50.333  3069  3136 D vold    : Preparing: /data/misc/profiles/cur/0/foreign-dex
+09-05 20:35:50.333  3069  3136 D vold    : Preparing: /data/system_de/0
+09-05 20:35:50.333  3069  3136 D vold    : Preparing: /data/misc_de/0
+09-05 20:35:50.333  3069  3136 D vold    : Preparing: /data/user_de/0
+09-05 20:35:50.333  3069  3136 D vold    : e4crypt_unlock_user_key 0 serial=0 token_present=0
+09-05 20:35:50.333  3069  3136 E vold    : Failed to chmod /data/system_ce/0: No such file or directory
+09-05 20:35:50.333  3069  3136 E vold    : Failed to chmod /data/misc_ce/0: No such file or directory
+09-05 20:35:50.333     1     1 I vdc     : 200 3070 Command succeeded
+09-05 20:35:50.340  3137  3137 I /system/bin/tzdatacheck: tzdata file /data/misc/zoneinfo/current/tzdata does not exist. No action required.
+09-05 20:35:50.352  3138  3138 D macloader: Deleting file /data/.cid.info
+09-05 20:35:50.356  3139  3139 I TeeMcDaemon: Registry search paths: [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:212]
+09-05 20:35:50.356  3139  3139 I TeeMcDaemon:   /data/misc/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-05 20:35:50.356  3139  3139 I TeeMcDaemon:   /efs/prov [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-05 20:35:50.356  3139  3139 I TeeMcDaemon:   /vendor/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-05 20:35:50.356  3139  3139 I TeeMcDaemon:   /system/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-05 20:35:50.356  3139  3139 I TeeMcDaemon: partition paths rp:  /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:223]
+09-05 20:35:50.356  3139  3139 I TeeMcDaemon: Initialise Secure World [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:253]
+09-05 20:35:50.359     1     1 I init    : type=1400 audit(0.0:16): avc: denied { write } for name="serialnumber" dev="configfs" ino=3607 scontext=u:r:init:s0 tcontext=u:object_r:configfs:s0 tclass=file permissive=1
+09-05 20:35:50.359     1     1 I init    : type=1400 audit(0.0:17): avc: denied { create } for name="mtp.0" scontext=u:r:init:s0 tcontext=u:object_r:configfs:s0 tclass=lnk_file permissive=1
+09-05 20:35:50.362  3139  3139 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:295]
+09-05 20:35:50.363     1     1 I init    : type=1400 audit(0.0:18): avc: denied { write } for name="battery" dev="sysfs" ino=35512 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+09-05 20:35:50.370  3149  3149 I sysinit : Running /system/etc/init.d/00banner
+09-05 20:35:50.378  3145  3145 I lowmemorykiller: Using in-kernel low memory killer interface
+09-05 20:35:50.383  3159  3159 I cm      : _ _                                       
+09-05 20:35:50.388  3160  3160 I cm      : | (_)_ __   ___  __ _  __ _  ___  ___  ___ 
+09-05 20:35:50.396  3147  3147 I SurfaceFlinger: SurfaceFlinger is starting
+09-05 20:35:50.396  3147  3147 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+09-05 20:35:50.397  3161  3161 I cm      : | | | '_ \ / _ \/ _` |/ _` |/ _ \/ _ \/ __|
+09-05 20:35:50.402  3164  3164 D wifiloader: Trigger initcall of deferred modules
+09-05 20:35:50.409  3171  3171 I         : installd firing up
+09-05 20:35:50.414  3184  3184 I cm      : | | | | | |  __/ (_| | (_| |  __/ (_) \__ \
+09-05 20:35:50.420  3187  3187 I cm      : |_|_|_| |_|\___|\__,_|\__, |\___|\___/|___/
+09-05 20:35:50.420  3172  3172 I keystore: Found keymaster0 module Keymaster OpenSSL HAL, version 2
+09-05 20:35:50.421  3172  3172 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 131: Creating device
+09-05 20:35:50.421  3172  3172 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 132: Device address: 0x7fac83e000
+09-05 20:35:50.421  3172  3172 I keystore: Keymaster0 module is software-only.  Using SoftKeymasterDevice instead.
+09-05 20:35:50.421  3172  3172 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 131: Creating device
+09-05 20:35:50.421  3172  3172 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 132: Device address: 0x7fac83e400
+09-05 20:35:50.424  3178  3178 I fingerprintd: Starting fingerprintd
+09-05 20:35:50.427  3188  3188 I cm      :                       |___/
+09-05 20:35:50.432  3183  3183 I perfprofd: starting Android Wide Profiling daemon
+09-05 20:35:50.432  3183  3183 E perfprofd: unable to open configuration file /data/data/com.google.android.gms/files/perfprofd.conf
+09-05 20:35:50.433  3183  3183 I perfprofd: random seed set to 2724009634
+09-05 20:35:50.433  3165  3165 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-05 20:35:50.435  3165  3165 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-05 20:35:50.435  3165  3165 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-05 20:35:50.435  3165  3165 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-05 20:35:50.435  3165  3165 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-05 20:35:50.435  3165  3165 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-05 20:35:50.435  3165  3165 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-05 20:35:50.435  3165  3165 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-05 20:35:50.435  3165  3165 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-05 20:35:50.435  3165  3165 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-05 20:35:50.435  3165  3165 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-05 20:35:50.435  3165  3165 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-05 20:35:50.435  3165  3165 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-05 20:35:50.435  3165  3165 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-05 20:35:50.436  3165  3165 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-05 20:35:50.436  3165  3165 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-05 20:35:50.436  3165  3165 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-05 20:35:50.437  3177  3177 I Netd    : Netd 1.0 starting
+09-05 20:35:50.437  3177  3177 D TetherController: Setting IP forward enable = 0
+09-05 20:35:50.440  3177  3177 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-05 20:35:50.440  3177  3177 E         : Failed to open libdatactrl, some features may not be present.
+09-05 20:35:50.440  3177  3177 E         : Failed to open libcsm_data, some features may not be present.
+09-05 20:35:50.462  3139  3139 I TeeMcDaemon: TEE is ready [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:332]
+09-05 20:35:50.464  3181  3181 I gatekeeperd: Starting gatekeeperd...
+09-05 20:35:50.464  3139  3139 I TeeMcDaemon: t-base-EXYNOS64-Android-400A-V011-20170203_131128_25330_57476 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:280]
+09-05 20:35:50.465  3181  3181 W gatekeeperd: falling back to software GateKeeper
+09-05 20:35:50.465  3139  3139 I TeeMcDaemon: Specific partition path used for Store_1.tf, stored in /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:340]
+09-05 20:35:50.465  3139  3139 I TeeMcDaemon: Start services [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:304]
+09-05 20:35:50.465  3139  3139 I TeeMcDaemon: * start secure world interface [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-05 20:35:50.465  3181  3181 I gatekeeperd: cold boot: clearing state
+09-05 20:35:50.465  3139  3139 I TeeMcDaemon: * start filesystem [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-05 20:35:50.465  3139  3139 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:71]
+09-05 20:35:50.465  3139  3139 I TeeMcDaemon: driver open [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:84]
+09-05 20:35:50.466  3139  3139 I TeeMcDaemon: Kinibi access granted by the driver [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/common.cpp:217]
+09-05 20:35:50.466  3139  3193 I TeeMcDaemon: Start listening to secure world [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:466]
+09-05 20:35:50.467  3139  3193 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/07050501000000000000000000000020.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+09-05 20:35:50.469  3139  3139 I TeeMcDaemon: * start registry update [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-05 20:35:50.469  3139  3139 I TeeMcDaemon: * start registry server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-05 20:35:50.469  3139  3139 I TeeMcDaemon: * start debug session [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-05 20:35:50.470  3139  3193 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/08050500000000000000000000000000.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+09-05 20:35:50.471  3139  3139 I TeeMcDaemon: session opened [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/DebugSession.cpp:113]
+09-05 20:35:50.471  3139  3139 I TeeMcDaemon: Load secure drivers [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:318]
+09-05 20:35:50.471  3139  3139 I TeeMcDaemon: * loading /system/app/FFFFFFFF000000000000000000000001.drbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-05 20:35:50.471  3139  3194 I TeeMcDaemon: void FileSystem::Impl::run(): Start listening for request from STH2 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:443]
+09-05 20:35:50.472  3139  3195 I TeeRegistryUpdate: Starting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:85]
+09-05 20:35:50.476  3139  3196 I TeeMcDaemon: void RegistryServer::Impl::run(): Starting server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryServer.cpp:230]
+09-05 20:35:50.480  3139  3195 I TeeRegistryUpdate: Exiting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:143]
+09-05 20:35:50.484  3139  3139 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-05 20:35:50.487  3147  3147 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-05 20:35:50.500  3162  3162 I cameraserver: ServiceManager: 0xf6499440
+09-05 20:35:50.500  3162  3162 I CameraService: CameraService started (pid=3162)
+09-05 20:35:50.500  3162  3162 I CameraService: CameraService process starting
+09-05 20:35:50.500  3162  3162 W BatteryNotifier: batterystats service unavailable!
+09-05 20:35:50.500  3162  3162 W BatteryNotifier: batterystats service unavailable!
+09-05 20:35:50.501  3162  3162 E CameraService: Could not load camera HAL module: -2 (No such file or directory)
+09-05 20:35:50.522  3173  3173 I mediacodec: @@@ mediacodecservice starting
+09-05 20:35:50.525  3139  3139 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-05 20:35:50.526  3147  3147 I gralloc : using (id=)
+09-05 20:35:50.526  3147  3147 I gralloc : xres         = 1440 px
+09-05 20:35:50.526  3147  3147 I gralloc : yres         = 2960 px
+09-05 20:35:50.526  3147  3147 I gralloc : width        = 70 mm (522.514282 dpi)
+09-05 20:35:50.526  3147  3147 I gralloc : height       = 143 mm (525.762268 dpi)
+09-05 20:35:50.526  3147  3147 I gralloc : refresh rate = 60.00 Hz
+09-05 20:35:50.528  3173  3173 W /system/bin/mediacodec: libminijail: allowing syscall: clock_gettime
+09-05 20:35:50.528  3173  3173 W /system/bin/mediacodec: libminijail: allowing syscall: connect
+09-05 20:35:50.528  3173  3173 W /system/bin/mediacodec: libminijail: allowing syscall: fcntl64
+09-05 20:35:50.528  3173  3173 W /system/bin/mediacodec: libminijail: allowing syscall: socket
+09-05 20:35:50.528  3173  3173 W /system/bin/mediacodec: libminijail: allowing syscall: writev
+09-05 20:35:50.528  3173  3173 W /system/bin/mediacodec: libminijail: logging seccomp filter failures
+09-05 20:35:50.531  3198  3198 I cm      : Welcome to Android 7.1.2 / LineageOS-14.1-20170905-UNOFFICIAL-dream2lte
+09-05 20:35:50.553  3175  3175 V MediaUtils: physMem: 3645837312
+09-05 20:35:50.553  3175  3175 V MediaUtils: requested limit: 729167460
+09-05 20:35:50.553  3175  3175 V MediaUtils: actual limit: 729167460
+09-05 20:35:50.553  3175  3175 V MediaUtils: original limits: 4294967295/4294967295
+09-05 20:35:50.553  3175  3175 V MediaUtils: new limits: 729167460/4294967295
+09-05 20:35:50.553  3175  3175 W /system/bin/mediaextractor: libminijail: allowing syscall: clock_gettime
+09-05 20:35:50.553  3175  3175 W /system/bin/mediaextractor: libminijail: allowing syscall: connect
+09-05 20:35:50.553  3175  3175 W /system/bin/mediaextractor: libminijail: allowing syscall: fcntl64
+09-05 20:35:50.553  3175  3175 W /system/bin/mediaextractor: libminijail: allowing syscall: socket
+09-05 20:35:50.553  3175  3175 W /system/bin/mediaextractor: libminijail: allowing syscall: writev
+09-05 20:35:50.554  3220  3220 I sysinit : Running /system/etc/init.d/90userinit
+09-05 20:35:50.554  3175  3175 W /system/bin/mediaextractor: libminijail: logging seccomp filter failures
+09-05 20:35:50.555  3078  3078 W auditd  : type=1325 audit(0.0:19): table=filter family=2 entries=4
+09-05 20:35:50.555  3078  3078 W auditd  : type=1320 audit(0.0:19): 
+09-05 20:35:50.558  3147  3147 W hwcomposer: invalid refresh rate, assuming 60 Hz
+09-05 20:35:50.558  3147  3147 D hwcomposer: using
+09-05 20:35:50.558  3147  3147 D hwcomposer: xres         = 1440 px
+09-05 20:35:50.558  3147  3147 D hwcomposer: yres         = 2960 px
+09-05 20:35:50.558  3147  3147 D hwcomposer: width        = 70 mm (522.514000 dpi)
+09-05 20:35:50.558  3147  3147 D hwcomposer: height       = 143 mm (525.762000 dpi)
+09-05 20:35:50.558  3147  3147 D hwcomposer: refresh rate = 60 Hz
+09-05 20:35:50.558  3147  3147 I hwcomposer: PSR info devname = /sys/devices/platform/12860000.decon_f/psr_info
+09-05 20:35:50.558  3147  3147 I hwcomposer: PSR mode is 2(0: video mode, 1: DP PSR mode, 2: MIPI-DSI command mode)
+09-05 20:35:50.558  3147  3147 I SurfaceFlinger: Using composer version 1.4
+09-05 20:35:50.558  3147  3147 E display : unknown display attribute 6
+09-05 20:35:50.558  3147  3147 I SurfaceFlinger: EGL information:
+09-05 20:35:50.558  3147  3147 I SurfaceFlinger: vendor    : Android
+09-05 20:35:50.558  3147  3147 I SurfaceFlinger: version   : 1.4 Android META-EGL
+09-05 20:35:50.558  3147  3147 I SurfaceFlinger: extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_swap_buffers_with_damage EGL_ANDROID_create_native_client_buffer EGL_ANDROID_front_buffer_auto_refresh EGL_KHR_image EGL_KHR_image_base EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_fence_sync EGL_KHR_create_context EGL_KHR_config_attribs EGL_KHR_surfaceless_context EGL_EXT_create_context_robustness EGL_ANDROID_image_native_buffer EGL_KHR_wait_sync EGL_ANDROID_recordable EGL_KHR_partial_update EGL_KHR_mutable_render_buffer EGL_EXT_protected_content 
+09-05 20:35:50.558  3147  3147 I SurfaceFlinger: Client API: OpenGL_ES
+09-05 20:35:50.558  3147  3147 I SurfaceFlinger: EGLSurface: 8-8-8-8, config=0x7fa626a138
+09-05 20:35:50.566  3166  3166 D gpsd    : WakeLock(Release,GPSD)
+09-05 20:35:50.567  3165  3165 D lhd     : OnIpcConnect
+09-05 20:35:50.570  3166  3166 D gpsd    : WakeLock(Release,SUPL)
+09-05 20:35:50.571  3078  3078 W auditd  : type=1325 audit(0.0:20): table=filter family=10 entries=4
+09-05 20:35:50.571  3078  3078 W auditd  : type=1320 audit(0.0:20): 
+09-05 20:35:50.571  3166  3166 I gpsd_d  : GNSS: 282637
+09-05 20:35:50.571  3166  3166 I gpsd_d  : CustomerModule::Create chip info "Broadcom,BCM4774,282637" written into /data/system/gps//chip.info
+09-05 20:35:50.571  3166  3166 D wrapperGPS: wrapperOpenClient_RILD
+09-05 20:35:50.571  3166  3166 E wrapperGPS: wrapperOpenClient_RILD: RegisterUnsolicitedHandler() UNSOL_GPS_NOTI (11009)
+09-05 20:35:50.571  3166  3166 D wrapperGPS: wrapperRegisterRequestCompleteHandler
+09-05 20:35:50.571  3166  3166 D wrapperGPS: wrapperRegisterUnsolicitedHandler id(12009), handler(0x138f56d30)
+09-05 20:35:50.571  3166  3166 D wrapperGPS: wrapperRegisterErrorCallback
+09-05 20:35:50.571  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:35:50.571  3147  3147 I SurfaceFlinger: OpenGL ES informations:
+09-05 20:35:50.571  3147  3147 I SurfaceFlinger: vendor    : ARM
+09-05 20:35:50.571  3147  3147 I SurfaceFlinger: renderer  : Mali-G71
+09-05 20:35:50.571  3147  3147 I SurfaceFlinger: version   : OpenGL ES 3.2 v1.r3p0-00rel0.52a2c5ce14e045eb8b9074c171442f91
+09-05 20:35:50.571  3147  3147 I SurfaceFlinger: extensions: GL_EXT_debug_marker GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_EXT_read_format_bgra GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_image_external_essl3 GL_OES_EGL_sync GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_required_internalformat GL_OES_vertex_array_object GL_OES_mapbuffer GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_type_2_10_10_10_REV GL_OES_fbo_render_mipmap GL_OES_element_index_uint GL_EXT_shadow_samplers GL_OES_texture_compression_astc GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_KHR_texture_compression_astc_sliced_3d GL_KHR_debug GL_EXT_occlusion_query_boolean GL_EXT_disjoint_timer_query GL_EXT_blend_minmax GL_EXT_discard_framebuffer GL_OES_get_program_binary GL_OES_texture_3D GL_EXT_texture_storage GL_EXT_multisamp
+09-05 20:35:50.571  3147  3147 I SurfaceFlinger: GL_MAX_TEXTURE_SIZE = 16384
+09-05 20:35:50.571  3147  3147 I SurfaceFlinger: GL_MAX_VIEWPORT_DIMS = 16384
+09-05 20:35:50.572  3147  3147 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:1
+09-05 20:35:50.575  3169  3169 I         : sMaxFastTracks = 8
+09-05 20:35:50.576  3169  3169 I audioserver: ServiceManager: 0xf6a19440
+09-05 20:35:50.576  3169  3169 W BatteryNotifier: batterystats service unavailable!
+09-05 20:35:50.576  3169  3169 I AudioFlinger: Using default 3000 mSec as standby time.
+09-05 20:35:50.576  3169  3169 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-05 20:35:50.577  3169  3169 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-05 20:35:50.577  3169  3169 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-05 20:35:50.577  3169  3169 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-05 20:35:50.577  3169  3169 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-05 20:35:50.585  3169  3169 E HAL     : load: module=/system/lib/hw/audio.primary.universal8895.so
+09-05 20:35:50.585  3169  3169 E HAL     : dlopen failed: library "lib_soundaliveresampler.so" not found
+09-05 20:35:50.585  3169  3169 E AudioFlinger: int android::load_audio_interface(const char *, audio_hw_device_t **) couldn't load audio hw module audio.primary (Invalid argument)
+09-05 20:35:50.585  3169  3169 E AudioFlinger: loadHwModule() error -22 loading module primary
+09-05 20:35:50.585  3169  3169 W APM_AudioPolicyManager: could not open HW module primary
+09-05 20:35:50.586  3169  3169 I bt_a2dp_hw: adev_open:  adev_open in A2dp_hw module
+09-05 20:35:50.586  3169  3169 I AudioFlinger: loadHwModule() Loaded a2dp audio interface from A2DP Audio HW HAL (audio) handle 10
+09-05 20:35:50.587  3078  3078 W auditd  : type=1325 audit(0.0:21): table=filter family=2 entries=6
+09-05 20:35:50.587  3078  3078 W auditd  : type=1320 audit(0.0:21): 
+09-05 20:35:50.587  3174  3174 I mediaserver: ServiceManager: 0xf61994a0
+09-05 20:35:50.587  3169  3169 I AudioFlinger: loadHwModule() Loaded usb audio interface from USB audio HW HAL (audio) handle 18
+09-05 20:35:50.588  3169  3169 I r_submix: adev_open(name=audio_hw_if)
+09-05 20:35:50.588  3169  3169 I r_submix: adev_init_check()
+09-05 20:35:50.588  3169  3169 I AudioFlinger: loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 26
+09-05 20:35:50.588  3169  3169 D r_submix: adev_open_input_stream(addr=0)
+09-05 20:35:50.588  3169  3169 D r_submix: submix_audio_device_create_pipe_l(addr=0, idx=9)
+09-05 20:35:50.588  3169  3169 D r_submix:   now using address 0 for route 9
+09-05 20:35:50.589  3169  3237 I AudioFlinger: AudioFlinger's thread 0xf659c740 ready to run
+09-05 20:35:50.589  3169  3169 D r_submix: adev_close_input_stream()
+09-05 20:35:50.589  3169  3169 D r_submix: submix_audio_device_release_pipe_l(idx=9) addr=0
+09-05 20:35:50.589  3169  3169 D r_submix: submix_audio_device_destroy_pipe_l(): pipe destroyed
+09-05 20:35:50.589  3169  3169 W APM_AudioPolicyManager: Output device 00000001 unreachable
+09-05 20:35:50.589  3169  3169 W APM_AudioPolicyManager: Output device 00000002 unreachable
+09-05 20:35:50.589  3169  3169 W APM_AudioPolicyManager: Input device 80000004 unreachable
+09-05 20:35:50.589  3169  3169 W APM_AudioPolicyManager: Input device 80000080 unreachable
+09-05 20:35:50.589  3169  3169 W APM_AudioPolicyManager: Input device 80000040 unreachable
+09-05 20:35:50.589  3169  3169 E APM_AudioPolicyManager: Default device 00000002 is unreachable
+09-05 20:35:50.589  3169  3169 E APM_AudioPolicyManager: Failed to open primary output
+09-05 20:35:50.590  3169  3169 I RadioService: RadioService
+09-05 20:35:50.590  3169  3169 I RadioService: onFirstRef
+09-05 20:35:50.590  3169  3169 E RadioService: couldn't load radio module radio.primary (No such file or directory)
+09-05 20:35:50.590  3169  3169 E SoundTriggerHwService: couldn't load sound trigger module sound_trigger.primary (No such file or directory)
+09-05 20:35:50.591  3078  3078 W auditd  : type=1325 audit(0.0:22): table=filter family=10 entries=6
+09-05 20:35:50.591  3078  3078 W auditd  : type=1320 audit(0.0:22): 
+09-05 20:35:50.592  3139  3194 I TeeMcDaemon: TEEC_Result Partition::open(): Open storage file "/efs/TEE/Store_1.tf" [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:157]
+09-05 20:35:50.593  3139  3194 I TeeMcDaemon: TEEC_Result Partition::open(): storage file "/efs/TEE/Store_1.tf" successfully open (size: 23 KB / 23552 B)) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:166]
+09-05 20:35:50.603  3139  3139 I mcDriverDaemon: type=1400 audit(0.0:23): avc: denied { read } for name="t-base-tui" dev="tmpfs" ino=20312 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-05 20:35:50.603  3139  3139 I mcDriverDaemon: type=1400 audit(0.0:23): avc: denied { open } for path="/dev/t-base-tui" dev="tmpfs" ino=20312 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-05 20:35:50.603  3139  3139 W mcDriverDaemon: type=1300 audit(0.0:23): arch=c00000b7 syscall=56 success=yes exit=9 a0=ffffff9c a1=4a89cb a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 exe="/system/bin/mcDriverDaemon" subj=u:r:tee:s0 key=(null)
+09-05 20:35:50.603  3078  3078 W auditd  : type=1327 audit(0.0:23): proctitle=2F73797374656D2F62696E2F6D634472697665724461656D6F6E002D72002F73797374656D2F6170702F46464646464646463030303030303030303030303030303030303030303030312E647262696E002D72002F73797374656D2F6170702F6D6352656769737472792F666666666666666664303030303030303030303030
+09-05 20:35:50.603  3078  3078 W auditd  : type=1320 audit(0.0:23): 
+09-05 20:35:50.603  3139  3139 I mcDriverDaemon: type=1400 audit(0.0:24): avc: denied { ioctl } for path="/dev/t-base-tui" dev="tmpfs" ino=20312 ioctlcmd=7404 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-05 20:35:50.603  3139  3139 W mcDriverDaemon: type=1300 audit(0.0:24): arch=c00000b7 syscall=29 success=yes exit=0 a0=9 a1=7404 a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 exe="/system/bin/mcDriverDaemon" subj=u:r:tee:s0 key=(null)
+09-05 20:35:50.603  3078  3078 W auditd  : type=1327 audit(0.0:24): proctitle=2F73797374656D2F62696E2F6D634472697665724461656D6F6E002D72002F73797374656D2F6170702F46464646464646463030303030303030303030303030303030303030303030312E647262696E002D72002F73797374656D2F6170702F6D6352656769737472792F666666666666666664303030303030303030303030
+09-05 20:35:50.603  3078  3078 W auditd  : type=1320 audit(0.0:24): 
+09-05 20:35:50.607  3139  3139 I TeeMcDaemon: Daemon running [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:342]
+09-05 20:35:50.610  3176  3176 I mediaserver: ServiceManager: 0xf62194a0
+09-05 20:35:50.610  3176  3176 W BatteryNotifier: batterystats service unavailable!
+09-05 20:35:50.647  3078  3078 W auditd  : type=1325 audit(0.0:25): table=filter family=2 entries=7
+09-05 20:35:50.647  3078  3078 W auditd  : type=1320 audit(0.0:25): 
+09-05 20:35:50.651  3078  3078 W auditd  : type=1325 audit(0.0:26): table=filter family=10 entries=7
+09-05 20:35:50.651  3078  3078 W auditd  : type=1320 audit(0.0:26): 
+09-05 20:35:50.655  3078  3078 W auditd  : type=1325 audit(0.0:27): table=filter family=2 entries=9
+09-05 20:35:50.655  3078  3078 W auditd  : type=1320 audit(0.0:27): 
+09-05 20:35:50.663  3078  3078 W auditd  : type=1325 audit(0.0:28): table=filter family=10 entries=9
+09-05 20:35:50.663  3078  3078 W auditd  : type=1320 audit(0.0:28): 
+09-05 20:35:50.695  3078  3078 W auditd  : type=1325 audit(0.0:29): table=filter family=2 entries=10
+09-05 20:35:50.695  3078  3078 W auditd  : type=1320 audit(0.0:29): 
+09-05 20:35:50.699  3223  3223 I rild    : type=1400 audit(0.0:30): avc: denied { dac_read_search } for capability=2 scontext=u:r:rild:s0 tcontext=u:r:rild:s0 tclass=capability permissive=1
+09-05 20:35:50.699  3223  3223 W rild    : type=1300 audit(0.0:30): arch=c00000b7 syscall=79 success=no exit=-2 a0=ffffff9c a1=7f98026180 a2=7f97418348 a3=0 items=0 ppid=1 auid=4294967295 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/rild" subj=u:r:rild:s0 key=(null)
+09-05 20:35:50.699  3078  3078 W auditd  : type=1327 audit(0.0:30): proctitle="/system/bin/rild"
+09-05 20:35:50.699  3078  3078 W auditd  : type=1320 audit(0.0:30): 
+09-05 20:35:50.699  3078  3078 W auditd  : type=1325 audit(0.0:31): table=filter family=10 entries=10
+09-05 20:35:50.699  3078  3078 W auditd  : type=1320 audit(0.0:31): 
+09-05 20:35:50.707  3078  3078 W auditd  : type=1325 audit(0.0:32): table=filter family=2 entries=12
+09-05 20:35:50.707  3078  3078 W auditd  : type=1320 audit(0.0:32): 
+09-05 20:35:50.711  3078  3078 W auditd  : type=1325 audit(0.0:33): table=filter family=10 entries=12
+09-05 20:35:50.753  3164  3164 V wifiloader: /proc/deferred_initcalls=0
+09-05 20:35:50.753  3164  3164 V wifiloader: 
+09-05 20:35:50.823  3167  3167 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+09-05 20:35:50.832  3167  3167 D AndroidRuntime: CheckJNI is ON
+09-05 20:35:50.834  3167  3167 I art     : option[0]=-Xzygote
+09-05 20:35:50.834  3167  3167 I art     : option[1]=-Xcheck:jni
+09-05 20:35:50.834  3167  3167 I art     : option[2]=-Xstacktracefile:/data/anr/traces.txt
+09-05 20:35:50.834  3167  3167 I art     : option[3]=exit
+09-05 20:35:50.834  3167  3167 I art     : option[4]=vfprintf
+09-05 20:35:50.834  3167  3167 I art     : option[5]=sensitiveThread
+09-05 20:35:50.834  3167  3167 I art     : option[6]=-verbose:gc
+09-05 20:35:50.835  3167  3167 I art     : option[7]=-Xms8m
+09-05 20:35:50.835  3167  3167 I art     : option[8]=-Xmx512m
+09-05 20:35:50.835  3167  3167 I art     : option[9]=-XX:HeapGrowthLimit=256m
+09-05 20:35:50.835  3167  3167 I art     : option[10]=-XX:HeapMinFree=2m
+09-05 20:35:50.835  3167  3167 I art     : option[11]=-XX:HeapMaxFree=8m
+09-05 20:35:50.835  3167  3167 I art     : option[12]=-XX:HeapTargetUtilization=0.75
+09-05 20:35:50.835  3167  3167 I art     : option[13]=-Xusejit:true
+09-05 20:35:50.835  3167  3167 I art     : option[14]=-Xjitsaveprofilinginfo
+09-05 20:35:50.835  3167  3167 I art     : option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+09-05 20:35:50.835  3167  3167 I art     : option[16]=-Xlockprofthreshold:500
+09-05 20:35:50.835  3167  3167 I art     : option[17]=-Ximage-compiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[18]=--runtime-arg
+09-05 20:35:50.835  3167  3167 I art     : option[19]=-Ximage-compiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[20]=-Xms64m
+09-05 20:35:50.835  3167  3167 I art     : option[21]=-Ximage-compiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[22]=--runtime-arg
+09-05 20:35:50.835  3167  3167 I art     : option[23]=-Ximage-compiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[24]=-Xmx64m
+09-05 20:35:50.835  3167  3167 I art     : option[25]=-Ximage-compiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[26]=--compiler-filter=verify-at-runtime
+09-05 20:35:50.835  3167  3167 I art     : option[27]=-Ximage-compiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[28]=--image-classes=/system/etc/preloaded-classes
+09-05 20:35:50.835  3167  3167 I art     : option[29]=-Ximage-compiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[30]=--compiled-classes=/system/etc/compiled-classes
+09-05 20:35:50.835  3167  3167 I art     : option[31]=-Xcompiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[32]=--runtime-arg
+09-05 20:35:50.835  3167  3167 I art     : option[33]=-Xcompiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[34]=-Xms64m
+09-05 20:35:50.835  3167  3167 I art     : option[35]=-Xcompiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[36]=--runtime-arg
+09-05 20:35:50.835  3167  3167 I art     : option[37]=-Xcompiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[38]=-Xmx512m
+09-05 20:35:50.835  3167  3167 I art     : option[39]=-Ximage-compiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[40]=--instruction-set-variant=generic
+09-05 20:35:50.835  3167  3167 I art     : option[41]=-Xcompiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[42]=--instruction-set-variant=generic
+09-05 20:35:50.835  3167  3167 I art     : option[43]=-Ximage-compiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[44]=--instruction-set-features=default
+09-05 20:35:50.835  3167  3167 I art     : option[45]=-Xcompiler-option
+09-05 20:35:50.835  3167  3167 I art     : option[46]=--instruction-set-features=default
+09-05 20:35:50.835  3167  3167 I art     : option[47]=-Duser.locale=en-US
+09-05 20:35:50.835  3167  3167 I art     : option[48]=--cpu-abilist=arm64-v8a
+09-05 20:35:50.835  3167  3167 I art     : option[49]=-Xfingerprint:samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys
+09-05 20:35:50.847  3167  3167 I art     : Pruning dalvik-cache since we are generating an image and will need to recompile
+09-05 20:35:50.847  3167  3167 I art     : Using an offset of 0xff0df000 from default art base address of 0x70000000
+09-05 20:35:50.847  3167  3167 I art     : GenerateImage: /system/bin/dex2oat --image=/data/dalvik-cache/arm64/system@framework@boot.art --dex-file=/system/framework/core-oj.jar --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/apache-xml.jar --dex-file=/system/framework/org.apache.http.legacy.boot.jar --dex-file=/system/framework/telephony-ext.jar --oat-file=/data/dalvik-cache/arm64/system@framework@boot.oat --instruction-set=arm64 --instruction-set-features=smp,a53 --base=0x6f0df000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --compiler-filter=verify-at-runtime --image-classes=/system/etc/preloaded-classes --compiled-classes=/system/etc/com
+09-05 20:35:50.880  3168  3168 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+09-05 20:35:50.884  3168  3168 D AndroidRuntime: CheckJNI is ON
+09-05 20:35:50.887  3168  3168 I art     : option[0]=-Xzygote
+09-05 20:35:50.887  3168  3168 I art     : option[1]=-Xcheck:jni
+09-05 20:35:50.887  3168  3168 I art     : option[2]=-Xstacktracefile:/data/anr/traces.txt
+09-05 20:35:50.887  3168  3168 I art     : option[3]=exit
+09-05 20:35:50.887  3168  3168 I art     : option[4]=vfprintf
+09-05 20:35:50.887  3168  3168 I art     : option[5]=sensitiveThread
+09-05 20:35:50.887  3168  3168 I art     : option[6]=-verbose:gc
+09-05 20:35:50.887  3168  3168 I art     : option[7]=-Xms8m
+09-05 20:35:50.887  3168  3168 I art     : option[8]=-Xmx512m
+09-05 20:35:50.887  3168  3168 I art     : option[9]=-XX:HeapGrowthLimit=256m
+09-05 20:35:50.887  3168  3168 I art     : option[10]=-XX:HeapMinFree=2m
+09-05 20:35:50.887  3168  3168 I art     : option[11]=-XX:HeapMaxFree=8m
+09-05 20:35:50.887  3168  3168 I art     : option[12]=-XX:HeapTargetUtilization=0.75
+09-05 20:35:50.887  3168  3168 I art     : option[13]=-Xusejit:true
+09-05 20:35:50.887  3168  3168 I art     : option[14]=-Xjitsaveprofilinginfo
+09-05 20:35:50.887  3168  3168 I art     : option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+09-05 20:35:50.887  3168  3168 I art     : option[16]=-Xlockprofthreshold:500
+09-05 20:35:50.887  3168  3168 I art     : option[17]=-Ximage-compiler-option
+09-05 20:35:50.887  3168  3168 I art     : option[18]=--runtime-arg
+09-05 20:35:50.887  3168  3168 I art     : option[19]=-Ximage-compiler-option
+09-05 20:35:50.887  3168  3168 I art     : option[20]=-Xms64m
+09-05 20:35:50.887  3168  3168 I art     : option[21]=-Ximage-compiler-option
+09-05 20:35:50.887  3168  3168 I art     : option[22]=--runtime-arg
+09-05 20:35:50.887  3168  3168 I art     : option[23]=-Ximage-compiler-option
+09-05 20:35:50.887  3168  3168 I art     : option[24]=-Xmx64m
+09-05 20:35:50.887  3168  3168 I art     : option[25]=-Ximage-compiler-option
+09-05 20:35:50.888  3168  3168 I art     : option[26]=--compiler-filter=verify-at-runtime
+09-05 20:35:50.888  3168  3168 I art     : option[27]=-Ximage-compiler-option
+09-05 20:35:50.888  3168  3168 I art     : option[28]=--image-classes=/system/etc/preloaded-classes
+09-05 20:35:50.888  3168  3168 I art     : option[29]=-Ximage-compiler-option
+09-05 20:35:50.888  3168  3168 I art     : option[30]=--compiled-classes=/system/etc/compiled-classes
+09-05 20:35:50.888  3168  3168 I art     : option[31]=-Xcompiler-option
+09-05 20:35:50.888  3168  3168 I art     : option[32]=--runtime-arg
+09-05 20:35:50.888  3168  3168 I art     : option[33]=-Xcompiler-option
+09-05 20:35:50.888  3168  3168 I art     : option[34]=-Xms64m
+09-05 20:35:50.888  3168  3168 I art     : option[35]=-Xcompiler-option
+09-05 20:35:50.888  3168  3168 I art     : option[36]=--runtime-arg
+09-05 20:35:50.888  3168  3168 I art     : option[37]=-Xcompiler-option
+09-05 20:35:50.888  3168  3168 I art     : option[38]=-Xmx512m
+09-05 20:35:50.888  3168  3168 I art     : option[39]=-Ximage-compiler-option
+09-05 20:35:50.888  3168  3168 I art     : option[40]=--instruction-set-variant=cortex-a53.a57
+09-05 20:35:50.888  3168  3168 I art     : option[41]=-Xcompiler-option
+09-05 20:35:50.888  3329  3329 I dex2oat : /system/bin/dex2oat --image=/data/dalvik-cache/arm64/system@framework@boot.art --dex-file=/system/framework/core-oj.jar --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/apache-xml.jar --dex-file=/system/framework/org.apache.http.legacy.boot.jar --dex-file=/system/framework/telephony-ext.jar --oat-file=/data/dalvik-cache/arm64/system@framework@boot.oat --instruction-set=arm64 --instruction-set-features=smp,a53 --base=0x6f0df000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --compiler-filter=verify-at-runtime --image-classes=/system/etc/preloaded-classes --compiled-classes=/system/etc/compiled-classes -
+09-05 20:35:50.888  3168  3168 I art     : option[42]=--instruction-set-variant=cortex-a53.a57
+09-05 20:35:50.888  3168  3168 I art     : option[43]=-Ximage-compiler-option
+09-05 20:35:50.888  3168  3168 I art     : option[44]=--instruction-set-features=default
+09-05 20:35:50.888  3168  3168 I art     : option[45]=-Xcompiler-option
+09-05 20:35:50.888  3168  3168 I art     : option[46]=--instruction-set-features=default
+09-05 20:35:50.888  3168  3168 I art     : option[47]=-Duser.locale=en-US
+09-05 20:35:50.888  3168  3168 I art     : option[48]=--cpu-abilist=armeabi-v7a,armeabi
+09-05 20:35:50.888  3168  3168 I art     : option[49]=-Xfingerprint:samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys
+09-05 20:35:50.897  3168  3168 I art     : Pruning dalvik-cache since we are generating an image and will need to recompile
+09-05 20:35:50.897  3168  3168 I art     : Using an offset of 0xdda000 from default art base address of 0x70000000
+09-05 20:35:50.897  3168  3168 I art     : GenerateImage: /system/bin/dex2oat --image=/data/dalvik-cache/arm/system@framework@boot.art --dex-file=/system/framework/core-oj.jar --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/apache-xml.jar --dex-file=/system/framework/org.apache.http.legacy.boot.jar --dex-file=/system/framework/telephony-ext.jar --oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --base=0x70dda000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --compiler-filter=verify-at-runtime --image-classes=/system/etc/preloaded-classes --compiled-classes=/sys
+09-05 20:35:50.913  3344  3344 I dex2oat : /system/bin/dex2oat --image=/data/dalvik-cache/arm/system@framework@boot.art --dex-file=/system/framework/core-oj.jar --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/apache-xml.jar --dex-file=/system/framework/org.apache.http.legacy.boot.jar --dex-file=/system/framework/telephony-ext.jar --oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --base=0x70dda000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --compiler-filter=verify-at-runtime --image-classes=/system/etc/preloaded-classes --compiled-classes=/system/etc/compile
+09-05 20:35:50.914  3329  3329 I dex2oat : setting boot class path to /system/framework/core-oj.jar:/system/framework/core-libart.jar:/system/framework/conscrypt.jar:/system/framework/okhttp.jar:/system/framework/core-junit.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/apache-xml.jar:/system/framework/org.apache.http.legacy.boot.jar:/system/framework/telephony-ext.jar
+09-05 20:35:50.937  3344  3344 I dex2oat : setting boot class path to /system/framework/core-oj.jar:/system/framework/core-libart.jar:/system/framework/conscrypt.jar:/system/framework/okhttp.jar:/system/framework/core-junit.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/apache-xml.jar:/system/framework/org.apache.http.legacy.boot.jar:/system/framework/telephony-ext.jar
+09-05 20:35:51.338  3177  3177 V NatController: runCmd(/system/bin/iptables -w -F natctrl_FORWARD) res=0
+09-05 20:35:51.343  3177  3177 V NatController: runCmd(/system/bin/ip6tables -w -F natctrl_FORWARD) res=0
+09-05 20:35:51.347  3177  3177 V NatController: runCmd(/system/bin/iptables -w -A natctrl_FORWARD -j DROP) res=0
+09-05 20:35:51.351  3177  3177 V NatController: runCmd(/system/bin/iptables -w -t nat -F natctrl_nat_POSTROUTING) res=0
+09-05 20:35:51.356  3177  3177 V NatController: runCmd(/system/bin/ip6tables -w -t raw -F natctrl_raw_PREROUTING) res=0
+09-05 20:35:51.360  3177  3177 V NatController: runCmd(/system/bin/iptables -w -F natctrl_tether_counters) res=1
+09-05 20:35:51.364  3177  3177 V NatController: runCmd(/system/bin/ip6tables -w -F natctrl_tether_counters) res=1
+09-05 20:35:51.368  3177  3177 V NatController: runCmd(/system/bin/iptables -w -X natctrl_tether_counters) res=1
+09-05 20:35:51.372  3177  3177 V NatController: runCmd(/system/bin/ip6tables -w -X natctrl_tether_counters) res=1
+09-05 20:35:51.376  3177  3177 V NatController: runCmd(/system/bin/iptables -w -N natctrl_tether_counters) res=0
+09-05 20:35:51.380  3177  3177 V NatController: runCmd(/system/bin/ip6tables -w -N natctrl_tether_counters) res=0
+09-05 20:35:51.384  3177  3177 V NatController: runCmd(/system/bin/iptables -w -t mangle -A natctrl_mangle_FORWARD -p tcp --tcp-flags SYN SYN -j TCPMSS --clamp-mss-to-pmtu) res=0
+09-05 20:35:51.442  3177  3177 E Netd    : cannot find interface dummy0
+09-05 20:35:51.443  3177  3177 D MDnsDS  : MDnsSdListener::Hander starting up
+09-05 20:35:51.443  3177  3498 D MDnsDS  : MDnsSdListener starting to monitor
+09-05 20:35:51.443  3177  3498 D MDnsDS  : Going to poll with pollCount 1
+09-05 20:35:51.491  3147  3147 D SurfaceFlinger: SF. shader cache generated - 26 shaders in 899.703857 ms
+09-05 20:35:51.494  3147  3147 D SurfaceFlinger: Set power mode=2, type=0 flinger=0x7fa6248000
+09-05 20:35:51.571  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:35:51.712  3505  3510 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-05 20:35:51.726  3505  3510 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:2
+09-05 20:35:51.811  3510  3510 I BootAnimation: type=1400 audit(0.0:122): avc: denied { read write } for name="fimg2d" dev="tmpfs" ino=20245 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-05 20:35:51.811  3510  3510 I BootAnimation: type=1400 audit(0.0:122): avc: denied { open } for path="/dev/fimg2d" dev="tmpfs" ino=20245 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-05 20:35:51.811  3510  3510 W BootAnimation: type=1300 audit(0.0:122): arch=c00000b7 syscall=56 success=yes exit=14 a0=ffffff9c a1=7f7917c703 a2=2 a3=0 items=0 ppid=1 auid=4294967295 uid=1003 gid=1003 euid=1003 suid=1003 fsuid=1003 egid=1003 sgid=1003 fsgid=1003 tty=(none) ses=4294967295 exe="/system/bin/bootanimation" subj=u:r:bootanim:s0 key=(null)
+09-05 20:35:51.811  3078  3078 W auditd  : type=1327 audit(0.0:122): proctitle="/system/bin/bootanimation"
+09-05 20:35:51.811  3078  3078 W auditd  : type=1320 audit(0.0:122): 
+09-05 20:35:51.811  3510  3510 I BootAnimation: type=1400 audit(0.0:123): avc: denied { ioctl } for path="/dev/fimg2d" dev="tmpfs" ino=20245 ioctlcmd=4d04 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-05 20:35:51.811  3510  3510 W BootAnimation: type=1300 audit(0.0:123): arch=c00000b7 syscall=29 success=yes exit=0 a0=f a1=c1104d04 a2=7f7510d2b0 a3=0 items=0 ppid=1 auid=4294967295 uid=1003 gid=1003 euid=1003 suid=1003 fsuid=1003 egid=1003 sgid=1003 fsgid=1003 tty=(none) ses=4294967295 exe="/system/bin/bootanimation" subj=u:r:bootanim:s0 key=(null)
+09-05 20:35:51.811  3078  3078 W auditd  : type=1327 audit(0.0:123): proctitle="/system/bin/bootanimation"
+09-05 20:35:51.811  3078  3078 W auditd  : type=1320 audit(0.0:123): 
+09-05 20:35:52.474  3344  3344 I dex2oat : Explicit concurrent mark sweep GC freed 7869(1469KB) AllocSpace objects, 0(0B) LOS objects, 66% free, 1825KB/5MB, paused 39us total 7.677ms
+09-05 20:35:52.482  3329  3329 I dex2oat : Explicit concurrent mark sweep GC freed 7869(2MB) AllocSpace objects, 0(0B) LOS objects, 61% free, 2MB/6MB, paused 53us total 9.103ms
+09-05 20:35:52.572  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:35:53.214  3329  3329 I dex2oat : dex2oat took 2.329s (threads: 8) arena alloc=0B (0B) java alloc=2MB (2608704B) native alloc=10MB (10597096B) free=5MB (5786904B)
+09-05 20:35:53.214  3344  3344 I dex2oat : dex2oat took 2.301s (threads: 8) arena alloc=0B (0B) java alloc=1829KB (1873040B) native alloc=7MB (7784736B) free=4MB (4798176B)
+09-05 20:35:53.241  3168  3168 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-05 20:35:53.244  3167  3167 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-05 20:35:53.269  3167  3167 W art     : Before Android 4.1, method double java.util.concurrent.ThreadLocalRandom.internalNextDouble(double, double) would have incorrectly overridden the package-private method in java.util.Random
+09-05 20:35:53.270  3167  3167 W art     : Before Android 4.1, method int java.util.concurrent.ThreadLocalRandom.internalNextInt(int, int) would have incorrectly overridden the package-private method in java.util.Random
+09-05 20:35:53.270  3167  3167 W art     : Before Android 4.1, method long java.util.concurrent.ThreadLocalRandom.internalNextLong(long, long) would have incorrectly overridden the package-private method in java.util.Random
+09-05 20:35:53.270  3168  3168 W art     : Before Android 4.1, method double java.util.concurrent.ThreadLocalRandom.internalNextDouble(double, double) would have incorrectly overridden the package-private method in java.util.Random
+09-05 20:35:53.270  3168  3168 W art     : Before Android 4.1, method int java.util.concurrent.ThreadLocalRandom.internalNextInt(int, int) would have incorrectly overridden the package-private method in java.util.Random
+09-05 20:35:53.270  3168  3168 W art     : Before Android 4.1, method long java.util.concurrent.ThreadLocalRandom.internalNextLong(long, long) would have incorrectly overridden the package-private method in java.util.Random
+09-05 20:35:53.392  3167  3167 I Radio-JNI: register_android_hardware_Radio DONE
+09-05 20:35:53.397  3168  3168 I Radio-JNI: register_android_hardware_Radio DONE
+09-05 20:35:53.426  3167  3167 I SamplingProfilerIntegration: Profiling disabled.
+09-05 20:35:53.427  3167  3167 D Zygote  : begin preload
+09-05 20:35:53.427  3167  3167 I Zygote  : Installing ICU cache reference pinning...
+09-05 20:35:53.427  3167  3167 I Zygote  : Preloading ICU data...
+09-05 20:35:53.438  3168  3168 I SamplingProfilerIntegration: Profiling disabled.
+09-05 20:35:53.439  3168  3168 D Zygote  : begin preload
+09-05 20:35:53.439  3168  3168 I Zygote  : Installing ICU cache reference pinning...
+09-05 20:35:53.439  3168  3168 I Zygote  : Preloading ICU data...
+09-05 20:35:53.572  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:35:53.576  3167  3167 I Zygote  : Preloading classes...
+09-05 20:35:53.583  3167  3167 W Zygote  : Class not found for preloading: [Landroid.view.Display$ColorTransform;
+09-05 20:35:53.615  3168  3168 I Zygote  : Preloading classes...
+09-05 20:35:53.622  3168  3168 W Zygote  : Class not found for preloading: [Landroid.view.Display$ColorTransform;
+09-05 20:35:54.028  3167  3167 E Typeface: Error mapping font file /system/fonts/DroidSansFallback.ttf
+09-05 20:35:54.047  3168  3168 E Typeface: Error mapping font file /system/fonts/DroidSansFallback.ttf
+09-05 20:35:54.572  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:35:54.898  3167  3167 I art     : Thread[1,tid=3167,Native,Thread*=0x7f94295a00,peer=0x12c420d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+09-05 20:35:54.898  3167  3167 D MtpDeviceJNI: register_android_mtp_MtpDevice
+09-05 20:35:54.899  3167  3167 I art     : Thread[1,tid=3167,Native,Thread*=0x7f94295a00,peer=0x12c420d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+09-05 20:35:54.900  3167  3167 I art     : Thread[1,tid=3167,Native,Thread*=0x7f94295a00,peer=0x12c420d0,"main"] recursive attempt to load library "/system/lib64/libmedia_jni.so"
+09-05 20:35:54.939  3167  3167 E FFMPEGSoftCodec: Failed to load FFMPEG plugin: (null)
+09-05 20:35:55.063  3168  3168 I art     : Thread[1,tid=3168,Native,Thread*=0xf4385400,peer=0x12c04f70,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+09-05 20:35:55.063  3168  3168 D MtpDeviceJNI: register_android_mtp_MtpDevice
+09-05 20:35:55.065  3168  3168 I art     : Thread[1,tid=3168,Native,Thread*=0xf4385400,peer=0x12c04f70,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+09-05 20:35:55.065  3168  3168 I art     : Thread[1,tid=3168,Native,Thread*=0xf4385400,peer=0x12c04f70,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+09-05 20:35:55.115  3168  3168 E FFMPEGSoftCodec: Failed to load FFMPEG plugin: (null)
+09-05 20:35:55.316  3167  3167 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform
+09-05 20:35:55.316  3167  3167 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform$1
+09-05 20:35:55.510  3168  3168 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform
+09-05 20:35:55.510  3168  3168 W Zygote  : Class not found for preloading: android.view.Display$ColorTransform$1
+09-05 20:35:55.559  3167  3167 W System  : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+09-05 20:35:55.572  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:35:55.791  3168  3168 W System  : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+09-05 20:35:55.803  3167  3167 I System  : Loaded time zone names for "" in 59ms (27ms in ICU)
+09-05 20:35:55.848  3167  3167 I System  : Loaded time zone names for "en_US" in 44ms (10ms in ICU)
+09-05 20:35:56.066  3168  3168 I System  : Loaded time zone names for "" in 67ms (19ms in ICU)
+09-05 20:35:56.126  3168  3168 I System  : Loaded time zone names for "en_US" in 59ms (11ms in ICU)
+09-05 20:35:56.159  3167  3167 I Zygote  : ...preloaded 4158 classes in 2583ms.
+09-05 20:35:56.159  3167  3167 I art     : VMRuntime.preloadDexCaches starting
+09-05 20:35:56.205  3167  3167 I art     : VMRuntime.preloadDexCaches strings total=288444 before=12011 after=12011
+09-05 20:35:56.205  3167  3167 I art     : VMRuntime.preloadDexCaches types total=23810 before=9280 after=11325
+09-05 20:35:56.205  3167  3167 I art     : VMRuntime.preloadDexCaches fields total=113941 before=41160 after=54105
+09-05 20:35:56.206  3167  3167 I art     : VMRuntime.preloadDexCaches methods total=199717 before=78591 after=96703
+09-05 20:35:56.206  3167  3167 I art     : VMRuntime.preloadDexCaches finished
+09-05 20:35:56.206  3167  3167 I Zygote  : Preloading resources...
+09-05 20:35:56.244  3167  3167 W Resources: Preloaded drawable resource #0x108025c (android:drawable/dialog_background_material) that varies with configuration!!
+09-05 20:35:56.252  3167  3167 W Resources: Preloaded color resource #0x10600ea (android:color/material_grey_800) that varies with configuration!!
+09-05 20:35:56.252  3167  3167 W Resources: Preloaded drawable resource #0x10802c9 (android:drawable/floating_popup_background_dark) that varies with configuration!!
+09-05 20:35:56.380  3167  3167 I Zygote  : ...preloaded 114 resources in 174ms.
+09-05 20:35:56.389  3167  3167 W Resources: Preloaded color resource #0x1060114 (android:color/background_cache_hint_selector_material_dark) that varies with configuration!!
+09-05 20:35:56.389  3167  3167 W Resources: Preloaded color resource #0x1060119 (android:color/btn_default_material_dark) that varies with configuration!!
+09-05 20:35:56.391  3167  3167 I Zygote  : ...preloaded 41 resources in 11ms.
+09-05 20:35:56.394  3167  3167 I Zygote  : ...preloaded 2 resource in 3ms.
+09-05 20:35:56.403  3167  3167 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-05 20:35:56.412  3167  3167 I Zygote  : Preloading shared libraries...
+09-05 20:35:56.437  3167  3167 I Zygote  : Uninstalled ICU cache reference pinning...
+09-05 20:35:56.445  3167  3167 I Zygote  : Installed AndroidKeyStoreProvider in 8ms.
+09-05 20:35:56.497  3168  3168 I Zygote  : ...preloaded 4158 classes in 2882ms.
+09-05 20:35:56.497  3168  3168 I art     : VMRuntime.preloadDexCaches starting
+09-05 20:35:56.559  3168  3168 I art     : VMRuntime.preloadDexCaches strings total=288444 before=12011 after=12011
+09-05 20:35:56.559  3168  3168 I art     : VMRuntime.preloadDexCaches types total=23810 before=9280 after=11325
+09-05 20:35:56.559  3168  3168 I art     : VMRuntime.preloadDexCaches fields total=113941 before=41160 after=54105
+09-05 20:35:56.559  3168  3168 I art     : VMRuntime.preloadDexCaches methods total=199717 before=78591 after=96703
+09-05 20:35:56.559  3168  3168 I art     : VMRuntime.preloadDexCaches finished
+09-05 20:35:56.560  3167  3167 I Zygote  : Warmed up JCA providers in 115ms.
+09-05 20:35:56.560  3167  3167 D Zygote  : end preload
+09-05 20:35:56.560  3167  3167 I art     : Starting a blocking GC Explicit
+09-05 20:35:56.560  3168  3168 I Zygote  : Preloading resources...
+09-05 20:35:56.571  3167  3167 I art     : Explicit concurrent mark sweep GC freed 3477(156KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 10MB/17MB, paused 58us total 10.809ms
+09-05 20:35:56.571  3167  3167 I art     : Starting a blocking GC Explicit
+09-05 20:35:56.573  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:35:56.581  3167  3167 I art     : Explicit concurrent mark sweep GC freed 43(1504B) AllocSpace objects, 0(0B) LOS objects, 40% free, 10MB/17MB, paused 50us total 10.057ms
+09-05 20:35:56.597  3167  3558 I art     : Starting a blocking GC HeapTrim
+09-05 20:35:56.598  3167  3167 I art     : Starting a blocking GC Background
+09-05 20:35:56.598  3168  3168 W Resources: Preloaded drawable resource #0x108025c (android:drawable/dialog_background_material) that varies with configuration!!
+09-05 20:35:56.607  3168  3168 W Resources: Preloaded color resource #0x10600ea (android:color/material_grey_800) that varies with configuration!!
+09-05 20:35:56.607  3168  3168 W Resources: Preloaded drawable resource #0x10802c9 (android:drawable/floating_popup_background_dark) that varies with configuration!!
+09-05 20:35:56.639  3565  3565 I main    : type=1400 audit(0.0:124): avc: denied { sys_nice } for capability=23 scontext=u:r:zygote:s0 tcontext=u:r:zygote:s0 tclass=capability permissive=1
+09-05 20:35:56.639  3565  3565 W main    : type=1300 audit(0.0:124): arch=c00000b7 syscall=119 success=yes exit=0 a0=ded a1=0 a2=7fd1d6c800 a3=0 items=0 ppid=3167 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 exe="/system/bin/app_process64" subj=u:r:zygote:s0 key=(null)
+09-05 20:35:56.639  3078  3078 W auditd  : type=1327 audit(0.0:124): proctitle="zygote64"
+09-05 20:35:56.639  3078  3078 W auditd  : type=1320 audit(0.0:124): 
+09-05 20:35:56.642  3167  3167 I Zygote  : System server process 3565 has been created
+09-05 20:35:56.642  3167  3167 I Zygote  : Accepting command socket connections
+09-05 20:35:56.744  3168  3168 I Zygote  : ...preloaded 114 resources in 184ms.
+09-05 20:35:56.754  3168  3168 W Resources: Preloaded color resource #0x1060114 (android:color/background_cache_hint_selector_material_dark) that varies with configuration!!
+09-05 20:35:56.754  3168  3168 W Resources: Preloaded color resource #0x1060119 (android:color/btn_default_material_dark) that varies with configuration!!
+09-05 20:35:56.757  3168  3168 I Zygote  : ...preloaded 41 resources in 13ms.
+09-05 20:35:56.759  3168  3168 I Zygote  : ...preloaded 2 resource in 2ms.
+09-05 20:35:56.794  3168  3168 D libEGL  : loaded /vendor/lib/egl/libGLES_mali.so
+09-05 20:35:56.808  3168  3168 I Zygote  : Preloading shared libraries...
+09-05 20:35:56.834  3168  3168 I Zygote  : Uninstalled ICU cache reference pinning...
+09-05 20:35:56.843  3168  3168 I Zygote  : Installed AndroidKeyStoreProvider in 9ms.
+09-05 20:35:56.997  3168  3168 I Zygote  : Warmed up JCA providers in 153ms.
+09-05 20:35:56.997  3168  3168 D Zygote  : end preload
+09-05 20:35:56.997  3168  3168 I art     : Starting a blocking GC Explicit
+09-05 20:35:57.009  3168  3168 I art     : Explicit concurrent mark sweep GC freed 3207(141KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 9MB/16MB, paused 76us total 11.865ms
+09-05 20:35:57.009  3168  3168 I art     : Starting a blocking GC Explicit
+09-05 20:35:57.020  3168  3168 I art     : Explicit concurrent mark sweep GC freed 52(2152B) AllocSpace objects, 0(0B) LOS objects, 40% free, 9MB/16MB, paused 75us total 10.737ms
+09-05 20:35:57.028  3168  3168 I Zygote  : Accepting command socket connections
+09-05 20:35:57.034  3565  3565 I Zygote  : Process: zygote socket opened, supported ABIS: armeabi-v7a,armeabi
+09-05 20:35:57.036  3565  3565 I InstallerConnection: connecting...
+09-05 20:35:57.036  3171  3171 I         : new connection
+09-05 20:35:57.054  3576  3576 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:35:57.366  3576  3576 I dex2oat : dex2oat took 312.569ms (threads: 8) arena alloc=2MB (2700872B) java alloc=819KB (839136B) native alloc=3MB (3270480B) free=5MB (5642416B)
+09-05 20:35:57.387  3585  3585 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:35:57.477  3585  3585 I dex2oat : dex2oat took 91.193ms (threads: 8) arena alloc=575KB (589544B) java alloc=116KB (119776B) native alloc=1233KB (1262896B) free=3MB (3979984B)
+09-05 20:35:57.497  3594  3594 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:35:57.573  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:35:58.516  3594  3601 W dex2oat : Compilation of void com.android.server.SystemServer.startOtherServices() took 118.939ms
+09-05 20:35:58.573  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:35:59.303  3594  3601 W dex2oat : Compilation of int com.android.server.am.ActivityManagerService.broadcastIntentLocked(com.android.server.am.ProcessRecord, java.lang.String, android.content.Intent, java.lang.String, android.content.IIntentReceiver, int, java.lang.String, android.os.Bundle, java.lang.String[], int, android.os.Bundle, boolean, boolean, int, int, int) took 110.782ms
+09-05 20:35:59.574  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:00.245  3594  3602 W dex2oat : Compilation of android.content.pm.PackageParser$Package com.android.server.pm.PackageManagerService.scanPackageDirtyLI(android.content.pm.PackageParser$Package, int, int, long, android.os.UserHandle) took 109.050ms
+09-05 20:36:00.482  3594  3602 W dex2oat : Compilation of void com.android.server.pm.PackageManagerService.dump(java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]) took 125.254ms
+09-05 20:36:00.574  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:01.036  3594  3594 I dex2oat : dex2oat took 3.539s (threads: 8) arena alloc=13MB (14650712B) java alloc=3MB (4138808B) native alloc=34MB (36338992B) free=18MB (19497680B)
+09-05 20:36:01.060  3630  3630 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:01.337  3630  3630 I dex2oat : dex2oat took 277.733ms (threads: 8) arena alloc=885KB (906552B) java alloc=235KB (240728B) native alloc=2MB (2343224B) free=3MB (3948232B)
+09-05 20:36:01.357  3639  3639 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:01.575  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:02.075  3639  3639 I dex2oat : dex2oat took 718.177ms (threads: 8) arena alloc=10MB (11041544B) java alloc=717KB (734728B) native alloc=5MB (6027704B) free=15MB (16254536B)
+09-05 20:36:02.080  3565  3565 I InstallerConnection: disconnecting...
+09-05 20:36:02.080  3171  3171 E         : eof
+09-05 20:36:02.080  3171  3171 E         : failed to read size
+09-05 20:36:02.080  3171  3171 I         : closing connection
+09-05 20:36:02.084  3565  3565 W art     : Found duplicate classes, falling back to interpreter mode for /system/framework/wifi-service.jar
+09-05 20:36:02.084  3565  3565 W art     : Found duplicated class when checking oat files: 'Lcom/google/protobuf/nano/MessageNano;' in /system/framework/services.jar and /system/framework/wifi-service.jar
+09-05 20:36:02.110  3565  3565 I SystemServer: Entered the Android system server!
+09-05 20:36:02.133  3565  3565 I SystemServiceManager: Starting com.android.server.pm.Installer
+09-05 20:36:02.133  3565  3565 I Installer: Waiting for installd to be ready.
+09-05 20:36:02.133  3565  3565 I InstallerConnection: connecting...
+09-05 20:36:02.133  3171  3171 I         : new connection
+09-05 20:36:02.133  3565  3565 I SystemServiceManager: Starting com.android.server.am.ActivityManagerService$Lifecycle
+09-05 20:36:02.142  3565  3565 I ActivityManager: Memory class: 256
+09-05 20:36:02.143  3565  3654 I ServiceThread: Enabled StrictMode logging for ActivityManager looper.
+09-05 20:36:02.144  3565  3655 I ServiceThread: Enabled StrictMode logging for android.ui looper.
+09-05 20:36:02.181  3565  3565 D BatteryStatsImpl: Reading daily items from /data/system/batterystats-daily.xml
+09-05 20:36:02.212  3565  3565 I AppOps  : No existing app ops /data/system/appops.xml; starting empty
+09-05 20:36:02.300  3565  3565 I IntentFirewall: Read new rules (A:0 B:0 S:0)
+09-05 20:36:02.304  3565  3661 I ServiceThread: Enabled StrictMode logging for android.display looper.
+09-05 20:36:02.314  3565  3565 D AppOps  : AppOpsService published
+09-05 20:36:02.314  3565  3565 I SystemServiceManager: Starting com.android.server.power.PowerManagerService
+09-05 20:36:02.316  3565  3663 I ServiceThread: Enabled StrictMode logging for PowerManagerService looper.
+09-05 20:36:02.318  3565  3565 I SamsungPowerHAL: Initialized settings:
+09-05 20:36:02.318  3565  3565 I SamsungPowerHAL: max_freqs: cluster[0]: 1690000, cluster[1]: 2314000
+09-05 20:36:02.318  3565  3565 I SamsungPowerHAL: hispeed_freqs: cluster[0]: 1690000, cluster[1]: 2496000
+09-05 20:36:02.318  3565  3565 I SamsungPowerHAL: boostpulse_fd: 62
+09-05 20:36:02.318  3565  3565 I SamsungPowerHAL: touchscreen_power_path: /sys/class/input/input0/enabled
+09-05 20:36:02.318  3565  3565 I SamsungPowerHAL: touchkey_power_path: NULL
+09-05 20:36:02.318  3565  3565 W libsuspend: Error writing 'on' to /sys/power/state: Invalid argument
+09-05 20:36:02.318  3565  3565 I libsuspend: Selected wakeup count
+09-05 20:36:02.320  3565  3565 I SystemServiceManager: Starting com.android.server.lights.LightsService
+09-05 20:36:02.321  3565  3565 I SystemServiceManager: Starting com.android.server.display.DisplayManagerService
+09-05 20:36:02.323  3565  3565 I SystemServiceManager: Starting phase 100
+09-05 20:36:02.324  3565  3661 W LocalDisplayAdapter: Unable to get active color mode for display device 0
+09-05 20:36:02.325  3565  3661 E LocalDisplayAdapter: Default and active color mode is no longer available! Reverting to first available mode.
+09-05 20:36:02.325  3147  3179 E SurfaceFlinger: getDefaultDisplay: id=2 is not a valid default display id
+09-05 20:36:02.326  3565  3661 I DisplayManagerService: Display device added: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 1440 x 2960, modeId 1, defaultModeId 1, supportedModes [{id=1, width=1440, height=2960, fps=60.000004}], colorMode -22, supportedColorModes [-22], HdrCapabilities android.view.Display$HdrCapabilities@a69d6308, density 560, 522.514 x 525.762 dpi, appVsyncOff 1000000, presDeadline 16666666, touch INTERNAL, rotation 0, type BUILT_IN, state UNKNOWN, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
+09-05 20:36:02.327  3147  3147 D SurfaceFlinger: Set power mode=2, type=0 flinger=0x7fa6248000
+09-05 20:36:02.327  3147  3147 D SurfaceFlinger: Screen type=0 is already mode=2
+09-05 20:36:02.337  3565  3661 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+09-05 20:36:02.338  3565  3565 I SystemServer: StartPackageManagerService
+09-05 20:36:02.343  3565  3565 W FileUtils: Failed to chmod(/data/system/packages.list): android.system.ErrnoException: chmod failed: ENOENT (No such file or directory)
+09-05 20:36:02.456  3565  3565 D SELinuxMMAC: Using policy file /system/etc/security/mac_permissions.xml
+09-05 20:36:02.463  3565  3565 I PackageManager: No settings file; creating initial state
+09-05 20:36:02.485  3668  3668 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:02.575  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:02.787  3668  3668 I dex2oat : dex2oat took 302.024ms (threads: 8) arena alloc=2MB (2570256B) java alloc=724KB (742192B) native alloc=2MB (2724584B) free=4MB (4615448B)
+09-05 20:36:02.807  3677  3677 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:02.890  3677  3677 I dex2oat : dex2oat took 83.675ms (threads: 8) arena alloc=478KB (489808B) java alloc=327KB (335824B) native alloc=1300KB (1332056B) free=2MB (2862248B)
+09-05 20:36:02.909  3686  3686 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:02.975  3686  3686 I dex2oat : dex2oat took 66.252ms (threads: 8) arena alloc=252KB (258320B) java alloc=51KB (53128B) native alloc=1105KB (1131912B) free=1454KB (1489528B)
+09-05 20:36:02.994  3695  3695 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.105  3695  3695 I dex2oat : dex2oat took 112.275ms (threads: 8) arena alloc=3MB (3572920B) java alloc=154KB (158488B) native alloc=1258KB (1288280B) free=6MB (7100328B)
+09-05 20:36:03.124  3704  3704 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.197  3704  3704 I dex2oat : dex2oat took 72.961ms (threads: 8) arena alloc=556KB (569696B) java alloc=90KB (92976B) native alloc=991KB (1015616B) free=3MB (3702976B)
+09-05 20:36:03.215  3713  3713 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.364  3713  3713 I dex2oat : dex2oat took 148.893ms (threads: 8) arena alloc=2MB (2108632B) java alloc=457KB (468920B) native alloc=1449KB (1484016B) free=4MB (4807440B)
+09-05 20:36:03.367  3565  3565 E art     : DexFile_getDexOptNeeded file '/system/framework/org.apache.http.legacy.jar' does not exist
+09-05 20:36:03.367  3565  3565 W PackageManager: Library not found: /system/framework/org.apache.http.legacy.jar
+09-05 20:36:03.383  3722  3722 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.455  3722  3722 I dex2oat : dex2oat took 72.362ms (threads: 8) arena alloc=446KB (456952B) java alloc=114KB (116880B) native alloc=1160KB (1188752B) free=2MB (3005552B)
+09-05 20:36:03.474  3731  3731 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.544  3731  3731 I dex2oat : dex2oat took 69.599ms (threads: 8) arena alloc=294KB (301720B) java alloc=132KB (135960B) native alloc=1117KB (1143872B) free=1954KB (2001856B)
+09-05 20:36:03.562  3740  3740 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.575  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:03.583  3740  3740 I dex2oat : dex2oat took 21.420ms (threads: 8) arena alloc=84KB (86488B) java alloc=59KB (61128B) native alloc=1045KB (1070760B) free=2026KB (2074968B)
+09-05 20:36:03.602  3749  3749 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.637  3749  3749 I dex2oat : dex2oat took 35.333ms (threads: 8) arena alloc=743KB (761264B) java alloc=249KB (255592B) native alloc=1323KB (1355288B) free=3MB (3363304B)
+09-05 20:36:03.655  3758  3758 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.679  3758  3758 I dex2oat : dex2oat took 24.530ms (threads: 8) arena alloc=262KB (268856B) java alloc=37KB (38472B) native alloc=1109KB (1135720B) free=1962KB (2010008B)
+09-05 20:36:03.697  3767  3767 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.762  3767  3767 I dex2oat : dex2oat took 64.703ms (threads: 8) arena alloc=3MB (3871776B) java alloc=127KB (130208B) native alloc=1341KB (1373872B) free=6MB (7014736B)
+09-05 20:36:03.781  3776  3776 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.891  3776  3776 I dex2oat : dex2oat took 110.311ms (threads: 8) arena alloc=2003KB (2051400B) java alloc=460KB (471880B) native alloc=1410KB (1444664B) free=5MB (5371080B)
+09-05 20:36:03.894  3565  3565 E art     : DexFile_getDexOptNeeded file '/system/framework/org.apache.http.legacy.jar' does not exist
+09-05 20:36:03.894  3565  3565 W PackageManager: Library not found: /system/framework/org.apache.http.legacy.jar
+09-05 20:36:03.910  3785  3785 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.941  3785  3785 I dex2oat : dex2oat took 31.469ms (threads: 8) arena alloc=598KB (613280B) java alloc=80KB (82112B) native alloc=1171KB (1199984B) free=3MB (3518608B)
+09-05 20:36:03.959  3794  3794 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:03.986  3794  3794 I dex2oat : dex2oat took 26.806ms (threads: 8) arena alloc=323KB (331304B) java alloc=109KB (112560B) native alloc=1107KB (1134480B) free=1964KB (2011248B)
+09-05 20:36:04.004  3803  3803 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:04.026  3803  3803 I dex2oat : dex2oat took 22.686ms (threads: 8) arena alloc=102KB (105336B) java alloc=59KB (61384B) native alloc=1044KB (1069904B) free=2MB (2600112B)
+09-05 20:36:04.028  3565  3565 D PackageManager: No files in app dir /vendor/overlay
+09-05 20:36:04.029  3565  3565 D PackageManager: start scanDirLI:/system/framework
+09-05 20:36:04.029  3565  3565 D PackageManager: max thread:6
+09-05 20:36:04.057  3565  3813 I PackageManager: /system/framework/org.cyanogenmod.platform-res.apk changed; collecting certs
+09-05 20:36:04.070  3565  3813 W PackageManager: Permission cyanogenmod.permission.WRITE_ALARMS from package cyanogenmod.platform in an unknown group android.permission-group.SYSTEM_CLOCK
+09-05 20:36:04.070  3565  3813 W PackageManager: Permission cyanogenmod.permission.MANAGE_ALARMS from package cyanogenmod.platform in an unknown group android.permission-group.SYSTEM_CLOCK
+09-05 20:36:04.071  3565  3813 W PackageManager: Permission cyanogenmod.permission.READ_ALARMS from package cyanogenmod.platform in an unknown group android.permission-group.SYSTEM_CLOCK
+09-05 20:36:04.123  3565  3812 I PackageManager: /system/framework/framework-res.apk changed; collecting certs
+09-05 20:36:04.216  3565  3565 D PackageManager: end scanDirLI:/system/framework
+09-05 20:36:04.218  3565  3565 D PackageManager: start scanDirLI:/system/priv-app
+09-05 20:36:04.218  3565  3565 D PackageManager: max thread:6
+09-05 20:36:04.228  3565  3812 I PackageManager: /system/priv-app/CMSettingsProvider changed; collecting certs
+09-05 20:36:04.230  3565  3817 I PackageManager: /system/priv-app/CMAudioService changed; collecting certs
+09-05 20:36:04.230  3565  3814 I PackageManager: /system/priv-app/AudioFX changed; collecting certs
+09-05 20:36:04.230  3565  3816 I PackageManager: /system/priv-app/BlockedNumberProvider changed; collecting certs
+09-05 20:36:04.231  3565  3815 I PackageManager: /system/priv-app/BackupRestoreConfirmation changed; collecting certs
+09-05 20:36:04.237  3565  3816 I PackageManager: New shared user android.uid.shared: id=10001
+09-05 20:36:04.244  3565  3812 I PackageManager: /system/priv-app/CalendarProvider changed; collecting certs
+09-05 20:36:04.244  3565  3816 I PackageManager: /system/priv-app/CarrierConfig changed; collecting certs
+09-05 20:36:04.248  3565  3817 I PackageManager: /system/priv-app/CallLogBackup changed; collecting certs
+09-05 20:36:04.249  3565  3812 I PackageManager: New shared user android.uid.calendar: id=10004
+09-05 20:36:04.250  3565  3813 I PackageManager: /system/priv-app/CMParts changed; collecting certs
+09-05 20:36:04.253  3565  3815 I PackageManager: /system/priv-app/CellBroadcastReceiver changed; collecting certs
+09-05 20:36:04.263  3565  3816 I PackageManager: /system/priv-app/CtsShimPrivPrebuilt changed; collecting certs
+09-05 20:36:04.267  3565  3817 I PackageManager: /system/priv-app/DefaultContainerService changed; collecting certs
+09-05 20:36:04.268  3565  3812 I PackageManager: /system/priv-app/ContactsProvider changed; collecting certs
+09-05 20:36:04.284  3565  3814 W PackageParser: No actions in intent filter at /system/priv-app/Contacts/Contacts.apk Binary XML file line #431
+09-05 20:36:04.291  3565  3814 I PackageManager: /system/priv-app/Contacts changed; collecting certs
+09-05 20:36:04.295  3565  3817 I PackageManager: /system/priv-app/DocumentsUI changed; collecting certs
+09-05 20:36:04.296  3565  3816 I PackageManager: /system/priv-app/DownloadProvider changed; collecting certs
+09-05 20:36:04.300  3565  3812 I PackageManager: /system/priv-app/Eleven changed; collecting certs
+09-05 20:36:04.302  3565  3816 I PackageManager: New shared user android.media: id=10009
+09-05 20:36:04.303  3565  3813 I PackageManager: /system/priv-app/EmergencyInfo changed; collecting certs
+09-05 20:36:04.305  3565  3816 W PackageManager: Permission android.permission.DOWNLOAD_WITHOUT_NOTIFICATION from package com.android.providers.downloads in an unknown group android.permission-group.NETWORK
+09-05 20:36:04.312  3565  3816 I PackageManager: /system/priv-app/ExtServices changed; collecting certs
+09-05 20:36:04.315  3565  3815 W PackageParser: No actions in intent filter at /system/priv-app/Dialer/Dialer.apk Binary XML file line #207
+09-05 20:36:04.319  3565  3813 I PackageManager: New shared user com.android.emergency.uid: id=10012
+09-05 20:36:04.322  3565  3815 I PackageManager: /system/priv-app/Dialer changed; collecting certs
+09-05 20:36:04.328  3565  3816 I PackageManager: /system/priv-app/FusedLocation changed; collecting certs
+09-05 20:36:04.329  3565  3817 I PackageManager: /system/priv-app/ExternalStorageProvider changed; collecting certs
+09-05 20:36:04.339  3565  3814 I PackageManager: /system/priv-app/InputDevices changed; collecting certs
+09-05 20:36:04.347  3565  3816 I PackageManager: /system/priv-app/MediaProvider changed; collecting certs
+09-05 20:36:04.349  3565  3814 I PackageManager: /system/priv-app/MmsService changed; collecting certs
+09-05 20:36:04.351  3565  3817 I PackageManager: /system/priv-app/ManagedProvisioning changed; collecting certs
+09-05 20:36:04.353  3565  3813 I PackageManager: /system/priv-app/Gallery2 changed; collecting certs
+09-05 20:36:04.360  3565  3814 I PackageManager: /system/priv-app/OneTimeInitializer changed; collecting certs
+09-05 20:36:04.363  3565  3816 I PackageManager: /system/priv-app/MtpDocumentsProvider changed; collecting certs
+09-05 20:36:04.365  3565  3812 I PackageManager: /system/priv-app/LineageSetupWizard changed; collecting certs
+09-05 20:36:04.374  3565  3815 I PackageManager: /system/priv-app/ProxyHandler changed; collecting certs
+09-05 20:36:04.387  3565  3814 I PackageManager: /system/priv-app/Recorder changed; collecting certs
+09-05 20:36:04.390  3565  3812 I PackageManager: /system/priv-app/SharedStorageBackup changed; collecting certs
+09-05 20:36:04.391  3565  3817 I PackageManager: /system/priv-app/PackageInstaller changed; collecting certs
+09-05 20:36:04.398  3565  3815 I PackageManager: /system/priv-app/SettingsProvider changed; collecting certs
+09-05 20:36:04.405  3565  3812 I PackageManager: /system/priv-app/StatementService changed; collecting certs
+09-05 20:36:04.411  3565  3813 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS in package: com.android.shell at: Binary XML file line #102
+09-05 20:36:04.416  3565  3813 I PackageManager: /system/priv-app/Shell changed; collecting certs
+09-05 20:36:04.419  3565  3817 I PackageManager: /system/priv-app/Tag changed; collecting certs
+09-05 20:36:04.419  3565  3814 I PackageManager: /system/priv-app/StorageManager changed; collecting certs
+09-05 20:36:04.436  3565  3817 I PackageManager: /system/priv-app/TelephonyProvider changed; collecting certs
+09-05 20:36:04.443  3565  3813 I PackageManager: /system/priv-app/Telecom changed; collecting certs
+09-05 20:36:04.450  3565  3815 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.CONFIGURE_WIFI_DISPLAY in package: com.android.systemui at: Binary XML file line #117
+09-05 20:36:04.455  3565  3816 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.USE_CREDENTIALS in package: com.android.settings at: Binary XML file line #56
+09-05 20:36:04.456  3565  3816 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.READ_SYNC_SETTINGS in package: com.android.settings at: Binary XML file line #61
+09-05 20:36:04.456  3565  3816 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.WRITE_SYNC_SETTINGS in package: com.android.settings at: Binary XML file line #62
+09-05 20:36:04.457  3565  3817 I PackageManager: /system/priv-app/Updater changed; collecting certs
+09-05 20:36:04.460  3565  3814 I PackageManager: /system/priv-app/Trebuchet changed; collecting certs
+09-05 20:36:04.467  3565  3815 I PackageManager: /system/priv-app/SystemUI changed; collecting certs
+09-05 20:36:04.474  3565  3813 I PackageManager: /system/priv-app/VpnDialogs changed; collecting certs
+09-05 20:36:04.479  3565  3814 W PackageManager: Permission com.android.launcher.permission.INSTALL_SHORTCUT from package com.cyanogenmod.trebuchet in an unknown group android.permission-group.SYSTEM_TOOLS
+09-05 20:36:04.479  3565  3814 W PackageManager: Permission com.android.launcher3.permission.READ_SETTINGS from package com.cyanogenmod.trebuchet in an unknown group android.permission-group.SYSTEM_TOOLS
+09-05 20:36:04.480  3565  3814 W PackageManager: Permission com.android.launcher3.permission.WRITE_SETTINGS from package com.cyanogenmod.trebuchet in an unknown group android.permission-group.SYSTEM_TOOLS
+09-05 20:36:04.484  3565  3817 I PackageManager: /system/priv-app/WallpaperCropper changed; collecting certs
+09-05 20:36:04.486  3565  3814 I PackageManager: /system/priv-app/WeatherManagerService changed; collecting certs
+09-05 20:36:04.487  3565  3812 I PackageManager: /system/priv-app/TeleService changed; collecting certs
+09-05 20:36:04.493  3565  3813 I PackageManager: /system/priv-app/WeatherProvider changed; collecting certs
+09-05 20:36:04.513  3565  3815 I PackageManager: New shared user android.uid.systemui: id=10033
+09-05 20:36:04.572  3565  3816 I PackageManager: /system/priv-app/Settings changed; collecting certs
+09-05 20:36:04.576  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:04.661  3565  3565 D PackageManager: end scanDirLI:/system/priv-app
+09-05 20:36:04.662  3565  3565 D PackageManager: start scanDirLI:/system/app
+09-05 20:36:04.662  3565  3565 D PackageManager: max thread:6
+09-05 20:36:04.667  3565  3817 I PackageManager: /system/app/BasicDreams changed; collecting certs
+09-05 20:36:04.668  3565  3815 I PackageManager: /system/app/BluetoothMidiService changed; collecting certs
+09-05 20:36:04.674  3565  3812 I PackageManager: /system/app/BookmarkProvider changed; collecting certs
+09-05 20:36:04.677  3565  3814 I PackageManager: /system/app/AdvancedDisplay changed; collecting certs
+09-05 20:36:04.680  3565  3815 I PackageManager: /system/app/CaptivePortalLogin changed; collecting certs
+09-05 20:36:04.687  3565  3813 W PackageParser: No actions in intent filter at /system/app/Bluetooth/Bluetooth.apk Binary XML file line #226
+09-05 20:36:04.690  3565  3815 I PackageManager: /system/app/CtsShimPrebuilt changed; collecting certs
+09-05 20:36:04.692  3565  3817 I PackageManager: /system/app/Camera2 changed; collecting certs
+09-05 20:36:04.692  3565  3816 I PackageManager: /system/app/Calendar changed; collecting certs
+09-05 20:36:04.695  3565  3815 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+09-05 20:36:04.695  3565  3815 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+09-05 20:36:04.695  3565  3815 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+09-05 20:36:04.695  3565  3815 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+09-05 20:36:04.695  3565  3815 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.cts.ctsshim activity: com.android.cts.ctsshim.InstallPriority origPrio: 100
+09-05 20:36:04.696  3565  3812 I PackageManager: /system/app/CertInstaller changed; collecting certs
+09-05 20:36:04.698  3565  3813 I PackageManager: /system/app/Bluetooth changed; collecting certs
+09-05 20:36:04.706  3565  3816 W PackageManager: Non-privileged app; cap priority to 0; package: com.android.calendar activity: com.android.calendar.GoogleCalendarUriIntentFilter origPrio: 50
+09-05 20:36:04.714  3565  3814 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.WRITE_SETTINGS in package: com.android.deskclock at: Binary XML file line #45
+09-05 20:36:04.717  3565  3815 I PackageManager: /system/app/Development changed; collecting certs
+09-05 20:36:04.718  3565  3812 I PackageManager: /system/app/DownloadProviderUi changed; collecting certs
+09-05 20:36:04.722  3565  3816 I PackageManager: /system/app/EasterEgg changed; collecting certs
+09-05 20:36:04.727  3565  3814 I PackageManager: /system/app/DeskClock changed; collecting certs
+09-05 20:36:04.732  3565  3815 I PackageManager: /system/app/ExtShared changed; collecting certs
+09-05 20:36:04.732  3565  3813 I PackageManager: /system/app/ExactCalculator changed; collecting certs
+09-05 20:36:04.740  3565  3812 I PackageManager: /system/app/Exchange2 changed; collecting certs
+09-05 20:36:04.747  3565  3816 I PackageManager: /system/app/HTMLViewer changed; collecting certs
+09-05 20:36:04.753  3565  3813 I PackageManager: /system/app/KeyChain changed; collecting certs
+09-05 20:36:04.756  3565  3815 I PackageManager: /system/app/Jelly changed; collecting certs
+09-05 20:36:04.757  3565  3812 I PackageManager: /system/app/LiveWallpapersPicker changed; collecting certs
+09-05 20:36:04.769  3565  3816 I PackageManager: /system/app/LockClock changed; collecting certs
+09-05 20:36:04.772  3565  3813 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.CHANGE_WIFI_STATE in package: com.android.nfc at: Binary XML file line #47
+09-05 20:36:04.773  3565  3813 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.ACCESS_WIFI_STATE in package: com.android.nfc at: Binary XML file line #48
+09-05 20:36:04.778  3565  3815 I PackageManager: /system/app/PacProcessor changed; collecting certs
+09-05 20:36:04.780  3565  3817 I PackageManager: /system/app/Email changed; collecting certs
+09-05 20:36:04.783  3565  3813 I PackageManager: /system/app/NfcNci changed; collecting certs
+09-05 20:36:04.784  3565  3812 I PackageManager: /system/app/PhotoTable changed; collecting certs
+09-05 20:36:04.790  3565  3814 I PackageManager: /system/app/LatinIME changed; collecting certs
+09-05 20:36:04.797  3565  3815 I PackageManager: /system/app/PicoTts changed; collecting certs
+09-05 20:36:04.802  3565  3812 I PackageManager: /system/app/PrintRecommendationService changed; collecting certs
+09-05 20:36:04.807  3565  3816 I PackageManager: /system/app/Profiles changed; collecting certs
+09-05 20:36:04.815  3565  3817 W PackageManager: Permission com.android.email.permission.READ_ATTACHMENT from package com.android.email in an unknown group android.permission-group.MESSAGES
+09-05 20:36:04.815  3565  3813 I PackageManager: /system/app/PrintSpooler changed; collecting certs
+09-05 20:36:04.816  3565  3815 I PackageManager: /system/app/RootPA changed; collecting certs
+09-05 20:36:04.817  3565  3812 I PackageManager: /system/app/Stk changed; collecting certs
+09-05 20:36:04.825  3565  3817 I PackageManager: /system/app/Terminal changed; collecting certs
+09-05 20:36:04.825  3565  3816 I PackageManager: /system/app/UserDictionaryProvider changed; collecting certs
+09-05 20:36:04.829  3565  3813 I PackageManager: /system/app/WAPPushManager changed; collecting certs
+09-05 20:36:04.832  3565  3816 W PackageManager: Failed to parse /system/app/mcRegistry: Missing base APK in /system/app/mcRegistry
+09-05 20:36:04.833  3565  3812 I PackageManager: /system/app/WallpaperBackup changed; collecting certs
+09-05 20:36:04.841  3565  3815 I PackageManager: /system/app/WallpaperPicker changed; collecting certs
+09-05 20:36:04.842  3565  3816 I PackageManager: /system/app/telresources changed; collecting certs
+09-05 20:36:04.856  3565  3813 I PackageManager: /system/app/webview changed; collecting certs
+09-05 20:36:04.869  3565  3817 I PackageManager: /system/app/messaging changed; collecting certs
+09-05 20:36:05.202  3565  3565 D PackageManager: end scanDirLI:/system/app
+09-05 20:36:05.203  3565  3565 D PackageManager: No files in app dir /system/vendor/app
+09-05 20:36:05.203  3565  3565 D PackageManager: No files in app dir /oem/app
+09-05 20:36:05.207  3565  3565 D PackageManager: No files in app dir /data/app
+09-05 20:36:05.207  3565  3565 D PackageManager: No files in app dir /data/app-private
+09-05 20:36:05.207  3565  3565 D PackageManager: No files in app dir /data/app-ephemeral
+09-05 20:36:05.210  3565  3565 E PackageManager: There should probably be exactly one setup wizard; found 0: matches=[]
+09-05 20:36:05.210  3565  3565 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+09-05 20:36:05.210  3565  3565 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+09-05 20:36:05.210  3565  3565 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+09-05 20:36:05.211  3565  3565 W PackageManager: Protected action; cap priority to 0; package: com.android.cts.priv.ctsshim activity: com.android.cts.priv.ctsshim.InstallPriority origPrio: 100
+09-05 20:36:05.211  3565  3565 W PackageManager: Protected action; cap priority to 0; package: com.android.packageinstaller activity: com.android.packageinstaller.PackageInstallerActivity origPrio: 1
+09-05 20:36:05.211  3565  3565 W PackageManager: Package com.android.gallery3d desires unavailable shared library com.google.android.media.effects; ignoring!
+09-05 20:36:05.211  3565  3565 W PackageManager: Package com.android.gallery3d desires unavailable shared library com.google.android.media.effects; ignoring!
+09-05 20:36:05.212  3565  3565 I PackageManager: Adjusting ABI for com.android.providers.media to arm64-v8a (requirer=com.android.mtp, scannedPackage=null)
+09-05 20:36:05.212  3565  3565 I PackageManager: Adjusting ABI for com.android.providers.downloads to arm64-v8a (requirer=com.android.mtp, scannedPackage=null)
+09-05 20:36:05.212  3565  3565 I PackageManager: Adjusting ABI for com.android.providers.downloads.ui to arm64-v8a (requirer=com.android.mtp, scannedPackage=null)
+09-05 20:36:05.213  3565  3565 I PackageManager: Adjusting ABI for com.android.inputdevices to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.214  3565  3565 I PackageManager: Adjusting ABI for org.cyanogenmod.cmsettings to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.214  3565  3565 I PackageManager: Adjusting ABI for com.cyanogenmod.setupwizard to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.214  3565  3565 I PackageManager: Adjusting ABI for com.cyanogenmod.settings.device to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.215  3565  3565 I PackageManager: Adjusting ABI for com.android.development to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.215  3565  3565 I PackageManager: Adjusting ABI for cyanogenmod.platform to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.215  3171  3171 E         : invalid apk path '/system/framework/org.cyanogenmod.platform-res.apk' (bad prefix)
+09-05 20:36:05.215  3565  3565 I PackageManager: Adjusting ABI for com.android.settings to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.216  3565  3565 I PackageManager: Adjusting ABI for com.android.keychain to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.216  3565  3565 I PackageManager: Adjusting ABI for com.android.providers.settings to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.217  3565  3565 I PackageManager: Adjusting ABI for com.android.server.telecom to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.217  3565  3565 I PackageManager: Adjusting ABI for org.cyanogenmod.cmparts to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.218  3565  3565 I PackageManager: Adjusting ABI for com.android.location.fused to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.218  3565  3565 I PackageManager: Adjusting ABI for com.android.wallpaperbackup to arm64-v8a (requirer=android, scannedPackage=null)
+09-05 20:36:05.220  3565  3565 I PackageManager: Time to scan packages: 2.751 seconds
+09-05 20:36:05.222  3565  3565 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+09-05 20:36:05.222  3565  3565 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+09-05 20:36:05.227  3565  3565 W PackageManager: Unknown permission cyanogenmod.permission.LEGALESE in package com.cyanogenmod.setupwizard
+09-05 20:36:05.230  3565  3565 W PackageManager: Unknown permission com.android.gallery3d.permission.STORAGE_CHANGE in package com.android.camera2
+09-05 20:36:05.231  3565  3565 W PackageManager: Unknown permission android.permission.NFC_UNLOCK in package com.android.nfc
+09-05 20:36:05.234  3565  3565 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+09-05 20:36:05.235  3565  3565 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+09-05 20:36:05.236  3565  3565 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+09-05 20:36:05.241  3565  3565 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.cyanogenmod.trebuchet
+09-05 20:36:05.241  3565  3565 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.cyanogenmod.trebuchet
+09-05 20:36:05.243  3565  3565 W PackageManager: Unknown permission com.google.android.permission.INSTALL_WEARABLE_PACKAGES in package com.android.packageinstaller
+09-05 20:36:05.243  3565  3565 W PackageManager: Not granting permission android.permission.DELETE_PACKAGES to package com.svox.pico (protectionLevel=18 flags=0x3808be45)
+09-05 20:36:05.246  3565  3565 W PackageManager: Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.android.dreams.phototable
+09-05 20:36:05.247  3565  3565 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+09-05 20:36:05.248  3565  3565 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.settings
+09-05 20:36:05.248  3565  3565 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.settings
+09-05 20:36:05.263  3565  3565 W PackageManager: Not granting permission android.permission.MANAGE_DOCUMENTS to package com.android.deskclock (protectionLevel=2 flags=0x3c49be45)
+09-05 20:36:05.263  3565  3565 W PackageManager: Unknown permission com.android.deskclock.worldclock.permissions.WRITE_DATABASE in package com.android.deskclock
+09-05 20:36:05.263  3565  3565 W PackageManager: Unknown permission org.codeaurora.permission.POWER_ON_ALERT in package com.android.deskclock
+09-05 20:36:05.264  3565  3565 W PackageManager: Not granting permission android.permission.WRITE_SECURE_SETTINGS to package com.android.deskclock (protectionLevel=50 flags=0x3c49be45)
+09-05 20:36:05.270  3565  3565 W PackageManager: Unknown permission com.cyanogenmod.lockclock.permission.READ_WEATHER in package com.android.systemui
+09-05 20:36:05.273  3565  3565 W PackageManager: Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.bluetooth
+09-05 20:36:05.275  3565  3565 W PackageManager: Unknown permission com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD in package com.android.development
+09-05 20:36:05.275  3565  3565 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.development
+09-05 20:36:05.275  3565  3565 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES in package com.android.development
+09-05 20:36:05.275  3565  3565 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser in package com.android.development
+09-05 20:36:05.277  3565  3565 V PackageManager: reconcileAppsData for null u0 0x3
+09-05 20:36:05.278  3171  3171 E SELinux : selinux_android_file_context_handle: Error getting file context handle (No such file or directory)
+09-05 20:36:05.420  3565  3565 V PackageManager: reconcileAppsData finished 93 packages
+09-05 20:36:05.420  3565  3565 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity
+09-05 20:36:05.420  3565  3565 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity
+09-05 20:36:05.421  3565  3565 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver
+09-05 20:36:05.421  3565  3565 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver
+09-05 20:36:05.421  3565  3565 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$SecretCodeReceiver
+09-05 20:36:05.421  3565  3565 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$SecretCodeReceiver
+09-05 20:36:05.421  3565  3565 V PackageManager: Disabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateServiceReceiver
+09-05 20:36:05.421  3565  3565 W PackageManager: Unable to disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateServiceReceiver
+09-05 20:36:05.421  3565  3565 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity
+09-05 20:36:05.421  3565  3565 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity
+09-05 20:36:05.421  3565  3565 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver
+09-05 20:36:05.422  3565  3565 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver
+09-05 20:36:05.422  3565  3565 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver
+09-05 20:36:05.422  3565  3565 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver
+09-05 20:36:05.422  3565  3565 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver
+09-05 20:36:05.422  3565  3565 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver
+09-05 20:36:05.422  3565  3565 V PackageManager: Disabling com.google.android.gms/com.google.android.gms.update.SystemUpdateServiceReceiver
+09-05 20:36:05.422  3565  3565 W PackageManager: Unable to disable com.google.android.gms/com.google.android.gms.update.SystemUpdateServiceReceiver
+09-05 20:36:05.422  3565  3565 V PackageManager: Enabling com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService
+09-05 20:36:05.423  3565  3565 W PackageManager: Unable to enable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService
+09-05 20:36:05.423  3565  3565 V PackageManager: Enabling com.google.android.gms/com.google.android.gms.update.SystemUpdateService
+09-05 20:36:05.423  3565  3565 W PackageManager: Unable to enable com.google.android.gms/com.google.android.gms.update.SystemUpdateService
+09-05 20:36:05.502  3819  3819 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-05 20:36:05.502  3819  3819 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-05 20:36:05.502  3819  3819 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-05 20:36:05.502  3819  3819 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-05 20:36:05.502  3819  3819 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-05 20:36:05.502  3819  3819 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-05 20:36:05.502  3819  3819 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-05 20:36:05.502  3819  3819 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-05 20:36:05.502  3819  3819 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-05 20:36:05.502  3819  3819 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-05 20:36:05.502  3819  3819 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-05 20:36:05.502  3819  3819 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-05 20:36:05.502  3819  3819 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-05 20:36:05.502  3819  3819 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-05 20:36:05.502  3819  3819 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-05 20:36:05.502  3819  3819 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-05 20:36:05.502  3819  3819 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-05 20:36:05.562  3819  3819 D lhd     : OnIpcConnect
+09-05 20:36:05.576  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:05.707  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/TelephonyProvider/TelephonyProvider.apk pkg=com.android.providers.telephony isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:05.722  3821  3821 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:05.955  3821  3821 I dex2oat : dex2oat took 232.967ms (threads: 8) arena alloc=6MB (7224152B) java alloc=384KB (394000B) native alloc=1819KB (1863376B) free=11MB (11768112B)
+09-05 20:36:05.959  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/MmsService/MmsService.apk pkg=com.android.mms.service isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:05.975  3830  3830 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:06.086  3830  3830 I dex2oat : dex2oat took 111.196ms (threads: 8) arena alloc=2043KB (2092864B) java alloc=285KB (292496B) native alloc=1674KB (1714480B) free=4MB (5101264B)
+09-05 20:36:06.089  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/DefaultContainerService/DefaultContainerService.apk pkg=com.android.defcontainer isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:06.104  3839  3839 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:06.196  3839  3839 I dex2oat : dex2oat took 92.314ms (threads: 8) arena alloc=536KB (549456B) java alloc=108KB (110976B) native alloc=1149KB (1176664B) free=2MB (2493352B)
+09-05 20:36:06.200  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/SettingsProvider/SettingsProvider.apk pkg=com.android.providers.settings isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:06.216  3848  3848 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:06.421  3848  3848 I dex2oat : dex2oat took 205.503ms (threads: 8) arena alloc=6MB (6933832B) java alloc=281KB (288096B) native alloc=1868KB (1913424B) free=10MB (10669488B)
+09-05 20:36:06.425  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/InputDevices/InputDevices.apk pkg=com.android.inputdevices isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:06.440  3857  3857 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:06.501  3857  3857 I dex2oat : dex2oat took 61.253ms (threads: 8) arena alloc=15KB (15632B) java alloc=32KB (33200B) native alloc=867KB (888104B) free=1692KB (1733336B)
+09-05 20:36:06.504  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/ExtShared/ExtShared.apk pkg=android.ext.shared isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:06.519  3866  3866 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:06.576  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:06.582  3866  3866 I dex2oat : dex2oat took 63.037ms (threads: 8) arena alloc=78KB (79992B) java alloc=55KB (57056B) native alloc=894KB (915880B) free=2MB (2229848B)
+09-05 20:36:06.585  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Telecom/Telecom.apk pkg=com.android.server.telecom isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:06.600  3875  3875 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:07.031  3875  3875 I dex2oat : dex2oat took 430.767ms (threads: 8) arena alloc=3MB (4026096B) java alloc=1161KB (1189200B) native alloc=4MB (4612104B) free=7MB (7970808B)
+09-05 20:36:07.035  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Dialer/Dialer.apk pkg=com.android.dialer isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:07.051  3884  3884 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:07.244  3884  3889 W dex2oat : Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+09-05 20:36:07.256  3884  3887 W dex2oat : Before Android 4.1, method int android.support.v7.widget.ListViewCompat.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+09-05 20:36:07.576  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:08.577  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:08.646  3884  3884 I dex2oat : dex2oat took 1.595s (threads: 8) arena alloc=4MB (4501240B) java alloc=6MB (6331744B) native alloc=16MB (17210856B) free=7MB (7954968B)
+09-05 20:36:08.652  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/ExtServices/ExtServices.apk pkg=android.ext.services isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:08.668  3893  3893 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:08.744  3893  3893 I dex2oat : dex2oat took 76.700ms (threads: 8) arena alloc=337KB (345992B) java alloc=92KB (94288B) native alloc=1124KB (1151880B) free=2MB (2518136B)
+09-05 20:36:08.747  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/CMSettingsProvider/CMSettingsProvider.apk pkg=org.cyanogenmod.cmsettings isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:08.763  3902  3902 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:08.875  3902  3902 I dex2oat : dex2oat took 112.181ms (threads: 8) arena alloc=1848KB (1893336B) java alloc=242KB (248552B) native alloc=1686KB (1727280B) free=4MB (4564176B)
+09-05 20:36:08.878  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/PackageInstaller/PackageInstaller.apk pkg=com.android.packageinstaller isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:08.894  3911  3911 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:08.991  3911  3914 W dex2oat : Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+09-05 20:36:09.008  3911  3913 W dex2oat : Before Android 4.1, method int android.support.v7.widget.ListViewCompat.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+09-05 20:36:09.577  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:09.656  3911  3911 I dex2oat : dex2oat took 762.138ms (threads: 8) arena alloc=4MB (5034392B) java alloc=3MB (4136336B) native alloc=7MB (7864808B) free=8MB (8912408B)
+09-05 20:36:09.660  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/ProxyHandler/ProxyHandler.apk pkg=com.android.proxyhandler isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:09.677  3920  3920 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:09.754  3920  3920 I dex2oat : dex2oat took 77.230ms (threads: 8) arena alloc=1271KB (1301752B) java alloc=119KB (122304B) native alloc=1130KB (1157744B) free=3MB (3560848B)
+09-05 20:36:09.757  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/LatinIME/LatinIME.apk pkg=com.android.inputmethod.latin isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:09.773  3930  3930 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:10.259  3930  3930 I dex2oat : dex2oat took 486.135ms (threads: 8) arena alloc=3MB (3402096B) java alloc=1819KB (1863232B) native alloc=4MB (5095536B) free=6MB (6963088B)
+09-05 20:36:10.264  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Settings/Settings.apk pkg=com.android.settings isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:10.280  3939  3939 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:10.465  3939  3945 W dex2oat : Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+09-05 20:36:10.476  3939  3945 W dex2oat : Before Android 4.1, method int android.support.v7.widget.ListViewCompat.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+09-05 20:36:10.577  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:11.577  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:11.892  3939  3939 I dex2oat : dex2oat took 1.612s (threads: 8) arena alloc=4MB (4862056B) java alloc=9MB (9993032B) native alloc=17MB (18030800B) free=7MB (8183600B)
+09-05 20:36:11.899  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/TeleService/TeleService.apk pkg=com.android.phone isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:11.916  3949  3949 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:12.578  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:12.722  3949  3949 I dex2oat : dex2oat took 805.883ms (threads: 8) arena alloc=9MB (9782120B) java alloc=2MB (2731168B) native alloc=8MB (8926632B) free=12MB (13093464B)
+09-05 20:36:12.727  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Shell/Shell.apk pkg=com.android.shell isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:12.743  3958  3958 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:12.908  3958  3958 I dex2oat : dex2oat took 164.424ms (threads: 8) arena alloc=2039KB (2088176B) java alloc=349KB (357680B) native alloc=1698KB (1739448B) free=4MB (5076296B)
+09-05 20:36:12.911  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/FusedLocation/FusedLocation.apk pkg=com.android.location.fused isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=/system/framework/com.android.location.provider.jar
+09-05 20:36:12.927  3967  3967 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:13.002  3967  3967 I dex2oat : dex2oat took 75.430ms (threads: 8) arena alloc=444KB (455384B) java alloc=143KB (146960B) native alloc=1286KB (1317728B) free=3MB (3925152B)
+09-05 20:36:13.005  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/SystemUI/SystemUI.apk pkg=com.android.systemui isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:13.021  3976  3976 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:13.222  3976  3976 W dex2oat : Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+09-05 20:36:13.238  3976  3984 W dex2oat : Before Android 4.1, method int android.support.v7.widget.ListViewCompat.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+09-05 20:36:13.578  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:14.579  3166  3166 D wrapperGPS: wrapperConnect_RILD
+09-05 20:36:14.769  3976  3976 I dex2oat : dex2oat took 1.748s (threads: 8) arena alloc=3MB (3191936B) java alloc=10MB (10606144B) native alloc=18MB (19032872B) free=6MB (6657240B)
+09-05 20:36:14.776  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/WeatherManagerService/WeatherManagerService.apk pkg=org.cyanogenmod.weatherservice isa=arm64 vmSafeMode=false debuggable=false target-filter=speed oatDir = null sharedLibraries=null
+09-05 20:36:14.793  3985  3985 I dex2oat : /system/bin/dex2oat --compiler-filter=speed
+09-05 20:36:14.939  3985  3985 I dex2oat : dex2oat took 147.139ms (threads: 8) arena alloc=2MB (2133520B) java alloc=412KB (422728B) native alloc=1556KB (1593888B) free=5MB (5746144B)
+09-05 20:36:14.943  3565  3565 E PackageManager: There should probably be a verifier, but, none were found
+09-05 20:36:14.946  3565  3565 D PackageManager: Ephemeral resolver NOT found; no matching intent filters
+09-05 20:36:14.947  3565  3565 I PackageManager: Ephemeral deactivated; missing resolver and installer
+09-05 20:36:14.947  3565  3565 I art     : Starting a blocking GC Explicit
+09-05 20:36:14.970  3565  3565 I art     : Explicit concurrent mark sweep GC freed 53429(3MB) AllocSpace objects, 45(2MB) LOS objects, 33% free, 9MB/13MB, paused 135us total 22.966ms
+09-05 20:36:14.972  3565  3565 I SystemServer: StartOtaDexOptService
+09-05 20:36:14.974  3565  3565 I SystemServer: StartUserManagerService
+09-05 20:36:14.974  3565  3565 I SystemServiceManager: Starting com.android.server.pm.UserManagerService$LifeCycle
+09-05 20:36:14.987  3145  3145 I lowmemorykiller: ActivityManager connected
+09-05 20:36:14.988  3565  3565 I SystemServiceManager: Starting com.android.server.BatteryService
+09-05 20:36:14.988  3565  3995 D SensorService: nuSensorService starting...
+09-05 20:36:14.991  3565  3995 W MultiHal: No multihal config file found at /system/etc/sensors/hals.conf
+09-05 20:36:14.991  3565  3995 I SensorService: Generated new HMAC key.
+09-05 20:36:14.992  3565  3565 I SystemServiceManager: Starting com.android.server.usage.UsageStatsService
+09-05 20:36:14.999  3565  3565 I SystemServiceManager: Starting com.android.server.webkit.WebViewUpdateService
+09-05 20:36:15.003  3565  3565 I SystemServer: Reading configuration...
+09-05 20:36:15.003  3565  3565 I SystemServer: StartSchedulingPolicyService
+09-05 20:36:15.004  3565  3565 I SystemServiceManager: Starting com.android.server.telecom.TelecomLoaderService
+09-05 20:36:15.004  3565  3565 I SystemServer: StartTelephonyRegistry
+09-05 20:36:15.008  3565  3565 I SystemServer: StartEntropyMixer
+09-05 20:36:15.008  3565  3565 W EntropyMixer: No existing entropy file -- first boot?
+09-05 20:36:15.028  3565  3565 I EntropyMixer: Added HW RNG output to entropy pool
+09-05 20:36:15.028  3565  3565 I EntropyMixer: Writing entropy...
+09-05 20:36:15.035  3565  3565 I SystemServer: Camera Service
+09-05 20:36:15.035  3565  3565 I SystemServiceManager: Starting com.android.server.camera.CameraService
+09-05 20:36:15.036  3565  3996 I ServiceThread: Enabled StrictMode logging for CameraService_proxy looper.
+09-05 20:36:15.037  3565  3565 I SystemServer: StartAccountManagerService
+09-05 20:36:15.038  3565  3565 I SystemServiceManager: Starting com.android.server.accounts.AccountManagerService$Lifecycle
+09-05 20:36:15.045  3565  3565 I SystemServer: StartContentService
+09-05 20:36:15.045  3565  3565 I SystemServiceManager: Starting com.android.server.content.ContentService$Lifecycle
+09-05 20:36:15.046  3565  3565 I SystemServer: InstallSystemProviders
+09-05 20:36:15.049  3565  3565 W System  : ClassLoader referenced unknown path: /system/priv-app/CMSettingsProvider/lib/arm64
+09-05 20:36:15.078  3565  3565 D ActivityThread: Loading provider settings: com.android.providers.settings.SettingsProvider
+09-05 20:36:15.080  3565  3565 W System  : ClassLoader referenced unknown path: /system/priv-app/SettingsProvider/lib/arm64
+09-05 20:36:15.081  3565  3565 D ApplicationLoaders: ignored Vulkan layer search path /system/priv-app/SettingsProvider/lib/arm64:/system/priv-app/SettingsProvider/SettingsProvider.apk!/lib/arm64-v8a:/system/lib64:/vendor/lib64 for namespace 0x7f981fe160
+09-05 20:36:15.137  3565  3565 I SettingsState: No settings state /data/system/users/0/settings_system.xml
+09-05 20:36:15.145  3565  3565 I SettingsState: No settings state /data/system/users/0/settings_secure.xml
+09-05 20:36:15.148  3565  3565 D SettingsProvider: Generated and saved new ANDROID_ID [f59f433486f601d9] for user 0
+09-05 20:36:15.155  3565  3565 I SettingsState: No settings state /data/system/users/0/settings_global.xml
+09-05 20:36:15.189  3565  3565 I SystemServer: StartVibratorService
+09-05 20:36:15.192  3565  3565 I SystemServer: StartConsumerIrService
+09-05 20:36:15.193  3565  3565 E ConsumerIrService: Can't open consumer IR HW Module, error: -2
+09-05 20:36:15.194  3565  3565 I SystemServer: StartAlarmManagerService
+09-05 20:36:15.194  3565  3565 I SystemServiceManager: Starting com.android.server.AlarmManagerService
+09-05 20:36:15.199  3565  3565 I SystemServer: InitWatchdog
+09-05 20:36:15.200  3565  3565 I SystemServer: StartInputManagerService
+09-05 20:36:15.200  3565  3565 I InputManager: Initializing input manager, mUseDevInputEventForAudioJack=false
+09-05 20:36:15.201  3565  3565 I SystemServer: StartWindowManagerService
+09-05 20:36:15.209  3565  3661 I WindowManager: No existing display settings /data/system/display_settings.xml; starting empty
+09-05 20:36:15.221  3565  3655 I CameraManagerGlobal: Connecting to camera service
+09-05 20:36:15.223  3162  3162 E CameraService: getCameraVendorTagDescriptor: camera hardware module doesn't exist
+09-05 20:36:15.301  3565  3565 I SystemServer: StartVrManagerService
+09-05 20:36:15.301  3565  3565 I SystemServiceManager: Starting com.android.server.vr.VrManagerService
+09-05 20:36:15.302  3565  3565 W VrManagerService: init_native: Could not open VR hardware module, error No such file or directory (-2).
+09-05 20:36:15.304  3565  3565 I InputManager: Starting input manager
+09-05 20:36:15.306  3565  4003 D EventHub: No input device configuration file found for device 'certify_hall'.
+09-05 20:36:15.310  3565  3565 I SystemServiceManager: Starting com.android.server.BluetoothService
+09-05 20:36:15.312  3565  3565 D BluetoothManagerService: Loading stored name and address
+09-05 20:36:15.312  3565  3565 D BluetoothManagerService: Stored bluetooth Name=null,Address=null
+09-05 20:36:15.312  3565  3565 D BluetoothManagerService: Bluetooth persisted state: 0
+09-05 20:36:15.313  3565  3565 I SystemServer: ConnectivityMetricsLoggerService
+09-05 20:36:15.313  3565  3565 I SystemServiceManager: Starting com.android.server.connectivity.MetricsLoggerService
+09-05 20:36:15.313  3565  3565 I SystemServer: IpConnectivityMetrics
+09-05 20:36:15.313  3565  3565 I SystemServiceManager: Starting com.android.server.connectivity.IpConnectivityMetrics
+09-05 20:36:15.314  3565  3565 I SystemServer: PinnerService
+09-05 20:36:15.314  3565  3565 I SystemServiceManager: Starting com.android.server.PinnerService
+09-05 20:36:15.316  3565  3565 I SystemServiceManager: Starting com.android.server.InputMethodManagerService$Lifecycle
+09-05 20:36:15.344  3565  4003 D EventHub: No input device configuration file found for device 'Headset'.
+09-05 20:36:15.346  3565  4003 W EventHub: Unable to disable kernel key repeat for /dev/input/event15: Function not implemented
+09-05 20:36:15.346  3565  4003 I EventHub: New device: id=2, fd=96, path='/dev/input/event15', name='Headset', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+09-05 20:36:15.346  3565  4003 D EventHub: No input device configuration file found for device 'gpio_keys'.
+09-05 20:36:15.347  3565  4003 W EventHub: Unable to disable kernel key repeat for /dev/input/event16: Function not implemented
+09-05 20:36:15.347  3565  4003 I EventHub: New device: id=3, fd=97, path='/dev/input/event16', name='gpio_keys', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+09-05 20:36:15.347  3565  4003 E EventHub: could not get driver version for /dev/input/mouse1, Not a typewriter
+09-05 20:36:15.384  3565  4003 D EventHub: No input device configuration file found for device 'sec_touchpad'.
+09-05 20:36:15.385  3565  4003 W EventHub: Unable to disable kernel key repeat for /dev/input/event1: Function not implemented
+09-05 20:36:15.385  3565  4003 I EventHub: New device: id=4, fd=99, path='/dev/input/event1', name='sec_touchpad', classes=0x15, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+09-05 20:36:15.385  3565  4003 E EventHub: could not get driver version for /dev/input/mouse0, Not a typewriter
+09-05 20:36:15.444  3565  4003 W EventHub: Unable to disable kernel key repeat for /dev/input/event0: Function not implemented
+09-05 20:36:15.444  3565  4003 I EventHub: New device: id=5, fd=100, path='/dev/input/event0', name='sec_touchscreen', classes=0x15, configuration='/system/usr/idc/sec_touchscreen.idc', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+09-05 20:36:15.444  3565  4003 D EventHub: No input device configuration file found for device 'hall'.
+09-05 20:36:15.488  3565  4003 D EventHub: No input device configuration file found for device 'ssp_context'.
+09-05 20:36:15.524  3565  4003 D EventHub: No input device configuration file found for device 'meta_event'.
+09-05 20:36:15.568  3565  4003 D EventHub: No input device configuration file found for device 'interrupt_gyro_sensor'.
+09-05 20:36:15.579  3166  3166 D wrapperGPS: wrapperCloseClient_RILD
+09-05 20:36:15.579  3166  3166 D gpsd    : WakeLock(Acquire,GPSD)
+09-05 20:36:15.579  3166  3166 D gpsd    : WakeLock(Release,GPSD)
+09-05 20:36:15.579  3166  3166 D gpsd    : WakeLock(Acquire,GPSD)
+09-05 20:36:15.579  3166  3166 D gpsd    : WakeLock(Release,GPSD)
+09-05 20:36:15.604  3565  4003 D EventHub: No input device configuration file found for device 'step_cnt_sensor'.
+09-05 20:36:15.640  3565  4003 D EventHub: No input device configuration file found for device 'sig_motion_sensor'.
+09-05 20:36:15.659  3565  3565 W System  : ClassLoader referenced unknown path: 
+09-05 20:36:15.660  3565  3565 D ApplicationLoaders: ignored Vulkan layer search path /system/app/LatinIME/lib/arm64:/system/fake-libs64:/system/app/LatinIME/LatinIME.apk!/lib/arm64-v8a:/system/lib64:/vendor/lib64 for namespace 0x7f981fe1d0
+09-05 20:36:15.684  3565  4003 D EventHub: No input device configuration file found for device 'gesture_sensor'.
+09-05 20:36:15.716  3565  4003 D EventHub: No input device configuration file found for device 'temp_humidity_sensor'.
+09-05 20:36:15.748  3565  4003 D EventHub: No input device configuration file found for device 'proximity_alert_sensor'.
+09-05 20:36:15.774  3565  3565 W InputMethodManagerService: No IME selected. Choose the most applicable IME.
+09-05 20:36:15.780  3565  3565 I InputMethodManagerService: Default found, using com.android.inputmethod.latin/.LatinIME
+09-05 20:36:15.782  3565  3565 I SystemServer: StartAccessibilityManagerService
+09-05 20:36:15.788  3565  4003 D EventHub: No input device configuration file found for device 'proximity_sensor'.
+09-05 20:36:15.790  3565  3565 I ActivityManager: Config changes=1df8 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h845dp 560dpi nrml long port ?uimode ?night -touch -keyb/h/h -nav/h s.2}
+09-05 20:36:15.792  3565  3653 I UsageStatsDatabase: Upgrading from version 0 to 3
+09-05 20:36:15.792  3565  3653 I UsageStatsDatabase: Deleting all usage stats files
+09-05 20:36:15.796  3565  3653 I UsageStatsService: User[0] Rollover scheduled @ 2017-09-06 20:36:15(1504730175790)
+09-05 20:36:15.796  3565  3653 D UsageStatsService: Initializing defaults for system apps on user 0
+09-05 20:36:15.814  3565  3653 E AppIdleHistory: Unable to read app idle file for user 0
+09-05 20:36:15.814  3565  3661 I ActivityManager: Config changes=400 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h773dp 560dpi nrml long port ?uimode ?night -touch -keyb/h/h -nav/h s.3}
+09-05 20:36:15.816  3565  4003 D EventHub: No input device configuration file found for device 'light_ir_sensor'.
+09-05 20:36:15.820  3565  3661 W LocalDisplayAdapter: Unable to find color mode 0, ignoring request.
+09-05 20:36:15.833  3565  3565 W LocalDisplayAdapter: Unable to find color mode 0, ignoring request.
+09-05 20:36:15.833  3565  3565 I SystemServiceManager: Starting com.android.server.MountService$Lifecycle
+09-05 20:36:15.839  3565  3565 I SystemServiceManager: Starting com.android.server.UiModeManagerService
+09-05 20:36:15.839  3565  4004 D MountService: Thinking about init, mSystemReady=false, mDaemonConnected=true
+09-05 20:36:15.839  3565  4004 D MountService: Thinking about reset, mSystemReady=false, mDaemonConnected=true
+09-05 20:36:15.839  3565  4004 D MountService: Thinking about init, mSystemReady=false, mDaemonConnected=true
+09-05 20:36:15.839  3565  4004 D MountService: Thinking about reset, mSystemReady=false, mDaemonConnected=true
+09-05 20:36:15.840  3565  4004 D CryptdConnector: SND -> {1 cryptfs getfield SystemLocale}
+09-05 20:36:15.841  3565  3565 I ActivityManager: Config changes=200 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h773dp 560dpi nrml long port -touch -keyb/h/h -nav/h s.4}
+09-05 20:36:15.841  3565  4006 D CryptdConnector: RCV <- {200 1 -1}
+09-05 20:36:15.844  3565  4004 W MountService: No primary storage mounted!
+09-05 20:36:15.844  3565  4004 D VoldConnector: SND -> {1 asec list}
+09-05 20:36:15.845  3565  4005 D VoldConnector: RCV <- {200 1 asec operation succeeded}
+09-05 20:36:15.846  3565  4004 I PackageManager: No secure containers found
+09-05 20:36:15.848  3565  4003 D EventHub: No input device configuration file found for device 'light_sensor'.
+09-05 20:36:15.848  3565  4004 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+09-05 20:36:15.848  3565  4004 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+09-05 20:36:15.852  3565  4004 W PackageManager: Unknown permission cyanogenmod.permission.LEGALESE in package com.cyanogenmod.setupwizard
+09-05 20:36:15.853  3565  4004 W PackageManager: Unknown permission com.android.gallery3d.permission.STORAGE_CHANGE in package com.android.camera2
+09-05 20:36:15.854  3565  4004 W PackageManager: Unknown permission android.permission.NFC_UNLOCK in package com.android.nfc
+09-05 20:36:15.856  3565  4004 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+09-05 20:36:15.857  3565  4004 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+09-05 20:36:15.857  3565  4004 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+09-05 20:36:15.860  3565  4004 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.cyanogenmod.trebuchet
+09-05 20:36:15.860  3565  4004 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.cyanogenmod.trebuchet
+09-05 20:36:15.861  3565  4004 W PackageManager: Unknown permission com.google.android.permission.INSTALL_WEARABLE_PACKAGES in package com.android.packageinstaller
+09-05 20:36:15.861  3565  4004 W PackageManager: Not granting permission android.permission.DELETE_PACKAGES to package com.svox.pico (protectionLevel=18 flags=0x3888be45)
+09-05 20:36:15.863  3565  4004 W PackageManager: Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.android.dreams.phototable
+09-05 20:36:15.864  3565  4004 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+09-05 20:36:15.865  3565  4004 W PackageManager: Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.settings
+09-05 20:36:15.865  3565  4004 W PackageManager: Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.settings
+09-05 20:36:15.873  3565  4004 W PackageManager: Not granting permission android.permission.MANAGE_DOCUMENTS to package com.android.deskclock (protectionLevel=2 flags=0x3cc9be45)
+09-05 20:36:15.874  3565  4004 W PackageManager: Unknown permission com.android.deskclock.worldclock.permissions.WRITE_DATABASE in package com.android.deskclock
+09-05 20:36:15.874  3565  4004 W PackageManager: Unknown permission org.codeaurora.permission.POWER_ON_ALERT in package com.android.deskclock
+09-05 20:36:15.874  3565  4004 W PackageManager: Not granting permission android.permission.WRITE_SECURE_SETTINGS to package com.android.deskclock (protectionLevel=50 flags=0x3cc9be45)
+09-05 20:36:15.877  3565  4004 W PackageManager: Unknown permission com.cyanogenmod.lockclock.permission.READ_WEATHER in package com.android.systemui
+09-05 20:36:15.879  3565  4004 W PackageManager: Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.bluetooth
+09-05 20:36:15.880  3565  4004 W PackageManager: Unknown permission com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD in package com.android.development
+09-05 20:36:15.880  3565  4004 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.development
+09-05 20:36:15.881  3565  4004 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES in package com.android.development
+09-05 20:36:15.881  3565  4004 W PackageManager: Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser in package com.android.development
+09-05 20:36:15.888  3565  4003 D EventHub: No input device configuration file found for device 'hrm_sensor'.
+09-05 20:36:15.920  3565  4003 D EventHub: No input device configuration file found for device 'grip_sensor'.
+09-05 20:36:15.956  3565  4003 E EventHub: could not get driver version for /dev/input/mice, Not a typewriter
+09-05 20:36:16.018  3565  4003 I InputReader: Device added: id=-1, name='Virtual', sources=0x00000301
+09-05 20:36:16.018  3565  4003 W InputReader: Invalid value for touch.size.calibration: 'normalized'
+09-05 20:36:16.019  3565  4003 I InputReader:   Touch device 'sec_touchscreen' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+09-05 20:36:16.019  3565  4003 I InputReader: Device added: id=5, name='sec_touchscreen', sources=0x00001103
+09-05 20:36:16.019  3565  4003 I InputReader:   Touch device 'sec_touchpad' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+09-05 20:36:16.019  3565  4003 I InputReader: Device added: id=4, name='sec_touchpad', sources=0x00002103
+09-05 20:36:16.019  3565  4003 I InputReader: Device added: id=3, name='gpio_keys', sources=0x00000101
+09-05 20:36:16.019  3565  4003 I InputReader: Device added: id=2, name='Headset', sources=0x00000101
+09-05 20:36:16.019  3565  4003 I InputReader: Reconfiguring input devices.  changes=0x00000004
+09-05 20:36:16.025  3565  4003 I InputReader: Device reconfigured: id=4, name='sec_touchpad', size 1440x2960, orientation 0, mode 4, display id 0
+09-05 20:36:16.026  3565  4003 I InputReader: Device reconfigured: id=5, name='sec_touchscreen', size 1440x2960, orientation 0, mode 1, display id 0
+09-05 20:36:16.026  3565  4002 I ActivityManager: Config changes=8 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h773dp 560dpi nrml long port finger -keyb/h/h -nav/h s.5}
+09-05 20:36:16.173  3565  3565 W art     : Long monitor contention with owner MountService (4004) at void com.android.server.pm.PackageManagerService.loadMediaPackages(android.util.ArrayMap, int[], boolean)(PackageManagerService.java:19557) waiters=0 in void com.android.server.pm.PackageManagerService.updatePackagesIfNeeded() for 326ms
+09-05 20:36:16.196  3565  3653 W art     : Long monitor contention with owner MountService (4004) at void com.android.server.pm.PackageManagerService.loadMediaPackages(android.util.ArrayMap, int[], boolean)(PackageManagerService.java:19557) waiters=1 in void com.android.server.pm.Settings$RuntimePermissionPersistence.writePermissionsSync(int) for 348ms
+09-05 20:36:16.196  3565  4004 W MountService: No primary storage defined yet; hacking together a stub
+09-05 20:36:16.198  3565  4004 W MountService: No primary storage defined yet; hacking together a stub
+09-05 20:36:16.199  3565  4004 W MountService: No primary storage mounted!
+09-05 20:36:16.199  3565  4004 D VoldConnector: SND -> {2 asec list}
+09-05 20:36:16.200  3565  4005 D VoldConnector: RCV <- {200 2 asec operation succeeded}
+09-05 20:36:16.207  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/RootPA/RootPA.apk pkg=com.gd.mobicore.pa isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:16.223  4007  4007 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:16.287  4007  4007 I dex2oat : dex2oat took 63.842ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1090KB (1116912B) free=1469KB (1504528B)
+09-05 20:36:16.289  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/CalendarProvider/CalendarProvider.apk pkg=com.android.providers.calendar isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=/system/framework/android.test.runner.jar
+09-05 20:36:16.305  4016  4016 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:16.403  4016  4016 I dex2oat : dex2oat took 98.285ms (threads: 8) arena alloc=0B (0B) java alloc=35KB (36168B) native alloc=1141KB (1169168B) free=1930KB (1976560B)
+09-05 20:36:16.406  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/MediaProvider/MediaProvider.apk pkg=com.android.providers.media isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:16.422  4025  4025 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:16.488  4025  4025 I dex2oat : dex2oat took 66.552ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1100KB (1126480B) free=1459KB (1494960B)
+09-05 20:36:16.491  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/WallpaperCropper/WallpaperCropper.apk pkg=com.android.wallpapercropper isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:16.507  4034  4034 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:16.584  4034  4034 I dex2oat : dex2oat took 76.985ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1070KB (1096560B) free=1489KB (1524880B)
+09-05 20:36:16.587  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/DocumentsUI/DocumentsUI.apk pkg=com.android.documentsui isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:16.602  4043  4043 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:16.727  4043  4043 I dex2oat : dex2oat took 125.062ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=510KB (523120B) free=2MB (2622608B)
+09-05 20:36:16.730  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk pkg=com.android.externalstorage isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:16.746  4052  4052 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:16.810  4052  4052 I dex2oat : dex2oat took 64.071ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1061KB (1087376B) free=1498KB (1534064B)
+09-05 20:36:16.813  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/HTMLViewer/HTMLViewer.apk pkg=com.android.htmlviewer isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:16.828  4061  4061 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:16.847  4061  4061 I dex2oat : dex2oat took 18.855ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=878KB (899152B) free=1169KB (1198000B)
+09-05 20:36:16.849  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/DownloadProvider/DownloadProvider.apk pkg=com.android.providers.downloads isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:16.865  4070  4070 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:16.902  4070  4070 I dex2oat : dex2oat took 37.811ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1142KB (1170096B) free=1417KB (1451344B)
+09-05 20:36:16.905  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/messaging/messaging.apk pkg=com.android.messaging isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:16.921  4079  4079 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:17.138  4079  4079 I dex2oat : dex2oat took 217.431ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=860KB (881288B) free=2MB (2919800B)
+09-05 20:36:17.141  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/Terminal/Terminal.apk pkg=com.android.terminal isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:17.157  4088  4088 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:17.277  4088  4088 I dex2oat : dex2oat took 120.388ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=488KB (500208B) free=2MB (2645520B)
+09-05 20:36:17.280  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/AudioFX/AudioFX.apk pkg=org.cyanogenmod.audiofx isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:17.296  4097  4097 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:17.439  4097  4097 I dex2oat : dex2oat took 144.097ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=474KB (485512B) free=2MB (2660216B)
+09-05 20:36:17.443  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/LineageSetupWizard/LineageSetupWizard.apk pkg=com.cyanogenmod.setupwizard isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:17.458  4106  4106 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:17.540  4106  4106 I dex2oat : dex2oat took 82.355ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32208B) native alloc=1119KB (1146224B) free=1440KB (1475216B)
+09-05 20:36:17.543  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/DownloadProviderUi/DownloadProviderUi.apk pkg=com.android.providers.downloads.ui isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:17.559  4115  4115 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:17.619  4115  4115 I dex2oat : dex2oat took 60.783ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32208B) native alloc=860KB (881232B) free=1187KB (1215920B)
+09-05 20:36:17.621  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/PacProcessor/PacProcessor.apk pkg=com.android.pacprocessor isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:17.637  4124  4124 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:17.699  4124  4124 I dex2oat : dex2oat took 62.255ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=858KB (878608B) free=1189KB (1218544B)
+09-05 20:36:17.702  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/CertInstaller/CertInstaller.apk pkg=com.android.certinstaller isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:17.718  4133  4133 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:17.792  4133  4133 I dex2oat : dex2oat took 74.599ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1005KB (1030096B) free=1554KB (1591344B)
+09-05 20:36:17.794  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/CarrierConfig/CarrierConfig.apk pkg=com.android.carrierconfig isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:17.810  4142  4142 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:17.872  4142  4142 I dex2oat : dex2oat took 62.249ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=858KB (878672B) free=1189KB (1218480B)
+09-05 20:36:17.875  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Contacts/Contacts.apk pkg=com.android.contacts isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:17.890  4151  4151 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:17.996  4151  4151 I dex2oat : dex2oat took 105.898ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=535KB (548024B) free=2MB (2597704B)
+09-05 20:36:17.999  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/Camera2/Camera2.apk pkg=com.android.camera2 isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.015  4160  4160 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.129  4160  4160 I dex2oat : dex2oat took 114.216ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=422KB (432760B) free=2MB (2712968B)
+09-05 20:36:18.131  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Recorder/Recorder.apk pkg=org.lineageos.recorder isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.147  4169  4169 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.219  4169  4169 I dex2oat : dex2oat took 72.873ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=498KB (510576B) free=2MB (2635152B)
+09-05 20:36:18.222  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/EasterEgg/EasterEgg.apk pkg=com.android.egg isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.238  4178  4178 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.272  4178  4178 I dex2oat : dex2oat took 34.320ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1099KB (1125744B) free=1460KB (1495696B)
+09-05 20:36:18.274  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/MtpDocumentsProvider/MtpDocumentsProvider.apk pkg=com.android.mtp isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.290  4187  4187 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.312  4187  4187 I dex2oat : dex2oat took 22.382ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32208B) native alloc=1022KB (1046896B) free=1537KB (1574544B)
+09-05 20:36:18.315  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/NfcNci/NfcNci.apk pkg=com.android.nfc isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.330  4196  4196 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.417  4196  4196 I dex2oat : dex2oat took 86.927ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=516KB (529272B) free=2MB (2616456B)
+09-05 20:36:18.419  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/Stk/Stk.apk pkg=com.android.stk isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.435  4205  4205 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.459  4205  4205 I dex2oat : dex2oat took 24.115ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1042KB (1067600B) free=1517KB (1553840B)
+09-05 20:36:18.461  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/BackupRestoreConfirmation/BackupRestoreConfirmation.apk pkg=com.android.backupconfirm isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.477  4214  4214 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.497  4214  4214 I dex2oat : dex2oat took 20.123ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32240B) native alloc=858KB (878736B) free=1189KB (1218416B)
+09-05 20:36:18.499  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/Profiles/Profiles.apk pkg=org.cyanogenmod.profiles isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.515  4223  4223 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.541  4223  4223 I dex2oat : dex2oat took 26.788ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1130KB (1157200B) free=1429KB (1464240B)
+09-05 20:36:18.544  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/LockClock/LockClock.apk pkg=com.cyanogenmod.lockclock isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.559  4232  4232 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.589  4232  4232 I dex2oat : dex2oat took 30.073ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1079KB (1105200B) free=1480KB (1516240B)
+09-05 20:36:18.592  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/StatementService/StatementService.apk pkg=com.android.statementservice isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.608  4241  4241 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.629  4241  4241 I dex2oat : dex2oat took 22.089ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1092KB (1118512B) free=1467KB (1502928B)
+09-05 20:36:18.632  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/AdvancedDisplay/AdvancedDisplay.apk pkg=com.cyanogenmod.settings.device isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.648  4250  4250 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.721  4250  4250 I dex2oat : dex2oat took 73.987ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=497KB (509360B) free=2MB (2636368B)
+09-05 20:36:18.724  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/CMAudioService/CMAudioService.apk pkg=org.cyanogenmod.cmaudio.service isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.739  4259  4259 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.778  4259  4259 I dex2oat : dex2oat took 38.886ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1141KB (1168816B) free=1418KB (1452624B)
+09-05 20:36:18.781  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/Calendar/Calendar.apk pkg=com.android.calendar isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.796  4268  4268 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.856  4268  4268 I dex2oat : dex2oat took 60.378ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=565KB (579568B) free=2MB (2566160B)
+09-05 20:36:18.859  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/SharedStorageBackup/SharedStorageBackup.apk pkg=com.android.sharedstoragebackup isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.875  4277  4277 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.896  4277  4277 I dex2oat : dex2oat took 21.668ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32208B) native alloc=858KB (878736B) free=1189KB (1218416B)
+09-05 20:36:18.898  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/PrintSpooler/PrintSpooler.apk pkg=com.android.printspooler isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.914  4286  4286 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.956  4286  4286 I dex2oat : dex2oat took 42.557ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1137KB (1165232B) free=1422KB (1456208B)
+09-05 20:36:18.959  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/BasicDreams/BasicDreams.apk pkg=com.android.dreams.basic isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:18.974  4295  4295 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:18.994  4295  4295 I dex2oat : dex2oat took 20.274ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=898KB (919632B) free=1149KB (1177520B)
+09-05 20:36:18.997  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/webview/webview.apk pkg=com.android.webview isa=arm vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.013  4304  4304 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.113  4304  4304 I dex2oat : dex2oat took 100.341ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=385KB (395144B) free=2MB (2750584B)
+09-05 20:36:19.115  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/webview/webview.apk pkg=com.android.webview isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.131  4313  4313 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.239  4313  4313 I dex2oat : dex2oat took 108.231ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=517KB (530248B) free=2MB (2615480B)
+09-05 20:36:19.241  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/CellBroadcastReceiver/CellBroadcastReceiver.apk pkg=com.android.cellbroadcastreceiver isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.257  4322  4322 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.282  4322  4322 I dex2oat : dex2oat took 25.135ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1105KB (1131984B) free=1454KB (1489456B)
+09-05 20:36:19.285  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/OneTimeInitializer/OneTimeInitializer.apk pkg=com.android.onetimeinitializer isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.300  4331  4331 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.322  4331  4331 I dex2oat : dex2oat took 21.710ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32208B) native alloc=1018KB (1043024B) free=1541KB (1578416B)
+09-05 20:36:19.324  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/CMParts/CMParts.apk pkg=org.cyanogenmod.cmparts isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.340  4340  4340 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.429  4340  4340 I dex2oat : dex2oat took 89.237ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=525KB (538008B) free=2MB (2607720B)
+09-05 20:36:19.431  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/KeyChain/KeyChain.apk pkg=com.android.keychain isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.447  4349  4349 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.470  4349  4349 I dex2oat : dex2oat took 22.853ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1003KB (1027408B) free=1556KB (1594032B)
+09-05 20:36:19.472  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/PrintRecommendationService/PrintRecommendationService.apk pkg=com.android.printservice.recommendation isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.488  4358  4358 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.510  4358  4358 I dex2oat : dex2oat took 22.617ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32240B) native alloc=1057KB (1082512B) free=1502KB (1538928B)
+09-05 20:36:19.513  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Gallery2/Gallery2.apk pkg=com.android.gallery3d isa=arm vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.528  4367  4367 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.677  4367  4367 I dex2oat : dex2oat took 148.727ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=541KB (554488B) free=2MB (2591240B)
+09-05 20:36:19.679  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Trebuchet/Trebuchet.apk pkg=com.cyanogenmod.trebuchet isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.695  4376  4376 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.768  4376  4376 I dex2oat : dex2oat took 72.775ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=558KB (571888B) free=2MB (2573840B)
+09-05 20:36:19.770  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/CallLogBackup/CallLogBackup.apk pkg=com.android.calllogbackup isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.786  4385  4385 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.806  4385  4385 I dex2oat : dex2oat took 19.919ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=878KB (899152B) free=1169KB (1198000B)
+09-05 20:36:19.808  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/PicoTts/PicoTts.apk pkg=com.svox.pico isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.824  4394  4394 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.843  4394  4394 I dex2oat : dex2oat took 20.106ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=880KB (901712B) free=1167KB (1195440B)
+09-05 20:36:19.846  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/Jelly/Jelly.apk pkg=org.lineageos.jelly isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.861  4404  4404 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.936  4404  4404 I dex2oat : dex2oat took 74.802ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=500KB (512880B) free=2MB (2632848B)
+09-05 20:36:19.939  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/ManagedProvisioning/ManagedProvisioning.apk pkg=com.android.managedprovisioning isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:19.954  4413  4413 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:19.982  4413  4413 I dex2oat : dex2oat took 27.453ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32208B) native alloc=1078KB (1104688B) free=1481KB (1516752B)
+09-05 20:36:19.984  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/PhotoTable/PhotoTable.apk pkg=com.android.dreams.phototable isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.000  4422  4422 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:20.024  4422  4422 I dex2oat : dex2oat took 24.086ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1052KB (1077328B) free=1507KB (1544112B)
+09-05 20:36:20.026  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/WAPPushManager/WAPPushManager.apk pkg=com.android.smspush isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.042  4431  4431 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:20.061  4431  4431 I dex2oat : dex2oat took 20.307ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1030KB (1055312B) free=1529KB (1566128B)
+09-05 20:36:20.064  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/LiveWallpapersPicker/LiveWallpapersPicker.apk pkg=com.android.wallpaper.livepicker isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.080  4440  4440 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:20.144  4440  4440 I dex2oat : dex2oat took 64.937ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32208B) native alloc=521KB (533936B) free=2MB (2611792B)
+09-05 20:36:20.147  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Tag/Tag.apk pkg=com.android.apps.tag isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.163  4449  4449 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:20.200  4449  4449 I dex2oat : dex2oat took 37.995ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1141KB (1168560B) free=1418KB (1452880B)
+09-05 20:36:20.203  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/StorageManager/StorageManager.apk pkg=com.android.storagemanager isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.219  4458  4458 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:20.297  4458  4458 I dex2oat : dex2oat took 78.340ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=500KB (512688B) free=2MB (2633040B)
+09-05 20:36:20.299  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/BookmarkProvider/BookmarkProvider.apk pkg=com.android.bookmarkprovider isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.318  4467  4467 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:20.338  4467  4467 I dex2oat : dex2oat took 20.488ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=878KB (899152B) free=1169KB (1198000B)
+09-05 20:36:20.340  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Eleven/Eleven.apk pkg=com.cyanogenmod.eleven isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.356  4476  4476 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:20.549  3166  3166 D gpsd    : WakeLock(Acquire,GPSD)
+09-05 20:36:20.549  3166  3166 D gpsd    : WakeLock(Release,GPSD)
+09-05 20:36:20.549  3166  3166 D gpsd    : WakeLock(Acquire,GPSD)
+09-05 20:36:20.549  3166  3166 D gpsd    : WakeLock(Release,GPSD)
+09-05 20:36:20.566  4479  4479 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-05 20:36:20.566  4479  4479 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-05 20:36:20.566  4479  4479 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-05 20:36:20.566  4479  4479 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-05 20:36:20.566  4479  4479 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-05 20:36:20.566  4479  4479 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-05 20:36:20.566  4479  4479 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-05 20:36:20.566  4479  4479 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-05 20:36:20.566  4479  4479 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-05 20:36:20.566  4479  4479 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-05 20:36:20.566  4479  4479 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-05 20:36:20.566  4479  4479 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-05 20:36:20.566  4479  4479 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-05 20:36:20.566  4479  4479 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-05 20:36:20.566  4479  4479 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-05 20:36:20.566  4479  4479 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-05 20:36:20.566  4479  4479 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-05 20:36:20.577  4476  4476 I dex2oat : dex2oat took 221.375ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=806KB (825448B) free=2MB (2451352B)
+09-05 20:36:20.580  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/ExactCalculator/ExactCalculator.apk pkg=com.android.calculator2 isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.596  4487  4487 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:20.625  3166  3166 D gpsd    : WakeLock(Acquire,GPSD)
+09-05 20:36:20.625  3166  3166 D gpsd    : WakeLock(Release,GPSD)
+09-05 20:36:20.625  3166  3166 D gpsd    : WakeLock(Acquire,GPSD)
+09-05 20:36:20.625  3166  3166 D gpsd    : WakeLock(Release,GPSD)
+09-05 20:36:20.625  4479  4479 D lhd     : OnIpcConnect
+09-05 20:36:20.674  4487  4487 I dex2oat : dex2oat took 79.298ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1106KB (1133552B) free=1453KB (1487888B)
+09-05 20:36:20.677  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/Updater/Updater.apk pkg=org.lineageos.updater isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.693  4497  4497 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:20.831  4497  4497 I dex2oat : dex2oat took 139.114ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=532KB (545624B) free=2MB (2600104B)
+09-05 20:36:20.835  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/VpnDialogs/VpnDialogs.apk pkg=com.android.vpndialogs isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.851  4506  4506 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:20.911  4506  4506 I dex2oat : dex2oat took 60.909ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=858KB (878672B) free=1189KB (1218480B)
+09-05 20:36:20.914  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/Email/Email.apk pkg=com.android.email isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:20.930  4515  4515 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:21.159  4515  4515 I dex2oat : dex2oat took 229.560ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=637KB (653128B) free=2MB (3016888B)
+09-05 20:36:21.162  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/WallpaperBackup/WallpaperBackup.apk pkg=com.android.wallpaperbackup isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:21.178  4524  4524 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:21.246  4524  4524 I dex2oat : dex2oat took 69.148ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=861KB (881744B) free=1186KB (1215408B)
+09-05 20:36:21.249  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/BlockedNumberProvider/BlockedNumberProvider.apk pkg=com.android.providers.blockednumber isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:21.265  4534  4534 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:21.348  4534  4534 I dex2oat : dex2oat took 83.753ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=1094KB (1120944B) free=1465KB (1500496B)
+09-05 20:36:21.351  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/UserDictionaryProvider/UserDictionaryProvider.apk pkg=com.android.providers.userdictionary isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:21.366  4543  4543 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:21.433  4543  4543 I dex2oat : dex2oat took 67.105ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=886KB (907408B) free=1161KB (1189744B)
+09-05 20:36:21.436  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/EmergencyInfo/EmergencyInfo.apk pkg=com.android.emergency isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:21.452  4552  4552 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:21.553  4552  4552 I dex2oat : dex2oat took 102.196ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=684KB (700464B) free=2MB (2445264B)
+09-05 20:36:21.556  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/DeskClock/DeskClock.apk pkg=com.android.deskclock isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:21.572  4561  4561 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:21.715  4561  4561 I dex2oat : dex2oat took 142.447ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=438KB (449320B) free=2MB (2696408B)
+09-05 20:36:21.717  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/Exchange2/Exchange2.apk pkg=com.android.exchange isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:21.733  4570  4570 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:21.918  4570  4570 I dex2oat : dex2oat took 185.532ms (threads: 8) arena alloc=0B (0B) java alloc=27KB (28240B) native alloc=587KB (601592B) free=2MB (2544136B)
+09-05 20:36:21.921  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/BluetoothMidiService/BluetoothMidiService.apk pkg=com.android.bluetoothmidiservice isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:21.937  4579  4579 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:21.999  4579  4579 I dex2oat : dex2oat took 61.900ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32208B) native alloc=858KB (878928B) free=1189KB (1218224B)
+09-05 20:36:22.001  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/Bluetooth/Bluetooth.apk pkg=com.android.bluetooth isa=arm vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=/system/framework/javax.obex.jar
+09-05 20:36:22.017  4588  4588 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:22.318  4588  4588 I dex2oat : dex2oat took 300.925ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32240B) native alloc=694KB (711368B) free=2MB (2958648B)
+09-05 20:36:22.321  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/Development/Development.apk pkg=com.android.development isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=/system/framework/android.test.runner.jar
+09-05 20:36:22.337  4597  4597 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:22.408  4597  4597 I dex2oat : dex2oat took 71.136ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32192B) native alloc=1072KB (1098032B) free=1487KB (1523408B)
+09-05 20:36:22.410  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/WallpaperPicker/WallpaperPicker.apk pkg=com.android.wallpaperpicker isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:22.426  4606  4606 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:22.493  4606  4606 I dex2oat : dex2oat took 67.117ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1073KB (1099632B) free=1486KB (1521808B)
+09-05 20:36:22.495  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/ContactsProvider/ContactsProvider.apk pkg=com.android.providers.contacts isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:22.511  4615  4615 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:22.611  4615  4615 I dex2oat : dex2oat took 100.555ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1133KB (1160496B) free=1938KB (1985232B)
+09-05 20:36:22.614  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/app/CaptivePortalLogin/CaptivePortalLogin.apk pkg=com.android.captiveportallogin isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:22.630  4624  4624 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:22.692  4624  4624 I dex2oat : dex2oat took 62.223ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32208B) native alloc=858KB (878672B) free=1189KB (1218480B)
+09-05 20:36:22.694  3565  3565 I PackageManager.DexOptimizer: Running dexopt (dex2oat) on: /system/priv-app/WeatherProvider/WeatherProvider.apk pkg=org.cyanogenmod.weather.provider isa=arm64 vmSafeMode=false debuggable=false target-filter=verify-at-runtime oatDir = null sharedLibraries=null
+09-05 20:36:22.710  4633  4633 I dex2oat : /system/bin/dex2oat --compiler-filter=verify-at-runtime
+09-05 20:36:22.772  4633  4633 I dex2oat : dex2oat took 63.138ms (threads: 8) arena alloc=0B (0B) java alloc=31KB (32216B) native alloc=1070KB (1095760B) free=1489KB (1525680B)
+09-05 20:36:22.776  3565  3565 W PackageManager: No disk maintenance in 1504643782776; running immediately
+09-05 20:36:22.776  3565  3565 I SystemServer: StartLockSettingsService
+09-05 20:36:22.776  3565  4004 I MountService: Running fstrim idle maintenance
+09-05 20:36:22.776  3565  3565 I SystemServiceManager: Starting com.android.server.LockSettingsService$Lifecycle
+09-05 20:36:22.777  3565  4004 D VoldConnector: SND -> {3 fstrim dotrim}
+09-05 20:36:22.778  3565  4005 D VoldConnector: RCV <- {200 3 Command succeeded}
+09-05 20:36:22.778  3069  4642 D vold    : Starting trim of /cache
+09-05 20:36:22.791  3565  3565 I SystemServiceManager: Starting com.android.server.DeviceIdleController
+09-05 20:36:22.794  3565  3565 I SystemServiceManager: Starting com.android.server.devicepolicy.DevicePolicyManagerService$Lifecycle
+09-05 20:36:22.798  3565  3565 I SystemServer: StartStatusBarManagerService
+09-05 20:36:22.800  3565  3565 I SystemServer: StartClipboardService
+09-05 20:36:22.802  3565  3565 I SystemServer: StartNetworkManagementService
+09-05 20:36:22.803  3565  4643 I NetworkManagement: onDaemonConnected()
+09-05 20:36:22.807  3565  3565 I SystemServiceManager: Starting com.android.server.TextServicesManagerService$Lifecycle
+09-05 20:36:22.812  3069  4642 I vold    : Trimmed 507375616 bytes on /cache in 34ms
+09-05 20:36:22.812  3069  4642 D vold    : Starting trim of /data
+09-05 20:36:22.813  3565  4005 D VoldConnector: RCV <- {662 /cache 507375616 34399000}
+09-05 20:36:22.814  3565  3565 I SystemServer: StartNetworkScoreService
+09-05 20:36:22.815  3565  3565 I SystemServer: StartNetworkStatsService
+09-05 20:36:22.820  3565  3565 I SystemServer: StartNetworkPolicyManagerService
+09-05 20:36:22.823  3565  3565 I SystemServer: No Wi-Fi NAN Service (NAN support Not Present)
+09-05 20:36:22.823  3565  3565 I SystemServiceManager: Starting com.android.server.wifi.p2p.WifiP2pService
+09-05 20:36:22.863  3565  3565 I WifiP2pService: Registering wifip2p
+09-05 20:36:22.864  3565  3565 I SystemServiceManager: Starting com.android.server.wifi.WifiService
+09-05 20:36:22.917  3565  3565 D WifiStateMachine: fst disabled
+09-05 20:36:22.926  3565  3565 D HS20    : Passpoint is enabled, false
+09-05 20:36:22.954  3177  3502 D CommandListener: Clearing all IP addresses on wlan0
+09-05 20:36:23.155  3565  3565 E WifiLogger: no ring buffers found
+09-05 20:36:23.155  3565  3565 E WifiLogger: Failed to start packet fate monitoring
+09-05 20:36:23.156  3565  4649 D WifiApConfigStore: 2G band allowed channels are:1,6,11
+09-05 20:36:23.160  3565  4649 E WifiApConfigStore: Error reading hotspot configuration java.io.FileNotFoundException: /data/misc/wifi/softap.conf (No such file or directory)
+09-05 20:36:23.160  3565  4649 D WifiApConfigStore: Fallback to use default AP configuration
+09-05 20:36:23.162  3565  3565 D WifiController: isAirplaneModeOn = false, isWifiEnabled = true, isScanningAvailable = false
+09-05 20:36:23.166  3565  3565 E WifiService: ensureConcurrencyFile template file doesnt existjava.io.FileNotFoundException: /etc/wifi/wifi_concurrency_cfg.txt (No such file or directory)
+09-05 20:36:23.166  3565  3565 I WifiService: Registering wifi
+09-05 20:36:23.167  3565  3565 I SystemServiceManager: Starting com.android.server.wifi.scanner.WifiScanningService
+09-05 20:36:23.167  3565  3565 I WifiScanningService: Creating wifiscanner
+09-05 20:36:23.169  3565  3565 I WifiScanningService: Publishing wifiscanner
+09-05 20:36:23.171  3565  3565 I SystemServiceManager: Starting com.android.server.wifi.RttService
+09-05 20:36:23.172  3565  3565 I RttService: Creating rttmanager
+09-05 20:36:23.172  3565  3565 I RttService: Starting rttmanager
+09-05 20:36:23.173  3565  3565 I SystemServiceManager: Starting com.android.server.ethernet.EthernetService
+09-05 20:36:23.174  3565  3565 I EthernetServiceImpl: Creating EthernetConfigStore
+09-05 20:36:23.174  3565  3565 E IpConfigStore: Error parsing configuration: java.io.FileNotFoundException: /data/misc/ethernet/ipconfig.txt (No such file or directory)
+09-05 20:36:23.174  3565  3565 W EthernetConfigStore: No Ethernet configuration found. Using default.
+09-05 20:36:23.174  3565  3565 I EthernetServiceImpl: Read stored IP configuration: IP assignment: DHCP
+09-05 20:36:23.174  3565  3565 I EthernetServiceImpl: Proxy settings: NONE
+09-05 20:36:23.174  3565  3565 I EthernetService: Registering service ethernet
+09-05 20:36:23.175  3565  3565 I SystemServer: StartConnectivityService
+09-05 20:36:23.187  3565  3565 D ConnectivityService: ConnectivityService starting up
+09-05 20:36:23.192  3565  3565 D ConnectivityService: wifiOnly=false
+09-05 20:36:23.210  3565  3565 I SystemServer: StartNsdService
+09-05 20:36:23.213  3565  3565 I SystemServer: StartUpdateLockService
+09-05 20:36:23.214  3565  3565 I SystemServiceManager: Starting com.android.server.RecoverySystemService
+09-05 20:36:23.216  3565  3565 I SystemServiceManager: Starting com.android.server.notification.NotificationManagerService
+09-05 20:36:23.229  3565  3565 D ConditionProviders.SCP: new ScheduleConditionProvider()
+09-05 20:36:23.257  3565  3565 D ZenLog  : set_zen_mode: off,init
+09-05 20:36:23.272  3565  3565 I SystemServiceManager: Starting com.android.server.storage.DeviceStorageMonitorService
+09-05 20:36:23.274  3565  3565 I SystemServer: StartLocationManagerService
+09-05 20:36:23.276  3565  3565 I SystemServer: StartCountryDetectorService
+09-05 20:36:23.277  3565  3565 I SystemServer: StartSearchManagerService
+09-05 20:36:23.277  3565  3565 I SystemServiceManager: Starting com.android.server.search.SearchManagerService$Lifecycle
+09-05 20:36:23.280  3565  3565 I SystemServiceManager: Starting com.android.server.DropBoxManagerService
+09-05 20:36:23.281  3565  3565 I SystemServer: StartWallpaperManagerService
+09-05 20:36:23.282  3565  3565 I SystemServiceManager: Starting com.android.server.wallpaper.WallpaperManagerService$Lifecycle
+09-05 20:36:23.284  3565  3565 E BitmapFactory: Unable to decode stream: java.io.FileNotFoundException: /data/system/users/0/wallpaper_orig (No such file or directory)
+09-05 20:36:23.284  3565  3565 E WallpaperManagerService: Invalid wallpaper data
+09-05 20:36:23.284  3565  3565 E WallpaperManagerService: Unable to apply new wallpaper
+09-05 20:36:23.284  3565  3565 W WallpaperManagerService: no current wallpaper -- first boot?
+09-05 20:36:23.285  3565  3565 I SystemServer: StartAudioService
+09-05 20:36:23.285  3565  3565 I SystemServiceManager: Starting com.android.server.audio.AudioService$Lifecycle
+09-05 20:36:23.290  3169  3240 D PermissionCache: checking android.permission.MODIFY_AUDIO_SETTINGS for uid=1000 => granted (660 us)
+09-05 20:36:23.291  3565  3565 W TelecomManager: Telecom Service not found.
+09-05 20:36:23.332  3565  3565 I SystemServiceManager: Starting com.android.server.DockObserver
+09-05 20:36:23.334  3565  3565 I SystemServer: StartWiredAccessoryManager
+09-05 20:36:23.335  3565  3565 W WiredAccessoryManager: This kernel does not have usb audio support
+09-05 20:36:23.336  3565  3565 I SystemServiceManager: Starting com.android.server.usb.UsbService$Lifecycle
+09-05 20:36:23.340  3565  3565 E UsbDeviceManager: failed to write to /sys/class/android_usb/android0/f_rndis/ethaddr

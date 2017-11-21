@@ -1,0 +1,126 @@
+--------- beginning of main
+09-25 02:42:03.372  3083  3083 W auditd  : type=1325 audit(0.0:2): table=filter family=2 entries=0
+09-25 02:42:03.372  3083  3083 W auditd  : type=1325 audit(0.0:3): table=mangle family=2 entries=0
+09-25 02:42:03.372  3083  3083 W auditd  : type=1325 audit(0.0:4): table=nat family=2 entries=0
+09-25 02:42:03.372  3083  3083 W auditd  : type=1325 audit(0.0:5): table=raw family=2 entries=0
+09-25 02:42:03.372  3083  3083 W auditd  : type=1325 audit(0.0:6): table=security family=2 entries=0
+09-25 02:42:03.372  3083  3083 W auditd  : type=1325 audit(0.0:7): table=filter family=3 entries=0
+09-25 02:42:03.372  3083  3083 W auditd  : type=1325 audit(0.0:8): table=filter family=10 entries=0
+09-25 02:42:03.372  3083  3083 W auditd  : type=1325 audit(0.0:9): table=mangle family=10 entries=0
+09-25 02:42:03.372  3083  3083 W auditd  : type=1325 audit(0.0:10): table=raw family=10 entries=0
+09-25 02:42:03.372  3083  3083 W auditd  : type=1325 audit(0.0:11): table=nat family=10 entries=0
+09-25 02:42:03.551  3083  3083 I auditd  : type=1403 audit(0.0:12): policy loaded auid=4294967295 ses=4294967295
+09-25 02:42:04.243  3083  3083 W auditd  : type=1305 audit(0.0:13): audit_pid=3073 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+09-25 02:42:04.243  3083  3083 W auditd  : type=1305 audit(0.0:14): audit_rate_limit=20 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+09-25 02:42:04.283  3075  3075 I         : debuggerd: starting
+--------- beginning of system
+09-25 02:42:04.299  3076  3076 I vold    : Vold 3.0 (the awakening) firing up
+09-25 02:42:04.299  3076  3076 V vold    : Detected support for: exfat ext4 f2fs ntfs vfat
+09-25 02:42:04.300  3076  3076 W Vold    : Tearing down stale mount /mnt/secure/asec
+09-25 02:42:04.310  3076  3076 W Vold    : Tearing down stale mount /mnt/secure
+09-25 02:42:04.312  3074  3074 I         : debuggerd: starting
+09-25 02:42:04.333  3076  3086 V vold    : /system/bin/sgdisk
+09-25 02:42:04.333  3076  3086 V vold    :     --android-dump
+09-25 02:42:04.333  3076  3086 V vold    :     /dev/block/vold/disk:179_0
+09-25 02:42:04.339  3076  3144 D vold    : e4crypt_init_user0
+09-25 02:42:04.339  3076  3144 D vold    : e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+09-25 02:42:04.339  3076  3144 D vold    : Preparing: /data/system/users/0
+09-25 02:42:04.339  3076  3144 E cutils  : Failed to mkdir(/data/system/users/0): No such file or directory
+09-25 02:42:04.339  3076  3144 E vold    : Failed to prepare /data/system/users/0: No such file or directory
+09-25 02:42:04.339  3076  3144 E vold    : Failed to prepare user 0 storage
+09-25 02:42:04.339     1     1 I vdc     : 400 3077 Command failed
+09-25 02:42:04.339     1     1 I vdc     : vdc terminated by exit(144)
+09-25 02:42:04.344  3076  3086 V vold    : DISK mbr
+09-25 02:42:04.344  3076  3086 V vold    : 
+09-25 02:42:04.344  3076  3086 V vold    : PART 1 c
+09-25 02:42:04.344  3076  3086 V vold    : 
+09-25 02:42:04.346  3146  3146 I /system/bin/tzdatacheck: tzdata file /data/misc/zoneinfo/current/tzdata does not exist. No action required.
+09-25 02:42:04.355  3148  3148 I TeeMcDaemon: Registry search paths: [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:212]
+09-25 02:42:04.355  3148  3148 I TeeMcDaemon:   /data/misc/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-25 02:42:04.355  3148  3148 I TeeMcDaemon:   /efs/prov [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-25 02:42:04.355  3148  3148 I TeeMcDaemon:   /vendor/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-25 02:42:04.355  3148  3148 I TeeMcDaemon:   /system/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-25 02:42:04.355  3148  3148 I TeeMcDaemon: partition paths rp:  /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:223]
+09-25 02:42:04.355  3148  3148 I TeeMcDaemon: Initialise Secure World [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:253]
+09-25 02:42:04.356  3147  3147 D macloader: Deleting file /data/.cid.info
+09-25 02:42:04.359     1     1 I init    : type=1400 audit(0.0:15): avc: denied { create } for name="mtp.0" scontext=u:r:init:s0 tcontext=u:object_r:configfs:s0 tclass=lnk_file permissive=1
+09-25 02:42:04.359  3148  3148 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:295]
+09-25 02:42:04.372  3159  3159 I sysinit : Running /system/etc/init.d/00banner 
+09-25 02:42:04.375  3153  3153 I lowmemorykiller: Using in-kernel low memory killer interface
+09-25 02:42:04.383  3169  3169 I cm      : _ _                                        
+09-25 02:42:04.383  3155  3155 I SurfaceFlinger: SurfaceFlinger is starting
+09-25 02:42:04.384  3155  3155 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+09-25 02:42:04.389  3172  3172 I cm      : | (_)_ __   ___  __ _  __ _  ___  ___  ___  
+09-25 02:42:04.395  3174  3174 I cm      : | | | '_ \ / _ \/ _` |/ _` |/ _ \/ _ \/ __| 
+09-25 02:42:04.400  3175  3175 I cm      : | | | | | |  __/ (_| | (_| |  __/ (_) \__ \ 
+09-25 02:42:04.406  3176  3176 I cm      : |_|_|_| |_|\___|\__,_|\__, |\___|\___/|___/ 
+09-25 02:42:04.412  3177  3177 I cm      :                       |___/ 
+09-25 02:42:04.429  3180  3180 I cm      : Welcome to Android 7.1.2 / LineageOS-14.1-20170919-UNOFFICIAL-dream2lte 
+09-25 02:42:04.435  3181  3181 I sysinit : Running /system/etc/init.d/90userinit 
+09-25 02:42:04.436  3155  3155 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-25 02:42:04.459  3148  3148 I TeeMcDaemon: TEE is ready [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:332]
+09-25 02:42:04.461  3148  3148 I TeeMcDaemon: t-base-EXYNOS64-Android-400A-V011-20170203_131128_25330_57476 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:280]
+09-25 02:42:04.461  3148  3148 I TeeMcDaemon: Specific partition path used for Store_1.tf, stored in /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:340]
+09-25 02:42:04.461  3148  3148 I TeeMcDaemon: Start services [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:304]
+09-25 02:42:04.461  3148  3148 I TeeMcDaemon: * start secure world interface [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-25 02:42:04.461  3148  3148 I TeeMcDaemon: * start filesystem [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-25 02:42:04.461  3148  3148 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:71]
+09-25 02:42:04.461  3148  3148 I TeeMcDaemon: driver open [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:84]
+09-25 02:42:04.461  3148  3148 I TeeMcDaemon: Kinibi access granted by the driver [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/common.cpp:217]
+09-25 02:42:04.461  3148  3184 I TeeMcDaemon: Start listening to secure world [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:466]
+09-25 02:42:04.462  3148  3184 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/07050501000000000000000000000020.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+09-25 02:42:04.463  3148  3148 I TeeMcDaemon: * start registry update [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-25 02:42:04.463  3148  3148 I TeeMcDaemon: * start registry server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-25 02:42:04.463  3148  3196 I TeeMcDaemon: void FileSystem::Impl::run(): Start listening for request from STH2 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:443]
+09-25 02:42:04.463  3148  3197 I TeeRegistryUpdate: Starting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:85]
+09-25 02:42:04.463  3148  3148 I TeeMcDaemon: * start debug session [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-25 02:42:04.464  3148  3198 I TeeMcDaemon: void RegistryServer::Impl::run(): Starting server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryServer.cpp:230]
+09-25 02:42:04.464  3148  3184 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/08050500000000000000000000000000.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+09-25 02:42:04.464  3148  3148 I TeeMcDaemon: session opened [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/DebugSession.cpp:113]
+09-25 02:42:04.464  3148  3148 I TeeMcDaemon: Load secure drivers [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:318]
+09-25 02:42:04.464  3148  3148 I TeeMcDaemon: * loading /system/app/FFFFFFFF000000000000000000000001.drbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-25 02:42:04.469  3148  3148 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-25 02:42:04.470  3155  3155 I gralloc : using (id=)
+09-25 02:42:04.470  3155  3155 I gralloc : xres         = 1440 px
+09-25 02:42:04.470  3155  3155 I gralloc : yres         = 2960 px
+09-25 02:42:04.470  3155  3155 I gralloc : width        = 70 mm (522.514282 dpi)
+09-25 02:42:04.470  3155  3155 I gralloc : height       = 143 mm (525.762268 dpi)
+09-25 02:42:04.470  3155  3155 I gralloc : refresh rate = 60.00 Hz
+09-25 02:42:04.486  3155  3155 W hwcomposer: invalid refresh rate, assuming 60 Hz
+09-25 02:42:04.486  3155  3155 D hwcomposer: using
+09-25 02:42:04.486  3155  3155 D hwcomposer: xres         = 1440 px
+09-25 02:42:04.486  3155  3155 D hwcomposer: yres         = 2960 px
+09-25 02:42:04.486  3155  3155 D hwcomposer: width        = 70 mm (522.514000 dpi)
+09-25 02:42:04.486  3155  3155 D hwcomposer: height       = 143 mm (525.762000 dpi)
+09-25 02:42:04.486  3155  3155 D hwcomposer: refresh rate = 60 Hz
+09-25 02:42:04.486  3155  3155 I hwcomposer: PSR info devname = /sys/devices/platform/12860000.decon_f/psr_info
+09-25 02:42:04.486  3155  3155 I hwcomposer: PSR mode is 2(0: video mode, 1: DP PSR mode, 2: MIPI-DSI command mode)
+09-25 02:42:04.486  3155  3155 I SurfaceFlinger: Using composer version 1.4
+09-25 02:42:04.486  3155  3155 E display : unknown display attribute 6
+09-25 02:42:04.486  3155  3155 I SurfaceFlinger: EGL information:
+09-25 02:42:04.486  3155  3155 I SurfaceFlinger: vendor    : Android
+09-25 02:42:04.486  3155  3155 I SurfaceFlinger: version   : 1.4 Android META-EGL
+09-25 02:42:04.486  3155  3155 I SurfaceFlinger: extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_swap_buffers_with_damage EGL_ANDROID_create_native_client_buffer EGL_ANDROID_front_buffer_auto_refresh EGL_KHR_image EGL_KHR_image_base EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_fence_sync EGL_KHR_create_context EGL_KHR_config_attribs EGL_KHR_surfaceless_context EGL_EXT_create_context_robustness EGL_ANDROID_image_native_buffer EGL_KHR_wait_sync EGL_ANDROID_recordable EGL_KHR_partial_update EGL_KHR_mutable_render_buffer EGL_EXT_protected_content 
+09-25 02:42:04.486  3155  3155 I SurfaceFlinger: Client API: OpenGL_ES
+09-25 02:42:04.487  3155  3155 I SurfaceFlinger: EGLSurface: 8-8-8-8, config=0x7fb0a6a138
+09-25 02:42:04.492  3148  3148 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-25 02:42:04.495  3155  3155 I SurfaceFlinger: OpenGL ES informations:
+09-25 02:42:04.496  3155  3155 I SurfaceFlinger: vendor    : ARM
+09-25 02:42:04.496  3155  3155 I SurfaceFlinger: renderer  : Mali-G71
+09-25 02:42:04.496  3155  3155 I SurfaceFlinger: version   : OpenGL ES 3.2 v1.r3p0-00rel0.52a2c5ce14e045eb8b9074c171442f91
+09-25 02:42:04.496  3155  3155 I SurfaceFlinger: extensions: GL_EXT_debug_marker GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_EXT_read_format_bgra GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_image_external_essl3 GL_OES_EGL_sync GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_required_internalformat GL_OES_vertex_array_object GL_OES_mapbuffer GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_type_2_10_10_10_REV GL_OES_fbo_render_mipmap GL_OES_element_index_uint GL_EXT_shadow_samplers GL_OES_texture_compression_astc GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_KHR_texture_compression_astc_sliced_3d GL_KHR_debug GL_EXT_occlusion_query_boolean GL_EXT_disjoint_timer_query GL_EXT_blend_minmax GL_EXT_discard_framebuffer GL_OES_get_program_binary GL_OES_texture_3D GL_EXT_texture_storage GL_EXT_multisamp
+09-25 02:42:04.496  3155  3155 I SurfaceFlinger: GL_MAX_TEXTURE_SIZE = 16384
+09-25 02:42:04.496  3155  3155 I SurfaceFlinger: GL_MAX_VIEWPORT_DIMS = 16384
+09-25 02:42:04.497  3155  3155 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:1
+09-25 02:42:04.559  3148  3196 I TeeMcDaemon: TEEC_Result Partition::open(): Open storage file "/efs/TEE/Store_1.tf" [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:157]
+09-25 02:42:04.559  3148  3196 I TeeMcDaemon: TEEC_Result Partition::open(): storage file "/efs/TEE/Store_1.tf" successfully open (size: 23 KB / 23552 B)) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:166]
+09-25 02:42:04.578  3148  3148 I TeeMcDaemon: Daemon running [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:342]
+09-25 02:42:05.390  3155  3155 D SurfaceFlinger: SF. shader cache generated - 26 shaders in 875.562561 ms
+09-25 02:42:05.393  3155  3155 D SurfaceFlinger: Set power mode=2, type=0 flinger=0x7fb0a48000
+09-25 02:42:05.713  3237  3243 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-25 02:42:05.723  3237  3243 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:2
+09-25 02:42:09.379  3164  3164 I cbd     : type=1400 audit(0.0:16): avc: denied { read } for name="sda10" dev="tmpfs" ino=20665 scontext=u:r:cpboot-daemon:s0 tcontext=u:object_r:radio_block_device:s0 tclass=blk_file permissive=1
+09-25 02:42:09.379  3164  3164 I cbd     : type=1400 audit(0.0:16): avc: denied { open } for path="/dev/block/sda10" dev="tmpfs" ino=20665 scontext=u:r:cpboot-daemon:s0 tcontext=u:object_r:radio_block_device:s0 tclass=blk_file permissive=1
+09-25 02:42:09.379  3164  3164 W cbd     : type=1300 audit(0.0:16): arch=c00000b7 syscall=56 success=yes exit=7 a0=ffffff9c a1=7fc256f2b0 a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/cbd" subj=u:r:cpboot-daemon:s0 key=(null)
+09-25 02:42:09.379  3083  3083 W auditd  : type=1327 audit(0.0:16): proctitle=2F73797374656D2F62696E2F636264002D64002D747373333130002D626D002D6D6D002D5000706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F524144494F002D6300706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F43505F4445425547
+09-25 02:42:09.379  3083  3083 W auditd  : type=1320 audit(0.0:16): 

@@ -1,0 +1,1403 @@
+--------- beginning of main
+09-08 01:06:46.373  3078  3078 W auditd  : type=1325 audit(0.0:2): table=filter family=2 entries=0
+09-08 01:06:46.373  3078  3078 W auditd  : type=1325 audit(0.0:3): table=mangle family=2 entries=0
+09-08 01:06:46.373  3078  3078 W auditd  : type=1325 audit(0.0:4): table=nat family=2 entries=0
+09-08 01:06:46.373  3078  3078 W auditd  : type=1325 audit(0.0:5): table=raw family=2 entries=0
+09-08 01:06:46.373  3078  3078 W auditd  : type=1325 audit(0.0:6): table=security family=2 entries=0
+09-08 01:06:46.373  3078  3078 W auditd  : type=1325 audit(0.0:7): table=filter family=3 entries=0
+09-08 01:06:46.373  3078  3078 W auditd  : type=1325 audit(0.0:8): table=filter family=10 entries=0
+09-08 01:06:46.373  3078  3078 W auditd  : type=1325 audit(0.0:9): table=mangle family=10 entries=0
+09-08 01:06:46.373  3078  3078 W auditd  : type=1325 audit(0.0:10): table=raw family=10 entries=0
+09-08 01:06:46.373  3078  3078 W auditd  : type=1325 audit(0.0:11): table=nat family=10 entries=0
+09-08 01:06:46.559  3078  3078 I auditd  : type=1403 audit(0.0:12): policy loaded auid=4294967295 ses=4294967295
+09-08 01:06:47.291  3067  3067 I logd    : type=1400 audit(0.0:13): avc: denied { dac_override } for capability=1 scontext=u:r:logd:s0 tcontext=u:r:logd:s0 tclass=capability permissive=1
+09-08 01:06:47.291  3067  3067 W logd    : type=1300 audit(0.0:13): arch=c00000b7 syscall=48 success=yes exit=0 a0=ffffff9c a1=7fa2b1a34a a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 exe="/system/bin/logd" subj=u:r:logd:s0 key=(null)
+09-08 01:06:47.291  3078  3078 W auditd  : type=1327 audit(0.0:13): proctitle="/system/bin/logd"
+09-08 01:06:47.291  3078  3078 W auditd  : type=1320 audit(0.0:13): 
+09-08 01:06:47.291  3078  3078 W auditd  : type=1305 audit(0.0:14): audit_pid=3067 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+09-08 01:06:47.291  3078  3078 W auditd  : type=1305 audit(0.0:15): audit_rate_limit=20 old=0 auid=4294967295 ses=4294967295 subj=u:r:logd:s0 res=1
+--------- beginning of system
+09-08 01:06:47.316  3070  3070 I vold    : Vold 3.0 (the awakening) firing up
+09-08 01:06:47.317  3070  3070 V vold    : Detected support for: exfat ext4 f2fs ntfs vfat
+09-08 01:06:47.319  3070  3070 W Vold    : Tearing down stale mount /mnt/secure/asec
+09-08 01:06:47.328  3068  3068 I         : debuggerd: starting
+09-08 01:06:47.334  3070  3070 W Vold    : Tearing down stale mount /mnt/secure
+09-08 01:06:47.360  3070  3136 D vold    : e4crypt_init_user0
+09-08 01:06:47.361  3070  3136 D vold    : e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+09-08 01:06:47.361  3070  3136 D vold    : Preparing: /data/system/users/0
+09-08 01:06:47.361  3070  3136 D vold    : Preparing: /data/misc/profiles/cur/0
+09-08 01:06:47.361  3070  3136 D vold    : Preparing: /data/misc/profiles/cur/0/foreign-dex
+09-08 01:06:47.361  3070  3136 D vold    : Preparing: /data/system_de/0
+09-08 01:06:47.362  3070  3136 D vold    : Preparing: /data/misc_de/0
+09-08 01:06:47.362  3070  3136 D vold    : Preparing: /data/user_de/0
+09-08 01:06:47.362  3070  3136 D vold    : e4crypt_unlock_user_key 0 serial=0 token_present=0
+09-08 01:06:47.362  3070  3136 E vold    : Failed to chmod /data/system_ce/0: No such file or directory
+09-08 01:06:47.363  3070  3136 E vold    : Failed to chmod /data/misc_ce/0: No such file or directory
+09-08 01:06:47.363     1     1 I vdc     : 200 3071 Command succeeded
+09-08 01:06:47.370  3137  3137 I /system/bin/tzdatacheck: tzdata file /data/misc/zoneinfo/current/tzdata does not exist. No action required.
+09-08 01:06:47.382  3138  3138 D macloader: Deleting file /data/.cid.info
+09-08 01:06:47.386  3139  3139 I TeeMcDaemon: Registry search paths: [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:212]
+09-08 01:06:47.386  3139  3139 I TeeMcDaemon:   /data/misc/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-08 01:06:47.386  3139  3139 I TeeMcDaemon:   /efs/prov [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-08 01:06:47.386  3139  3139 I TeeMcDaemon:   /vendor/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-08 01:06:47.386  3139  3139 I TeeMcDaemon:   /system/app/mcRegistry [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:214]
+09-08 01:06:47.386  3139  3139 I TeeMcDaemon: partition paths rp:  /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:223]
+09-08 01:06:47.386  3139  3139 I TeeMcDaemon: Initialise Secure World [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:253]
+09-08 01:06:47.388  3139  3139 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:295]
+09-08 01:06:47.399     1     1 I init    : type=1400 audit(0.0:16): avc: denied { write } for name="serialnumber" dev="configfs" ino=20229 scontext=u:r:init:s0 tcontext=u:object_r:configfs:s0 tclass=file permissive=1
+09-08 01:06:47.399     1     1 I init    : type=1400 audit(0.0:17): avc: denied { create } for name="mtp.0" scontext=u:r:init:s0 tcontext=u:object_r:configfs:s0 tclass=lnk_file permissive=1
+09-08 01:06:47.399  3144  3144 I sysinit : Running /system/etc/init.d/00banner
+09-08 01:06:47.403     1     1 I init    : type=1400 audit(0.0:18): avc: denied { write } for name="battery" dev="sysfs" ino=35512 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+09-08 01:06:47.411  3160  3160 I init    : type=1400 audit(0.0:19): avc: denied { entrypoint } for path="/system/bin/cbd" dev="sda17" ino=192 scontext=u:r:cbd:s0 tcontext=u:object_r:cpboot-daemon_exec:s0 tclass=file permissive=1
+09-08 01:06:47.411  3160  3160 W cbd     : type=1300 audit(0.0:19): arch=c00000b7 syscall=221 success=yes exit=0 a0=7f9a5181c1 a1=7f9a596680 a2=544098 a3=4 items=0 ppid=1 auid=4294967295 uid=0 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/cbd" subj=u:r:cbd:s0 key=(null)
+09-08 01:06:47.411  3078  3078 W auditd  : type=1327 audit(0.0:19): proctitle=2F73797374656D2F62696E2F636264002D64002D747373333130002D626D002D6D6D002D5000706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F524144494F002D6300706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F43505F4445425547
+09-08 01:06:47.411  3078  3078 W auditd  : type=1320 audit(0.0:19): 
+09-08 01:06:47.423  3160  3160 I cbd     : type=1400 audit(0.0:20): avc: denied { read } for path="/system/bin/cbd" dev="sda17" ino=192 scontext=u:r:cbd:s0 tcontext=u:object_r:cpboot-daemon_exec:s0 tclass=file permissive=1
+09-08 01:06:47.423  3160  3160 W cbd     : type=1300 audit(0.0:20): arch=c00000b7 syscall=226 success=yes exit=0 a0=493000 a1=3000 a2=1 a3=1 items=0 ppid=1 auid=4294967295 uid=0 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/cbd" subj=u:r:cbd:s0 key=(null)
+09-08 01:06:47.423  3078  3078 W auditd  : type=1327 audit(0.0:20): proctitle=2F73797374656D2F62696E2F636264002D64002D747373333130002D626D002D6D6D002D5000706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F524144494F002D6300706C6174666F726D2F31313132303030302E7566732F62792D6E616D652F43505F4445425547
+09-08 01:06:47.423  3078  3078 W auditd  : type=1320 audit(0.0:20): 
+09-08 01:06:47.429  3151  3151 I SurfaceFlinger: SurfaceFlinger is starting
+09-08 01:06:47.430  3155  3155 I cm      : _ _                                       
+09-08 01:06:47.430  3151  3151 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+09-08 01:06:47.433  3148  3148 I lowmemorykiller: Using in-kernel low memory killer interface
+09-08 01:06:47.440  3169  3169 I         : installd firing up
+09-08 01:06:47.446  3162  3162 D wifiloader: Trigger initcall of deferred modules
+09-08 01:06:47.448  3176  3176 I fingerprintd: Starting fingerprintd
+09-08 01:06:47.452  3163  3163 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-08 01:06:47.452  3163  3163 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-08 01:06:47.452  3163  3163 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-08 01:06:47.452  3163  3163 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-08 01:06:47.452  3163  3163 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-08 01:06:47.452  3163  3163 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-08 01:06:47.452  3163  3163 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-08 01:06:47.452  3163  3163 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-08 01:06:47.452  3163  3163 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-08 01:06:47.452  3163  3163 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-08 01:06:47.452  3163  3163 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-08 01:06:47.452  3163  3163 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-08 01:06:47.452  3163  3163 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-08 01:06:47.452  3163  3163 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-08 01:06:47.453  3163  3163 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-08 01:06:47.453  3163  3163 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-08 01:06:47.453  3163  3163 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-08 01:06:47.457  3182  3182 I cm      : | (_)_ __   ___  __ _  __ _  ___  ___  ___ 
+09-08 01:06:47.459  3170  3170 I keystore: Found keymaster0 module Keymaster OpenSSL HAL, version 2
+09-08 01:06:47.459  3170  3170 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 131: Creating device
+09-08 01:06:47.459  3170  3170 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 132: Device address: 0x7fb363e000
+09-08 01:06:47.459  3170  3170 I keystore: Keymaster0 module is software-only.  Using SoftKeymasterDevice instead.
+09-08 01:06:47.459  3170  3170 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 131: Creating device
+09-08 01:06:47.459  3170  3170 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 132: Device address: 0x7fb363e400
+09-08 01:06:47.461  3175  3175 I Netd    : Netd 1.0 starting
+09-08 01:06:47.461  3175  3175 D TetherController: Setting IP forward enable = 0
+09-08 01:06:47.464  3178  3178 I perfprofd: starting Android Wide Profiling daemon
+09-08 01:06:47.464  3185  3185 I cm      : | | | '_ \ / _ \/ _` |/ _` |/ _ \/ _ \/ __|
+09-08 01:06:47.464  3178  3178 E perfprofd: unable to open configuration file /data/data/com.google.android.gms/files/perfprofd.conf
+09-08 01:06:47.464  3175  3175 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:06:47.464  3175  3175 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:06:47.465  3175  3175 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:06:47.465  3178  3178 I perfprofd: random seed set to 1716105528
+09-08 01:06:47.467  3177  3177 I gatekeeperd: Starting gatekeeperd...
+09-08 01:06:47.468  3177  3177 W gatekeeperd: falling back to software GateKeeper
+09-08 01:06:47.470  3186  3186 I cm      : | | | | | |  __/ (_| | (_| |  __/ (_) \__ \
+09-08 01:06:47.477  3188  3188 I cm      : |_|_|_| |_|\___|\__,_|\__, |\___|\___/|___/
+09-08 01:06:47.489  3139  3139 I TeeMcDaemon: TEE is ready [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:332]
+09-08 01:06:47.490  3139  3139 I TeeMcDaemon: t-base-EXYNOS64-Android-400A-V011-20170203_131128_25330_57476 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:280]
+09-08 01:06:47.491  3139  3139 I TeeMcDaemon: Specific partition path used for Store_1.tf, stored in /efs/TEE [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:340]
+09-08 01:06:47.491  3139  3139 I TeeMcDaemon: Start services [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:304]
+09-08 01:06:47.491  3139  3139 I TeeMcDaemon: * start secure world interface [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-08 01:06:47.491  3139  3139 I TeeMcDaemon: * start filesystem [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-08 01:06:47.491  3139  3139 I TeeMcDaemon: driver version: v6.3 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:71]
+09-08 01:06:47.491  3139  3139 I TeeMcDaemon: driver open [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/driver.cpp:84]
+09-08 01:06:47.491  3139  3139 I TeeMcDaemon: Kinibi access granted by the driver [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/ClientLib/src/common.cpp:217]
+09-08 01:06:47.497  3139  3191 I TeeMcDaemon: Start listening to secure world [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:466]
+09-08 01:06:47.497  3189  3189 I cm      :                       |___/
+09-08 01:06:47.500  3139  3191 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/07050501000000000000000000000020.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+09-08 01:06:47.501  3139  3139 I TeeMcDaemon: * start registry update [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-08 01:06:47.501  3139  3139 I TeeMcDaemon: * start registry server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-08 01:06:47.501  3139  3139 I TeeMcDaemon: * start debug session [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:308]
+09-08 01:06:47.502  3139  3191 W TeeMcDaemon: Cannot open trustlet /data/misc/mcRegistry/08050500000000000000000000000000.tlbin (No such file or directory) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/SecureWorld.cpp:195]
+09-08 01:06:47.502  3139  3193 I TeeMcDaemon: void FileSystem::Impl::run(): Start listening for request from STH2 [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:443]
+09-08 01:06:47.502  3139  3194 I TeeRegistryUpdate: Starting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:85]
+09-08 01:06:47.503  3139  3139 I TeeMcDaemon: session opened [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/DebugSession.cpp:113]
+09-08 01:06:47.503  3139  3139 I TeeMcDaemon: Load secure drivers [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:318]
+09-08 01:06:47.503  3139  3139 I TeeMcDaemon: * loading /system/app/FFFFFFFF000000000000000000000001.drbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-08 01:06:47.504  3139  3194 I TeeRegistryUpdate: Exiting registry update open thread [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryUpdate.cpp:143]
+09-08 01:06:47.504  3139  3195 I TeeMcDaemon: void RegistryServer::Impl::run(): Starting server [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/RegistryServer.cpp:230]
+--------- beginning of crash
+09-08 01:06:47.509  3174  3174 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:06:47.509  3174  3174 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3174 (mediaserver)
+09-08 01:06:47.510  3068  3068 W         : debuggerd: handling request: pid=3174 uid=1013 gid=1005 tid=3174
+09-08 01:06:47.516  3139  3139 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-08 01:06:47.520  3151  3151 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-08 01:06:47.524  3197  3197 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:06:47.532  3197  3197 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:06:47.532  3197  3197 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:06:47.532  3197  3197 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:06:47.532  3197  3197 F DEBUG   : Revision: '0'
+09-08 01:06:47.532  3197  3197 F DEBUG   : ABI: 'arm'
+09-08 01:06:47.532  3197  3197 F DEBUG   : pid: 3174, tid: 3174, name: mediaserver  >>> /system/bin/mediaserver <<<
+09-08 01:06:47.532  3197  3197 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:06:47.532  3197  3197 F DEBUG   :     r0 00000000  r1 00000c66  r2 00000006  r3 00000008
+09-08 01:06:47.532  3197  3197 F DEBUG   :     r4 f74bd58c  r5 00000006  r6 f74bd534  r7 0000010c
+09-08 01:06:47.532  3197  3197 F DEBUG   :     r8 fff33ca0  r9 00000001  sl fff33ce0  fp f744a010
+09-08 01:06:47.533  3197  3197 F DEBUG   :     ip 00000000  sp fff33c38  lr f749cf8f  pc f749d9a8  cpsr 200f0010
+09-08 01:06:47.539  3203  3203 I init    : type=1400 audit(0.0:21): avc: denied { create } for name="rild2" scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+09-08 01:06:47.539  3203  3203 W init    : type=1300 audit(0.0:21): arch=c00000b7 syscall=200 success=yes exit=0 a0=9 a1=7fc1967ec8 a2=6e a3=ffffffffffffffff items=0 ppid=1 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 exe="/init" subj=u:r:init:s0 key=(null)
+09-08 01:06:47.539  3078  3078 W auditd  : type=1327 audit(0.0:21): proctitle=2F696E6974002D2D7365636F6E642D7374616765
+09-08 01:06:47.539  3078  3078 W auditd  : type=1320 audit(0.0:21): 
+09-08 01:06:47.539  3203  3203 I init    : type=1400 audit(0.0:22): avc: denied { setattr } for name="rild2" dev="tmpfs" ino=11397 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+09-08 01:06:47.539  3203  3203 W init    : type=1300 audit(0.0:22): arch=c00000b7 syscall=54 success=yes exit=0 a0=ffffff9c a1=7fc1967eca a2=0 a3=3e9 items=0 ppid=1 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 exe="/init" subj=u:r:init:s0 key=(null)
+09-08 01:06:47.539  3078  3078 W auditd  : type=1327 audit(0.0:22): proctitle=2F696E6974002D2D7365636F6E642D7374616765
+09-08 01:06:47.539  3078  3078 W auditd  : type=1320 audit(0.0:22): 
+09-08 01:06:47.545  3197  3197 F DEBUG   : 
+09-08 01:06:47.545  3197  3197 F DEBUG   : backtrace:
+09-08 01:06:47.545  3197  3197 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:06:47.545  3197  3197 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:06:47.545  3197  3197 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:06:47.545  3197  3197 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:06:47.545  3197  3197 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:06:47.545  3197  3197 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:06:47.545  3197  3197 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:06:47.545  3197  3197 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:06:47.545  3197  3197 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:06:47.550  3139  3139 I TeeMcDaemon: * loading /system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:323]
+09-08 01:06:47.551  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:06:47.555  3164  3164 D gpsd    : WakeLock(Release,SUPL)
+09-08 01:06:47.556  3164  3164 I gpsd_d  : GNSS: 282637
+09-08 01:06:47.557  3164  3164 I gpsd_d  : CustomerModule::Create chip info "Broadcom,BCM4774,282637" written into /data/system/gps//chip.info
+09-08 01:06:47.557  3164  3164 D wrapperGPS: wrapperOpenClient_RILD
+09-08 01:06:47.557  3164  3164 E wrapperGPS: wrapperOpenClient_RILD: RegisterUnsolicitedHandler() UNSOL_GPS_NOTI (11009)
+09-08 01:06:47.557  3164  3164 D wrapperGPS: wrapperRegisterRequestCompleteHandler
+09-08 01:06:47.557  3164  3164 D wrapperGPS: wrapperRegisterUnsolicitedHandler id(12009), handler(0x136e1ed30)
+09-08 01:06:47.557  3164  3164 D wrapperGPS: wrapperRegisterErrorCallback
+09-08 01:06:47.557  3164  3164 D wrapperGPS: wrapperConnect_RILD
+09-08 01:06:47.558  3163  3163 D lhd     : OnIpcConnect
+09-08 01:06:47.559  3151  3151 I gralloc : using (id=)
+09-08 01:06:47.559  3151  3151 I gralloc : xres         = 1440 px
+09-08 01:06:47.559  3151  3151 I gralloc : yres         = 2960 px
+09-08 01:06:47.559  3151  3151 I gralloc : width        = 70 mm (522.514282 dpi)
+09-08 01:06:47.559  3151  3151 I gralloc : height       = 143 mm (525.762268 dpi)
+09-08 01:06:47.559  3151  3151 I gralloc : refresh rate = 60.00 Hz
+09-08 01:06:47.565  3166  3166 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:06:47.565  3166  3166 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3166 (app_process32)
+09-08 01:06:47.577  3171  3171 I mediacodec: @@@ mediacodecservice starting
+09-08 01:06:47.577  3171  3171 W /system/bin/mediacodec: libminijail: allowing syscall: clock_gettime
+09-08 01:06:47.577  3171  3171 W /system/bin/mediacodec: libminijail: allowing syscall: connect
+09-08 01:06:47.577  3171  3171 W /system/bin/mediacodec: libminijail: allowing syscall: fcntl64
+09-08 01:06:47.577  3171  3171 W /system/bin/mediacodec: libminijail: allowing syscall: socket
+09-08 01:06:47.577  3171  3171 W /system/bin/mediacodec: libminijail: allowing syscall: writev
+09-08 01:06:47.578  3171  3171 W /system/bin/mediacodec: libminijail: logging seccomp filter failures
+09-08 01:06:47.579  3078  3078 W auditd  : type=1325 audit(0.0:23): table=filter family=2 entries=4
+09-08 01:06:47.579  3078  3078 W auditd  : type=1320 audit(0.0:23): 
+09-08 01:06:47.580  3167  3167 I         : sMaxFastTracks = 8
+09-08 01:06:47.580  3219  3219 I cm      : Welcome to Android 7.1.2 / LineageOS-14.1-20170907-UNOFFICIAL-dream2lte
+09-08 01:06:47.580  3167  3167 I audioserver: ServiceManager: 0xf6299440
+09-08 01:06:47.581  3167  3167 W BatteryNotifier: batterystats service unavailable!
+09-08 01:06:47.581  3167  3167 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:06:47.581  3167  3167 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:06:47.582  3167  3167 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:06:47.582  3167  3167 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:06:47.582  3167  3167 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:06:47.583  3167  3167 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:06:47.583  3173  3173 V MediaUtils: physMem: 3645853696
+09-08 01:06:47.583  3173  3173 V MediaUtils: requested limit: 729170720
+09-08 01:06:47.583  3173  3173 V MediaUtils: actual limit: 729170720
+09-08 01:06:47.583  3173  3173 V MediaUtils: original limits: 4294967295/4294967295
+09-08 01:06:47.583  3173  3173 V MediaUtils: new limits: 729170720/4294967295
+09-08 01:06:47.583  3173  3173 W /system/bin/mediaextractor: libminijail: allowing syscall: clock_gettime
+09-08 01:06:47.583  3173  3173 W /system/bin/mediaextractor: libminijail: allowing syscall: connect
+09-08 01:06:47.583  3173  3173 W /system/bin/mediaextractor: libminijail: allowing syscall: fcntl64
+09-08 01:06:47.583  3173  3173 W /system/bin/mediaextractor: libminijail: allowing syscall: socket
+09-08 01:06:47.583  3173  3173 W /system/bin/mediaextractor: libminijail: allowing syscall: writev
+09-08 01:06:47.584  3151  3151 W hwcomposer: invalid refresh rate, assuming 60 Hz
+09-08 01:06:47.584  3151  3151 D hwcomposer: using
+09-08 01:06:47.584  3151  3151 D hwcomposer: xres         = 1440 px
+09-08 01:06:47.584  3151  3151 D hwcomposer: yres         = 2960 px
+09-08 01:06:47.584  3151  3151 D hwcomposer: width        = 70 mm (522.514000 dpi)
+09-08 01:06:47.584  3151  3151 D hwcomposer: height       = 143 mm (525.762000 dpi)
+09-08 01:06:47.584  3151  3151 D hwcomposer: refresh rate = 60 Hz
+09-08 01:06:47.584  3151  3151 I hwcomposer: PSR info devname = /sys/devices/platform/12860000.decon_f/psr_info
+09-08 01:06:47.584  3151  3151 I hwcomposer: PSR mode is 2(0: video mode, 1: DP PSR mode, 2: MIPI-DSI command mode)
+09-08 01:06:47.584  3173  3173 W /system/bin/mediaextractor: libminijail: logging seccomp filter failures
+09-08 01:06:47.584  3151  3151 I SurfaceFlinger: Using composer version 1.4
+09-08 01:06:47.584  3151  3151 E display : unknown display attribute 6
+09-08 01:06:47.584  3151  3151 I SurfaceFlinger: EGL information:
+09-08 01:06:47.584  3151  3151 I SurfaceFlinger: vendor    : Android
+09-08 01:06:47.584  3151  3151 I SurfaceFlinger: version   : 1.4 Android META-EGL
+09-08 01:06:47.585  3151  3151 I SurfaceFlinger: extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_swap_buffers_with_damage EGL_ANDROID_create_native_client_buffer EGL_ANDROID_front_buffer_auto_refresh EGL_KHR_image EGL_KHR_image_base EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_fence_sync EGL_KHR_create_context EGL_KHR_config_attribs EGL_KHR_surfaceless_context EGL_EXT_create_context_robustness EGL_ANDROID_image_native_buffer EGL_KHR_wait_sync EGL_ANDROID_recordable EGL_KHR_partial_update EGL_KHR_mutable_render_buffer EGL_EXT_protected_content 
+09-08 01:06:47.585  3151  3151 I SurfaceFlinger: Client API: OpenGL_ES
+09-08 01:06:47.585  3151  3151 I SurfaceFlinger: EGLSurface: 8-8-8-8, config=0x7f9006a138
+09-08 01:06:47.583  3078  3078 W auditd  : type=1325 audit(0.0:24): table=filter family=10 entries=4
+09-08 01:06:47.583  3078  3078 W auditd  : type=1320 audit(0.0:24): 
+09-08 01:06:47.595  3174  3174 W mediaserver: type=1701 audit(0.0:25): auid=4294967295 uid=1013 gid=1005 ses=4294967295 subj=u:r:mediaserver:s0 exe="/system/bin/mediaserver" sig=6
+09-08 01:06:47.595  3151  3151 I SurfaceFlinger: OpenGL ES informations:
+09-08 01:06:47.595  3151  3151 I SurfaceFlinger: vendor    : ARM
+09-08 01:06:47.595  3151  3151 I SurfaceFlinger: renderer  : Mali-G71
+09-08 01:06:47.595  3151  3151 I SurfaceFlinger: version   : OpenGL ES 3.2 v1.r3p0-00rel0.52a2c5ce14e045eb8b9074c171442f91
+09-08 01:06:47.595  3151  3151 I SurfaceFlinger: extensions: GL_EXT_debug_marker GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_EXT_read_format_bgra GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_image_external_essl3 GL_OES_EGL_sync GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_required_internalformat GL_OES_vertex_array_object GL_OES_mapbuffer GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_type_2_10_10_10_REV GL_OES_fbo_render_mipmap GL_OES_element_index_uint GL_EXT_shadow_samplers GL_OES_texture_compression_astc GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_KHR_texture_compression_astc_sliced_3d GL_KHR_debug GL_EXT_occlusion_query_boolean GL_EXT_disjoint_timer_query GL_EXT_blend_minmax GL_EXT_discard_framebuffer GL_OES_get_program_binary GL_OES_texture_3D GL_EXT_texture_storage GL_EXT_multisamp
+09-08 01:06:47.595  3151  3151 I SurfaceFlinger: GL_MAX_TEXTURE_SIZE = 16384
+09-08 01:06:47.595  3151  3151 I SurfaceFlinger: GL_MAX_VIEWPORT_DIMS = 16384
+09-08 01:06:47.596  3231  3231 I sysinit : Running /system/etc/init.d/90userinit
+09-08 01:06:47.596  3151  3151 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:1
+09-08 01:06:47.599  3078  3078 W auditd  : type=1325 audit(0.0:26): table=filter family=2 entries=6
+09-08 01:06:47.599  3078  3078 W auditd  : type=1320 audit(0.0:26): 
+09-08 01:06:47.603  3068  3068 W         : debuggerd: resuming target 3174
+09-08 01:06:47.603  3068  3068 E         : debuggerd: failed to send signal 18 to target: No such process
+09-08 01:06:47.603  3068  3068 W         : debuggerd: handling request: pid=3166 uid=0 gid=0 tid=3166
+09-08 01:06:47.611  3242  3242 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:06:47.615  3078  3078 W auditd  : type=1325 audit(0.0:27): table=filter family=10 entries=6
+09-08 01:06:47.615  3078  3078 W auditd  : type=1320 audit(0.0:27): 
+09-08 01:06:47.630  3139  3193 I TeeMcDaemon: TEEC_Result Partition::open(): Open storage file "/efs/TEE/Store_1.tf" [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:157]
+09-08 01:06:47.631  3139  3193 I TeeMcDaemon: TEEC_Result Partition::open(): storage file "/efs/TEE/Store_1.tf" successfully open (size: 23 KB / 23552 B)) [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/FSD2.cpp:166]
+09-08 01:06:47.643  3139  3139 I mcDriverDaemon: type=1400 audit(0.0:28): avc: denied { read } for name="t-base-tui" dev="tmpfs" ino=19977 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:06:47.643  3139  3139 I mcDriverDaemon: type=1400 audit(0.0:28): avc: denied { open } for path="/dev/t-base-tui" dev="tmpfs" ino=19977 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:06:47.643  3139  3139 W mcDriverDaemon: type=1300 audit(0.0:28): arch=c00000b7 syscall=56 success=yes exit=9 a0=ffffff9c a1=4a89cb a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 exe="/system/bin/mcDriverDaemon" subj=u:r:tee:s0 key=(null)
+09-08 01:06:47.643  3078  3078 W auditd  : type=1327 audit(0.0:28): proctitle=2F73797374656D2F62696E2F6D634472697665724461656D6F6E002D72002F73797374656D2F6170702F46464646464646463030303030303030303030303030303030303030303030312E647262696E002D72002F73797374656D2F6170702F6D6352656769737472792F666666666666666664303030303030303030303030
+09-08 01:06:47.643  3078  3078 W auditd  : type=1320 audit(0.0:28): 
+09-08 01:06:47.643  3139  3139 I mcDriverDaemon: type=1400 audit(0.0:29): avc: denied { ioctl } for path="/dev/t-base-tui" dev="tmpfs" ino=19977 ioctlcmd=7404 scontext=u:r:tee:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:06:47.643  3139  3139 W mcDriverDaemon: type=1300 audit(0.0:29): arch=c00000b7 syscall=29 success=yes exit=0 a0=9 a1=7404 a2=0 a3=0 items=0 ppid=1 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 exe="/system/bin/mcDriverDaemon" subj=u:r:tee:s0 key=(null)
+09-08 01:06:47.643  3078  3078 W auditd  : type=1327 audit(0.0:29): proctitle=2F73797374656D2F62696E2F6D634472697665724461656D6F6E002D72002F73797374656D2F6170702F46464646464646463030303030303030303030303030303030303030303030312E647262696E002D72002F73797374656D2F6170702F6D6352656769737472792F666666666666666664303030303030303030303030
+09-08 01:06:47.643  3078  3078 W auditd  : type=1320 audit(0.0:29): 
+09-08 01:06:47.644  3172  3172 I mediaserver: ServiceManager: 0xf60194a0
+09-08 01:06:47.649  3139  3139 I TeeMcDaemon: Daemon running [hardware/samsung_slsi/exynos8895/mobicore_kinibi400/Daemon/src/MobiCoreDriverDaemon.cpp:342]
+09-08 01:06:47.661  3242  3242 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:06:47.662  3242  3242 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:06:47.662  3242  3242 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:06:47.662  3242  3242 F DEBUG   : Revision: '0'
+09-08 01:06:47.662  3242  3242 F DEBUG   : ABI: 'arm'
+09-08 01:06:47.662  3242  3242 F DEBUG   : pid: 3166, tid: 3166, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:06:47.662  3242  3242 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:06:47.662  3242  3242 F DEBUG   :     r0 00000000  r1 00000c5e  r2 00000006  r3 00000008
+09-08 01:06:47.662  3242  3242 F DEBUG   :     r4 f770458c  r5 00000006  r6 f7704534  r7 0000010c
+09-08 01:06:47.663  3242  3242 F DEBUG   :     r8 fffa8050  r9 00000001  sl fffa8080  fp f7691010
+09-08 01:06:47.663  3242  3242 F DEBUG   :     ip 00000000  sp fffa7fe8  lr f76e3f8f  pc f76e49a8  cpsr 200f0010
+09-08 01:06:47.667  3242  3242 F DEBUG   : 
+09-08 01:06:47.667  3242  3242 F DEBUG   : backtrace:
+09-08 01:06:47.668  3242  3242 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:06:47.668  3242  3242 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:06:47.668  3242  3242 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:06:47.668  3242  3242 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:06:47.668  3242  3242 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:06:47.668  3242  3242 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:06:47.668  3242  3242 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:06:47.668  3242  3242 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:06:47.668  3242  3242 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:06:47.675  3200  3200 I rild    : type=1400 audit(0.0:30): avc: denied { dac_read_search } for capability=2 scontext=u:r:rild:s0 tcontext=u:r:rild:s0 tclass=capability permissive=1
+09-08 01:06:47.675  3200  3200 W rild    : type=1300 audit(0.0:30): arch=c00000b7 syscall=79 success=no exit=-2 a0=ffffff9c a1=7f96626180 a2=7f95a18348 a3=0 items=0 ppid=1 auid=4294967295 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4294967295 exe="/system/bin/rild" subj=u:r:rild:s0 key=(null)
+09-08 01:06:47.722  3068  3068 W         : debuggerd: resuming target 3166
+09-08 01:06:47.727  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:06:47.799  3162  3162 V wifiloader: /proc/deferred_initcalls=0
+09-08 01:06:47.799  3162  3162 V wifiloader: 
+09-08 01:06:48.498  3151  3151 D SurfaceFlinger: SF. shader cache generated - 26 shaders in 882.316406 ms
+09-08 01:06:48.501  3151  3151 D SurfaceFlinger: Set power mode=2, type=0 flinger=0x7f90048000
+09-08 01:06:48.557  3164  3164 D wrapperGPS: wrapperConnect_RILD
+09-08 01:06:48.742  3330  3336 D libEGL  : loaded /vendor/lib64/egl/libGLES_mali.so
+09-08 01:06:48.753  3330  3336 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2960]-format:2
+09-08 01:06:48.827  3336  3336 I BootAnimation: type=1400 audit(0.0:36): avc: denied { read write } for name="fimg2d" dev="tmpfs" ino=19910 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:06:48.827  3336  3336 I BootAnimation: type=1400 audit(0.0:36): avc: denied { open } for path="/dev/fimg2d" dev="tmpfs" ino=19910 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:06:48.827  3336  3336 W BootAnimation: type=1300 audit(0.0:36): arch=c00000b7 syscall=56 success=yes exit=14 a0=ffffff9c a1=7f84f05703 a2=2 a3=0 items=0 ppid=1 auid=4294967295 uid=1003 gid=1003 euid=1003 suid=1003 fsuid=1003 egid=1003 sgid=1003 fsgid=1003 tty=(none) ses=4294967295 exe="/system/bin/bootanimation" subj=u:r:bootanim:s0 key=(null)
+09-08 01:06:48.827  3078  3078 W auditd  : type=1327 audit(0.0:36): proctitle="/system/bin/bootanimation"
+09-08 01:06:48.827  3078  3078 W auditd  : type=1320 audit(0.0:36): 
+09-08 01:06:48.827  3336  3336 I BootAnimation: type=1400 audit(0.0:37): avc: denied { ioctl } for path="/dev/fimg2d" dev="tmpfs" ino=19910 ioctlcmd=4d04 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+09-08 01:06:48.827  3336  3336 W BootAnimation: type=1300 audit(0.0:37): arch=c00000b7 syscall=29 success=yes exit=0 a0=f a1=c1104d04 a2=7f80f0d2b0 a3=0 items=0 ppid=1 auid=4294967295 uid=1003 gid=1003 euid=1003 suid=1003 fsuid=1003 egid=1003 sgid=1003 fsgid=1003 tty=(none) ses=4294967295 exe="/system/bin/bootanimation" subj=u:r:bootanim:s0 key=(null)
+09-08 01:06:48.827  3078  3078 W auditd  : type=1327 audit(0.0:37): proctitle="/system/bin/bootanimation"
+09-08 01:06:48.827  3078  3078 W auditd  : type=1320 audit(0.0:37): 
+09-08 01:06:49.558  3164  3164 D wrapperGPS: wrapperConnect_RILD
+09-08 01:06:50.558  3164  3164 D wrapperGPS: wrapperConnect_RILD
+09-08 01:06:50.558  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:06:50.558  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:06:50.558  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:06:50.558  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:06:50.716  3369  3369 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:06:50.716  3369  3369 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3369 (mediaserver)
+09-08 01:06:50.716  3068  3068 W         : debuggerd: handling request: pid=3369 uid=1013 gid=1005 tid=3369
+09-08 01:06:50.722  3371  3371 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:06:50.725  3370  3370 I Netd    : Netd 1.0 starting
+09-08 01:06:50.725  3370  3370 D TetherController: Setting IP forward enable = 0
+09-08 01:06:50.725  3367  3367 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:06:50.725  3367  3367 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3367 (app_process32)
+09-08 01:06:50.727  3078  3078 W auditd  : type=1325 audit(0.0:38): table=filter family=2 entries=10
+09-08 01:06:50.727  3078  3078 W auditd  : type=1320 audit(0.0:38): 
+09-08 01:06:50.727  3370  3370 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:06:50.727  3370  3370 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:06:50.727  3370  3370 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:06:50.735  3078  3078 W auditd  : type=1325 audit(0.0:39): table=filter family=10 entries=10
+09-08 01:06:50.735  3078  3078 W auditd  : type=1320 audit(0.0:39): 
+09-08 01:06:50.739  3078  3078 W auditd  : type=1325 audit(0.0:40): table=filter family=2 entries=9
+09-08 01:06:50.739  3078  3078 W auditd  : type=1320 audit(0.0:40): 
+09-08 01:06:50.743  3078  3078 W auditd  : type=1325 audit(0.0:41): table=filter family=10 entries=9
+09-08 01:06:50.743  3078  3078 W auditd  : type=1320 audit(0.0:41): 
+09-08 01:06:50.747  3078  3078 W auditd  : type=1325 audit(0.0:42): table=filter family=2 entries=9
+09-08 01:06:50.747  3078  3078 W auditd  : type=1320 audit(0.0:42): 
+09-08 01:06:50.751  3078  3078 W auditd  : type=1325 audit(0.0:43): table=filter family=10 entries=9
+09-08 01:06:50.751  3078  3078 W auditd  : type=1320 audit(0.0:43): 
+09-08 01:06:50.755  3078  3078 W auditd  : type=1325 audit(0.0:44): table=filter family=2 entries=7
+09-08 01:06:50.755  3078  3078 W auditd  : type=1320 audit(0.0:44): 
+09-08 01:06:50.767  3078  3078 W auditd  : type=1325 audit(0.0:45): table=filter family=10 entries=7
+09-08 01:06:50.767  3078  3078 W auditd  : type=1320 audit(0.0:45): 
+09-08 01:06:50.771  3078  3078 W auditd  : type=1325 audit(0.0:46): table=filter family=2 entries=9
+09-08 01:06:50.771  3078  3078 W auditd  : type=1320 audit(0.0:46): 
+09-08 01:06:50.772  3368  3368 I         : sMaxFastTracks = 8
+09-08 01:06:50.773  3371  3371 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:06:50.773  3368  3368 I audioserver: ServiceManager: 0xf6899440
+09-08 01:06:50.773  3371  3371 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:06:50.773  3371  3371 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:06:50.773  3368  3368 W BatteryNotifier: batterystats service unavailable!
+09-08 01:06:50.773  3368  3368 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:06:50.773  3371  3371 F DEBUG   : Revision: '0'
+09-08 01:06:50.773  3371  3371 F DEBUG   : ABI: 'arm'
+09-08 01:06:50.773  3371  3371 F DEBUG   : pid: 3369, tid: 3369, name: mediaserver  >>> /system/bin/mediaserver <<<
+09-08 01:06:50.774  3371  3371 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:06:50.774  3368  3368 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:06:50.774  3371  3371 F DEBUG   :     r0 00000000  r1 00000d29  r2 00000006  r3 00000008
+09-08 01:06:50.774  3371  3371 F DEBUG   :     r4 f770558c  r5 00000006  r6 f7705534  r7 0000010c
+09-08 01:06:50.774  3371  3371 F DEBUG   :     r8 ff90a6e0  r9 00000001  sl ff90a720  fp f7692010
+09-08 01:06:50.774  3371  3371 F DEBUG   :     ip 00000000  sp ff90a678  lr f76e4f8f  pc f76e59a8  cpsr 200f0010
+09-08 01:06:50.774  3368  3368 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:06:50.774  3368  3368 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:06:50.774  3368  3368 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:06:50.774  3368  3368 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:06:50.777  3371  3371 F DEBUG   : 
+09-08 01:06:50.777  3371  3371 F DEBUG   : backtrace:
+09-08 01:06:50.777  3371  3371 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:06:50.778  3371  3371 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:06:50.778  3371  3371 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:06:50.778  3371  3371 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:06:50.778  3371  3371 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:06:50.778  3371  3371 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:06:50.778  3371  3371 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:06:50.778  3371  3371 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:06:50.778  3371  3371 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:06:50.783  3078  3078 W auditd  : type=1325 audit(0.0:47): table=filter family=10 entries=9
+09-08 01:06:50.783  3078  3078 W auditd  : type=1320 audit(0.0:47): 
+09-08 01:06:50.787  3078  3078 W auditd  : type=1325 audit(0.0:48): table=filter family=2 entries=10
+09-08 01:06:50.787  3078  3078 W auditd  : type=1320 audit(0.0:48): 
+09-08 01:06:50.791  3078  3078 W auditd  : type=1325 audit(0.0:49): table=filter family=10 entries=10
+09-08 01:06:50.791  3078  3078 W auditd  : type=1320 audit(0.0:49): 
+09-08 01:06:50.795  3369  3369 W mediaserver: type=1701 audit(0.0:50): auid=4294967295 uid=1013 gid=1005 ses=4294967295 subj=u:r:mediaserver:s0 exe="/system/bin/mediaserver" sig=6
+09-08 01:06:50.799  3078  3078 W auditd  : type=1325 audit(0.0:51): table=filter family=2 entries=9
+09-08 01:06:50.799  3078  3078 W auditd  : type=1320 audit(0.0:51): 
+09-08 01:06:50.800  3068  3068 W         : debuggerd: resuming target 3369
+09-08 01:06:50.800  3068  3068 W         : debuggerd: handling request: pid=3367 uid=0 gid=0 tid=3367
+09-08 01:06:50.807  3078  3078 W auditd  : type=1325 audit(0.0:52): table=filter family=10 entries=9
+09-08 01:06:50.807  3078  3078 W auditd  : type=1320 audit(0.0:52): 
+09-08 01:06:50.808  3392  3392 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:06:50.811  3078  3078 W auditd  : type=1325 audit(0.0:53): table=filter family=2 entries=9
+09-08 01:06:50.811  3078  3078 W auditd  : type=1320 audit(0.0:53): 
+09-08 01:06:50.858  3392  3392 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:06:50.858  3392  3392 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:06:50.858  3392  3392 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:06:50.858  3392  3392 F DEBUG   : Revision: '0'
+09-08 01:06:50.859  3392  3392 F DEBUG   : ABI: 'arm'
+09-08 01:06:50.859  3392  3392 F DEBUG   : pid: 3367, tid: 3367, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:06:50.859  3392  3392 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:06:50.859  3392  3392 F DEBUG   :     r0 00000000  r1 00000d27  r2 00000006  r3 00000008
+09-08 01:06:50.859  3392  3392 F DEBUG   :     r4 f739258c  r5 00000006  r6 f7392534  r7 0000010c
+09-08 01:06:50.859  3392  3392 F DEBUG   :     r8 ffbffcf0  r9 00000001  sl ffbffd20  fp f731f010
+09-08 01:06:50.859  3392  3392 F DEBUG   :     ip 00000000  sp ffbffc88  lr f7371f8f  pc f73729a8  cpsr 200f0010
+09-08 01:06:50.863  3392  3392 F DEBUG   : 
+09-08 01:06:50.863  3392  3392 F DEBUG   : backtrace:
+09-08 01:06:50.863  3392  3392 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:06:50.863  3392  3392 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:06:50.863  3392  3392 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:06:50.863  3392  3392 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:06:50.863  3392  3392 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:06:50.863  3392  3392 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:06:50.863  3392  3392 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:06:50.863  3392  3392 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:06:50.863  3392  3392 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:06:50.895  3068  3068 W         : debuggerd: resuming target 3367
+09-08 01:06:50.899  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:06:56.277  3422  3422 I Netd    : Netd 1.0 starting
+09-08 01:06:56.277  3422  3422 D TetherController: Setting IP forward enable = 0
+09-08 01:06:56.278  3422  3422 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:06:56.279  3078  3078 W auditd  : type=1325 audit(0.0:64): table=filter family=2 entries=13
+09-08 01:06:56.279  3078  3078 W auditd  : type=1320 audit(0.0:64): 
+09-08 01:06:56.279  3422  3422 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:06:56.279  3422  3422 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:06:56.287  3078  3078 W auditd  : type=1325 audit(0.0:65): table=filter family=10 entries=13
+09-08 01:06:56.287  3078  3078 W auditd  : type=1320 audit(0.0:65): 
+09-08 01:06:56.287  3419  3419 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:06:56.287  3419  3419 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3419 (app_process32)
+09-08 01:06:56.287  3068  3068 W         : debuggerd: handling request: pid=3419 uid=0 gid=0 tid=3419
+09-08 01:06:56.291  3078  3078 W auditd  : type=1325 audit(0.0:66): table=filter family=2 entries=12
+09-08 01:06:56.291  3078  3078 W auditd  : type=1320 audit(0.0:66): 
+09-08 01:06:56.291  3421  3421 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:06:56.291  3421  3421 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3421 (mediaserver)
+09-08 01:06:56.293  3425  3425 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:06:56.299  3078  3078 W auditd  : type=1325 audit(0.0:67): table=filter family=10 entries=12
+09-08 01:06:56.299  3078  3078 W auditd  : type=1320 audit(0.0:67): 
+09-08 01:06:56.303  3078  3078 W auditd  : type=1325 audit(0.0:68): table=filter family=2 entries=12
+09-08 01:06:56.303  3078  3078 W auditd  : type=1320 audit(0.0:68): 
+09-08 01:06:56.307  3078  3078 W auditd  : type=1325 audit(0.0:69): table=filter family=10 entries=12
+09-08 01:06:56.307  3078  3078 W auditd  : type=1320 audit(0.0:69): 
+09-08 01:06:56.311  3078  3078 W auditd  : type=1325 audit(0.0:70): table=filter family=2 entries=10
+09-08 01:06:56.311  3078  3078 W auditd  : type=1320 audit(0.0:70): 
+09-08 01:06:56.319  3078  3078 W auditd  : type=1325 audit(0.0:71): table=filter family=10 entries=10
+09-08 01:06:56.319  3078  3078 W auditd  : type=1320 audit(0.0:71): 
+09-08 01:06:56.319  3078  3078 W auditd  : type=1325 audit(0.0:72): table=filter family=2 entries=12
+09-08 01:06:56.319  3078  3078 W auditd  : type=1320 audit(0.0:72): 
+09-08 01:06:56.323  3078  3078 W auditd  : type=1325 audit(0.0:73): table=filter family=10 entries=12
+09-08 01:06:56.323  3078  3078 W auditd  : type=1320 audit(0.0:73): 
+09-08 01:06:56.334  3420  3420 I         : sMaxFastTracks = 8
+09-08 01:06:56.334  3420  3420 I audioserver: ServiceManager: 0xf6399440
+09-08 01:06:56.335  3420  3420 W BatteryNotifier: batterystats service unavailable!
+09-08 01:06:56.335  3420  3420 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:06:56.335  3420  3420 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:06:56.336  3420  3420 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:06:56.336  3420  3420 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:06:56.336  3420  3420 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:06:56.336  3420  3420 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:06:56.344  3425  3425 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:06:56.344  3425  3425 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:06:56.344  3425  3425 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:06:56.344  3425  3425 F DEBUG   : Revision: '0'
+09-08 01:06:56.344  3425  3425 F DEBUG   : ABI: 'arm'
+09-08 01:06:56.344  3425  3425 F DEBUG   : pid: 3419, tid: 3419, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:06:56.344  3425  3425 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:06:56.344  3425  3425 F DEBUG   :     r0 00000000  r1 00000d5b  r2 00000006  r3 00000008
+09-08 01:06:56.344  3425  3425 F DEBUG   :     r4 f719958c  r5 00000006  r6 f7199534  r7 0000010c
+09-08 01:06:56.344  3425  3425 F DEBUG   :     r8 ffe8efe0  r9 00000001  sl ffe8f010  fp f7126010
+09-08 01:06:56.345  3425  3425 F DEBUG   :     ip 00000000  sp ffe8ef78  lr f7178f8f  pc f71799a8  cpsr 200f0010
+09-08 01:06:56.348  3425  3425 F DEBUG   : 
+09-08 01:06:56.348  3425  3425 F DEBUG   : backtrace:
+09-08 01:06:56.348  3425  3425 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:06:56.348  3425  3425 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:06:56.348  3425  3425 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:06:56.348  3425  3425 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:06:56.348  3425  3425 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:06:56.349  3425  3425 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:06:56.349  3425  3425 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:06:56.349  3425  3425 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:06:56.349  3425  3425 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:06:56.379  3068  3068 W         : debuggerd: resuming target 3419
+09-08 01:06:56.380  3068  3068 W         : debuggerd: handling request: pid=3421 uid=1013 gid=1005 tid=3421
+09-08 01:06:56.383  3453  3453 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:06:56.384  3453  3453 E         : debuggerd: failed to respond to client: Broken pipe
+09-08 01:06:56.384  3453  3453 E         : debuggerd: ptrace detach from 3421 failed: No such process
+09-08 01:06:56.384  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:06:56.385  3068  3068 W         : debuggerd: resuming target 3421
+09-08 01:07:00.935  3489  3489 I Netd    : Netd 1.0 starting
+09-08 01:07:00.935  3489  3489 D TetherController: Setting IP forward enable = 0
+09-08 01:07:00.937  3488  3488 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:07:00.937  3488  3488 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3488 (mediaserver)
+09-08 01:07:00.937  3489  3489 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:07:00.937  3489  3489 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:07:00.937  3489  3489 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:07:00.937  3068  3068 W         : debuggerd: handling request: pid=3488 uid=1013 gid=1005 tid=3488
+09-08 01:07:00.944  3491  3491 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:00.943  3078  3078 W auditd  : type=1325 audit(0.0:87): table=filter family=2 entries=12
+09-08 01:07:00.943  3078  3078 W auditd  : type=1320 audit(0.0:87): 
+09-08 01:07:00.947  3078  3078 W auditd  : type=1325 audit(0.0:88): table=filter family=10 entries=12
+09-08 01:07:00.947  3078  3078 W auditd  : type=1320 audit(0.0:88): 
+09-08 01:07:00.958  3486  3486 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:07:00.958  3486  3486 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3486 (app_process32)
+09-08 01:07:00.959  3078  3078 W auditd  : type=1325 audit(0.0:89): table=filter family=2 entries=11
+09-08 01:07:00.959  3078  3078 W auditd  : type=1320 audit(0.0:89): 
+09-08 01:07:00.963  3078  3078 W auditd  : type=1325 audit(0.0:90): table=filter family=10 entries=11
+09-08 01:07:00.963  3078  3078 W auditd  : type=1320 audit(0.0:90): 
+09-08 01:07:00.967  3078  3078 W auditd  : type=1325 audit(0.0:91): table=filter family=2 entries=11
+09-08 01:07:00.967  3078  3078 W auditd  : type=1320 audit(0.0:91): 
+09-08 01:07:00.971  3078  3078 W auditd  : type=1325 audit(0.0:92): table=filter family=10 entries=11
+09-08 01:07:00.971  3078  3078 W auditd  : type=1320 audit(0.0:92): 
+09-08 01:07:00.975  3078  3078 W auditd  : type=1325 audit(0.0:93): table=filter family=2 entries=9
+09-08 01:07:00.975  3078  3078 W auditd  : type=1320 audit(0.0:93): 
+09-08 01:07:00.979  3078  3078 W auditd  : type=1325 audit(0.0:94): table=filter family=10 entries=9
+09-08 01:07:00.979  3078  3078 W auditd  : type=1320 audit(0.0:94): 
+09-08 01:07:00.983  3078  3078 W auditd  : type=1325 audit(0.0:95): table=filter family=2 entries=11
+09-08 01:07:00.983  3078  3078 W auditd  : type=1320 audit(0.0:95): 
+09-08 01:07:00.987  3078  3078 W auditd  : type=1325 audit(0.0:96): table=filter family=10 entries=11
+09-08 01:07:00.987  3078  3078 W auditd  : type=1320 audit(0.0:96): 
+09-08 01:07:00.994  3491  3491 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:00.994  3491  3491 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:00.994  3491  3491 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:00.994  3491  3491 F DEBUG   : Revision: '0'
+09-08 01:07:00.994  3491  3491 F DEBUG   : ABI: 'arm'
+09-08 01:07:00.995  3491  3491 F DEBUG   : pid: 3488, tid: 3488, name: mediaserver  >>> /system/bin/mediaserver <<<
+09-08 01:07:00.995  3491  3491 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:00.995  3491  3491 F DEBUG   :     r0 00000000  r1 00000da0  r2 00000006  r3 00000008
+09-08 01:07:00.995  3491  3491 F DEBUG   :     r4 f772e58c  r5 00000006  r6 f772e534  r7 0000010c
+09-08 01:07:00.995  3491  3491 F DEBUG   :     r8 ffe486c0  r9 00000001  sl ffe48700  fp f76bb010
+09-08 01:07:00.995  3491  3491 F DEBUG   :     ip 00000000  sp ffe48658  lr f770df8f  pc f770e9a8  cpsr 200f0010
+09-08 01:07:00.998  3487  3487 I         : sMaxFastTracks = 8
+09-08 01:07:00.998  3487  3487 I audioserver: ServiceManager: 0xf6899440
+09-08 01:07:00.999  3487  3487 W BatteryNotifier: batterystats service unavailable!
+09-08 01:07:00.999  3487  3487 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:07:00.999  3491  3491 F DEBUG   : 
+09-08 01:07:00.999  3491  3491 F DEBUG   : backtrace:
+09-08 01:07:00.999  3491  3491 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:00.999  3491  3491 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:00.999  3491  3491 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:00.999  3491  3491 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:00.999  3487  3487 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:07:00.999  3491  3491 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:00.999  3491  3491 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:00.999  3491  3491 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:00.999  3491  3491 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:00.999  3491  3491 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:00.999  3487  3487 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:07:00.999  3487  3487 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:00.999  3487  3487 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:01.000  3487  3487 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:07:01.024  3068  3068 W         : debuggerd: resuming target 3488
+09-08 01:07:01.024  3068  3068 E         : debuggerd: failed to send signal 18 to target: No such process
+09-08 01:07:01.024  3068  3068 W         : debuggerd: handling request: pid=3486 uid=0 gid=0 tid=3486
+09-08 01:07:01.031  3516  3516 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:01.082  3516  3516 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:01.082  3516  3516 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:01.082  3516  3516 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:01.082  3516  3516 F DEBUG   : Revision: '0'
+09-08 01:07:01.082  3516  3516 F DEBUG   : ABI: 'arm'
+09-08 01:07:01.082  3516  3516 F DEBUG   : pid: 3486, tid: 3486, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:07:01.082  3516  3516 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:01.082  3516  3516 F DEBUG   :     r0 00000000  r1 00000d9e  r2 00000006  r3 00000008
+09-08 01:07:01.082  3516  3516 F DEBUG   :     r4 f746158c  r5 00000006  r6 f7461534  r7 0000010c
+09-08 01:07:01.082  3516  3516 F DEBUG   :     r8 ffea9890  r9 00000001  sl ffea98c0  fp f73ee010
+09-08 01:07:01.083  3516  3516 F DEBUG   :     ip 00000000  sp ffea9828  lr f7440f8f  pc f74419a8  cpsr 200f0010
+09-08 01:07:01.086  3516  3516 F DEBUG   : 
+09-08 01:07:01.086  3516  3516 F DEBUG   : backtrace:
+09-08 01:07:01.086  3516  3516 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:01.086  3516  3516 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:01.086  3516  3516 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:01.086  3516  3516 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:01.086  3516  3516 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:01.086  3516  3516 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:01.086  3516  3516 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:01.086  3516  3516 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:01.086  3516  3516 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:01.120  3068  3068 W         : debuggerd: resuming target 3486
+09-08 01:07:01.124  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:07:02.503  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:02.503  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:02.503  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:02.503  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:02.519  3546  3546 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-08 01:07:02.519  3546  3546 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-08 01:07:02.519  3546  3546 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-08 01:07:02.519  3546  3546 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-08 01:07:02.519  3546  3546 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-08 01:07:02.519  3546  3546 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-08 01:07:02.519  3546  3546 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-08 01:07:02.519  3546  3546 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-08 01:07:02.519  3546  3546 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-08 01:07:02.519  3546  3546 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-08 01:07:02.519  3546  3546 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-08 01:07:02.519  3546  3546 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-08 01:07:02.519  3546  3546 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-08 01:07:02.519  3546  3546 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-08 01:07:02.519  3546  3546 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-08 01:07:02.519  3546  3546 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-08 01:07:02.519  3546  3546 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-08 01:07:02.579  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:02.579  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:02.579  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:02.579  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:02.579  3546  3546 D lhd     : OnIpcConnect
+09-08 01:07:05.523  3552  3552 I Netd    : Netd 1.0 starting
+09-08 01:07:05.523  3552  3552 D TetherController: Setting IP forward enable = 0
+09-08 01:07:05.525  3552  3552 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:07:05.525  3552  3552 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:07:05.525  3552  3552 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:07:05.523  3078  3078 W auditd  : type=1325 audit(0.0:121): table=filter family=2 entries=16
+09-08 01:07:05.523  3078  3078 W auditd  : type=1320 audit(0.0:121): 
+09-08 01:07:05.531  3549  3549 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:07:05.531  3549  3549 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3549 (app_process32)
+09-08 01:07:05.532  3068  3068 W         : debuggerd: handling request: pid=3549 uid=0 gid=0 tid=3549
+09-08 01:07:05.531  3078  3078 W auditd  : type=1325 audit(0.0:122): table=filter family=10 entries=16
+09-08 01:07:05.531  3078  3078 W auditd  : type=1320 audit(0.0:122): 
+09-08 01:07:05.537  3551  3551 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:07:05.537  3551  3551 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3551 (mediaserver)
+09-08 01:07:05.539  3555  3555 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:05.539  3078  3078 W auditd  : type=1325 audit(0.0:123): table=filter family=2 entries=15
+09-08 01:07:05.539  3078  3078 W auditd  : type=1320 audit(0.0:123): 
+09-08 01:07:05.547  3078  3078 W auditd  : type=1325 audit(0.0:124): table=filter family=10 entries=15
+09-08 01:07:05.547  3078  3078 W auditd  : type=1320 audit(0.0:124): 
+09-08 01:07:05.551  3078  3078 W auditd  : type=1325 audit(0.0:125): table=filter family=2 entries=15
+09-08 01:07:05.551  3078  3078 W auditd  : type=1320 audit(0.0:125): 
+09-08 01:07:05.555  3078  3078 W auditd  : type=1325 audit(0.0:126): table=filter family=10 entries=15
+09-08 01:07:05.555  3078  3078 W auditd  : type=1320 audit(0.0:126): 
+09-08 01:07:05.559  3078  3078 W auditd  : type=1325 audit(0.0:127): table=filter family=2 entries=13
+09-08 01:07:05.559  3078  3078 W auditd  : type=1320 audit(0.0:127): 
+09-08 01:07:05.563  3078  3078 W auditd  : type=1325 audit(0.0:128): table=filter family=10 entries=13
+09-08 01:07:05.563  3078  3078 W auditd  : type=1320 audit(0.0:128): 
+09-08 01:07:05.567  3078  3078 W auditd  : type=1325 audit(0.0:129): table=filter family=2 entries=15
+09-08 01:07:05.567  3078  3078 W auditd  : type=1320 audit(0.0:129): 
+09-08 01:07:05.571  3078  3078 W auditd  : type=1325 audit(0.0:130): table=filter family=10 entries=15
+09-08 01:07:05.571  3078  3078 W auditd  : type=1320 audit(0.0:130): 
+09-08 01:07:05.584  3550  3550 I         : sMaxFastTracks = 8
+09-08 01:07:05.584  3550  3550 I audioserver: ServiceManager: 0xf6619440
+09-08 01:07:05.585  3550  3550 W BatteryNotifier: batterystats service unavailable!
+09-08 01:07:05.585  3550  3550 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:07:05.585  3550  3550 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:07:05.585  3550  3550 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:07:05.585  3550  3550 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:05.585  3550  3550 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:05.585  3550  3550 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:07:05.589  3555  3555 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:05.590  3555  3555 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:05.590  3555  3555 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:05.590  3555  3555 F DEBUG   : Revision: '0'
+09-08 01:07:05.590  3555  3555 F DEBUG   : ABI: 'arm'
+09-08 01:07:05.590  3555  3555 F DEBUG   : pid: 3549, tid: 3549, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:07:05.590  3555  3555 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:05.590  3555  3555 F DEBUG   :     r0 00000000  r1 00000ddd  r2 00000006  r3 00000008
+09-08 01:07:05.590  3555  3555 F DEBUG   :     r4 f738858c  r5 00000006  r6 f7388534  r7 0000010c
+09-08 01:07:05.590  3555  3555 F DEBUG   :     r8 ffc24300  r9 00000001  sl ffc24330  fp f7315010
+09-08 01:07:05.590  3555  3555 F DEBUG   :     ip 00000000  sp ffc24298  lr f7367f8f  pc f73689a8  cpsr 200f0010
+09-08 01:07:05.594  3555  3555 F DEBUG   : 
+09-08 01:07:05.594  3555  3555 F DEBUG   : backtrace:
+09-08 01:07:05.594  3555  3555 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:05.594  3555  3555 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:05.594  3555  3555 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:05.594  3555  3555 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:05.594  3555  3555 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:05.594  3555  3555 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:05.595  3555  3555 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:05.595  3555  3555 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:05.595  3555  3555 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:05.626  3068  3068 W         : debuggerd: resuming target 3549
+09-08 01:07:05.627  3068  3068 W         : debuggerd: handling request: pid=3551 uid=1013 gid=1005 tid=3551
+09-08 01:07:05.630  3582  3582 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:05.630  3582  3582 E         : debuggerd: failed to respond to client: Broken pipe
+09-08 01:07:05.630  3582  3582 E         : debuggerd: ptrace detach from 3551 failed: No such process
+09-08 01:07:05.631  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:07:05.631  3068  3068 W         : debuggerd: resuming target 3551
+09-08 01:07:11.100  3588  3588 I Netd    : Netd 1.0 starting
+09-08 01:07:11.100  3588  3588 D TetherController: Setting IP forward enable = 0
+09-08 01:07:11.102  3588  3588 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:07:11.102  3588  3588 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:07:11.102  3588  3588 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:07:11.104  3587  3587 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:07:11.104  3587  3587 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3587 (mediaserver)
+09-08 01:07:11.104  3068  3068 W         : debuggerd: handling request: pid=3587 uid=1013 gid=1005 tid=3587
+09-08 01:07:11.103  3078  3078 W auditd  : type=1325 audit(0.0:142): table=filter family=2 entries=16
+09-08 01:07:11.103  3078  3078 W auditd  : type=1320 audit(0.0:142): 
+09-08 01:07:11.109  3590  3590 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:11.111  3585  3585 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:07:11.111  3585  3585 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3585 (app_process32)
+09-08 01:07:11.111  3078  3078 W auditd  : type=1325 audit(0.0:143): table=filter family=10 entries=16
+09-08 01:07:11.111  3078  3078 W auditd  : type=1320 audit(0.0:143): 
+09-08 01:07:11.115  3078  3078 W auditd  : type=1325 audit(0.0:144): table=filter family=2 entries=15
+09-08 01:07:11.115  3078  3078 W auditd  : type=1320 audit(0.0:144): 
+09-08 01:07:11.119  3078  3078 W auditd  : type=1325 audit(0.0:145): table=filter family=10 entries=15
+09-08 01:07:11.119  3078  3078 W auditd  : type=1320 audit(0.0:145): 
+09-08 01:07:11.127  3078  3078 W auditd  : type=1325 audit(0.0:146): table=filter family=2 entries=15
+09-08 01:07:11.127  3078  3078 W auditd  : type=1320 audit(0.0:146): 
+09-08 01:07:11.131  3078  3078 W auditd  : type=1325 audit(0.0:147): table=filter family=10 entries=15
+09-08 01:07:11.131  3078  3078 W auditd  : type=1320 audit(0.0:147): 
+09-08 01:07:11.135  3078  3078 W auditd  : type=1325 audit(0.0:148): table=filter family=2 entries=13
+09-08 01:07:11.135  3078  3078 W auditd  : type=1320 audit(0.0:148): 
+09-08 01:07:11.139  3078  3078 W auditd  : type=1325 audit(0.0:149): table=filter family=10 entries=13
+09-08 01:07:11.139  3078  3078 W auditd  : type=1320 audit(0.0:149): 
+09-08 01:07:11.143  3078  3078 W auditd  : type=1325 audit(0.0:150): table=filter family=2 entries=15
+09-08 01:07:11.143  3078  3078 W auditd  : type=1320 audit(0.0:150): 
+09-08 01:07:11.147  3078  3078 W auditd  : type=1325 audit(0.0:151): table=filter family=10 entries=15
+09-08 01:07:11.147  3078  3078 W auditd  : type=1320 audit(0.0:151): 
+09-08 01:07:11.159  3590  3590 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:11.160  3590  3590 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:11.160  3590  3590 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:11.160  3590  3590 F DEBUG   : Revision: '0'
+09-08 01:07:11.160  3590  3590 F DEBUG   : ABI: 'arm'
+09-08 01:07:11.160  3590  3590 F DEBUG   : pid: 3587, tid: 3587, name: mediaserver  >>> /system/bin/mediaserver <<<
+09-08 01:07:11.160  3590  3590 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:11.160  3590  3590 F DEBUG   :     r0 00000000  r1 00000e03  r2 00000006  r3 00000008
+09-08 01:07:11.160  3590  3590 F DEBUG   :     r4 f709058c  r5 00000006  r6 f7090534  r7 0000010c
+09-08 01:07:11.160  3590  3590 F DEBUG   :     r8 ffc0d9c0  r9 00000001  sl ffc0da00  fp f701d010
+09-08 01:07:11.160  3590  3590 F DEBUG   :     ip 00000000  sp ffc0d958  lr f706ff8f  pc f70709a8  cpsr 200f0010
+09-08 01:07:11.164  3590  3590 F DEBUG   : 
+09-08 01:07:11.164  3590  3590 F DEBUG   : backtrace:
+09-08 01:07:11.164  3590  3590 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:11.164  3590  3590 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:11.164  3590  3590 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:11.164  3590  3590 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:11.164  3590  3590 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:11.164  3590  3590 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:11.164  3590  3590 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:11.164  3590  3590 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:11.164  3590  3590 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:11.169  3586  3586 I         : sMaxFastTracks = 8
+09-08 01:07:11.169  3586  3586 I audioserver: ServiceManager: 0xf6519440
+09-08 01:07:11.169  3586  3586 W BatteryNotifier: batterystats service unavailable!
+09-08 01:07:11.169  3586  3586 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:07:11.169  3586  3586 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:07:11.170  3586  3586 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:07:11.170  3586  3586 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:11.170  3586  3586 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:11.170  3586  3586 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:07:11.187  3068  3068 W         : debuggerd: resuming target 3587
+09-08 01:07:11.188  3068  3068 W         : debuggerd: handling request: pid=3585 uid=0 gid=0 tid=3585
+09-08 01:07:11.194  3614  3614 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:11.245  3614  3614 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:11.245  3614  3614 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:11.245  3614  3614 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:11.245  3614  3614 F DEBUG   : Revision: '0'
+09-08 01:07:11.245  3614  3614 F DEBUG   : ABI: 'arm'
+09-08 01:07:11.245  3614  3614 F DEBUG   : pid: 3585, tid: 3585, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:07:11.245  3614  3614 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:11.245  3614  3614 F DEBUG   :     r0 00000000  r1 00000e01  r2 00000006  r3 00000008
+09-08 01:07:11.245  3614  3614 F DEBUG   :     r4 f72db58c  r5 00000006  r6 f72db534  r7 0000010c
+09-08 01:07:11.245  3614  3614 F DEBUG   :     r8 ffb10270  r9 00000001  sl ffb102a0  fp f7268010
+09-08 01:07:11.245  3614  3614 F DEBUG   :     ip 00000000  sp ffb10208  lr f72baf8f  pc f72bb9a8  cpsr 200f0010
+09-08 01:07:11.249  3614  3614 F DEBUG   : 
+09-08 01:07:11.249  3614  3614 F DEBUG   : backtrace:
+09-08 01:07:11.249  3614  3614 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:11.249  3614  3614 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:11.249  3614  3614 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:11.249  3614  3614 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:11.249  3614  3614 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:11.249  3614  3614 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:11.249  3614  3614 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:11.249  3614  3614 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:11.249  3614  3614 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:11.281  3068  3068 W         : debuggerd: resuming target 3585
+09-08 01:07:11.285  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:07:16.309  3644  3644 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:07:16.309  3644  3644 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3644 (mediaserver)
+09-08 01:07:16.309  3068  3068 W         : debuggerd: handling request: pid=3644 uid=1013 gid=1005 tid=3644
+09-08 01:07:16.314  3646  3646 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:16.315  3645  3645 I Netd    : Netd 1.0 starting
+09-08 01:07:16.315  3645  3645 D TetherController: Setting IP forward enable = 0
+09-08 01:07:16.317  3645  3645 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:07:16.317  3645  3645 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:07:16.317  3645  3645 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:07:16.318  3642  3642 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:07:16.318  3642  3642 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3642 (app_process32)
+09-08 01:07:16.315  3078  3078 W auditd  : type=1325 audit(0.0:183): table=filter family=2 entries=16
+09-08 01:07:16.315  3078  3078 W auditd  : type=1320 audit(0.0:183): 
+09-08 01:07:16.319  3078  3078 W auditd  : type=1325 audit(0.0:184): table=filter family=10 entries=15
+09-08 01:07:16.319  3078  3078 W auditd  : type=1320 audit(0.0:184): 
+09-08 01:07:16.323  3078  3078 W auditd  : type=1325 audit(0.0:185): table=filter family=2 entries=15
+09-08 01:07:16.323  3078  3078 W auditd  : type=1320 audit(0.0:185): 
+09-08 01:07:16.327  3078  3078 W auditd  : type=1325 audit(0.0:186): table=filter family=10 entries=14
+09-08 01:07:16.327  3078  3078 W auditd  : type=1320 audit(0.0:186): 
+09-08 01:07:16.331  3078  3078 W auditd  : type=1325 audit(0.0:187): table=filter family=2 entries=15
+09-08 01:07:16.331  3078  3078 W auditd  : type=1320 audit(0.0:187): 
+09-08 01:07:16.335  3078  3078 W auditd  : type=1325 audit(0.0:188): table=filter family=10 entries=14
+09-08 01:07:16.335  3078  3078 W auditd  : type=1320 audit(0.0:188): 
+09-08 01:07:16.339  3078  3078 W auditd  : type=1325 audit(0.0:189): table=filter family=2 entries=13
+09-08 01:07:16.339  3078  3078 W auditd  : type=1320 audit(0.0:189): 
+09-08 01:07:16.343  3078  3078 W auditd  : type=1325 audit(0.0:190): table=filter family=10 entries=12
+09-08 01:07:16.343  3078  3078 W auditd  : type=1320 audit(0.0:190): 
+09-08 01:07:16.347  3078  3078 W auditd  : type=1325 audit(0.0:191): table=filter family=2 entries=15
+09-08 01:07:16.347  3078  3078 W auditd  : type=1320 audit(0.0:191): 
+09-08 01:07:16.355  3078  3078 W auditd  : type=1325 audit(0.0:192): table=filter family=10 entries=14
+09-08 01:07:16.355  3078  3078 W auditd  : type=1320 audit(0.0:192): 
+09-08 01:07:16.364  3646  3646 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:16.365  3646  3646 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:16.365  3646  3646 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:16.365  3646  3646 F DEBUG   : Revision: '0'
+09-08 01:07:16.365  3646  3646 F DEBUG   : ABI: 'arm'
+09-08 01:07:16.365  3646  3646 F DEBUG   : pid: 3644, tid: 3644, name: mediaserver  >>> /system/bin/mediaserver <<<
+09-08 01:07:16.365  3646  3646 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:16.365  3646  3646 F DEBUG   :     r0 00000000  r1 00000e3c  r2 00000006  r3 00000008
+09-08 01:07:16.365  3646  3646 F DEBUG   :     r4 f779658c  r5 00000006  r6 f7796534  r7 0000010c
+09-08 01:07:16.365  3646  3646 F DEBUG   :     r8 ffda0e70  r9 00000001  sl ffda0eb0  fp f7723010
+09-08 01:07:16.365  3646  3646 F DEBUG   :     ip 00000000  sp ffda0e08  lr f7775f8f  pc f77769a8  cpsr 200f0010
+09-08 01:07:16.366  3643  3643 I         : sMaxFastTracks = 8
+09-08 01:07:16.367  3643  3643 I audioserver: ServiceManager: 0xf6999440
+09-08 01:07:16.368  3643  3643 W BatteryNotifier: batterystats service unavailable!
+09-08 01:07:16.368  3643  3643 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:07:16.368  3643  3643 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:07:16.368  3643  3643 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:07:16.368  3643  3643 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:16.369  3643  3643 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:16.369  3643  3643 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:07:16.370  3646  3646 F DEBUG   : 
+09-08 01:07:16.370  3646  3646 F DEBUG   : backtrace:
+09-08 01:07:16.370  3646  3646 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:16.370  3646  3646 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:16.370  3646  3646 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:16.370  3646  3646 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:16.370  3646  3646 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:16.370  3646  3646 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:16.370  3646  3646 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:16.370  3646  3646 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:16.370  3646  3646 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:16.392  3068  3068 W         : debuggerd: resuming target 3644
+09-08 01:07:16.393  3068  3068 W         : debuggerd: handling request: pid=3642 uid=0 gid=0 tid=3642
+09-08 01:07:16.400  3672  3672 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:16.451  3672  3672 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:16.451  3672  3672 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:16.451  3672  3672 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:16.451  3672  3672 F DEBUG   : Revision: '0'
+09-08 01:07:16.451  3672  3672 F DEBUG   : ABI: 'arm'
+09-08 01:07:16.452  3672  3672 F DEBUG   : pid: 3642, tid: 3642, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:07:16.452  3672  3672 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:16.452  3672  3672 F DEBUG   :     r0 00000000  r1 00000e3a  r2 00000006  r3 00000008
+09-08 01:07:16.452  3672  3672 F DEBUG   :     r4 f73c258c  r5 00000006  r6 f73c2534  r7 0000010c
+09-08 01:07:16.452  3672  3672 F DEBUG   :     r8 ffb96130  r9 00000001  sl ffb96160  fp f734f010
+09-08 01:07:16.452  3672  3672 F DEBUG   :     ip 00000000  sp ffb960c8  lr f73a1f8f  pc f73a29a8  cpsr 200f0010
+09-08 01:07:16.456  3672  3672 F DEBUG   : 
+09-08 01:07:16.456  3672  3672 F DEBUG   : backtrace:
+09-08 01:07:16.456  3672  3672 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:16.456  3672  3672 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:16.456  3672  3672 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:16.456  3672  3672 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:16.456  3672  3672 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:16.456  3672  3672 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:16.456  3672  3672 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:16.456  3672  3672 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:16.456  3672  3672 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:16.490  3068  3068 W         : debuggerd: resuming target 3642
+09-08 01:07:16.494  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:07:17.569  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:17.569  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:17.569  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:17.569  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:17.584  3704  3704 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-08 01:07:17.584  3704  3704 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-08 01:07:17.584  3704  3704 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-08 01:07:17.584  3704  3704 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-08 01:07:17.584  3704  3704 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-08 01:07:17.584  3704  3704 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-08 01:07:17.584  3704  3704 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-08 01:07:17.584  3704  3704 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-08 01:07:17.585  3704  3704 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-08 01:07:17.585  3704  3704 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-08 01:07:17.585  3704  3704 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-08 01:07:17.585  3704  3704 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-08 01:07:17.585  3704  3704 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-08 01:07:17.585  3704  3704 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-08 01:07:17.585  3704  3704 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-08 01:07:17.585  3704  3704 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-08 01:07:17.585  3704  3704 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-08 01:07:17.644  3704  3704 D lhd     : OnIpcConnect
+09-08 01:07:17.644  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:17.644  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:17.644  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:17.644  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:20.588  3709  3709 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:07:20.588  3709  3709 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3709 (mediaserver)
+09-08 01:07:20.588  3068  3068 W         : debuggerd: handling request: pid=3709 uid=1013 gid=1005 tid=3709
+09-08 01:07:20.593  3711  3711 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:20.595  3710  3710 I Netd    : Netd 1.0 starting
+09-08 01:07:20.595  3710  3710 D TetherController: Setting IP forward enable = 0
+09-08 01:07:20.596  3710  3710 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:07:20.597  3710  3710 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:07:20.597  3710  3710 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:07:20.597  3707  3707 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:07:20.598  3707  3707 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3707 (app_process32)
+09-08 01:07:20.595  3078  3078 W auditd  : type=1325 audit(0.0:224): table=filter family=2 entries=16
+09-08 01:07:20.595  3078  3078 W auditd  : type=1320 audit(0.0:224): 
+09-08 01:07:20.603  3078  3078 W auditd  : type=1325 audit(0.0:225): table=filter family=10 entries=16
+09-08 01:07:20.603  3078  3078 W auditd  : type=1320 audit(0.0:225): 
+09-08 01:07:20.607  3078  3078 W auditd  : type=1325 audit(0.0:226): table=filter family=2 entries=15
+09-08 01:07:20.607  3078  3078 W auditd  : type=1320 audit(0.0:226): 
+09-08 01:07:20.611  3078  3078 W auditd  : type=1325 audit(0.0:227): table=filter family=10 entries=15
+09-08 01:07:20.611  3078  3078 W auditd  : type=1320 audit(0.0:227): 
+09-08 01:07:20.615  3078  3078 W auditd  : type=1325 audit(0.0:228): table=filter family=2 entries=15
+09-08 01:07:20.615  3078  3078 W auditd  : type=1320 audit(0.0:228): 
+09-08 01:07:20.619  3078  3078 W auditd  : type=1325 audit(0.0:229): table=filter family=10 entries=15
+09-08 01:07:20.619  3078  3078 W auditd  : type=1320 audit(0.0:229): 
+09-08 01:07:20.623  3078  3078 W auditd  : type=1325 audit(0.0:230): table=filter family=2 entries=13
+09-08 01:07:20.623  3078  3078 W auditd  : type=1320 audit(0.0:230): 
+09-08 01:07:20.627  3078  3078 W auditd  : type=1325 audit(0.0:231): table=filter family=10 entries=13
+09-08 01:07:20.627  3078  3078 W auditd  : type=1320 audit(0.0:231): 
+09-08 01:07:20.635  3078  3078 W auditd  : type=1325 audit(0.0:232): table=filter family=2 entries=15
+09-08 01:07:20.635  3078  3078 W auditd  : type=1320 audit(0.0:232): 
+09-08 01:07:20.643  3711  3711 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:20.644  3711  3711 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:20.644  3711  3711 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:20.644  3711  3711 F DEBUG   : Revision: '0'
+09-08 01:07:20.644  3711  3711 F DEBUG   : ABI: 'arm'
+09-08 01:07:20.644  3711  3711 F DEBUG   : pid: 3709, tid: 3709, name: mediaserver  >>> /system/bin/mediaserver <<<
+09-08 01:07:20.644  3711  3711 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:20.644  3711  3711 F DEBUG   :     r0 00000000  r1 00000e7d  r2 00000006  r3 00000008
+09-08 01:07:20.644  3711  3711 F DEBUG   :     r4 f773e58c  r5 00000006  r6 f773e534  r7 0000010c
+09-08 01:07:20.639  3078  3078 W auditd  : type=1325 audit(0.0:233): table=filter family=10 entries=15
+09-08 01:07:20.644  3711  3711 F DEBUG   :     r8 ff87b280  r9 00000001  sl ff87b2c0  fp f76cb010
+09-08 01:07:20.644  3711  3711 F DEBUG   :     ip 00000000  sp ff87b218  lr f771df8f  pc f771e9a8  cpsr 200f0010
+09-08 01:07:20.639  3078  3078 W auditd  : type=1320 audit(0.0:233): 
+09-08 01:07:20.646  3708  3708 I         : sMaxFastTracks = 8
+09-08 01:07:20.647  3708  3708 I audioserver: ServiceManager: 0xf6719440
+09-08 01:07:20.647  3708  3708 W BatteryNotifier: batterystats service unavailable!
+09-08 01:07:20.647  3708  3708 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:07:20.647  3708  3708 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:07:20.648  3708  3708 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:07:20.648  3708  3708 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:20.648  3708  3708 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:20.648  3708  3708 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:07:20.648  3711  3711 F DEBUG   : 
+09-08 01:07:20.648  3711  3711 F DEBUG   : backtrace:
+09-08 01:07:20.648  3711  3711 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:20.648  3711  3711 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:20.648  3711  3711 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:20.648  3711  3711 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:20.648  3711  3711 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:20.648  3711  3711 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:20.648  3711  3711 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:20.649  3711  3711 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:20.649  3711  3711 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:20.672  3068  3068 W         : debuggerd: resuming target 3709
+09-08 01:07:20.672  3068  3068 E         : debuggerd: failed to send signal 18 to target: No such process
+09-08 01:07:20.672  3068  3068 W         : debuggerd: handling request: pid=3707 uid=0 gid=0 tid=3707
+09-08 01:07:20.679  3735  3735 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:20.729  3735  3735 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:20.729  3735  3735 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:20.729  3735  3735 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:20.729  3735  3735 F DEBUG   : Revision: '0'
+09-08 01:07:20.729  3735  3735 F DEBUG   : ABI: 'arm'
+09-08 01:07:20.729  3735  3735 F DEBUG   : pid: 3707, tid: 3707, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:07:20.730  3735  3735 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:20.730  3735  3735 F DEBUG   :     r0 00000000  r1 00000e7b  r2 00000006  r3 00000008
+09-08 01:07:20.730  3735  3735 F DEBUG   :     r4 f72e658c  r5 00000006  r6 f72e6534  r7 0000010c
+09-08 01:07:20.730  3735  3735 F DEBUG   :     r8 ffa36170  r9 00000001  sl ffa361a0  fp f7273010
+09-08 01:07:20.730  3735  3735 F DEBUG   :     ip 00000000  sp ffa36108  lr f72c5f8f  pc f72c69a8  cpsr 200f0010
+09-08 01:07:20.733  3735  3735 F DEBUG   : 
+09-08 01:07:20.733  3735  3735 F DEBUG   : backtrace:
+09-08 01:07:20.734  3735  3735 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:20.734  3735  3735 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:20.734  3735  3735 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:20.734  3735  3735 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:20.734  3735  3735 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:20.735  3735  3735 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:20.735  3735  3735 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:20.735  3735  3735 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:20.736  3735  3735 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:20.770  3068  3068 W         : debuggerd: resuming target 3707
+09-08 01:07:20.775  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:07:25.823  3766  3766 I Netd    : Netd 1.0 starting
+09-08 01:07:25.823  3766  3766 D TetherController: Setting IP forward enable = 0
+09-08 01:07:25.825  3766  3766 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:07:25.825  3766  3766 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:07:25.825  3766  3766 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:07:25.832  3765  3765 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:07:25.832  3765  3765 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3765 (mediaserver)
+09-08 01:07:25.833  3068  3068 W         : debuggerd: handling request: pid=3765 uid=1013 gid=1005 tid=3765
+09-08 01:07:25.827  3078  3078 W auditd  : type=1325 audit(0.0:263): table=filter family=2 entries=15
+09-08 01:07:25.827  3078  3078 W auditd  : type=1320 audit(0.0:263): 
+09-08 01:07:25.835  3078  3078 W auditd  : type=1325 audit(0.0:264): table=filter family=10 entries=13
+09-08 01:07:25.835  3078  3078 W auditd  : type=1320 audit(0.0:264): 
+09-08 01:07:25.839  3763  3763 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:07:25.839  3763  3763 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3763 (app_process32)
+09-08 01:07:25.840  3768  3768 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:25.851  3078  3078 W auditd  : type=1325 audit(0.0:265): table=filter family=2 entries=14
+09-08 01:07:25.851  3078  3078 W auditd  : type=1320 audit(0.0:265): 
+09-08 01:07:25.859  3078  3078 W auditd  : type=1325 audit(0.0:266): table=filter family=10 entries=12
+09-08 01:07:25.859  3078  3078 W auditd  : type=1320 audit(0.0:266): 
+09-08 01:07:25.867  3078  3078 W auditd  : type=1325 audit(0.0:267): table=filter family=2 entries=14
+09-08 01:07:25.867  3078  3078 W auditd  : type=1320 audit(0.0:267): 
+09-08 01:07:25.881  3764  3764 I         : sMaxFastTracks = 8
+09-08 01:07:25.881  3764  3764 I audioserver: ServiceManager: 0xf6399440
+09-08 01:07:25.881  3764  3764 W BatteryNotifier: batterystats service unavailable!
+09-08 01:07:25.881  3764  3764 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:07:25.882  3764  3764 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:07:25.882  3764  3764 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:07:25.882  3764  3764 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:25.882  3764  3764 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:25.883  3764  3764 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:07:25.879  3078  3078 W auditd  : type=1325 audit(0.0:268): table=filter family=10 entries=12
+09-08 01:07:25.879  3078  3078 W auditd  : type=1320 audit(0.0:268): 
+09-08 01:07:25.891  3768  3768 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:25.891  3768  3768 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:25.891  3768  3768 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:25.891  3768  3768 F DEBUG   : Revision: '0'
+09-08 01:07:25.891  3768  3768 F DEBUG   : ABI: 'arm'
+09-08 01:07:25.891  3768  3768 F DEBUG   : pid: 3765, tid: 3765, name: mediaserver  >>> /system/bin/mediaserver <<<
+09-08 01:07:25.891  3768  3768 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:25.891  3768  3768 F DEBUG   :     r0 00000000  r1 00000eb5  r2 00000006  r3 00000008
+09-08 01:07:25.891  3768  3768 F DEBUG   :     r4 f71a258c  r5 00000006  r6 f71a2534  r7 0000010c
+09-08 01:07:25.891  3768  3768 F DEBUG   :     r8 ffc015e0  r9 00000001  sl ffc01620  fp f712f010
+09-08 01:07:25.891  3768  3768 F DEBUG   :     ip 00000000  sp ffc01578  lr f7181f8f  pc f71829a8  cpsr 200f0010
+09-08 01:07:25.887  3078  3078 W auditd  : type=1325 audit(0.0:269): table=filter family=2 entries=12
+09-08 01:07:25.887  3078  3078 W auditd  : type=1320 audit(0.0:269): 
+09-08 01:07:25.895  3768  3768 F DEBUG   : 
+09-08 01:07:25.895  3768  3768 F DEBUG   : backtrace:
+09-08 01:07:25.895  3768  3768 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:25.895  3768  3768 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:25.895  3768  3768 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:25.895  3768  3768 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:25.895  3768  3768 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:25.895  3768  3768 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:25.895  3768  3768 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:25.895  3768  3768 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:25.895  3768  3768 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:25.899  3078  3078 W auditd  : type=1325 audit(0.0:270): table=filter family=10 entries=10
+09-08 01:07:25.899  3078  3078 W auditd  : type=1320 audit(0.0:270): 
+09-08 01:07:25.907  3078  3078 W auditd  : type=1325 audit(0.0:271): table=filter family=2 entries=14
+09-08 01:07:25.907  3078  3078 W auditd  : type=1320 audit(0.0:271): 
+09-08 01:07:25.915  3765  3765 W mediaserver: type=1701 audit(0.0:272): auid=4294967295 uid=1013 gid=1005 ses=4294967295 subj=u:r:mediaserver:s0 exe="/system/bin/mediaserver" sig=6
+09-08 01:07:25.920  3068  3068 W         : debuggerd: resuming target 3765
+09-08 01:07:25.920  3068  3068 W         : debuggerd: handling request: pid=3763 uid=0 gid=0 tid=3763
+09-08 01:07:25.919  3078  3078 W auditd  : type=1325 audit(0.0:273): table=filter family=10 entries=12
+09-08 01:07:25.928  3785  3785 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:25.979  3785  3785 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:25.979  3785  3785 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:25.979  3785  3785 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:25.979  3785  3785 F DEBUG   : Revision: '0'
+09-08 01:07:25.979  3785  3785 F DEBUG   : ABI: 'arm'
+09-08 01:07:25.979  3785  3785 F DEBUG   : pid: 3763, tid: 3763, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:07:25.979  3785  3785 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:25.980  3785  3785 F DEBUG   :     r0 00000000  r1 00000eb3  r2 00000006  r3 00000008
+09-08 01:07:25.980  3785  3785 F DEBUG   :     r4 f718658c  r5 00000006  r6 f7186534  r7 0000010c
+09-08 01:07:25.980  3785  3785 F DEBUG   :     r8 ff91b200  r9 00000001  sl ff91b230  fp f7113010
+09-08 01:07:25.980  3785  3785 F DEBUG   :     ip 00000000  sp ff91b198  lr f7165f8f  pc f71669a8  cpsr 200f0010
+09-08 01:07:25.983  3785  3785 F DEBUG   : 
+09-08 01:07:25.983  3785  3785 F DEBUG   : backtrace:
+09-08 01:07:25.983  3785  3785 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:25.984  3785  3785 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:25.984  3785  3785 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:25.984  3785  3785 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:25.984  3785  3785 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:25.984  3785  3785 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:25.984  3785  3785 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:25.984  3785  3785 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:25.984  3785  3785 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:26.017  3068  3068 W         : debuggerd: resuming target 3763
+09-08 01:07:26.022  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:07:31.104  3806  3806 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:07:31.104  3806  3806 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3806 (mediaserver)
+09-08 01:07:31.104  3068  3068 W         : debuggerd: handling request: pid=3806 uid=1013 gid=1005 tid=3806
+09-08 01:07:31.112  3808  3808 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:31.113  3807  3807 I Netd    : Netd 1.0 starting
+09-08 01:07:31.113  3807  3807 D TetherController: Setting IP forward enable = 0
+09-08 01:07:31.116  3807  3807 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:07:31.116  3807  3807 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:07:31.116  3807  3807 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:07:31.115  3078  3078 W auditd  : type=1325 audit(0.0:285): table=filter family=2 entries=15
+09-08 01:07:31.115  3078  3078 W auditd  : type=1320 audit(0.0:285): 
+09-08 01:07:31.119  3078  3078 W auditd  : type=1325 audit(0.0:286): table=filter family=10 entries=13
+09-08 01:07:31.119  3078  3078 W auditd  : type=1320 audit(0.0:286): 
+09-08 01:07:31.127  3804  3804 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:07:31.127  3804  3804 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3804 (app_process32)
+09-08 01:07:31.123  3078  3078 W auditd  : type=1325 audit(0.0:287): table=filter family=2 entries=14
+09-08 01:07:31.123  3078  3078 W auditd  : type=1320 audit(0.0:287): 
+09-08 01:07:31.135  3078  3078 W auditd  : type=1325 audit(0.0:288): table=filter family=10 entries=12
+09-08 01:07:31.135  3078  3078 W auditd  : type=1320 audit(0.0:288): 
+09-08 01:07:31.147  3078  3078 W auditd  : type=1325 audit(0.0:289): table=filter family=2 entries=14
+09-08 01:07:31.147  3078  3078 W auditd  : type=1320 audit(0.0:289): 
+09-08 01:07:31.155  3078  3078 W auditd  : type=1325 audit(0.0:290): table=filter family=10 entries=12
+09-08 01:07:31.155  3078  3078 W auditd  : type=1320 audit(0.0:290): 
+09-08 01:07:31.163  3808  3808 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:31.163  3808  3808 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:31.163  3808  3808 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:31.163  3808  3808 F DEBUG   : Revision: '0'
+09-08 01:07:31.163  3808  3808 F DEBUG   : ABI: 'arm'
+09-08 01:07:31.163  3808  3808 F DEBUG   : pid: 3806, tid: 3806, name: mediaserver  >>> /system/bin/mediaserver <<<
+09-08 01:07:31.164  3808  3808 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:31.164  3808  3808 F DEBUG   :     r0 00000000  r1 00000ede  r2 00000006  r3 00000008
+09-08 01:07:31.164  3808  3808 F DEBUG   :     r4 f711258c  r5 00000006  r6 f7112534  r7 0000010c
+09-08 01:07:31.164  3808  3808 F DEBUG   :     r8 ff926580  r9 00000001  sl ff9265c0  fp f709f010
+09-08 01:07:31.164  3808  3808 F DEBUG   :     ip 00000000  sp ff926518  lr f70f1f8f  pc f70f29a8  cpsr 200f0010
+09-08 01:07:31.167  3808  3808 F DEBUG   : 
+09-08 01:07:31.167  3808  3808 F DEBUG   : backtrace:
+09-08 01:07:31.163  3078  3078 W auditd  : type=1325 audit(0.0:291): table=filter family=2 entries=12
+09-08 01:07:31.163  3078  3078 W auditd  : type=1320 audit(0.0:291): 
+09-08 01:07:31.167  3808  3808 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:31.167  3808  3808 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:31.167  3808  3808 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:31.167  3808  3808 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:31.168  3808  3808 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:31.168  3808  3808 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:31.168  3808  3808 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:31.168  3808  3808 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:31.168  3808  3808 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:31.177  3805  3805 I         : sMaxFastTracks = 8
+09-08 01:07:31.178  3805  3805 I audioserver: ServiceManager: 0xf6299440
+09-08 01:07:31.178  3805  3805 W BatteryNotifier: batterystats service unavailable!
+09-08 01:07:31.178  3805  3805 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:07:31.178  3805  3805 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:07:31.179  3805  3805 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:07:31.179  3805  3805 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:31.179  3805  3805 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:31.179  3805  3805 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:07:31.179  3078  3078 W auditd  : type=1325 audit(0.0:292): table=filter family=10 entries=10
+09-08 01:07:31.179  3078  3078 W auditd  : type=1320 audit(0.0:292): 
+09-08 01:07:31.191  3078  3078 W auditd  : type=1325 audit(0.0:293): table=filter family=2 entries=14
+09-08 01:07:31.191  3078  3078 W auditd  : type=1320 audit(0.0:293): 
+09-08 01:07:31.199  3078  3078 W auditd  : type=1325 audit(0.0:294): table=filter family=10 entries=12
+09-08 01:07:31.199  3078  3078 W auditd  : type=1320 audit(0.0:294): 
+09-08 01:07:31.209  3068  3068 W         : debuggerd: resuming target 3806
+09-08 01:07:31.209  3068  3068 W         : debuggerd: handling request: pid=3804 uid=0 gid=0 tid=3804
+09-08 01:07:31.220  3827  3827 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:31.271  3827  3827 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:31.271  3827  3827 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:31.271  3827  3827 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:31.271  3827  3827 F DEBUG   : Revision: '0'
+09-08 01:07:31.271  3827  3827 F DEBUG   : ABI: 'arm'
+09-08 01:07:31.272  3827  3827 F DEBUG   : pid: 3804, tid: 3804, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:07:31.272  3827  3827 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:31.272  3827  3827 F DEBUG   :     r0 00000000  r1 00000edc  r2 00000006  r3 00000008
+09-08 01:07:31.272  3827  3827 F DEBUG   :     r4 f779358c  r5 00000006  r6 f7793534  r7 0000010c
+09-08 01:07:31.272  3827  3827 F DEBUG   :     r8 ffafb360  r9 00000001  sl ffafb390  fp f7720010
+09-08 01:07:31.272  3827  3827 F DEBUG   :     ip 00000000  sp ffafb2f8  lr f7772f8f  pc f77739a8  cpsr 200f0010
+09-08 01:07:31.276  3827  3827 F DEBUG   : 
+09-08 01:07:31.276  3827  3827 F DEBUG   : backtrace:
+09-08 01:07:31.276  3827  3827 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:31.276  3827  3827 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:31.276  3827  3827 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:31.276  3827  3827 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:31.276  3827  3827 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:31.276  3827  3827 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:31.276  3827  3827 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:31.276  3827  3827 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:31.276  3827  3827 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:31.308  3068  3068 W         : debuggerd: resuming target 3804
+09-08 01:07:31.313  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:07:32.662  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:32.663  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:32.663  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:32.663  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:32.759  3845  3845 V lhd     : GlLhdInterface::Init(/system/etc/lhd.conf)
+09-08 01:07:32.759  3845  3845 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "FlpName"="tcp"
+09-08 01:07:32.759  3845  3845 V lhd     : SetCfgValue: LHD config "LheSerialControl"="BBD:Serial=TTY"
+09-08 01:07:32.759  3845  3845 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheClockMHz"="100"
+09-08 01:07:32.759  3845  3845 V lhd     : SetCfgValue: LHD config "LhePatch"="/dev/bbd_patch"
+09-08 01:07:32.759  3845  3845 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="4"
+09-08 01:07:32.759  3845  3845 V lhd     : SetCfgValue: LHD config "LheBbdPacket"="/dev/ttyBCM"
+09-08 01:07:32.759  3845  3845 V lhd     : SetCfgValue: LHD config "LheBbdControl"="/dev/bbd_control"
+09-08 01:07:32.760  3845  3845 V lhd     : SetCfgValue: LHD config "LheBbdSensor"="/dev/bbd_sensor"
+09-08 01:07:32.760  3845  3845 V lhd     : SetCfgValue: LHD config "Lhe477xDebugFlags"="RPC:FACILITY=33:STDOUT_PUTS:STDOUT_LOG"
+09-08 01:07:32.760  3845  3845 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LheSensorIpc"="true"
+09-08 01:07:32.760  3845  3845 E lhd     : SetCfgValue: Critical Error. Unknown configuration parameter "LhePinMux"="P17=M1"
+09-08 01:07:32.760  3845  3845 V lhd     : SetCfgValue: LHD config "LheAutoBaudDelayMS"="10"
+09-08 01:07:32.760  3845  3845 V lhd     : SetCfgValue: LHD config "LheMaxMcuResetTries"="3"
+09-08 01:07:32.760  3845  3845 E lhd     : OpenFirmwareFile: Fail to open /efs/sec_efs/sensorhub_urgent_fw.patch, errno 2
+09-08 01:07:32.760  3845  3845 E lhd     : getCustPatchVersion: Fail to parse patch /efs/sec_efs/sensorhub_urgent_fw.patch
+09-08 01:07:32.760  3845  3845 E lhd     : getCustPatchVersion: <CustomerVersion> not found
+09-08 01:07:32.823  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:32.823  3845  3845 D lhd     : OnIpcConnect
+09-08 01:07:32.823  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:32.823  3164  3164 D gpsd    : WakeLock(Acquire,GPSD)
+09-08 01:07:32.823  3164  3164 D gpsd    : WakeLock(Release,GPSD)
+09-08 01:07:35.748  3852  3852 I Netd    : Netd 1.0 starting
+09-08 01:07:35.748  3852  3852 D TetherController: Setting IP forward enable = 0
+09-08 01:07:35.753  3852  3852 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:07:35.753  3852  3852 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:07:35.753  3852  3852 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:07:35.757  3851  3851 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:07:35.757  3851  3851 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3851 (mediaserver)
+09-08 01:07:35.757  3068  3068 W         : debuggerd: handling request: pid=3851 uid=1013 gid=1005 tid=3851
+09-08 01:07:35.755  3078  3078 W auditd  : type=1325 audit(0.0:307): table=filter family=2 entries=15
+09-08 01:07:35.755  3078  3078 W auditd  : type=1320 audit(0.0:307): 
+09-08 01:07:35.762  3849  3849 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:07:35.762  3849  3849 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3849 (app_process32)
+09-08 01:07:35.763  3854  3854 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:35.767  3078  3078 W auditd  : type=1325 audit(0.0:308): table=filter family=10 entries=13
+09-08 01:07:35.767  3078  3078 W auditd  : type=1320 audit(0.0:308): 
+09-08 01:07:35.775  3078  3078 W auditd  : type=1325 audit(0.0:309): table=filter family=2 entries=14
+09-08 01:07:35.775  3078  3078 W auditd  : type=1320 audit(0.0:309): 
+09-08 01:07:35.787  3078  3078 W auditd  : type=1325 audit(0.0:310): table=filter family=10 entries=12
+09-08 01:07:35.787  3078  3078 W auditd  : type=1320 audit(0.0:310): 
+09-08 01:07:35.795  3078  3078 W auditd  : type=1325 audit(0.0:311): table=filter family=2 entries=14
+09-08 01:07:35.795  3078  3078 W auditd  : type=1320 audit(0.0:311): 
+09-08 01:07:35.812  3850  3850 I         : sMaxFastTracks = 8
+09-08 01:07:35.812  3850  3850 I audioserver: ServiceManager: 0xf6319440
+09-08 01:07:35.812  3850  3850 W BatteryNotifier: batterystats service unavailable!
+09-08 01:07:35.812  3850  3850 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:07:35.812  3850  3850 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:07:35.813  3850  3850 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:07:35.813  3850  3850 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:35.813  3850  3850 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:35.813  3850  3850 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:07:35.807  3078  3078 W auditd  : type=1325 audit(0.0:312): table=filter family=10 entries=12
+09-08 01:07:35.807  3078  3078 W auditd  : type=1320 audit(0.0:312): 
+09-08 01:07:35.814  3854  3854 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:35.814  3854  3854 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:35.814  3854  3854 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:35.814  3854  3854 F DEBUG   : Revision: '0'
+09-08 01:07:35.814  3854  3854 F DEBUG   : ABI: 'arm'
+09-08 01:07:35.814  3854  3854 F DEBUG   : pid: 3851, tid: 3851, name: mediaserver  >>> /system/bin/mediaserver <<<
+09-08 01:07:35.814  3854  3854 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:35.814  3854  3854 F DEBUG   :     r0 00000000  r1 00000f0b  r2 00000006  r3 00000008
+09-08 01:07:35.814  3854  3854 F DEBUG   :     r4 f758258c  r5 00000006  r6 f7582534  r7 0000010c
+09-08 01:07:35.814  3854  3854 F DEBUG   :     r8 ffddd400  r9 00000001  sl ffddd440  fp f750f010
+09-08 01:07:35.814  3854  3854 F DEBUG   :     ip 00000000  sp ffddd398  lr f7561f8f  pc f75629a8  cpsr 200f0010
+09-08 01:07:35.818  3854  3854 F DEBUG   : 
+09-08 01:07:35.818  3854  3854 F DEBUG   : backtrace:
+09-08 01:07:35.818  3854  3854 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:35.818  3854  3854 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:35.818  3854  3854 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:35.818  3854  3854 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:35.818  3854  3854 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:35.818  3854  3854 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:35.818  3854  3854 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:35.818  3854  3854 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:35.818  3854  3854 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:35.819  3078  3078 W auditd  : type=1325 audit(0.0:313): table=filter family=2 entries=12
+09-08 01:07:35.819  3078  3078 W auditd  : type=1320 audit(0.0:313): 
+09-08 01:07:35.827  3078  3078 W auditd  : type=1325 audit(0.0:314): table=filter family=10 entries=10
+09-08 01:07:35.827  3078  3078 W auditd  : type=1320 audit(0.0:314): 
+09-08 01:07:35.839  3851  3851 W mediaserver: type=1701 audit(0.0:315): auid=4294967295 uid=1013 gid=1005 ses=4294967295 subj=u:r:mediaserver:s0 exe="/system/bin/mediaserver" sig=6
+09-08 01:07:35.843  3068  3068 W         : debuggerd: resuming target 3851
+09-08 01:07:35.844  3068  3068 W         : debuggerd: handling request: pid=3849 uid=0 gid=0 tid=3849
+09-08 01:07:35.839  3078  3078 W auditd  : type=1325 audit(0.0:316): table=filter family=2 entries=14
+09-08 01:07:35.839  3078  3078 W auditd  : type=1320 audit(0.0:316): 
+09-08 01:07:35.851  3870  3870 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:35.851  3078  3078 W auditd  : type=1325 audit(0.0:317): table=filter family=10 entries=12
+09-08 01:07:35.902  3870  3870 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:35.902  3870  3870 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:35.902  3870  3870 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:35.902  3870  3870 F DEBUG   : Revision: '0'
+09-08 01:07:35.902  3870  3870 F DEBUG   : ABI: 'arm'
+09-08 01:07:35.903  3870  3870 F DEBUG   : pid: 3849, tid: 3849, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:07:35.903  3870  3870 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:35.903  3870  3870 F DEBUG   :     r0 00000000  r1 00000f09  r2 00000006  r3 00000008
+09-08 01:07:35.903  3870  3870 F DEBUG   :     r4 f723858c  r5 00000006  r6 f7238534  r7 0000010c
+09-08 01:07:35.903  3870  3870 F DEBUG   :     r8 ffd71990  r9 00000001  sl ffd719c0  fp f71c5010
+09-08 01:07:35.903  3870  3870 F DEBUG   :     ip 00000000  sp ffd71928  lr f7217f8f  pc f72189a8  cpsr 200f0010
+09-08 01:07:35.907  3870  3870 F DEBUG   : 
+09-08 01:07:35.907  3870  3870 F DEBUG   : backtrace:
+09-08 01:07:35.907  3870  3870 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:35.907  3870  3870 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:35.907  3870  3870 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:35.907  3870  3870 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:35.907  3870  3870 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:35.907  3870  3870 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:35.907  3870  3870 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:35.907  3870  3870 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:35.907  3870  3870 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:35.945  3068  3068 W         : debuggerd: resuming target 3849
+09-08 01:07:35.951  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:07:41.045  3893  3893 I Netd    : Netd 1.0 starting
+09-08 01:07:41.045  3893  3893 D TetherController: Setting IP forward enable = 0
+09-08 01:07:41.047  3892  3892 F libc    : CANNOT LINK EXECUTABLE "/system/bin/mediaserver": cannot locate symbol "_ZNK7android8hardware7camera26params19OutputConfiguration14getSurfaceTypeEv" referenced by "/system/lib/libcameraservice.so"...
+09-08 01:07:41.047  3892  3892 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3892 (mediaserver)
+09-08 01:07:41.048  3068  3068 W         : debuggerd: handling request: pid=3892 uid=1013 gid=1005 tid=3892
+09-08 01:07:41.049  3893  3893 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:07:41.049  3893  3893 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:07:41.049  3893  3893 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:07:41.055  3894  3894 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:41.062  3890  3890 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:07:41.062  3890  3890 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3890 (app_process32)
+09-08 01:07:41.059  3078  3078 W auditd  : type=1325 audit(0.0:328): table=filter family=2 entries=15
+09-08 01:07:41.059  3078  3078 W auditd  : type=1320 audit(0.0:328): 
+09-08 01:07:41.067  3078  3078 W auditd  : type=1325 audit(0.0:329): table=filter family=10 entries=12
+09-08 01:07:41.067  3078  3078 W auditd  : type=1320 audit(0.0:329): 
+09-08 01:07:41.079  3078  3078 W auditd  : type=1325 audit(0.0:330): table=filter family=2 entries=14
+09-08 01:07:41.079  3078  3078 W auditd  : type=1320 audit(0.0:330): 
+09-08 01:07:41.087  3078  3078 W auditd  : type=1325 audit(0.0:331): table=filter family=10 entries=11
+09-08 01:07:41.087  3078  3078 W auditd  : type=1320 audit(0.0:331): 
+09-08 01:07:41.099  3078  3078 W auditd  : type=1325 audit(0.0:332): table=filter family=2 entries=14
+09-08 01:07:41.099  3078  3078 W auditd  : type=1320 audit(0.0:332): 
+09-08 01:07:41.105  3891  3891 I         : sMaxFastTracks = 8
+09-08 01:07:41.105  3891  3891 I audioserver: ServiceManager: 0xf6419440
+09-08 01:07:41.105  3891  3891 W BatteryNotifier: batterystats service unavailable!
+09-08 01:07:41.105  3891  3891 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:07:41.107  3078  3078 W auditd  : type=1325 audit(0.0:333): table=filter family=10 entries=11
+09-08 01:07:41.107  3078  3078 W auditd  : type=1320 audit(0.0:333): 
+09-08 01:07:41.106  3891  3891 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:07:41.106  3894  3894 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:41.106  3891  3891 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:07:41.106  3891  3891 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:41.106  3891  3891 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:41.106  3894  3894 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:41.106  3891  3891 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:07:41.106  3894  3894 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:41.106  3894  3894 F DEBUG   : Revision: '0'
+09-08 01:07:41.106  3894  3894 F DEBUG   : ABI: 'arm'
+09-08 01:07:41.107  3894  3894 F DEBUG   : pid: 3892, tid: 3892, name: mediaserver  >>> /system/bin/mediaserver <<<
+09-08 01:07:41.107  3894  3894 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:41.107  3894  3894 F DEBUG   :     r0 00000000  r1 00000f34  r2 00000006  r3 00000008
+09-08 01:07:41.107  3894  3894 F DEBUG   :     r4 f707858c  r5 00000006  r6 f7078534  r7 0000010c
+09-08 01:07:41.107  3894  3894 F DEBUG   :     r8 ffca5ea0  r9 00000001  sl ffca5ee0  fp f7005010
+09-08 01:07:41.107  3894  3894 F DEBUG   :     ip 00000000  sp ffca5e38  lr f7057f8f  pc f70589a8  cpsr 200f0010
+09-08 01:07:41.111  3894  3894 F DEBUG   : 
+09-08 01:07:41.111  3894  3894 F DEBUG   : backtrace:
+09-08 01:07:41.111  3894  3894 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:41.111  3894  3894 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:41.111  3894  3894 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:41.111  3894  3894 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:41.111  3894  3894 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:41.111  3894  3894 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:41.111  3894  3894 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:41.111  3894  3894 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:41.111  3894  3894 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:41.119  3078  3078 W auditd  : type=1325 audit(0.0:334): table=filter family=2 entries=12
+09-08 01:07:41.119  3078  3078 W auditd  : type=1320 audit(0.0:334): 
+09-08 01:07:41.135  3078  3078 W auditd  : type=1325 audit(0.0:335): table=filter family=10 entries=9
+09-08 01:07:41.135  3078  3078 W auditd  : type=1320 audit(0.0:335): 
+09-08 01:07:41.143  3892  3892 W mediaserver: type=1701 audit(0.0:336): auid=4294967295 uid=1013 gid=1005 ses=4294967295 subj=u:r:mediaserver:s0 exe="/system/bin/mediaserver" sig=6
+09-08 01:07:41.147  3068  3068 W         : debuggerd: resuming target 3892
+09-08 01:07:41.147  3068  3068 W         : debuggerd: handling request: pid=3890 uid=0 gid=0 tid=3890
+09-08 01:07:41.147  3078  3078 W auditd  : type=1325 audit(0.0:337): table=filter family=2 entries=14
+09-08 01:07:41.147  3078  3078 W auditd  : type=1320 audit(0.0:337): 
+09-08 01:07:41.155  3911  3911 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:41.159  3078  3078 W auditd  : type=1325 audit(0.0:338): table=filter family=10 entries=11
+09-08 01:07:41.205  3911  3911 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:41.205  3911  3911 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:41.205  3911  3911 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:41.205  3911  3911 F DEBUG   : Revision: '0'
+09-08 01:07:41.205  3911  3911 F DEBUG   : ABI: 'arm'
+09-08 01:07:41.206  3911  3911 F DEBUG   : pid: 3890, tid: 3890, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:07:41.206  3911  3911 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:41.206  3911  3911 F DEBUG   :     r0 00000000  r1 00000f32  r2 00000006  r3 00000008
+09-08 01:07:41.206  3911  3911 F DEBUG   :     r4 f72b158c  r5 00000006  r6 f72b1534  r7 0000010c
+09-08 01:07:41.206  3911  3911 F DEBUG   :     r8 ff963f20  r9 00000001  sl ff963f50  fp f723e010
+09-08 01:07:41.206  3911  3911 F DEBUG   :     ip 00000000  sp ff963eb8  lr f7290f8f  pc f72919a8  cpsr 200f0010
+09-08 01:07:41.209  3911  3911 F DEBUG   : 
+09-08 01:07:41.209  3911  3911 F DEBUG   : backtrace:
+09-08 01:07:41.209  3911  3911 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:41.210  3911  3911 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:41.210  3911  3911 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:41.210  3911  3911 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:41.210  3911  3911 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:41.210  3911  3911 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:41.210  3911  3911 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:41.210  3911  3911 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:41.210  3911  3911 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:41.248  3889  3889 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+09-08 01:07:41.253  3068  3068 W         : debuggerd: resuming target 3890
+09-08 01:07:41.262  3149  3149 I ServiceManager: service 'media.audio_flinger' died
+09-08 01:07:46.338  3932  3932 I Netd    : Netd 1.0 starting
+09-08 01:07:46.338  3932  3932 D TetherController: Setting IP forward enable = 0
+09-08 01:07:46.352  3932  3932 I QtiConnectivityAdapter: Failed to open libconnctrl, some features may not be present.
+09-08 01:07:46.352  3932  3932 E         : Failed to open libdatactrl, some features may not be present.
+09-08 01:07:46.352  3932  3932 E         : Failed to open libcsm_data, some features may not be present.
+09-08 01:07:46.358  3930  3930 F libc    : CANNOT LINK EXECUTABLE "/system/bin/app_process32": cannot locate symbol "_ZN7android14CameraMetadata14getTagFromNameEPKcPKNS_19VendorTagDescriptorEPj" referenced by "/system/lib/libandroid_runtime.so"...
+09-08 01:07:46.358  3930  3930 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3930 (app_process32)
+09-08 01:07:46.359  3068  3068 W         : debuggerd: handling request: pid=3930 uid=0 gid=0 tid=3930
+09-08 01:07:46.355  3078  3078 W auditd  : type=1325 audit(0.0:348): table=filter family=2 entries=15
+09-08 01:07:46.355  3078  3078 W auditd  : type=1320 audit(0.0:348): 
+09-08 01:07:46.368  3934  3934 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+09-08 01:07:46.367  3078  3078 W auditd  : type=1325 audit(0.0:349): table=filter family=10 entries=12
+09-08 01:07:46.367  3078  3078 W auditd  : type=1320 audit(0.0:349): 
+09-08 01:07:46.375  3078  3078 W auditd  : type=1325 audit(0.0:350): table=filter family=2 entries=14
+09-08 01:07:46.375  3078  3078 W auditd  : type=1320 audit(0.0:350): 
+09-08 01:07:46.383  3078  3078 W auditd  : type=1325 audit(0.0:351): table=filter family=10 entries=11
+09-08 01:07:46.383  3078  3078 W auditd  : type=1320 audit(0.0:351): 
+09-08 01:07:46.395  3078  3078 W auditd  : type=1325 audit(0.0:352): table=filter family=2 entries=14
+09-08 01:07:46.395  3078  3078 W auditd  : type=1320 audit(0.0:352): 
+09-08 01:07:46.404  3931  3931 I         : sMaxFastTracks = 8
+09-08 01:07:46.405  3931  3931 I audioserver: ServiceManager: 0xf6799440
+09-08 01:07:46.405  3931  3931 W BatteryNotifier: batterystats service unavailable!
+09-08 01:07:46.405  3931  3931 I AudioFlinger: Using default 3000 mSec as standby time.
+09-08 01:07:46.405  3931  3931 I AudioPolicyService: AudioPolicyService CSTOR in new mode
+09-08 01:07:46.405  3931  3931 W APM::ConfigParsingUtils: loadOutput() invalid supported devices
+09-08 01:07:46.406  3931  3931 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:46.406  3931  3931 W APM::ConfigParsingUtils: loadInput() invalid supported devices
+09-08 01:07:46.406  3931  3931 I APM::ConfigParsingUtils: loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+09-08 01:07:46.403  3078  3078 W auditd  : type=1325 audit(0.0:353): table=filter family=10 entries=11
+09-08 01:07:46.403  3078  3078 W auditd  : type=1320 audit(0.0:353): 
+09-08 01:07:46.418  3934  3934 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-08 01:07:46.418  3934  3934 F DEBUG   : LineageOS Version: '14.1-20170907-UNOFFICIAL-dream2lte'
+09-08 01:07:46.418  3934  3934 F DEBUG   : Build fingerprint: 'samsung/dream2ltexx/dream2lte:7.0/NRD90M/G955FXXU1AQH3:user/release-keys'
+09-08 01:07:46.418  3934  3934 F DEBUG   : Revision: '0'
+09-08 01:07:46.419  3934  3934 F DEBUG   : ABI: 'arm'
+09-08 01:07:46.419  3934  3934 F DEBUG   : pid: 3930, tid: 3930, name: app_process32  >>> /system/bin/app_process32 <<<
+09-08 01:07:46.419  3934  3934 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+09-08 01:07:46.419  3934  3934 F DEBUG   :     r0 00000000  r1 00000f5a  r2 00000006  r3 00000008
+09-08 01:07:46.419  3934  3934 F DEBUG   :     r4 f76a958c  r5 00000006  r6 f76a9534  r7 0000010c
+09-08 01:07:46.415  3078  3078 W auditd  : type=1325 audit(0.0:354): table=filter family=2 entries=12
+09-08 01:07:46.415  3078  3078 W auditd  : type=1320 audit(0.0:354): 
+09-08 01:07:46.419  3934  3934 F DEBUG   :     r8 ffb97440  r9 00000001  sl ffb97470  fp f7636010
+09-08 01:07:46.419  3934  3934 F DEBUG   :     ip 00000000  sp ffb973d8  lr f7688f8f  pc f76899a8  cpsr 200f0010
+09-08 01:07:46.423  3934  3934 F DEBUG   : 
+09-08 01:07:46.423  3934  3934 F DEBUG   : backtrace:
+09-08 01:07:46.423  3934  3934 F DEBUG   :     #00 pc 000469a8  /system/bin/linker (__dl_tgkill+12)
+09-08 01:07:46.423  3934  3934 F DEBUG   :     #01 pc 00045f8b  /system/bin/linker (__dl_pthread_kill+34)
+09-08 01:07:46.423  3934  3934 F DEBUG   :     #02 pc 0003e32f  /system/bin/linker (__dl_raise+10)
+09-08 01:07:46.423  3934  3934 F DEBUG   :     #03 pc 0003cdeb  /system/bin/linker (__dl___libc_android_abort+34)
+09-08 01:07:46.423  3934  3934 F DEBUG   :     #04 pc 0003bbbc  /system/bin/linker (__dl_abort+4)
+09-08 01:07:46.423  3934  3934 F DEBUG   :     #05 pc 0003de2b  /system/bin/linker (__dl___libc_fatal+22)
+09-08 01:07:46.423  3934  3934 F DEBUG   :     #06 pc 00009c43  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+3146)
+09-08 01:07:46.423  3934  3934 F DEBUG   :     #07 pc 00008f63  /system/bin/linker (__dl___linker_init+358)
+09-08 01:07:46.423  3934  3934 F DEBUG   :     #08 pc 000027c0  /system/bin/linker (_start+4)
+09-08 01:07:46.423  3078  3078 W auditd  : type=1325 audit(0.0:355): table=filter family=10 entries=9
+09-08 01:07:46.423  3078  3078 W auditd  : type=1320 audit(0.0:355): 
+09-08 01:07:46.435  3078  3078 W auditd  : type=1325 audit(0.0:356): table=filter family=2 entries=14
+09-08 01:07:46.435  3078  3078 W auditd  : type=1320 audit(0.0:356): 
+09-08 01:07:46.443  3078  3078 W auditd  : type=1325 audit(0.0:357): table=filter family=10 entries=11
+09-08 01:07:46.443  3078  3078 W auditd  : type=1320 audit(0.0:357): 
+09-08 01:07:46.458  3068  3068 W         : debuggerd: resuming target 3930
+09-08 01:07:46.464  3149  3149 I ServiceManager: service 'media.audio_flinger' died
